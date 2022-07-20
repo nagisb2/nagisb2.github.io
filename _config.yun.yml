@@ -1,0 +1,16 @@
+#avatar:
+#  url: /images/avatar.jpg # 你的头像图片地址
+#  rounded: true
+#  opacity: 1
+banner:
+  enable: true
+  title: NAGISB的小站
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+#favicon: /favicon.ico
+
