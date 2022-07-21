@@ -2,6 +2,14 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+#aplayer:
+#  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+#  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+#  meting: true
+#  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+aplayer:
+  meting: true
+
 # Site
 title: NAGISB的博客
 subtitle: ''

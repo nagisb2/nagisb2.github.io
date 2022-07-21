@@ -23,15 +23,17 @@ avatar:
   url: nagisb.png
   rounded: true
   opacity: 1
-  mickey_mouse: false
+  mickey_mouse: true
+  message: 不想上学
   status:
-    enable: true
+    enable: false
     emoji: 😭
     message: 不想上学
 pages:
-  - name: 我的小伙伴们
+  - name: 导航链接
     url: /links/
-    icon: ri:genderless-line
+    #icon: ri:genderless-line
+    icon: ri:share-line
     color: dodgerblue
 social:
   - name: 网易云音乐
@@ -60,7 +62,7 @@ footer:
     start_time: '2020-07-19T22:21:00'
 menu:
   home:
-    title: 首页
+    title: home
     path: /
     icon: ri:home-4-line
   list:
@@ -77,9 +79,25 @@ menu:
     #   icon: ri:cloud-line
     #   count: 你猜
   custom:
-    title: 文件
-    path: https://yun.yunyoujun.cn
-    icon: ri:folder-2-line
+    title: music
+    path: /playlist/
+    icon: ri:music-2-line
+notice:
+  enable: false
+  content: Thanks for playing my game.
+say:
+  enable: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
+
+
+
+
+
+
 
 
 
