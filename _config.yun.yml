@@ -1,10 +1,10 @@
-#avatar:
-#  url: /images/avatar.jpg # 你的头像图片地址
-#  rounded: true
-#  opacity: 1
 banner:
   enable: true
-  title: NAGISB的小站
+  title:
+    - NA
+    - GI
+    - SB
+    - Blog
   border: true
   cloud:
     enable: true
@@ -12,5 +12,38 @@ banner:
   go_down:
     enable: true
     icon: ri:arrow-down-s-line
-#favicon: /favicon.ico
+#鼠标样式
+cursor:
+  enable: true
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
+avatar:
+  enable: true
+  url: nagisb.png
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😭
+    message: 不想上学
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: ri:genderless-line
+    color: dodgerblue
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+
+
+
+
+
+
+
 

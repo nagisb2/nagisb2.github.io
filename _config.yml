@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: NAGISB的小站
+title: NAGISB的博客
 subtitle: ''
 description: ''
 keywords:
@@ -40,7 +40,9 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
+prependRoot: true
+postAsset: true
 relative_link: false
 future: true
 highlight:
