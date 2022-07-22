@@ -41,7 +41,7 @@ social:
     icon: ri:netease-cloud-music-line
     color: '#C10D0C'
 post_meta:
-  item_text: false
+  item_text: true
   created_at: true
   updated_at: true
   categories: true
@@ -59,7 +59,7 @@ footer:
     enable: true
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: '2020-07-19T22:21:00'
+    start_time: '2022-07-19T22:21:00'
 menu:
   home:
     title: home
@@ -92,6 +92,26 @@ say:
   hitokoto:
     enable: true
     api: https://v1.hitokoto.cn
+engine_search:
+  enable: false
+# search
+# https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+# _config.yun.yml
+medium_zoom: true
+reward:
+  enable: true
+  icon: ri:hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 微信支付
+      path: https://git.poker/nagisb2/image/blob/master/wechat.webp?raw=true
+      color: '#2DC100'
+      icon: ri:wechat-pay-line
+wordcount:
+  enable: true
 
 
 

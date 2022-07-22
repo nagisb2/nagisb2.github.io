@@ -1,12 +1,16 @@
 ---
 title: 我的md笔记
 date: 2022-07-20 10:41:32
-tags: 笔记
+tags: Markdown
+hide: index
+password: 2181
+categories:
+- [笔记,md]
 ---
 
 # 一级标题
 
-**强调语句**
+## **强调语句**
 
 _我是斜体_
 
@@ -46,3 +50,12 @@ _我是斜体_
 ---
 
 :sweat_smile:
+
+<center>这是一个HTML居中</center>
+
+<u>下划线</u>
+
+
+
+
+

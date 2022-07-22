@@ -9,7 +9,7 @@
 #  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
 aplayer:
   meting: true
-
+  
 # Site
 title: NAGISB的博客
 subtitle: ''
@@ -21,7 +21,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://blog.nagisb.space
 permalink: post/:name/
 permalink_defaults:
 pretty_urls:
