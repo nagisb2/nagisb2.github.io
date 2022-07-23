@@ -1,0 +1,153 @@
+banner:
+  enable: true
+  title:
+    - NA
+    - GI
+    - SB
+    - Blog
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+#鼠标样式
+cursor:
+  enable: true
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
+avatar:
+  enable: true
+  url: nagisb.png
+  rounded: true
+  opacity: 1
+  mickey_mouse: true
+  message: 不想上学
+  status:
+    enable: false
+    emoji: 😭
+    message: 不想上学
+pages:
+  - name: 导航链接
+    url: /links/
+    #icon: ri:genderless-line
+    icon: ri:share-line
+    color: dodgerblue
+social:
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: ri:rss-line
+    color: orange
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=1682645831
+    icon: ri:netease-cloud-music-line
+    color: '#C10D0C'
+  - name: E-Mail
+    link: mailto:w2181890001@gmail.com
+    icon: ri:mail-line
+    color: '#8E71C1'
+  - name: Twitter
+    link: https://twitter.com/gisb_na
+    icon: ri:twitter-line
+    color: '#1da1f2'
+  - name: GitHub
+    link: https://github.com/nagisb2
+    icon: ri:github-line
+    color: '#181717'
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
+wordcloud:
+  enable: true
+footer:
+  since: 2022
+  icon:
+    name: ri:cloud-line
+    title: 404NOT FOUNT
+    url: /404.html
+  powered:
+    enable: false
+  live_time:
+    enable: true
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: '2022-07-19T22:21:00'
+menu:
+  home:
+    title: home
+    path: /
+    icon: ri:home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: ri:archive-line
+    - type: categories
+      path: /categories/
+      icon: ri:folder-2-line
+    - type: tags
+      path: /tags/
+      icon: ri:price-tag-3-line
+    # - path: https://www.yunyoujun.cn
+    #   icon: ri:cloud-line
+    #   count: 你猜
+  custom:
+    title: music
+    path: /playlist/
+    icon: ri:music-2-line
+notice:
+  enable: false
+  content: Thanks for playing my game.
+say:
+  enable: true
+  api: https://cdn.jsdelivr.net/gh/ElpsyCN/say@gh-pages/sentences.json
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: true
+    api: https://v1.hitokoto.cn
+engine_search:
+  enable: false
+# search
+# https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+# _config.yun.yml
+medium_zoom: true
+reward:
+  enable: true
+  icon: ri:hand-coin-line
+  comment: I'm so cute. Please give me money.
+  # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
+  methods:
+    - name: 微信支付
+      path: https://git.poker/nagisb2/image/blob/master/wechat.webp?raw=true
+      color: '#2DC100'
+      icon: ri:wechat-pay-line
+wordcount:
+  enable: true
+  count: true
+  time: true
+pjax:
+  enable: true
+google_analytics:
+  enable: true
+  id: G-5G031WZ8W0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

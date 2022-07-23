@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>安卓像微机一样安装双系统</title>
+    <url>/post/System-double/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
+<p>1.一部已经解好Bl的手机和一台微机</p>
+<p>2.已经做好备份工作和能够承担风险的能力</p>
+<p><em><span id="more"></span></em></p>
+<h3 id="工具和方式"><a href="#工具和方式" class="headerlink" title="工具和方式"></a>工具和方式</h3><p>sgdisk: Android下操作GPT分区的命令工具,一般自带</p>
+<p>不限于社区上的REC: 用来刷系统,执行命令</p>
+<p>可以执行命令的方式: 包括但不限于adb,第三方REC,解释性脚本bash</p>
+<h2 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h2><h3 id="确保权限"><a href="#确保权限" class="headerlink" title="确保权限"></a>确保权限</h3><p>打开MT管理器进入终端,输入su,继续输入sgdiak,若终端回显最后一行代表成功执行命令!</p>
+<p><img src="/images/sgdisk-shell.png" alt="direct" loading="lazy"></p>
+<h3 id="终端命令"><a href="#终端命令" class="headerlink" title="终端命令"></a>终端命令</h3><p>首先输入; <code>sgdisk /dev/block/sda --print</code> 回显查看手机的分区情况 </p>
+<p>可能由于设备类型不同,sgdisk[分区块]可能不通用</p>
+<blockquote>
+<p>UFS闪存分区块:sda,sdb,sdd,sde,sdf</p>
+<p>EMMC闪存分区块:mmcblk0</p>
+</blockquote>
+<p><img src="/images/partition.png" alt="direct" loading="lazy"></p>
+<p>备份命令: <code>--backup=/路径/rename.bin</code>; 恢复命令: <code>  --load-backup=/路径/rename.bin</code></p>
+<blockquote>
+<p>修改(恢复)命令后只有重启系统才会限定修改系统分区当前仍是旧分区表备份命令只备份当前分区</p>
+<p>目前命令前缀都是sgdisk /[分区路径]</p>
+</blockquote>
+<p>删除命令: <code>--delete=[分区号]</code>; 新建命令: <code>--new=[分区号:开始:结束]</code></p>
+<p>改名命令: <code>--change-name=分区号:名字</code> </p>
+<h3 id="终端操作"><a href="#终端操作" class="headerlink" title="终端操作"></a>终端操作</h3><h4 id="删除data"><a href="#删除data" class="headerlink" title="删除data"></a>删除data</h4><p>使用删除命令删除分区21[userdata]</p>
+<h4 id="新建data"><a href="#新建data" class="headerlink" title="新建data"></a>新建data</h4><p>使用新建命令<code>sgdisk /dev/block/sda --new=0:0+sizeGib</code>; <code>sgdisk /dev/block/sda --new:0:0+sizeGib</code></p>
+<blockquote>
+<p>前者新建大小size分区21,后者表示新建填充剩余空间分区22</p>
+</blockquote>
+<h4 id="进行改名"><a href="#进行改名" class="headerlink" title="进行改名"></a>进行改名</h4><p>使用改名命令<code>sgdisk /dev/block/sda --change-name=21:userdata</code>; <code>sgdisk /dev/block/sda --change-name=22:userdata1</code></p>
+<hr>
+<blockquote>
+<p>到上面差不多是完成微机分硬盘装系统的操作,只不过从图形操作变成终端操作</p>
+</blockquote>
+<h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><p>重启进入TWRP,进入终端界面操作</p>
+<p>按照我上面的例子,<code>mke2fs -t ext4 /dev/block/sda21; mke2fs -t ext4 /dev/block/sda22</code></p>
+<hr>
+<p><del>到以上为之你已经完成了小白最容易踩到坑的部分了</del></p>
+<hr>
+<h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p>直接重启你会发现进去入厂系统了,用的是刚刚userdata的分区,看看内存是不是已经改变了</p>
+<h2 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h2><blockquote>
+<p>原理: 用命令通过恢复备份的分区镜像来换系统</p>
+<blockquote>
+<p> <a href="https://www.lanzouw.com/iGcPjvvuu9g">下载工具压缩包</a></p>
+</blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符*表示</span><br><span class="line">将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名</span><br><span class="line">使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置</span><br><span class="line">再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名</span><br><span class="line">同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统</span><br><span class="line">使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2</span><br><span class="line">电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了</span><br></pre></td></tr></table></figure>
+
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切换的方法可以根据工具说明rec刷入切换</p>
+<p>当不是官方原版分区表时一定不能线刷,不然必定砖,只能9008</p>
+<p>刷双系统尽量是同底层组合避免不必要的bug 如安卓9和安卓10底层差别很大</p>
+<h2 id="一键切换"><a href="#一键切换" class="headerlink" title="一键切换"></a>一键切换</h2><p><a href="https://www.coolapk.com/apk/com.highsys.systemchanger">ATMS-ROM激活器</a></p>
+]]></content>
+      <categories>
+        <category>刷机</category>
+        <category>安卓</category>
+      </categories>
+      <tags>
+        <tag>双系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电信HG6543C1超级管理员账户密码获取</title>
+    <url>/post/light-cat/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
+<blockquote>
+<p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p>
+</blockquote>
+<p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p>
+<h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p>
+<h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote>
+<p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p>
+</blockquote>
+<hr>
+<h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p>
+<p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p>
+<hr>
+<p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p>
+<h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p>
+<blockquote>
+<p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p>
+</blockquote>
+<p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p>
+<hr>
+<p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p>
+<p><img src="/images/cat-passwd.png" loading="lazy"></p>
+<hr>
+<h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>>
+
+<p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>刷机</category>
+      </categories>
+      <tags>
+        <tag>整活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的md笔记</title>
+    <url>/post/practice/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="0c76cd05fccadefebf9f85ff680b78063b6d65463c3678b2f326e6bb3da4cf79">c1dcf91c718b678e6f1232343cdc9c09aeff2e7bce69098ec0d0e0b478239419e5ae46f0b81273d23d4b9c0b399fe53eaddae4b9db8298d7e8fcf8f203f8469886c8d194aa17a029b0a6415f9b8f4237a659d7b210e6fa8d73a667dc97af7374072b9d586a59b824e5390592ee6902c92c6ea8c5d45d538cb6f7d39290a509dd13582a9a0db2ccfcffe79d3d90b892aff0d71eda4628826ca1f9dbca48876447ed0a032111f4e07ba57b22578a3cd19da8e8d4a9f79d2bcf4afeeeb0bc6cc7148b61f827f95d3df61e36cfa2cfd5a42256a113a21f5538842f6ef84b053a80c345e569bea06b384cec51e786cc6b78f85efce3f8a9429489c2263258a7795fd6fb3f4acf305edc5faed1d6c23aeeeff8472e8e30096a0ba47e4ed9622f59b78f7e12b46dae78da2ac4278e5271e3cc902fde8047affc13b0baf5a29e8cdf33c8f721aafef5e86de1fd7fb7d8fd432b87a2f7a9dc6a54bea01ccb759ee7a17a022cbd607e0c0cc49b55a7788a90041de61699a1503e2c63a35920cea272b6b71bd29f5711958ab5caecf43ee9545f236a67a75145b5281d9d19dfb392e1ffc2d3de7aed3c32ed569395c6b6fd343b020411cc2a0e64749e2d6ee468cb2f0b2ddd171119e0689d0068aa10a7ec53d68fba3ece3bce89a993100c67c7d311239b68991751e72e42d8a81690d0e952de5113a40a23bb7e268c691f809a1c99ec0558526a2c2eefdceecebd4a6e4cfa360ab9a522509a1d88075a58247d266039d97ec992434d2ac9e54a9500aa6fc2486126c048cdb6431c786ed4535541196f07fdcb614b0c4911548a47987d81ab0778da019059706a1854146256c9677394e0a8ac10668b2320ae5b49fce5be704aa956f1b4bcba101d8d779774b463b1217657354f2324fd36f589533c30c8828035b1c677c166c9d64d929e6ff260136d026465a4c4ae83ce7498ea4674265f0935a4ea92a44c39d77263ea2e73ce8ed3c3b35d7bf88456d4e79a7f7ec0931634578ee3f6d24737bdedfd868c47a2abecbdc6ae624c3410bb9426102394440aa71ac40ca009fdd9a4a22548cb562a846c1034c832e55c27e2a10c280c445af9c6254160b4352069cc56c45c302601d074bdddbefceac44590561ecc61e377ee13ad84caee7b47cfc78f9f70eab60f78fa4dd52f3e4290b49ed6c1bf18c2ada6adebee86f0f67b80ed98001a6ae27e03e32c82dbce44ab49a3af98f4d677e47acb6fbec696e2f01f265c2ccab16f51413ee60183a52cd9845a414bf913173fdd505d16571d946e5933b092b29c492fc84757a99c60a51f530caf27cfec0ab17c1158de002bb3ff87fb1763ea2a322becc819bc88a2a8099c298012b903cfe2962fbe511804db0ee68dd502f49ad3a16bd77be4b9a2ace3452e2fed2ed92ddd785bb88847aacc0079d0f5971660c8991a13aee2a871e5ec2348956e157c6b715ee56e37b6fc325f42958bef819fffd478c93b004b5283b4acce352d6337d02aec9ffc19cd3d5c1c168f9a9237575be6d213a20715c790b79999bf61946730d46d06a303e85b3749cbe6e773a04bdd9d5019565e3998c7f4426598ae2c6f29eb45dc563162e7d20e87a839aeaa3320f5053ac945708df13f2d80f22b6d4b9931f5b8bfd11ee25b6bbc21e9fa7bf9ca0401919cae13ff27b35958c07a7f545a0a686f994cee0c4ca23c19f206eebf923425af0f9da9580a23f38d1b0a1e1b407973e5b5b78da3606e570c870dbaeb3d71ffc35bb1ce8ab152bdb038b1cfc33c44ccc029e2ed57f84d108b28eb09da87b594529bac378f9282db1bc6ec44a02f83effd42dd48541275f7f85308bf03b9fd2cfd3ef015f399943dce520ce5b5e78e213195360000bd08858a0e4ff9e336c3c5b4a9882b3dc8b1cd389edd8468ff21c29967735d46756451c7fd181fe4a1dfc64a27e8c784c9d0e3e157ae8d59ae01bf64bf988b3513120cd764c016dc7f618539267d31da27e49a4020bbac72cf6d011a8af85b68ec93679ddc4344cf3d4c1066cfe7ada937e0dd4ef7dc7b2dbdcee17e9a978b6460012a1cf5bb8538f2bdf28986826d06d27d78e1f727a1c56afaaa17385e15215217ef88a0bfb570b9cc3fb120c0880361b5bbbb2bd4cbde144000230a76c21644c71d57d10ddcd62bcb267c0639d88f807f5baa7634a78ea5a15dc60ee76b97a337e018951d4b2b12912b28668aee929d2ba60d8b8438e4234e2db3077f58097187786cd0366f513a98861f9ed1e43dcedaa5cd2bd3d64eec6d8bb7bf4c6202b66b9c7039e8ca00df18edfcdc4f3d438affc9220d5b52b384859f8130656ddf6be8c86901a82a9f050faaf4e508a7eb40311bcb8db987eaf179b4408d0d1c821f23d2b76766896945ed89e1730997a456706465b3796dffe8b45ddafb2dc5fc3f545f9190da7255773d5b19e481</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>md</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>来给你的u盘实现一盘多系统</title>
+    <url>/post/ventory/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p>
+<h2 id="Ventoy"><a href="#Ventoy" class="headerlink" title="Ventoy"></a>Ventoy</h2><p><img src="/images/ventoy-menu.png" alt="界面" loading="lazy"></p>
+<center>UI</centry>
+</center>
+
+<p>有了Ventoy你就无需反复地格式化U盘,你只需要吧 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件拷贝到U盘里面就可以启动了,无需(换系统反复重新写盘)其他操作。ventoy与普通U盘启动器来说ventoy制作的U盘<strong>仍然可以作为一个普通U盘存储文件</strong></p>
+<hr>
+<center>一个U盘通吃200多款操作系统安装</center>
+
+<p>你可以一次性拷贝多个不同类型的镜像文件,Ventoy会在启动时显示一个菜单供你选择,支持大部分常见类型的操作系统其中包括主流的 Windows11 /Win10 /8.1 /8 /7 ,WinPE(PE系统等等) Ubuntu CentOS Debian Linux …</p>
+<h2 id="制作启动器"><a href="#制作启动器" class="headerlink" title="制作启动器"></a>制作启动器</h2><h3 id="软件部署"><a href="#软件部署" class="headerlink" title="软件部署"></a>软件部署</h3><p>官网下载相应版本后,分区类型选择MBR兼容性好,然后开始安装一个U盘启动器就做好了,期间会格式化U盘</p>
+<h3 id="U盘部署"><a href="#U盘部署" class="headerlink" title="U盘部署"></a>U盘部署</h3><p>随意选择U盘目录将系统文件复制到U盘 比如我的是&gt;&gt;/IMG</p>
+<h2 id="从U盘启动"><a href="#从U盘启动" class="headerlink" title="从U盘启动"></a>从U盘启动</h2><p><img src="/images/efi.jpg" alt="efi" loading="lazy"></p>
+<p>重启进入EFI选择U盘名字,以上是不同品牌EFI快捷键</p>
+<hr>
+<h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><blockquote>
+<p>好的瑞士军刀怎么能少的了DIY呢</p>
+</blockquote>
+<p>在U盘根目录新建<code>themes</code>文件夹,由于更改主题需要编译json文件所以ventoy自带了VentoyPlugson方便傻瓜式操作</p>
+<p><a href="https://www.gnome-look.org/browse?cat=109&ord=latest">GRUB Themes - Gnome-look.org</a>在里面下载你喜欢的主题.tg,解包后再解压知道只有文件夹,放到你的themes文件夹</p>
+<p>找到你的ventoy安装路径打开<code>VentoyPlugson.exe</code>选择启动; 或者点击链接<a href="http://127.0.0.1:24681/">链接</a></p>
+<p>选择主题插件设置你的主题样式,教程就结束了!</p>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><center>在界面使用F5可以切换主题</center>
+
+<p><img src="/images/theme-ventoy.png" alt="ventoy" loading="lazy"></p>
+]]></content>
+      <categories>
+        <category>刷机</category>
+        <category>windows</category>
+      </categories>
+      <tags>
+        <tag>u盘</tag>
+      </tags>
+  </entry>
+</search>
