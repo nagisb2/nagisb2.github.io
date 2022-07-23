@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NAGISB的博客</title>
+  
+  
+  <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
+  
+  <link href="http://blog.nagisb.space/"/>
+  <updated>2022-07-23T06:12:35.170Z</updated>
+  <id>http://blog.nagisb.space/</id>
+  
+  <author>
+    <name>NAGISB</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电信HG6543C1超级管理员账户密码获取</title>
+    <link href="http://blog.nagisb.space/post/light-cat/"/>
+    <id>http://blog.nagisb.space/post/light-cat/</id>
+    <published>2022-07-23T05:03:28.376Z</published>
+    <updated>2022-07-23T06:12:35.170Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p><blockquote><p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p></blockquote><p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p><h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p><h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote><p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p></blockquote><hr><h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p><p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p><hr><p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p><h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p><blockquote><p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p></blockquote><p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p><hr><p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p><p><img src="/images/cat-passwd.png" loading="lazy"></p><hr><h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>><p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="刷机" scheme="http://blog.nagisb.space/categories/%E5%88%B7%E6%9C%BA/"/>
+    
+    
+    <category term="整活" scheme="http://blog.nagisb.space/tags/%E6%95%B4%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>来给你的u盘实现一盘多系统</title>
+    <link href="http://blog.nagisb.space/post/ventory/"/>
+    <id>http://blog.nagisb.space/post/ventory/</id>
+    <published>2022-07-22T03:07:56.962Z</published>
+    <updated>2022-07-22T06:30:00.424Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p><h2 id="Ventoy"><a href="#Ventoy" class="headerlink" title="Ventoy"></a>Ventoy</h2><p><img src="/images/ventoy-menu.png" alt="界面" loading="lazy"></p><center>UI</centry></center><p>有了Ventoy你就无需反复地格式化U盘,你只需要吧 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件拷贝到U盘里面就可以启动了,无需(换系统反复重新写盘)其他操作。ventoy与普通U盘启动器来说ventoy制作的U盘<strong>仍然可以作为一个普通U盘存储文件</strong></p><hr><center>一个U盘通吃200多款操作系统安装</center><p>你可以一次性拷贝多个不同类型的镜像文件,Ventoy会在启动时显示一个菜单供你选择,支持大部分常见类型的操作系统其中包括主流的 Windows11 /Win10 /8.1 /8 /7 ,WinPE(PE系统等等) Ubuntu CentOS Debian Linux …</p><h2 id="制作启动器"><a href="#制作启动器" class="headerlink" title="制作启动器"></a>制作启动器</h2><h3 id="软件部署"><a href="#软件部署" class="headerlink" title="软件部署"></a>软件部署</h3><p>官网下载相应版本后,分区类型选择MBR兼容性好,然后开始安装一个U盘启动器就做好了,期间会格式化U盘</p><h3 id="U盘部署"><a href="#U盘部署" class="headerlink" title="U盘部署"></a>U盘部署</h3><p>随意选择U盘目录将系统文件复制到U盘 比如我的是&gt;&gt;/IMG</p><h2 id="从U盘启动"><a href="#从U盘启动" class="headerlink" title="从U盘启动"></a>从U盘启动</h2><p><img src="/images/efi.jpg" alt="efi" loading="lazy"></p><p>重启进入EFI选择U盘名字,以上是不同品牌EFI快捷键</p><hr><h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><blockquote><p>好的瑞士军刀怎么能少的了DIY呢</p></blockquote><p>在U盘根目录新建<code>themes</code>文件夹,由于更改主题需要编译json文件所以ventoy自带了VentoyPlugson方便傻瓜式操作</p><p><a href="https://www.gnome-look.org/browse?cat=109&ord=latest">GRUB Themes - Gnome-look.org</a>在里面下载你喜欢的主题.tg,解包后再解压知道只有文件夹,放到你的themes文件夹</p><p>找到你的ventoy安装路径打开<code>VentoyPlugson.exe</code>选择启动; 或者点击链接<a href="http://127.0.0.1:24681/">链接</a></p><p>选择主题插件设置你的主题样式,教程就结束了!</p><h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><center>在界面使用F5可以切换主题</center><p><img src="/images/theme-ventoy.png" alt="ventoy" loading="lazy"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/ventoy-logo.png&quot; alt=&quot;ventoy&quot;&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="刷机" scheme="http://blog.nagisb.space/categories/%E5%88%B7%E6%9C%BA/"/>
+    
+    <category term="windows" scheme="http://blog.nagisb.space/categories/%E5%88%B7%E6%9C%BA/windows/"/>
+    
+    
+    <category term="u盘" scheme="http://blog.nagisb.space/tags/u%E7%9B%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓像微机一样安装双系统</title>
+    <link href="http://blog.nagisb.space/post/System-double/"/>
+    <id>http://blog.nagisb.space/post/System-double/</id>
+    <published>2022-07-20T17:13:11.672Z</published>
+    <updated>2022-07-21T15:39:49.331Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p><p>1.一部已经解好Bl的手机和一台微机</p><p>2.已经做好备份工作和能够承担风险的能力</p><p><em><span id="more"></span></em></p><h3 id="工具和方式"><a href="#工具和方式" class="headerlink" title="工具和方式"></a>工具和方式</h3><p>sgdisk: Android下操作GPT分区的命令工具,一般自带</p><p>不限于社区上的REC: 用来刷系统,执行命令</p><p>可以执行命令的方式: 包括但不限于adb,第三方REC,解释性脚本bash</p><h2 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h2><h3 id="确保权限"><a href="#确保权限" class="headerlink" title="确保权限"></a>确保权限</h3><p>打开MT管理器进入终端,输入su,继续输入sgdiak,若终端回显最后一行代表成功执行命令!</p><p><img src="/images/sgdisk-shell.png" alt="direct" loading="lazy"></p><h3 id="终端命令"><a href="#终端命令" class="headerlink" title="终端命令"></a>终端命令</h3><p>首先输入; <code>sgdisk /dev/block/sda --print</code> 回显查看手机的分区情况 </p><p>可能由于设备类型不同,sgdisk[分区块]可能不通用</p><blockquote><p>UFS闪存分区块:sda,sdb,sdd,sde,sdf</p><p>EMMC闪存分区块:mmcblk0</p></blockquote><p><img src="/images/partition.png" alt="direct" loading="lazy"></p><p>备份命令: <code>--backup=/路径/rename.bin</code>; 恢复命令: <code>  --load-backup=/路径/rename.bin</code></p><blockquote><p>修改(恢复)命令后只有重启系统才会限定修改系统分区当前仍是旧分区表备份命令只备份当前分区</p><p>目前命令前缀都是sgdisk /[分区路径]</p></blockquote><p>删除命令: <code>--delete=[分区号]</code>; 新建命令: <code>--new=[分区号:开始:结束]</code></p><p>改名命令: <code>--change-name=分区号:名字</code> </p><h3 id="终端操作"><a href="#终端操作" class="headerlink" title="终端操作"></a>终端操作</h3><h4 id="删除data"><a href="#删除data" class="headerlink" title="删除data"></a>删除data</h4><p>使用删除命令删除分区21[userdata]</p><h4 id="新建data"><a href="#新建data" class="headerlink" title="新建data"></a>新建data</h4><p>使用新建命令<code>sgdisk /dev/block/sda --new=0:0+sizeGib</code>; <code>sgdisk /dev/block/sda --new:0:0+sizeGib</code></p><blockquote><p>前者新建大小size分区21,后者表示新建填充剩余空间分区22</p></blockquote><h4 id="进行改名"><a href="#进行改名" class="headerlink" title="进行改名"></a>进行改名</h4><p>使用改名命令<code>sgdisk /dev/block/sda --change-name=21:userdata</code>; <code>sgdisk /dev/block/sda --change-name=22:userdata1</code></p><hr><blockquote><p>到上面差不多是完成微机分硬盘装系统的操作,只不过从图形操作变成终端操作</p></blockquote><h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><p>重启进入TWRP,进入终端界面操作</p><p>按照我上面的例子,<code>mke2fs -t ext4 /dev/block/sda21; mke2fs -t ext4 /dev/block/sda22</code></p><hr><p><del>到以上为之你已经完成了小白最容易踩到坑的部分了</del></p><hr><h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p>直接重启你会发现进去入厂系统了,用的是刚刚userdata的分区,看看内存是不是已经改变了</p><h2 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h2><blockquote><p>原理: 用命令通过恢复备份的分区镜像来换系统</p><blockquote><p> <a href="https://www.lanzouw.com/iGcPjvvuu9g">下载工具压缩包</a></p></blockquote></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符*表示</span><br><span class="line">将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名</span><br><span class="line">使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置</span><br><span class="line">再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名</span><br><span class="line">同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统</span><br><span class="line">使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2</span><br><span class="line">电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了</span><br></pre></td></tr></table></figure><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切换的方法可以根据工具说明rec刷入切换</p><p>当不是官方原版分区表时一定不能线刷,不然必定砖,只能9008</p><p>刷双系统尽量是同底层组合避免不必要的bug 如安卓9和安卓10底层差别很大</p><h2 id="一键切换"><a href="#一键切换" class="headerlink" title="一键切换"></a>一键切换</h2><p><a href="https://www.coolapk.com/apk/com.highsys.systemchanger">ATMS-ROM激活器</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言与准备&quot;&gt;&lt;a href=&quot;#前言与准备&quot; class=&quot;headerlink&quot; title=&quot;前言与准备&quot;&gt;&lt;/a&gt;前言与准备&lt;/h2&gt;&lt;p&gt;本教程理论上通用与所有解了BL想要双系统的安卓系统。&lt;/p&gt;
+&lt;p&gt;1.一部已经解好Bl的手机和一台微机&lt;/p&gt;
+&lt;p&gt;2.已经做好备份工作和能够承担风险的能力&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="刷机" scheme="http://blog.nagisb.space/categories/%E5%88%B7%E6%9C%BA/"/>
+    
+    <category term="安卓" scheme="http://blog.nagisb.space/categories/%E5%88%B7%E6%9C%BA/%E5%AE%89%E5%8D%93/"/>
+    
+    
+    <category term="双系统" scheme="http://blog.nagisb.space/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的md笔记</title>
+    <link href="http://blog.nagisb.space/post/practice/"/>
+    <id>http://blog.nagisb.space/post/practice/</id>
+    <published>2022-07-20T02:41:32.000Z</published>
+    <updated>2022-07-22T05:03:16.438Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="6c6e01d245d856dfd4993001740e8ee1426a3c3655a245f3155abd3b9b15bd64">c1dcf91c718b678e6f1232343cdc9c09aeff2e7bce69098ec0d0e0b478239419e5ae46f0b81273d23d4b9c0b399fe53eaddae4b9db8298d7e8fcf8f203f8469886c8d194aa17a029b0a6415f9b8f4237372547446ed56c0a6b506e854f1db1d69d0dff735665eafe40d7003ab2460455a57e84e8d63871aeef172cca8ca7171431d763b35c7c9bb85947332ae7dfbe5dbd47fceacbeb7d2897990b9db405487dbc7c9508200942b435825879c88e9e018422c9de74fcbec75c8c2ba45d3500823416e3f88d1570d8bc5c99ffca47a7ab1e33f8cbb0f7e78a1a6e3aeb3a99c007a4cc0c42251c23df339bdb25ab8dc96d9cbc6e781c153d23bccb5bd399e0af3b451a5c6f95a406541d1019e7cce91700e1b514c9a215369ad419e9fe9b97c846be5cf97d0795f345df54f3c5664e8e1d47c0d1b0e0a55fb761a40ee18f96537de30fd60cfc92dea9f892b5dc8e8d43c5789b8caeee0e4093d51d6d86180173d89358d8cdb6ea6957b374849cc34ab072404a7ac592ca5505f8190b5727aed5e8b7ac10a8efe36fe4198d08fd11ccae8caf121a96b4aa15f064266149b4b298e9ef0de38f689332562221998e39290f39d2cdbf86898c5e4a898eb2c8b9191e7058989551f5ee2c2ae763dfa6bdb8cdcff2fa5693ba95f6220b2aedb229be4949bf06bb1489440f6225fde6921357310e9ce4b2495365b63139389e8a5289171346cf50c5c50f48ded4fab9fdeccf19295fe037855b35f189e62f7aa8267c17002fe5d9f04cdb178808ae95f2716f5bf812c7f5411467b594afe26338b7fcc9bb8913bcc29d9f2bd51a67e724c5464dc4e760bdd2b0556d874a44cadb9f47ba57a8c8d4bd9ef2037ccc353f793c16dcbd2f4222538c890202c73cfae18519801e35092b58ae572bec47f2fdf9fb1093046ac709f0cc494670898da71922f87bdcf937440d054dc6d1af900af57528305781de5dde89dc43994768677e37f4bd11a597e753ed1e431fa2b937f91a95d1f1924b00dc3e921f15747f2cfcd26167002ec2faf58f6f5118299764df1a8aa3e1ab82057c60ab30b80bf69d605e8d8e85bdf04fb04c76f4b550ab151d071fb806631d5097b8e00076dc1af3fd2c42de566fb4cb66bc62c8f6cda0d556ff79b43b0fbd5038eaec08523cd10fdeadc693f8114ed255156bbb184b4dcc5f1a983103c45a914b71848f5e43824f3457de3f0355b0f9f7631652618dde97fc7bdacc9f8cdc74e187cd8a5b75442ee4a6ac0648fef019d6eb94d0a974de4159848b337e45d93bba16f48a6325dbc14719d4b5b52e9e537d3255508844a1c0569d2409c4ffca21d71734ccac2096b795c52be3b63dcaad83344f0ea633f61ecd1774c8e7553f84fd609669dce4c16fdc42b6095d830803a5035898929b149a762f2d7b2f5c31d4816afecc42c8364264eda45143a5f01c9ac10bb008857c8c12a966b084565f2443858a879383a8c17d9e1d49078f4f4dfb0d08d7f665524100c59d1cbdc00d906ee526d73e14c411ac1288b6e0b23c7878b811dfb8164a73016fff6e1697bb6be9e43e446efd15f6fdb8a663b3813edace5cd51602295f7cf6b25b1d76c614b32cc1947574519d3c5ad1950852e1e87244edd4ea6c1cd61e723d2fccfc6a398f2ff1e7a32926698982d45905eba49836774d205b5c36dabffc7cb38ab1d1b2c31b82a0222d330ca258104ea573541b445decfcb9f4219d0488ec7a6916fac665d19b6c489e213433cd05ce12f42c12c62f1e3f2eaf34ea85e23b5b77660e8e4b02534af12530caa867163d3a44f79e9929c04a4493b7343f1cd176c4b2e04affba30b0fc85e50a38b93819243ae5cb8b1a969fab949a72f067f18696ce165ddaa105fa6e4434ff1e9561dcbad114df553ee01323881b9e29d4d7cbe483d0d759db61c70cd9ff1e047c3840b40bdaff6a34f6b86cffd57c874fcf801e0f3fd5d3f32e302f83dae4c842b289073ca687f13cb7b4c27a15812d6d7cde92f37c69a421824b40cb20cc3ea97069573010c85788e267318a282a741d3eab811288a8aff64768d7e766211495ff8aa46ba449e04503b1520145df30f46be0c2ef8613bdda4f827057409cd38822b6647c192a516f272cb956b6bdb4ea561894ab33a4d2351e03bd05e7015bdb6edc71a1b5cf7ce863909fcc573c4b5a6569da110bc4b42a80feaadd485e189ad743b79d467a7dc21a80ab337d5a7af101057f4c35771fae9640d9f3bb58eef7e707917452ce750635b4c894a36aab87d90361fe2862e9eab4443d573f9b6806d4c605cffb04007f0d2865d08902cdccf3a54210cb4c858653e810c8834adef8882750e6f6af30ee7f4f00421d3170ecd6bb36f931b10ecfec2bcc9c2c04e56e2a3ab484f25f7a15f90e49aad7d1197edc4e8ca04706fbc4b04c399f8b6bcdf972a83ba6</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="笔记" scheme="http://blog.nagisb.space/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="md" scheme="http://blog.nagisb.space/categories/%E7%AC%94%E8%AE%B0/md/"/>
+    
+    
+    <category term="Markdown" scheme="http://blog.nagisb.space/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
