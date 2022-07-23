@@ -54,7 +54,6 @@ Telnet用户名 ：root
 
 ## 8080端口管理员登录
 
-
-<center>开启桥接模式</center>>
+<center>开启桥接模式</center>
 
 ![cat](/images/cat-qiaojie.png)
