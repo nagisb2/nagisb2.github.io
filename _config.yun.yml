@@ -49,6 +49,7 @@ post_meta:
 wordcloud:
   enable: true
 footer:
+  since: 2022
   icon:
     name: ri:cloud-line
     title: 404NOT FOUNT
@@ -112,7 +113,14 @@ reward:
       icon: ri:wechat-pay-line
 wordcount:
   enable: true
-
+pjax:
+  enable: true
+google_analytics:
+  enable: true
+  id: G-5G031WZ8W0
+baidu_analytics:
+  enable: true
+  id: 8a9d9f5d1a872adbf80483d4a19a633c
 
 
 
