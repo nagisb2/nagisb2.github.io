@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>奥卡姆剃刀</title>
+    <url>/post/Occam&#39;s%20Razor/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
+<li><p>如无必要 勿增实体</p>
+<blockquote>
+ <center>英格兰奥卡姆逻辑学家--威廉</center></blockquote>
+</li>
+</ul>
+<p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p>
+<p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>安卓像微机一样安装双系统</title>
     <url>/post/System-double/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
@@ -70,6 +87,7 @@
 <blockquote>
 <p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p>
 </blockquote>
+<p><em><span id="more"></span></em></p>
 <p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p>
 <h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p>
 <h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote>
@@ -97,7 +115,7 @@
         <category>刷机</category>
       </categories>
       <tags>
-        <tag>整活</tag>
+        <tag>整活,光猫</tag>
       </tags>
   </entry>
   <entry>
@@ -117,7 +135,6 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>笔记</category>
-        <category>linux</category>
       </categories>
       <tags>
         <tag>Linux</tag>
@@ -140,7 +157,6 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>笔记</category>
-        <category>md</category>
       </categories>
       <tags>
         <tag>Markdown</tag>
