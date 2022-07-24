@@ -206,6 +206,7 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote>
 <p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p>
 </blockquote>
+<p><em><span id="more"></span></em></p>
 <p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p>
 <hr>
 <h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p>
