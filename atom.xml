@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-07-26T03:45:22.747Z</updated>
+  <updated>2022-07-26T15:41:45.764Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>优雅的盗号技巧</title>
+    <link href="http://blog.nagisb.space/post/qq-passwd/"/>
+    <id>http://blog.nagisb.space/post/qq-passwd/</id>
+    <published>2022-07-26T14:30:33.000Z</published>
+    <updated>2022-07-26T15:41:45.764Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p><p><em><span id="more"></span></em></p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul><li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p><blockquote><p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p></blockquote></li></ul><ol><li><p>安装软件后按提示打开软件无障碍服务</p></li><li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p></li></ol><h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p><p><img src="/images/qq-passwd.png" loading="lazy"></p><center>提前打开密码显示按钮</center><p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p><p><img src="/images/Type-qq.png" loading="lazy"></p><p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p><h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;声明&quot;&gt;&lt;a href=&quot;#声明&quot; class=&quot;headerlink&quot; title=&quot;声明&quot;&gt;&lt;/a&gt;声明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;由于此文章、&lt;a href=&quot;https://www.findlaw.cn/hetong/ft590/&quot;&gt;不可抗力&lt;/a&gt;、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>信息论与编码基础</title>

