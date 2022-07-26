@@ -1,19 +1,19 @@
 .spoiler {
     margin: 5px 0;
     padding: 0 15px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid transparent;
     position: relative;
     clear: both;
     border-radius: 3px;
 }
 
 .spoiler .spoiler-title {
-    background: #1b1f2e;
+    background: transparent;
     margin: 0 -15px;
     padding: 5px 15px;
     color: #e5e5e5;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
     display: block;
     cursor: pointer;
 }
@@ -23,7 +23,7 @@
 }
 
 .spoiler.collapsed .spoiler-title:before {
-    content: "Show; ";
+    content: "> ";
 }
 
 .spoiler.expanded .spoiler-title:before {
