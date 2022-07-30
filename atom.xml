@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-07-29T11:33:45.211Z</updated>
+  <updated>2022-07-30T14:38:23.158Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>帕累托法则</title>
+    <link href="http://blog.nagisb.space/post/Pareto%20principle/"/>
+    <id>http://blog.nagisb.space/post/Pareto%20principle/</id>
+    <published>2022-07-30T14:08:51.000Z</published>
+    <updated>2022-07-30T14:38:23.158Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p></blockquote><p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在通信的过程中需要&lt;strong&gt;消除80%不确定性的&lt;/strong&gt;事物运动状态或存在方式,&lt;strong&gt;获取20%信息&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="随笔一记" scheme="http://blog.nagisb.space/categories/%E9%9A%8F%E7%AC%94%E4%B8%80%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>DNS</title>
