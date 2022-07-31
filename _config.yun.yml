@@ -1,3 +1,51 @@
+favicon: /images/favicon.ico
+bg_image:
+  enable: true
+  url: https://upload-bbs.mihoyo.com/upload/2022/04/04/260511332/5f36c9c2ec91bf56caf5331e4ed4918d_4875177930097895211.jpg
+  dark: https://git.poker/nagisb2/image/blob/master/bizhi-blue_yasuo.webp?raw=true
+  # blur: 2px
+  opacity: 0.8
+head:
+  css:
+    custom: 
+    #stylesheet: https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css
+  js:
+    base:
+      
+    async:
+      iconfont: https://at.alicdn.com/t/font_2598701_hm5djhdw3d.js 
+      iconfont1: https://cdn.jsdelivr.net/gh/nagisb2/file@1.0/font_3543821_rhwvosswlc.js 
+    defer:
+      #- https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js
+footer:
+  js:
+    defer:
+      #- https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js
+  since: 2022
+  icon:
+    name: ri:questionnaire-line
+    color: "#7A7374"
+    title: 404NOT FOUNT
+    url: /404.html
+  powered:
+    enable: false
+  support:
+    enable: true
+    title: 本网站由jsDelivr提供 CDN 加速
+    link: https://www.jsdelivr.com/
+    logo: https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
+    prefix: 💜💜💜💜
+    suffix: 💜💜💜💜
+  live_time:
+    enable: true
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: '2022-07-19T22:21:00'
+  custom_text: 
+  - <a target="_blank" href="https://hexo.io" title="由Hexo驱动 v6.2.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=Hexo"></a>
+  - <a target="_blank" href="https://yun.yunyoujun.cn/" title="主题 Yun-1.10.4"><img src="https://img.shields.io/badge/Theme-Yun-6513df?style=flat&logo=Google Cloud"></a>
+  - <a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub"></a>
+  - 'Deploys by <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style=""><svg width="66.33" height="15" viewBox="0 0 283 64" id="vercel-logo" fill="#000" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z"></path></svg></a><br><img width="315" height="100" src="https://api.moedog.org/count/@himekana?theme=rule34" style="margin-top:10px" alt>'
 banner:
   enable: true
   title:
@@ -20,21 +68,21 @@ cursor:
   text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
 avatar:
   enable: true
-  url: nagisb.png
+  url: /nagisb.png
   rounded: true
   opacity: 1
   mickey_mouse: true
-  message: 不想上学
+  # message: 不想上学
   status:
-    enable: false
-    emoji: 😭
-    message: 不想上学
+    enable: ture
+    emoji: 😎
+    message: 暑假ing
 pages:
-  - name: 导航链接
-    url: /links/
-    #icon: ri:genderless-line
-    icon: ri:share-line
-    color: dodgerblue
+  #- name: 导航链接
+  #  url: /links/
+  #  #icon: ri:genderless-line
+  #  icon: ri:share-line
+  #  color: dodgerblue  
 social:
   - name: RSS
     link: /atom.xml # config.feed.path
@@ -44,18 +92,45 @@ social:
     link: https://music.163.com/#/user/home?id=1682645831
     icon: ri:netease-cloud-music-line
     color: '#C10D0C'
-  - name: E-Mail
-    link: mailto:w2181890001@gmail.com
-    icon: ri:mail-line
-    color: '#8E71C1'
+  - name: 酷狗
+    link: https://wwwapi.kugou.com/share/zlist.html?listid=19&type=0&uid=1003801245&sign=747aac2b678ae204fe781f8f9067b081&_t=1632545367&pagesize=30&json=&page=1&token=66a3cc379c897b5e2eb11573556935aa298b7b639bfdc0cb94d07543975c2f96#hash=FB973B4987E914B4AE60E261331C03E7&album_id=38747155&album_audio_id=269637511
+    icon: icon-kugou
+    color: '#4DC2FF'
   - name: Twitter
     link: https://twitter.com/gisb_na
     icon: ri:twitter-line
     color: '#1da1f2'
-  - name: GitHub
-    link: https://github.com/nagisb2
-    icon: ri:github-line
-    color: '#181717'
+  - name: Telegram
+    link: https://t.me/AB2
+    icon: ri:telegram-line
+    color: '#0088CC'
+  - name: Pixiv Daily Ranking
+    link: https://www.vilipix.com/ranking
+    icon: icon-pixiv
+  - name: bangumi
+    link: https://bgm.tv/game/list/fuyou2181/collect?orderby=rate
+    icon: icon-pgc_bangumi
+    color: "#F09199"
+  - name: Coolapk
+    link: https://www.coolapk.com/u/2118614
+    color: '#2DC100'
+    icon: icon-coolapk1
+  - name: 阿苇岛
+    link: https://aweidao1.com/
+    color: '#7acdba'
+    icon: ri:at-fill
+  - name: QQ
+    link: https://git.poker/nagisb2/image/blob/master/QQ-id.webp?raw=true
+    color: '#12B7F5'
+    icon: ri:qq-line
+  - name: 微信
+    link: https://git.poker/nagisb2/image/blob/master/weixin-id.1h8psrjlw1j4.webp?raw=true
+    color: '#2DC100'
+    icon: ri:wechat-pay-line
+  - name: E-Mail
+    link: mailto:w2181890001@gmail.com
+    icon: ri:mail-line
+    color: '#8E71C1'
 post_meta:
   item_text: true
   created_at: true
@@ -64,19 +139,6 @@ post_meta:
   tags: true
 wordcloud:
   enable: true
-footer:
-  since: 2022
-  icon:
-    name: ri:cloud-line
-    title: 404NOT FOUNT
-    url: /404.html
-  powered:
-    enable: false
-  live_time:
-    enable: true
-    prefix: 本博客已萌萌哒地运行
-    suffix: (●'◡'●)
-    start_time: '2022-07-19T22:21:00'
 menu:
   home:
     title: home
@@ -96,9 +158,9 @@ menu:
     #   icon: ri:cloud-line
     #   count: 你猜
   custom:
-    title: music
-    path: /playlist/
-    icon: ri:music-2-line
+    title: 留言板
+    path: /about/#comment
+    icon: ri:clipboard-line
 notice:
   enable: false
   content: Thanks for playing my game.
@@ -132,13 +194,42 @@ wordcount:
   count: true
   time: true
 pjax:
-  enable: true
+  enable: false
 google_analytics:
   enable: true
   id: G-5G031WZ8W0
-
-
-
+sidebar:
+  tagcloud:
+    enable: True
+    amount: 5
+busuanzi:
+  enable: true
+  site_uv: true
+  site_uv_icon: ri:user-line
+  site_pv: true
+  site_pv_icon: ri:eye-line
+  page_pv: true
+  page_pv_icon: ri:eye-line
+albums:
+  enable: false
+  icon: icon-gallery-line
+tags:
+  Markdown: '#4fc08d'
+  整活: '#0E834D'
+  信息论: '#5298d1'
+  Linux: '#026E00'
+  双系统: '#F14E32'
+  u盘: '#61dafb'
+  光猫: '#3776ab'
+  服务器: '#8892BF'
+  编码: '#0066B8'
+  文件: '#F4DF4F'
+  TypeScript: '#317AC6'
+  Laravel: '#F4645F'
+categories:
+  随笔一记: '#F4645F'
+colors:
+  primary: "#986DB2"
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 电信HG6543C1超级管理员账户密码获取
 data: 2022-07-23 13:03:58
-tag: 整活
+tag: [整活,光猫]
 categories:
 - [刷机]
 ---
@@ -11,6 +11,8 @@ categories:
 为什么要获取管理员密码
 
 > 一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入[用户界面](http://192.168.1.1/cgi-bin/luci)在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限
+
+*<!-- more -->*
 
 ![direct](/images/cat-80.png)
 
@@ -54,7 +56,6 @@ Telnet用户名 ：root
 
 ## 8080端口管理员登录
 
-
-<center>开启桥接模式</center>>
+<center>开启桥接模式</center>
 
 ![cat](/images/cat-qiaojie.png)

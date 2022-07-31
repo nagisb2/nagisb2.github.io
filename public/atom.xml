@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>NAGISB的博客</title>
+  <title>NAGISB&#39;S</title>
   
-  
+  <subtitle>blog.nagisb.space</subtitle>
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-07-23T06:12:35.170Z</updated>
+  <updated>2022-07-31T18:18:52.122Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -17,13 +17,78 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>电信HG6543C1超级管理员账户密码获取</title>
-    <link href="http://blog.nagisb.space/post/light-cat/"/>
-    <id>http://blog.nagisb.space/post/light-cat/</id>
-    <published>2022-07-23T05:03:28.376Z</published>
-    <updated>2022-07-23T06:12:35.170Z</updated>
+    <title>Code of conduct</title>
+    <link href="http://blog.nagisb.space/post/Code%20of%20conduct/"/>
+    <id>http://blog.nagisb.space/post/Code%20of%20conduct/</id>
+    <published>2022-07-31T17:44:38.669Z</published>
+    <updated>2022-07-31T18:18:52.122Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p><blockquote><p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p></blockquote><p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p><h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p><h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote><p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p></blockquote><hr><h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p><p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p><hr><p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p><h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p><blockquote><p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p></blockquote><p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p><hr><p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p><p><img src="/images/cat-passwd.png" loading="lazy"></p><hr><h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>><p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="63ff280e636472b26fa94e2504b2a98b3e96b0fa932749de21c2af7b5f2e5a7c">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8ca3bf99e2f9d5b110a69e518e7b7f3e74fa33ad03de93bae3ac875fab8273b1b113e2f32f81a999db0f435d9b854cfccddd1210ae108282ae9238a61b687b7d1f7f1ba17e35463e8c02adad7258aaea68d3dd88d353c61da94fe0016e37ca916604ac4b8e01aa65da48f208ed8a1a4daebdbc57904cc3bc57d91c8b26d40a9830775923b2825996c064da227983b447737e6d8a9f90d55691e5cc755d6a3958b18c1f0a311356352ae91c516ad81f853a80d06ae9280f25a4b6c49b75f9da57dd153aadf5bd1fc043e0a77e7bd76e9d683c1d057baabc6931dff34c5736e2c082ec6679ab2fed31e0789990845ac8147f8466589b5f4184cc511d334cf990363258d80300eda9f515f0cad997105e6a7f3bfb4f25f4e1b625bb88c793ba49ce546ddbb67588820240ee9139a4ce2ee3b84b9748cd962e554fb2203eb8676e8566e250f4de40e7ab665fb3ebaffb872bf6a7bce1443b426c1072dd720e61add6c5a59afb5d7adee3083b9b753db2ad9ef308bc0cd50cc6959409efac7c51d90636f3a504d3ba8d3ec183aa08c5720a5a5b96d0b0618043c3677d1f4b635fea2f43460123291c1cf38b9e405314c5c46845cbd93426da4da547f43367a10347fdf5c2f12fd2735c0e2e89b286924959acb48dcc20d8027c05345d89703496b9fe41303ccb849492fe6b01b96cfdece7149b0c8857c0c7bfc6c58b6759b345e8e6c5f9d971a0c9ad6ce92f2b7e8e98e526b94876cdcf7c6c119819a00b6557e6e1018de934777604ce06e3408cf5cdbb9f063430b6bc0879178f134838aeade6b15fc85d0178b5a877fc46a7ff2be5f4f8598c27718c00ff9bf00bbf5c1c33e73b7c5d65f281c442de20ab4a8b12533fa5a13aca003cedb43ff4ac571279582dab5936aca89f505921a0ed819223ff922bd410a850a785ebc9b83f0a3c2a7dd260859a2fa5d66d596902209f0b9927b1b01d315270b8f45c8208b4e91e356fa995852154385a4852130bf1463dbf35e4957e13730ae50c5307cb540d64c9bb59e20a0e59e02e4821902029977940ea0a8a887e201d4b97c8ba3350a8dec0579e10690bf8bb64fff6f04ebb49ec133b9e2b70c9793a71aa6da0b44a7b8c3e1a71f368d3224725764df62d6a70272008e8f80ec44eff7c65eb9c88eeb732ec521cc07ea7afacff27cf785eedbb818396f40bb546046b38a1f757ac86620928f9754ca3597894bf968322600d24944c3867b536d6c999760512a131ef74568cfee08e49c2c3bcfb19b02530075a45b7ce9d27f02904328bf5110d312d2093d6a976b51e22d14cdcb7d15148b327f9ca786da7241d889ba9b3bebecd5f4adca07af76d57191b074368502c4e8dde40580958b2b511d7f25fef509aa49742f63699a68cd1a6049ef47d664c903bcdac63652fa6d08a15d1ab1959cdb2b1e28fafff0a9092dc5e3bd943a49ee60cd38be9d4b76951674745cc7ab0d45fe96fda7ab3678cbef0f74f92da5852e849eaa734d90ba868e22abba9d82599af06e8220a88850c2865aa67e619ca540ee7cc13f43e5b90f01e110b5fb9370b8f3443e0bd708cc5e05713c9861c4930854224f9e26b74b43f709014e3b3df48e130e635d4d1a9afc3dc83534d971588b8a8d572b7cd8fed8</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>帕累托法则</title>
+    <link href="http://blog.nagisb.space/post/Pareto%20principle/"/>
+    <id>http://blog.nagisb.space/post/Pareto%20principle/</id>
+    <published>2022-07-30T14:08:51.000Z</published>
+    <updated>2022-07-30T14:38:23.158Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p></blockquote><p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在通信的过程中需要&lt;strong&gt;消除80%不确定性的&lt;/strong&gt;事物运动状态或存在方式,&lt;strong&gt;获取20%信息&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="随笔一记" scheme="http://blog.nagisb.space/categories/%E9%9A%8F%E7%AC%94%E4%B8%80%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>DNS</title>
+    <link href="http://blog.nagisb.space/post/real-rational/"/>
+    <id>http://blog.nagisb.space/post/real-rational/</id>
+    <published>2022-07-29T10:58:02.000Z</published>
+    <updated>2022-07-29T11:33:45.211Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul><li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p></li><li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p></li></ul><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;什么是DNS&quot;&gt;&lt;a href=&quot;#什么是DNS&quot; class=&quot;headerlink&quot; title=&quot;什么是DNS&quot;&gt;&lt;/a&gt;什么是DNS&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;域名系统（Domain Name System)服务。它作为将&lt;a href=&quot;https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D&quot;&gt;域名&lt;/a&gt;和&lt;a href=&quot;https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80&quot;&gt;IP地址&lt;/a&gt;&lt;strong&gt;相互&lt;/strong&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E6%98%A0%E5%B0%84&quot;&gt;映射&lt;/a&gt;的一个&lt;a href=&quot;https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93&quot;&gt;分布式数据库&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;DNS就是将域名解析为IP地址，浏览器就将解析的&lt;strong&gt;IP地址&lt;/strong&gt;信息用来网上冲浪&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="随笔一记" scheme="http://blog.nagisb.space/categories/%E9%9A%8F%E7%AC%94%E4%B8%80%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>黄梅戏</title>
+    <link href="http://blog.nagisb.space/post/oper-hmx/"/>
+    <id>http://blog.nagisb.space/post/oper-hmx/</id>
+    <published>2022-07-29T07:58:09.000Z</published>
+    <updated>2022-07-29T10:56:04.851Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote><p>黄梅戏，原名黄梅调、采茶戏等，起源于湖北黄梅，发展壮大于安徽安庆。 </p><p>黄梅戏与京剧、越剧、评剧 、豫剧并称<strong>中国五大戏曲剧种</strong></p></blockquote><h3 id="棒打薄情郎——又名金玉奴"><a href="#棒打薄情郎——又名金玉奴" class="headerlink" title="棒打薄情郎——又名金玉奴"></a>棒打薄情郎——又名金玉奴</h3><ul><li>第一场——招婿</li></ul><pre><code>天色晚雪纷飞 叫他何处把身投 你救人就要救到地——黄花闺女老丈夫招我做女婿 千万不可失良机 不但得了个多情女 重此有了安身地——秀才</code></pre><ul><li>第二场——中榜</li></ul><pre><code>一去月余信渺茫 害我终日倚门往 但愿官人早日还——妻子为人只要有双手 走遍天下饿不煞——妻子纲常礼体心胆寒 怎与乞丐吧亲攀——官人</code></pre><ul><li>第三场——推江</li></ul><pre><code>肚里如吃萤火虫 为了我的女儿愿忍痛 好似水上浮萍草 风浪打呐随水流——岳父——官人丢了破屋上官哪舟 还怕招来一场哪羞——妻子1.01</code></pre><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
       
@@ -33,10 +98,225 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>文件伪装图片命令</title>
+    <link href="http://blog.nagisb.space/post/zip&amp;png/"/>
+    <id>http://blog.nagisb.space/post/zip&amp;png/</id>
+    <published>2022-07-28T08:29:51.206Z</published>
+    <updated>2022-07-29T09:40:34.111Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre><code>cd %SystemDrive%\Users\Administrator\Desktopcd %UserProfile%\Desktopcopy /b xxx.png+xxx.zip xxx.png</code></pre><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;pre&gt;&lt;code&gt;cd %SystemDrive%\Users\Administrator\Desktop
+cd %UserProfile%\Desktop
+copy /b xxx.png+xxx.zip xxx.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="文件" scheme="http://blog.nagisb.space/tags/%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The violin</title>
+    <link href="http://blog.nagisb.space/post/The%20violin/"/>
+    <id>http://blog.nagisb.space/post/The%20violin/</id>
+    <published>2022-07-27T11:16:37.496Z</published>
+    <updated>2022-07-29T09:22:23.914Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary><ol><li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li><li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li><li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li><li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li></ol><h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul><li>四根琴弦 , 右手按弦 </li></ul><h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul><li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p><blockquote><p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p></blockquote></li><li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>对熵的一种微观解释进行可视化</title>
+    <link href="http://blog.nagisb.space/post/entropy/"/>
+    <id>http://blog.nagisb.space/post/entropy/</id>
+    <published>2022-07-27T04:55:33.358Z</published>
+    <updated>2022-07-28T10:24:07.773Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details><summary>熵源于的热力学第二定律</summary><ul><li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li><li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li></ul><p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p><p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p><p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p><p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;熵增定律&quot;&gt;&lt;a href=&quot;#熵增定律&quot; class=&quot;headerlink&quot; title=&quot;熵增定律&quot;&gt;&lt;/a&gt;熵增定律&lt;/h4&gt;&lt;details&gt;
+&lt;summary&gt;熵源于的热力学第二定律&lt;/summary&gt;
+
+&lt;ul&gt;
+&lt;li&gt;热量不能自发地从低温物体转移到高温物体（克劳修斯）&lt;/li&gt;
+&lt;li&gt;不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)&lt;/details&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;熵增的过程是一个自发的由有序向无序发展的过程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;粒子数量和粒子微观态数量——玻尔兹曼熵&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;事物运动状态或存在方式的不确定性——&lt;a href=&quot;https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea&quot;&gt;信息熵&lt;/a&gt;&lt;/strong&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;24&quot; height=&quot;24&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;/&gt;&lt;path d=&quot;M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z&quot;/&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="随笔一记" scheme="http://blog.nagisb.space/categories/%E9%9A%8F%E7%AC%94%E4%B8%80%E8%AE%B0/"/>
+    
+    
+    <category term="信息论" scheme="http://blog.nagisb.space/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>优雅的盗号技巧</title>
+    <link href="http://blog.nagisb.space/post/qq-passwd/"/>
+    <id>http://blog.nagisb.space/post/qq-passwd/</id>
+    <published>2022-07-26T14:30:33.000Z</published>
+    <updated>2022-07-28T10:24:55.013Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p><p><em><span id="more"></span></em></p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul><li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p><blockquote><p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p></blockquote></li></ul><ol><li><p>安装软件后按提示打开软件无障碍服务</p></li><li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p></li></ol><h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p><p><img src="/images/qq-passwd.png" loading="lazy"></p><center>提前打开密码显示按钮</center><p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p><p><img src="/images/Type-qq.png" loading="lazy"></p><p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p><h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;声明&quot;&gt;&lt;a href=&quot;#声明&quot; class=&quot;headerlink&quot; title=&quot;声明&quot;&gt;&lt;/a&gt;声明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;由于此文章、&lt;a href=&quot;https://www.findlaw.cn/hetong/ft590/&quot;&gt;不可抗力&lt;/a&gt;、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>信息论与编码基础</title>
+    <link href="http://blog.nagisb.space/post/information/"/>
+    <id>http://blog.nagisb.space/post/information/</id>
+    <published>2022-07-25T23:35:11.000Z</published>
+    <updated>2022-07-27T08:35:06.400Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="18e3df9b55e4f2e38422928fbd9277cfe559f1421983df83f1762d4310b223d6">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9452c2f04edb51ef276b6dad8f34c5858da0fc247d2bbebd1d8ceeefb5ec9e3dfa4b5d8d1048d872c1be48bce2cee74e895a14b155017c9f2c8ea5352ba13e796840301c92cbbe96d50a405528e4a48d5195de0181a72e76f5d6b6355f798d6c705c20e835c8bbafb1db98e7720bb5f6773cd8d492f5a68cde8529dc5a135b2f1aedda41a59c7168e4ab0209f857fff9edd2991c4e95eb9c0967b2120d7b8f05b841ae022d0b56e1b448243debc07d02924ba27ecc346618553988a094414c5e25093ae7e07873f8eb884661f2355a3cb0f1be11f86ad6de0c10d9eb832092cac041a6362352601c7d9d5f4927b8b31a5e13021c513e3ff49ca5804a4c85b36805622903d93e25c1d10370260135ed5b6787ef6486d95b0c66cf26614eae7421b189fd08183f3564c6a87e13271530b4b9f72f14671016f3a0d9cea129452eb35d7931d251e77f1be9c76e618bcdf147c32ad1a7eb2ecb1d8b7a5e747b93650c3d4afedfc9772ebea0efc209ce119c35934e817ada96c45c41a35e70ed84096700a2701834a3f451cc603a7b578904d1ccfb671effdc289283623df958877793e133dfc6909967acbce9e761e628a3d6b5ae273875ce691fc5ba43f601b8550c4f714af521a636a75335bc9ac781c8c2bce8361cbe511ed6f8e158de835fef891e60ff46aae7073aae58fb5349cb27b0989dfe4aa6783744fc7d97d06ffd30b110c6ba5be34aafe57593818a159a7e31ac3b3ebda4aefbafaa8ebcf9ff6235aff86e412c6f896b85c4f35ee0519faaa4e018dae97d95163c95e082cde8e294b817fb11d1ab1d13e7ecd77037a030a4f83ea4b6d9c7fe2839563307e4e38302c6f13486cd852c7d8b1995ce9febd4171283d233172b9a9a16cf02e51e269afcd0603c5b3cbdde4406aca1594939fb2cdc65ff93c30a1afefbadba968efead98ce2c15244e1b628e4661e734ee307a15ea00a4f53030cfd677a0962b86e8919b38d6ac2658992e427501cd9792ee821ce4712b52a20c3f6b5627112357e5ce656320790fae979a1c4bf1fdaa5cbe616574b750a4f1d8867731d2fcb1832f5532d2b1fc459dc127983fd00a54b87dbf4e46b975f330d493b84c30c96f4861bbfef6a8f65f3dfcca739fc360bada574339f97e816a381dc4bc0591595381d657ebe6e4494e36daebb80224954b537177d3d14a47939aff30464ea75ddb4429b1f2059159e7cf791e27a1d04fbcb7df2c027bed4aa1f9b789bf6316a58a0af6022c6b316d60974c4a85fc854e01ca5234fbebcbf816aad873c4ae70c22fa64d995ad2082f64c547f4a63da32061b736697a89a0bacc1e9888c20f4c730da86ea5ea0626f57b4d4dff330138eda5fcd5b3437fe33c1acdefbe9902f888e2ea6189832472341fdac09a1108cba80cbaec9f6b87803904b8963cb32323ce74862a734f57e4c0dbcc08af1f1e8010ac39ba5eea0054637ef40e6475803e6132cf14ad9c9615372ee6b2095d73fe8d2fc33fc12a514f167ac46b295ac662b74cc79cef854fce869e0e8ead89fdd2f581fc7d3df05f5611238d6b4182f5e36396c2760091eb367f30cd74476dcd0f051e7344f97677efc1f795f116d307fede83a1bfaa644a2f274feacbdf851852a0a3afadf8617fd1b70d58c9cd9d439198607f1f70380b72bacb20bf77e8b675fe1783b8733e00faa9f7e9017bd11e93dd579fefc6b3f949dfe9c806086ccb56de18ee5255a2e01cb0aaa5edd1c80405ed52eeefccb9db905cc1a56a8ff65e8b5b8598ac41a2e4597573f34293121a63c55d62e8133af2073b5a7744cd4a4605ec2a0d279d5648b83c4f3576a8b592f60d05426e1c0a7bb9c228566f9429ead38b46a2902b0ece485b8f68380c76ab97d6b726be73df7c683dcc18b3a4378bb8dc3f253df301d0c890fc3d4ad0cac24126a86ab0b77cc8f9af637cac238462ec55b8073bf183bccfa86223cc76cad7109ab04230e09e463c0f71ede292cc2265b3f49575f282ac7babf941f7c0ba6b68cce1b9f33553abc0bb840948f0afca075190b85281f21c31548ad994da5425e6557c54b997db132040f1585d2630d25bf3129d2530e6939c2367ee90a6d705c2e6fc5796307bb2133323fbf5daf0abbf5c8c703473538b7bdbfa827605cdd134caebfa92705c1bb0f1239a351c17fffb7afc9cc93109297f6c67659f5c548c8411c56d0d39e8dddfe9481e80d24c8c8689a009d05425e24b4c6546cb8c5ddb031a1f8be6c27bf7f4c740d6cf966e109821c6a17d292601382d4080c6d2079adac4a09b01a24b0e9a99798f832bf9280b0138af9c898faf98ef092930b1792121f710449a5e170d82b7b6757d1b5d371b895a056d26989af7527cbe30a370d737906486784f8fa204c77b376df4d0c9308e2eb680f7e0e5c27a4e22be327b3f10ef1de1294b4fd022d04684f7cb60637643e89e77cbe26a81a1270f7bdda69172d556a5a2f068729df7330de80d930a525023e52bab09742cc5d52af4b298813de36a9b7be29b47c14fba780f5b7ac3f1ef9de5cedd00fca472bbecdf5e59ad6d61bd64a78d10924fc40455d6c0b96861db58cb5eda894c490e9953a366d7866663a2201cc8bf450fc6f1f75a0b63f7ddeb940b31133106ab640267f1297c2cf4ca6039d0b1a2d7d1595728ab32f77a18353ac8b6b5218ae5599cab6297074701561b9847dfcd83b0ec2bbdaea285190cd8d089e88a9bd02e325f35b70d8847a6375dedc51728dd30b53201f2513775baed2f7143169dfa98db38e55d77b1b6de756e3f3f8ac23fd4fb194bcbacbc6690f7e41d81a91b8018c6d8c51bc240b7bc020a352a616f939904c3af1090c1972d03a7a1c3dbdc19e7ea2428425726dbb8e72e04d61dedc0559416e7f114e1534719ade35abdbfc103be4cdb99f6801ddb5957453f12e10615982afdf1efe739dbe5a2529176314453b0c8ebecb229e18539bc87d7719f93db9c47d15be554e7f5d2031be3a29438c233bf6c9df334e527bc3d643b4d064bb78279728a75f0bdaa36d9ae9df3d8f89f37052b11dc5fe1d70d782eb532ff69901a51bc6cb1b52a97ba10c07107563a0dd2d1f0f8ed5a4ad21157c36407317cc429f2dedcb9370a7969985c30f1fae8fc19e54fe674b53423458e4c51f027733c63c3032f0e9935ed4e78ea8d9bb9f2926a24594ccd86edb537cba3534b8eefa3a20f7d7edc23c4ecb1a89356602824768</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="笔记" scheme="http://blog.nagisb.space/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="信息论" scheme="http://blog.nagisb.space/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/"/>
+    
+    <category term="编码" scheme="http://blog.nagisb.space/tags/%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows作为服务器发布静态网址</title>
+    <link href="http://blog.nagisb.space/post/win-server/"/>
+    <id>http://blog.nagisb.space/post/win-server/</id>
+    <published>2022-07-24T20:34:46.532Z</published>
+    <updated>2022-07-25T01:40:28.828Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote><p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p></blockquote><p><em><span id="more"></span></em></p><p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p><hr><h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p><p>设置→控制面板→程序→启用或关闭Windows功能→找到<code>Internet Information Services</code>并勾选→确定</p><h2 id="创建静态网址"><a href="#创建静态网址" class="headerlink" title="创建静态网址"></a>创建静态网址</h2><ul><li><p><a href="https://www.aliyundrive.com/s/EiA6LXj9GKQ">index.html</a></p><blockquote><p>下载静态网址放到本地 , 如我的地址为 &gt; 桌面/web/index.html</p></blockquote></li></ul><p>双击打开这个网址可以看到在浏览器上这个页面 , 现在就把它放到公网上</p><h2 id="什么是IPV6"><a href="#什么是IPV6" class="headerlink" title="什么是IPV6"></a><a href="https://zhuanlan.zhihu.com/p/36542469">什么是IPV6</a></h2><ul><li>总而言之使用IPV6的地址可以直接将本地地址映射到公网地址上面 </li><li> IPV4想要实现可以申请公网IP,或者使用内网穿透</li></ul><h3 id="测试IPV6"><a href="#测试IPV6" class="headerlink" title="测试IPV6"></a><a href="http://test-ipv6.com/">测试IPV6</a></h3><p>若网址显示没有接入IPV6可以去路由器设置开启IPV6</p><hr><h3 id="获取IPV6地址"><a href="#获取IPV6地址" class="headerlink" title="获取IPV6地址"></a>获取IPV6地址</h3><p>打开CMD , 在出来的DOS界面里，输入<code>ipconfig</code>  , 回显显示IPV6地址</p><p><img src="/images/IPV6-ip.png" loading="lazy"></p><h2 id="搜索IIS程序打开"><a href="#搜索IIS程序打开" class="headerlink" title="搜索IIS程序打开"></a>搜索IIS程序打开</h2><p>点击红色下拉标,可以看到一个默认网站,右键网站 , 选择添加网址,物理路径选择静态网址所在文件夹,如: <code>F:\Users\Administrator\Desktop\Web</code>,ip地址输入IPV6地址.点击确认</p><p><img src="/images/IIS-ip.png" loading="lazy"></p><h2 id="部署网址"><a href="#部署网址" class="headerlink" title="部署网址"></a>部署网址</h2><ul><li><p>在浏览器上<code>http://[ipv6地址]:端口(</code>不填默认80) , 显示错误页面 , 提示无权访问，是因为我们没有开启权限</p><blockquote><p>在本地电脑找到网址所在文件夹,右键属性共享页面,选择不共享下面的共享设置,输入添加everyone用户共享</p></blockquote></li><li><p>再次输入<code>http://[ipv6地址]:端口</code>可以看到.html页面 , 使用不再局域网下的设备输入网址测试IPV6地址</p></li></ul><p><img src="/images/ipv6-index.png" loading="lazy"></p><hr><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote><p><a href="https://www.bilibili.com/read/cv6429435/">让你的windows电脑变成服务器 </a><strong>—陈就就</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;什么是IIS&quot;&gt;&lt;a href=&quot;#什么是IIS&quot; class=&quot;headerlink&quot; title=&quot;什么是IIS&quot;&gt;&lt;/a&gt;什么是IIS&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Internet Information Service&lt;code&gt;（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="服务器" scheme="http://blog.nagisb.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>奥卡姆剃刀</title>
+    <link href="http://blog.nagisb.space/post/Occam&#39;s%20Razor/"/>
+    <id>http://blog.nagisb.space/post/Occam&#39;s%20Razor/</id>
+    <published>2022-07-24T02:08:05.337Z</published>
+    <updated>2022-07-28T08:50:20.737Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul><li><p>如无必要 勿增实体</p><blockquote> <center>英格兰奥卡姆逻辑学家--威廉</center></blockquote></li></ul><p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p><p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简单性原则&quot;&gt;&lt;a href=&quot;#简单性原则&quot; class=&quot;headerlink&quot; title=&quot;简单性原则&quot;&gt;&lt;/a&gt;简单性原则&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如无必要 勿增实体&lt;/p&gt;
+&lt;blockquote&gt;
+ &lt;center&gt;英格兰奥卡姆逻辑学家--威廉&lt;/center&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="随笔一记" scheme="http://blog.nagisb.space/categories/%E9%9A%8F%E7%AC%94%E4%B8%80%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基础Linux&amp;shell</title>
+    <link href="http://blog.nagisb.space/post/linux-teach/"/>
+    <id>http://blog.nagisb.space/post/linux-teach/</id>
+    <published>2022-07-23T22:12:28.000Z</published>
+    <updated>2022-07-25T23:53:36.666Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="f7afd80d4b071e118528029a9143771f9274eb1b0ce2656371b361fe4f48e222">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9458108753a61dd94232a9ff4601c714d1909fab7f6ab81d7bea644eb8f3cf433d356a4b82ebfa45d97331169db08af1ef2ba7a32ac74120503b29b607095f16bda3d54e79b2713f345c9845a233791a661d31c6bdf74e9811e8458fe3d6864129261a0e6d65a48d21d6dd6c665bf9ddf287d8d5cf654caaed6b8407c1792d2426df7f704d30f7eb385dc5650a7d97a1e8772585e156605093b4fe5536facdd70fa7716fcb806d0a94c8db33b485d43b90693f0b7f42f6c353f57d2290c3b72f407dd1dd6bc6dce07b7279e6a82adc82f86050b9ff9f9ecd3992f852dea623d368d5ba5efc153863fe596c2e14f3db4e6495d772b5821c663cccda18c37dcbcfa6d69966675b173c8f85e2751053c733b6137ca2a12f5f7dd69c5d4976118d337e7edcc84e810bee7e8d92e7cf6b9d0b02379d90bd1865a0d2dcf74bcae20b4e08f80cb19b4e20116894f3abba04d6725314dd70f40f81f2756cd423cf36a550cf26a689f250d9f636e57c6bc4f657347bc6471c5f848c3bb5eba0711b8cea74ccab31e183971f28fae02d33f3e077a71b46626ffc370e698f865a852f12a56ffa9e5188befc335ca48c3cb4230cedb270ceca7dc9261fde8e7fbd4b4e9b85961495f81b8e03b312a7b010c9648f275eebe31de2f93fbc362d28a1389485e5ee64f532560fba1ce27acf8666355049dbdf8536df6d4eabe699487e7951c5d367d73f9cb35fe38438118d31b4dd4b064dab58142a70669b3772591078fc0bb8370c30231deb82ab994325bb0e764125f3f262de1bcd16d372a9425465faf3c5ca04926e2e5d544e473c8cb3511648d525837ec8bb0fd504a5394af836a126cdda113143a049edec5c24e1bc2d035415ce3b76a4ea993da30e7c380c273c45120daf6d95004c40a6d067e329c4d22322802c357c004f17e253264331d5f078e2ee60f8810321433245cacbd99a0c8594778760004dac4f9f505eb51b5dcd9ca748faf29ed12d8398145e64a8d8233a7c30a3b10c5e07d9800b667868a41728de326ef8540a8f4318b3e3c0918396aeaaab8243385994b4cf2aeb0438f2f85addf3bfe4892766aac364a6d051ad6b6a590099f38bc08897a563860052b0c0fafb9f496c3a86586fa2dae5d637bf1159f4f03990e6fd177623de66dd7bd6f749333b16fb04c770adb0b6b790be586991a3a3ed481f8cb77c5068b7dcbf076d08c901bbbc762d00d50b702420c309ac986f80b556be1a849e5e13e68d90a5847fffd438ecc202858bd660637caeacffb965b97c6a618b814dda0961914098b748ed58a8cae377b739d2d760482acfe23c35208754fdcf9c00605f5b6b59d701cfdbf6155c7cd6bcbff0887445c5119dacf2615de4b907a697429c328d007eba6d127df2d07ec215e6a6ba4077e4dac72819849e88688dc3989badd7b958568e1dab89b567dc87c9dc83455bd00dd438d8ee98b8e8722be55410f199f5fe482270ecce76fa90fd0a0c3ab99c07d68a51e04dcd0bde232e1c56e47d0645a3d66692f0f8520d5dcb1d54b133703cf44076f1db1b6edda47ebbd3958a0f4e8cb16928a507c91483a7c58fbb41575154e88f06593479ce36594b09d2bffe1dc6b825cf75eb1ee5f1a387ee22de592cf6aeb2413a75ecded7e33787defb74431586674359770fb21dbe6a0da94ae6afb59f5db65615cbd6892b8a00bb4a8966299d73debd21d4646917e51e61bbf8e5a55f143e95e24c4eea1d942de5776a8f2758e517186145c134f66526cfe63d856f61e484caf69d16c2f1e625eb7b13e76d055175547dd45e564bf51e757806b1af9fd4293eb5c537a75746d8c199e0bfbf1127b75367c68a496875053e83e116ec55209f1f7ef96d5ec33cc5fa0da0f3a8a97a55a4ca0685614265f28e16427e1cd15e5c7c5434950910f5ca024a336fd9eb4cc99911465ec72a841d756964b3d58e369daea709d57c4fe32af26c02bab79c6a7be37b23df433080896741d53059811e3a94175fc40d604a7652a62596b0f5fe4f93f228f2595468e1d16f62f1115f52f7b66dbeae10cc50d6e5bf46bb783407647f3c86f02911c93133337e04cbc17158508675f655aa68e95f68f9a56746bfb158277370b708547b7a1856289ea1921ee1ed10dc73f2a8ffc4f272834e148a7518f54e785dc1076dced6f584c597bea1597d516fb61d672262fcc5f99274471d6d18df24ea3e2b804d913ec06d6b6eb767977919cc32957c8e3b60709ab9e2e9959aa44691d4beb1e6d58b906e015f7c374e23a5018b0c8d965047d11c47263416fade44c21d7bd6c241ae0a7be7b654598e529ce15dbd3640c86e43943ac0378acf27abc997b3ac8bf07f57a2fc9183ce65fc4d6bdb17e7826eed8e14f2a5e7525282438853270cc80bddfbaf2761f669f1102f3f69409d978fa6e7142df16797629bb1f347494f40914a082774260c435425da8798c064c4e3f2c1bafd2525d3c715f58c2d3173bbe13ec9007d35dda6681e265b9d5da32ed51dc1b91b9a25eb4ccef30ff732082c02e33b24fa9e84cbee913f9615cf8245d0d39138eb615ab9fb81a84bb6de5b9c2597f8e39f2c17501d331bbd9a683c599ccd4d9fba3fea8fcf98bd1e005f713f869e56b7609773211f4bba5c66b8e7398dacaa519508fbba27e1b451889fc8f7c1ca717988925af09154becd1383d40d078e70397dcb2ab3fffb9553806dd425d429da921f83ad02edd8148b62ba90df52c2339268fcc9f4e183dfb04b25e296fa081ca520303b41da4d783f5d21b154b3d00cf629013061cf0a903896f0755e7229bc71782e01863f5c6e3baf393f07e732d26e2df921ce725e67a7a9692894d458c743830ad2c1ef7d8be716fcea1d8210e60f9d3af20ffb5e588d71b6cc7e0067d7925076e61ff6fe9b4373c01e2201a3783db3f4ca791de077bcf0e4a107a6dc199da12939a6227496bcad3a16d6a949dc3c982354bc96528dd4cee827281a370fd64413b948abcd78b70dfe4869c0ec6fe84fb86063ab5cfcb2a53046c87bc50669ddd8bad69700935c52ce2de28198aa02a9821451eb69a690b86ee7a7681a64d09084216d9610b67dfd711df0cb8c378674314d251a38d415b8613f77424f1c02640f5ca143511fc20040533044ed619605ff77d1be1d582b07be67340daa7dfe24ef00bddefee</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="笔记" scheme="http://blog.nagisb.space/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Linux" scheme="http://blog.nagisb.space/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电信HG6543C1超级管理员账户密码获取</title>
+    <link href="http://blog.nagisb.space/post/light-cat/"/>
+    <id>http://blog.nagisb.space/post/light-cat/</id>
+    <published>2022-07-23T05:03:28.000Z</published>
+    <updated>2022-07-23T05:03:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p><blockquote><p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p></blockquote><p><em><span id="more"></span></em></p><p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p><h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p><h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote><p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p></blockquote><hr><h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p><p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p><hr><p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p><h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p><blockquote><p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p></blockquote><p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p><hr><p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p><p><img src="/images/cat-passwd.png" loading="lazy"></p><hr><h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center><p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;管理员密码&quot;&gt;&lt;a href=&quot;#管理员密码&quot; class=&quot;headerlink&quot; title=&quot;管理员密码&quot;&gt;&lt;/a&gt;管理员密码&lt;/h2&gt;&lt;p&gt;为什么要获取管理员密码&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入&lt;a href=&quot;http://192.168.1.1/cgi-bin/luci&quot;&gt;用户界面&lt;/a&gt;在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
     <category term="刷机" scheme="http://blog.nagisb.space/categories/%E5%88%B7%E6%9C%BA/"/>
     
     
     <category term="整活" scheme="http://blog.nagisb.space/tags/%E6%95%B4%E6%B4%BB/"/>
+    
+    <category term="光猫" scheme="http://blog.nagisb.space/tags/%E5%85%89%E7%8C%AB/"/>
     
   </entry>
   
@@ -47,7 +327,7 @@
     <published>2022-07-22T03:07:56.962Z</published>
     <updated>2022-07-22T06:30:00.424Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p><h2 id="Ventoy"><a href="#Ventoy" class="headerlink" title="Ventoy"></a>Ventoy</h2><p><img src="/images/ventoy-menu.png" alt="界面" loading="lazy"></p><center>UI</centry></center><p>有了Ventoy你就无需反复地格式化U盘,你只需要吧 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件拷贝到U盘里面就可以启动了,无需(换系统反复重新写盘)其他操作。ventoy与普通U盘启动器来说ventoy制作的U盘<strong>仍然可以作为一个普通U盘存储文件</strong></p><hr><center>一个U盘通吃200多款操作系统安装</center><p>你可以一次性拷贝多个不同类型的镜像文件,Ventoy会在启动时显示一个菜单供你选择,支持大部分常见类型的操作系统其中包括主流的 Windows11 /Win10 /8.1 /8 /7 ,WinPE(PE系统等等) Ubuntu CentOS Debian Linux …</p><h2 id="制作启动器"><a href="#制作启动器" class="headerlink" title="制作启动器"></a>制作启动器</h2><h3 id="软件部署"><a href="#软件部署" class="headerlink" title="软件部署"></a>软件部署</h3><p>官网下载相应版本后,分区类型选择MBR兼容性好,然后开始安装一个U盘启动器就做好了,期间会格式化U盘</p><h3 id="U盘部署"><a href="#U盘部署" class="headerlink" title="U盘部署"></a>U盘部署</h3><p>随意选择U盘目录将系统文件复制到U盘 比如我的是&gt;&gt;/IMG</p><h2 id="从U盘启动"><a href="#从U盘启动" class="headerlink" title="从U盘启动"></a>从U盘启动</h2><p><img src="/images/efi.jpg" alt="efi" loading="lazy"></p><p>重启进入EFI选择U盘名字,以上是不同品牌EFI快捷键</p><hr><h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><blockquote><p>好的瑞士军刀怎么能少的了DIY呢</p></blockquote><p>在U盘根目录新建<code>themes</code>文件夹,由于更改主题需要编译json文件所以ventoy自带了VentoyPlugson方便傻瓜式操作</p><p><a href="https://www.gnome-look.org/browse?cat=109&ord=latest">GRUB Themes - Gnome-look.org</a>在里面下载你喜欢的主题.tg,解包后再解压知道只有文件夹,放到你的themes文件夹</p><p>找到你的ventoy安装路径打开<code>VentoyPlugson.exe</code>选择启动; 或者点击链接<a href="http://127.0.0.1:24681/">链接</a></p><p>选择主题插件设置你的主题样式,教程就结束了!</p><h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><center>在界面使用F5可以切换主题</center><p><img src="/images/theme-ventoy.png" alt="ventoy" loading="lazy"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p><h2 id="Ventoy"><a href="#Ventoy" class="headerlink" title="Ventoy"></a>Ventoy</h2><p><img src="/images/ventoy-menu.png" alt="界面" loading="lazy"></p><center>UI</centry></center><p>有了Ventoy你就无需反复地格式化U盘,你只需要吧 ISO/WIM/IMG/VHD(x)/EFI 等类型的文件拷贝到U盘里面就可以启动了,无需(换系统反复重新写盘)其他操作。ventoy与普通U盘启动器来说ventoy制作的U盘<strong>仍然可以作为一个普通U盘存储文件</strong></p><hr><center>一个U盘通吃200多款操作系统安装</center><p>你可以一次性拷贝多个不同类型的镜像文件,Ventoy会在启动时显示一个菜单供你选择,支持大部分常见类型的操作系统其中包括主流的 Windows11 /Win10 /8.1 /8 /7 ,WinPE(PE系统等等) Ubuntu CentOS Debian Linux …</p><h2 id="制作启动器"><a href="#制作启动器" class="headerlink" title="制作启动器"></a>制作启动器</h2><h3 id="软件部署"><a href="#软件部署" class="headerlink" title="软件部署"></a>软件部署</h3><p>官网下载相应版本后,分区类型选择MBR兼容性好,然后开始安装一个U盘启动器就做好了,期间会格式化U盘</p><h3 id="U盘部署"><a href="#U盘部署" class="headerlink" title="U盘部署"></a>U盘部署</h3><p>随意选择U盘目录将系统文件复制到U盘 比如我的是&gt;&gt;/IMG</p><h2 id="从U盘启动"><a href="#从U盘启动" class="headerlink" title="从U盘启动"></a>从U盘启动</h2><p><img src="/images/efi.jpg" alt="efi" loading="lazy"></p><p>重启进入EFI选择U盘名字,以上是不同品牌EFI快捷键</p><hr><h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><blockquote><p>好的瑞士军刀怎么能少的了DIY呢</p></blockquote><p>在U盘根目录新建<code>themes</code>文件夹,由于更改主题需要编译json文件所以ventoy自带了VentoyPlugson方便傻瓜式操作</p><p><a href="https://www.gnome-look.org/browse?cat=109&ord=latest">GRUB Themes - Gnome-look.org</a>在里面下载你喜欢的主题.tg,解包后再解压知道只有文件夹,放到你的themes文件夹</p><p>找到你的ventoy安装路径打开<code>VentoyPlugson.exe</code>选择启动; 或者点击链接<a href="http://127.0.0.1:24681/">链接</a></p><p>选择主题插件设置你的主题样式,教程就结束了!</p><h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><center>在界面使用F5可以切换主题</center><p><img src="/images/theme-ventoy.png" alt="ventoy" loading="lazy"></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/ventoy-logo.png&quot; alt=&quot;ventoy&quot;&gt;&lt;em&gt;</summary>
@@ -68,9 +348,9 @@
     <link href="http://blog.nagisb.space/post/System-double/"/>
     <id>http://blog.nagisb.space/post/System-double/</id>
     <published>2022-07-20T17:13:11.672Z</published>
-    <updated>2022-07-21T15:39:49.331Z</updated>
+    <updated>2022-07-31T18:45:38.113Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p><p>1.一部已经解好Bl的手机和一台微机</p><p>2.已经做好备份工作和能够承担风险的能力</p><p><em><span id="more"></span></em></p><h3 id="工具和方式"><a href="#工具和方式" class="headerlink" title="工具和方式"></a>工具和方式</h3><p>sgdisk: Android下操作GPT分区的命令工具,一般自带</p><p>不限于社区上的REC: 用来刷系统,执行命令</p><p>可以执行命令的方式: 包括但不限于adb,第三方REC,解释性脚本bash</p><h2 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h2><h3 id="确保权限"><a href="#确保权限" class="headerlink" title="确保权限"></a>确保权限</h3><p>打开MT管理器进入终端,输入su,继续输入sgdiak,若终端回显最后一行代表成功执行命令!</p><p><img src="/images/sgdisk-shell.png" alt="direct" loading="lazy"></p><h3 id="终端命令"><a href="#终端命令" class="headerlink" title="终端命令"></a>终端命令</h3><p>首先输入; <code>sgdisk /dev/block/sda --print</code> 回显查看手机的分区情况 </p><p>可能由于设备类型不同,sgdisk[分区块]可能不通用</p><blockquote><p>UFS闪存分区块:sda,sdb,sdd,sde,sdf</p><p>EMMC闪存分区块:mmcblk0</p></blockquote><p><img src="/images/partition.png" alt="direct" loading="lazy"></p><p>备份命令: <code>--backup=/路径/rename.bin</code>; 恢复命令: <code>  --load-backup=/路径/rename.bin</code></p><blockquote><p>修改(恢复)命令后只有重启系统才会限定修改系统分区当前仍是旧分区表备份命令只备份当前分区</p><p>目前命令前缀都是sgdisk /[分区路径]</p></blockquote><p>删除命令: <code>--delete=[分区号]</code>; 新建命令: <code>--new=[分区号:开始:结束]</code></p><p>改名命令: <code>--change-name=分区号:名字</code> </p><h3 id="终端操作"><a href="#终端操作" class="headerlink" title="终端操作"></a>终端操作</h3><h4 id="删除data"><a href="#删除data" class="headerlink" title="删除data"></a>删除data</h4><p>使用删除命令删除分区21[userdata]</p><h4 id="新建data"><a href="#新建data" class="headerlink" title="新建data"></a>新建data</h4><p>使用新建命令<code>sgdisk /dev/block/sda --new=0:0+sizeGib</code>; <code>sgdisk /dev/block/sda --new:0:0+sizeGib</code></p><blockquote><p>前者新建大小size分区21,后者表示新建填充剩余空间分区22</p></blockquote><h4 id="进行改名"><a href="#进行改名" class="headerlink" title="进行改名"></a>进行改名</h4><p>使用改名命令<code>sgdisk /dev/block/sda --change-name=21:userdata</code>; <code>sgdisk /dev/block/sda --change-name=22:userdata1</code></p><hr><blockquote><p>到上面差不多是完成微机分硬盘装系统的操作,只不过从图形操作变成终端操作</p></blockquote><h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><p>重启进入TWRP,进入终端界面操作</p><p>按照我上面的例子,<code>mke2fs -t ext4 /dev/block/sda21; mke2fs -t ext4 /dev/block/sda22</code></p><hr><p><del>到以上为之你已经完成了小白最容易踩到坑的部分了</del></p><hr><h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p>直接重启你会发现进去入厂系统了,用的是刚刚userdata的分区,看看内存是不是已经改变了</p><h2 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h2><blockquote><p>原理: 用命令通过恢复备份的分区镜像来换系统</p><blockquote><p> <a href="https://www.lanzouw.com/iGcPjvvuu9g">下载工具压缩包</a></p></blockquote></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符*表示</span><br><span class="line">将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名</span><br><span class="line">使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置</span><br><span class="line">再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名</span><br><span class="line">同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统</span><br><span class="line">使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2</span><br><span class="line">电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了</span><br></pre></td></tr></table></figure><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切换的方法可以根据工具说明rec刷入切换</p><p>当不是官方原版分区表时一定不能线刷,不然必定砖,只能9008</p><p>刷双系统尽量是同底层组合避免不必要的bug 如安卓9和安卓10底层差别很大</p><h2 id="一键切换"><a href="#一键切换" class="headerlink" title="一键切换"></a>一键切换</h2><p><a href="https://www.coolapk.com/apk/com.highsys.systemchanger">ATMS-ROM激活器</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p><p>1.一部已经解好Bl的手机和一台微机</p><p>2.已经做好备份工作和能够承担风险的能力</p><p><em><span id="more"></span></em></p><h3 id="工具和方式"><a href="#工具和方式" class="headerlink" title="工具和方式"></a>工具和方式</h3><p>sgdisk: Android下操作GPT分区的命令工具,一般自带</p><p>不限于社区上的REC: 用来刷系统,执行命令</p><p>可以执行命令的方式: 包括但不限于adb,第三方REC,解释性脚本bash</p><h2 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h2><h3 id="确保权限"><a href="#确保权限" class="headerlink" title="确保权限"></a>确保权限</h3><p>打开MT管理器进入终端,输入su,继续输入sgdiak,若终端回显最后一行代表成功执行命令!</p><p><img src="/images/sgdisk-shell.png" alt="direct" loading="lazy"></p><h3 id="终端命令"><a href="#终端命令" class="headerlink" title="终端命令"></a>终端命令</h3><p>首先输入; <code>sgdisk /dev/block/sda --print</code> 回显查看手机的分区情况 </p><p>可能由于设备类型不同,sgdisk[分区块]可能不通用</p><blockquote><p>UFS闪存分区块:sda,sdb,sdd,sde,sdf</p><p>EMMC闪存分区块:mmcblk0</p></blockquote><p><img src="/images/partition.png" alt="direct" loading="lazy"></p><p>备份命令: <code>--backup=/路径/rename.bin</code>; 恢复命令: <code>  --load-backup=/路径/rename.bin</code></p><blockquote><p>修改(恢复)命令后只有重启系统才会限定修改系统分区当前仍是旧分区表备份命令只备份当前分区</p><p>目前命令前缀都是sgdisk /[分区路径]</p></blockquote><p>删除命令: <code>--delete=[分区号]</code>; 新建命令: <code>--new=[分区号:开始:结束]</code></p><p>改名命令: <code>--change-name=分区号:名字</code> </p><h3 id="终端操作"><a href="#终端操作" class="headerlink" title="终端操作"></a>终端操作</h3><h4 id="删除data"><a href="#删除data" class="headerlink" title="删除data"></a>删除data</h4><p>使用删除命令删除分区21[userdata]</p><h4 id="新建data"><a href="#新建data" class="headerlink" title="新建data"></a>新建data</h4><p>使用新建命令<code>sgdisk /dev/block/sda --new=0:0+sizeGib</code>; <code>sgdisk /dev/block/sda --new:0:0+sizeGib</code></p><blockquote><p>前者新建大小size分区21,后者表示新建填充剩余空间分区22</p></blockquote><h4 id="进行改名"><a href="#进行改名" class="headerlink" title="进行改名"></a>进行改名</h4><p>使用改名命令<code>sgdisk /dev/block/sda --change-name=21:userdata</code>; <code>sgdisk /dev/block/sda --change-name=22:userdata1</code></p><hr><blockquote><p>到上面差不多是完成微机分硬盘装系统的操作,只不过从图形操作变成终端操作</p></blockquote><h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><p>重启进入TWRP,进入终端界面操作</p><p>按照我上面的例子,<code>mke2fs -t ext4 /dev/block/sda21; mke2fs -t ext4 /dev/block/sda22</code></p><hr><p><del>到以上为之你已经完成了小白最容易踩到坑的部分了</del></p><hr><h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p>直接重启你会发现进去入厂系统了,用的是刚刚userdata的分区,看看内存是不是已经改变了</p><h2 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h2><blockquote><p>原理: 用命令通过恢复备份的分区镜像来换系统</p><blockquote><p> <a href="https://www.lanzouw.com/iGcPjvvuu9g">下载工具压缩包</a></p></blockquote></blockquote><ol><li>一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符<em>表示</em></li><li>将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名</li><li>   使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置</li><li>   再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名</li><li>   同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统</li><li>   使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2</li><li>   电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了</li></ol><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切换的方法可以根据工具说明rec刷入切换</p><p>当不是官方原版分区表时一定不能线刷,不然必定砖,只能9008</p><p>刷双系统尽量是同底层组合避免不必要的bug 如安卓9和安卓10底层差别很大</p><h2 id="一键切换"><a href="#一键切换" class="headerlink" title="一键切换"></a>一键切换</h2><p><a href="https://www.coolapk.com/apk/com.highsys.systemchanger">ATMS-ROM激活器</a></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;前言与准备&quot;&gt;&lt;a href=&quot;#前言与准备&quot; class=&quot;headerlink&quot; title=&quot;前言与准备&quot;&gt;&lt;/a&gt;前言与准备&lt;/h2&gt;&lt;p&gt;本教程理论上通用与所有解了BL想要双系统的安卓系统。&lt;/p&gt;
@@ -94,9 +374,9 @@
     <link href="http://blog.nagisb.space/post/practice/"/>
     <id>http://blog.nagisb.space/post/practice/</id>
     <published>2022-07-20T02:41:32.000Z</published>
-    <updated>2022-07-22T05:03:16.438Z</updated>
+    <updated>2022-07-30T15:41:17.067Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="6c6e01d245d856dfd4993001740e8ee1426a3c3655a245f3155abd3b9b15bd64">c1dcf91c718b678e6f1232343cdc9c09aeff2e7bce69098ec0d0e0b478239419e5ae46f0b81273d23d4b9c0b399fe53eaddae4b9db8298d7e8fcf8f203f8469886c8d194aa17a029b0a6415f9b8f4237372547446ed56c0a6b506e854f1db1d69d0dff735665eafe40d7003ab2460455a57e84e8d63871aeef172cca8ca7171431d763b35c7c9bb85947332ae7dfbe5dbd47fceacbeb7d2897990b9db405487dbc7c9508200942b435825879c88e9e018422c9de74fcbec75c8c2ba45d3500823416e3f88d1570d8bc5c99ffca47a7ab1e33f8cbb0f7e78a1a6e3aeb3a99c007a4cc0c42251c23df339bdb25ab8dc96d9cbc6e781c153d23bccb5bd399e0af3b451a5c6f95a406541d1019e7cce91700e1b514c9a215369ad419e9fe9b97c846be5cf97d0795f345df54f3c5664e8e1d47c0d1b0e0a55fb761a40ee18f96537de30fd60cfc92dea9f892b5dc8e8d43c5789b8caeee0e4093d51d6d86180173d89358d8cdb6ea6957b374849cc34ab072404a7ac592ca5505f8190b5727aed5e8b7ac10a8efe36fe4198d08fd11ccae8caf121a96b4aa15f064266149b4b298e9ef0de38f689332562221998e39290f39d2cdbf86898c5e4a898eb2c8b9191e7058989551f5ee2c2ae763dfa6bdb8cdcff2fa5693ba95f6220b2aedb229be4949bf06bb1489440f6225fde6921357310e9ce4b2495365b63139389e8a5289171346cf50c5c50f48ded4fab9fdeccf19295fe037855b35f189e62f7aa8267c17002fe5d9f04cdb178808ae95f2716f5bf812c7f5411467b594afe26338b7fcc9bb8913bcc29d9f2bd51a67e724c5464dc4e760bdd2b0556d874a44cadb9f47ba57a8c8d4bd9ef2037ccc353f793c16dcbd2f4222538c890202c73cfae18519801e35092b58ae572bec47f2fdf9fb1093046ac709f0cc494670898da71922f87bdcf937440d054dc6d1af900af57528305781de5dde89dc43994768677e37f4bd11a597e753ed1e431fa2b937f91a95d1f1924b00dc3e921f15747f2cfcd26167002ec2faf58f6f5118299764df1a8aa3e1ab82057c60ab30b80bf69d605e8d8e85bdf04fb04c76f4b550ab151d071fb806631d5097b8e00076dc1af3fd2c42de566fb4cb66bc62c8f6cda0d556ff79b43b0fbd5038eaec08523cd10fdeadc693f8114ed255156bbb184b4dcc5f1a983103c45a914b71848f5e43824f3457de3f0355b0f9f7631652618dde97fc7bdacc9f8cdc74e187cd8a5b75442ee4a6ac0648fef019d6eb94d0a974de4159848b337e45d93bba16f48a6325dbc14719d4b5b52e9e537d3255508844a1c0569d2409c4ffca21d71734ccac2096b795c52be3b63dcaad83344f0ea633f61ecd1774c8e7553f84fd609669dce4c16fdc42b6095d830803a5035898929b149a762f2d7b2f5c31d4816afecc42c8364264eda45143a5f01c9ac10bb008857c8c12a966b084565f2443858a879383a8c17d9e1d49078f4f4dfb0d08d7f665524100c59d1cbdc00d906ee526d73e14c411ac1288b6e0b23c7878b811dfb8164a73016fff6e1697bb6be9e43e446efd15f6fdb8a663b3813edace5cd51602295f7cf6b25b1d76c614b32cc1947574519d3c5ad1950852e1e87244edd4ea6c1cd61e723d2fccfc6a398f2ff1e7a32926698982d45905eba49836774d205b5c36dabffc7cb38ab1d1b2c31b82a0222d330ca258104ea573541b445decfcb9f4219d0488ec7a6916fac665d19b6c489e213433cd05ce12f42c12c62f1e3f2eaf34ea85e23b5b77660e8e4b02534af12530caa867163d3a44f79e9929c04a4493b7343f1cd176c4b2e04affba30b0fc85e50a38b93819243ae5cb8b1a969fab949a72f067f18696ce165ddaa105fa6e4434ff1e9561dcbad114df553ee01323881b9e29d4d7cbe483d0d759db61c70cd9ff1e047c3840b40bdaff6a34f6b86cffd57c874fcf801e0f3fd5d3f32e302f83dae4c842b289073ca687f13cb7b4c27a15812d6d7cde92f37c69a421824b40cb20cc3ea97069573010c85788e267318a282a741d3eab811288a8aff64768d7e766211495ff8aa46ba449e04503b1520145df30f46be0c2ef8613bdda4f827057409cd38822b6647c192a516f272cb956b6bdb4ea561894ab33a4d2351e03bd05e7015bdb6edc71a1b5cf7ce863909fcc573c4b5a6569da110bc4b42a80feaadd485e189ad743b79d467a7dc21a80ab337d5a7af101057f4c35771fae9640d9f3bb58eef7e707917452ce750635b4c894a36aab87d90361fe2862e9eab4443d573f9b6806d4c605cffb04007f0d2865d08902cdccf3a54210cb4c858653e810c8834adef8882750e6f6af30ee7f4f00421d3170ecd6bb36f931b10ecfec2bcc9c2c04e56e2a3ab484f25f7a15f90e49aad7d1197edc4e8ca04706fbc4b04c399f8b6bcdf972a83ba6</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="7a56b38b1e5eb4b6b453a7931cb9f23174e315978c10f15430e5994f0e4d5bd9">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa84be2fd8ec42e5a6edaff40062dbe973452d5613a7b7defe49944f1c88ceef98d797f648ab259916f5dd4ef8ba1a4816afbaa7dbe5fe93a82b5ee0f61bb652d9992f5a449415a546b7df011af2f5d39effda49e82dd3ecc7177df0bc74ab6e0f1b1bf7879ed2074008fb55a59c3ded4ceabef688ed4eaed6c5f3d0dda8e433f86f9f5f626f130238be68961a74c2b7b8af4cb46382d8fa4081ded65cee9aa93c34cdfe356cc58bbf07bcfbf6f2db5976eed3d4a889bcedffd694dea5a8390ab313d2804ab64e974db59f0f18182e8264cb90d29e3b803ea372e3e8e2eaf85f112d62e47e8471607efa3b9fc5b5c272a4a98f6774cd377434b412d721d7293c5d6626b3fc5909ca28ee596d86b16194f9061124a56eb8f470a0ae994bcf7c376258a302fe130cb0c90c7cd5cdeef24baceb4e0fa900cc14fdb00a46241bd81a9ea00aa1013d9dfb578a164f2bf68543d5c94da34bfa7d3d41ae0749d8a5707573be6c51437709e17da541e062dd4069b5ce80c41e8727d64254071a04bafb775c0da77ee3e6ef78a79d7085842dd883cbf8e86cad21d9cc2ff5adce76b8bda1bd1ec0914cb8ee225dea8bf425259a4030465912c85ae6053fe2da3063af8447ca9438d3b68b9504b84c8fb452bcfb1555f085a4933d16bda6afda9d2cc5e9dd7b544cf36e35bffd0708776b48271d9d459f3e55a16a3f69d575b3415b54f647f51a6e4c15ddad0eebb0ea4481eea926b3758282013c8f33189f38d9f21cafd9de23f33a550614f79ae99fe3cd05e33c0b35feb3b498176aec772a62248aa6120ebec80b208f02b24a7fb253a4830331be05a6a5cc48b275539eae84fa3f745216e4fa76542ed0fe806ff5ac12d4bdcb7a02957ce99a6ffb185164133cd356002b4232bf57eadee57cd898af650566f6977db974467a7b99d7f576a60ee758601060bd7c34e2f19752d603291240365688b09ff77d814f2372290741b0380d1cbd758ae4766527015b544e9e42b7e856bb3e508e295adf11d4e8183c5861831f70184e7201747e12ba0bd9b838fec1dfeb49878377392917fc58c7d777ec683bb9afb4034dfb7f97129013f05d60aa4d3c69e2cae9d1f94c9c2f022a69c3313d7b3ecd6fca7382bcbb42b36b925bc604a12fa58b39c49cfdbf9e88e6cf482c07780544b6ab14f5a7f4a675f65d4276eb972398088c49f822bd90e54f1e23a468d5455a3f0524752ae34171acfb185d0d2b1312fc861036397243e75f0acc352663b4fc663ca0f9205e4c1d6ce5ebc5d9df695f33efc8f335fbb53a7f1b02728952557fda1931d01c4fb75435ae3c62606ba2bd094632bab847504618622bdfb20ba71b23e7f176c825c2f28c14132aeb6c29af264d50904f8872c4531608c3471401e6324d854c424d7302080089a13f1b40a00fc746328b1073997ce3d36275e9ac3908dd67899cd7edf99a1905b5b14512162ba5a27622ecc524c2e28a6d15483da252269aed8c7f339e4187bb6d57c5c61722cf4655a16b895e812a6e9f06ff1a11e8f8871280d091a2e297d12c22f8e4f89b7a9ac6056fa477740426c9f7d090dda862446babaf4211cbeede5ed3ab4a8bf47bf75bb1e998151dbeae3400fa93a5887e4d2f515c11ad16b730898b2f0a61b8e17a975589061994268f8c68b5f9190f8a8d72a2dd921ecef1bfe91eccd48cf219b516b6084581e41ad5e66d99f4b2f19b8a4f7bc82907cfb4dcec9ec047b320424c5b270314dbdfd2a325752f83a4ec598173606338dc8d9efd96aa95c9fcc508ffb0a64cae0eed06927cc7efd62ce3875d69e1109dacfe741a206e963f37645a28888a78e611ce0d9f04a3ea6fac0955b06966983a66d314e7da7917d12e34690b10380eac5438b3561194de58a5233ad2974d881fff028fc9579bdeb82f746a1b43ea3d289700199f8c16a0727027fac7920cf710469208b858b6ff3d0d7703194e2c192e02ebc845e5ff3bcb92f8f9ef6f667d5e55f484415d26d2f7ff64264071daa4a6e6e16554b210d63c05ee51f7790ceb7851fad6011a97b3b5a6e8167304c68e1af155c600d0695559db4df1827a99ec89d2811bd4cce7536ae003ff044db57f40a10ce7015d3f841a163432759bd8551ba2b72a645bc5d520a416279f554bdaa3fbdc3f421818b657a60ee7673227c6ba237fd904251fd470800ca132bc2ed5b554f3f349898fbbdcf64f894f215b5dcedcdc94665f4942fec2ffa6ced611cdb9da9bae8727b768aa783ab003e8b65a04fc472f2e98ca0cd960234353e2e4472cd7efdd60b7d0ad1ef10d8ee9987761210f983b3a03b39e866251e92b31522243ec6a44cf46ec447b8fc2363e81cca7b2f46af0369b60f5817a072119b61c2d6d550e99daa759847f7a8414efe434daa2abe8f57e06a126fa9865e8f0a31e95cdc62c2dc8ea5f93ed2166bbb57038e737a20d211458dbbe20672247c505bd7e7da1d1e16ae061759274aa8f0ec89c00105df37f0afc26b5740b5ce22e36f48e280ac586dace3ecb13ad3768256cfc105e0fbdece61fa79cbbdaf968feb7ab1b3fd75fa39fd9fe4f10da603ae4b5440481e431996318359818aa6bb15bbc041b6c0f7ab4054494b013279080f6494af06cf0ef2aafdaad51b1e1e116192d012ee4c9017394d29d2f322eeca79d4140a28d0ce98d5e77ac56e556d0b825370efc8c3423a6a58317b787112f25578504672a8c6b551ac637fcf521a09059c1f536e4943b6d874413016aef0c35d6c8c4079047156ba6c5cf42892c94df59848c65e4bb77fc222657207f57039ccdee88ae19fed736eb5dd60d958b45041f5fb12bddd80569fbd3a9d2c21f0ac558f38ff7009fa5e8699ceb9eb3787c787be62ca2eaac996098ebdd42483a64336ac397bc1f7b3cc7f17b19bbd3a36265f961b7c42d3fae826b946896dbda059cbcbd7bfcb6e02eb86aebace9312e73b1e41d19417457191bcb5af6d723056b094cd9e25620dd76d07fbd430d2b907ca12f790beda14d4f7a23d0aac9dfadbd47948cb98b37c090db0dd28afafa68f13a3c154e6650123d41d0b7de12142a0e3e98e500f6c52714727866a4568375c94701ac247de4a0324df776f03e147f113a200dddc45c25f4065869db57d</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
@@ -104,8 +384,6 @@
     
     
     <category term="笔记" scheme="http://blog.nagisb.space/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="md" scheme="http://blog.nagisb.space/categories/%E7%AC%94%E8%AE%B0/md/"/>
     
     
     <category term="Markdown" scheme="http://blog.nagisb.space/tags/Markdown/"/>

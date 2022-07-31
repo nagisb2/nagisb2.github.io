@@ -2,6 +2,7 @@
 title: 安卓像微机一样安装双系统
 data: 2022-07-20 23:03:38
 tag: 双系统
+readmore: true
 categories:
 - [刷机,安卓]
 ---
@@ -95,15 +96,14 @@ sgdisk: Android下操作GPT分区的命令工具,一般自带
 >原理: 用命令通过恢复备份的分区镜像来换系统
 > >  [下载工具压缩包](https://www.lanzouw.com/iGcPjvvuu9g)
 
-```
-一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符*表示
-将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名
-使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置
-再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名
-同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统
-使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2
-电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了
-```
+1. 一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符*表示*
+2. 将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名
+3.	使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置
+4.	再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名
+5.	同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统
+6.	使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2
+7.	电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了
+
 
 ## 注意事项
 

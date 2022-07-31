@@ -7,13 +7,18 @@
 #  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
 #  meting: true
 #  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
+    
+cdn:
+  pre: https://cdn.jsdelivr.net/gh/nagisb2/nagisb2.github.io@master
+
+  
 aplayer:
   meting: true
   
 # Site
-title: NAGISB的博客
-subtitle: ''
-description: ''
+title: NAGISB'S
+subtitle: 'blog.nagisb.space'
+description: 'From JiangMen'
 keywords:
 author: NAGISB
 language: zh-CN
