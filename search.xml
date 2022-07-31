@@ -31,29 +31,6 @@
       </categories>
   </entry>
   <entry>
-    <title>对熵的一种微观解释进行可视化</title>
-    <url>/post/entropy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
-<summary>熵源于的热力学第二定律</summary>
-
-<ul>
-<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
-<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
-</ul>
-<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
-<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
-<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
-<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安卓像微机一样安装双系统</title>
     <url>/post/System-double/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
@@ -121,6 +98,29 @@
       </categories>
       <tags>
         <tag>双系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对熵的一种微观解释进行可视化</title>
+    <url>/post/entropy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
+<summary>熵源于的热力学第二定律</summary>
+
+<ul>
+<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
+<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
+</ul>
+<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
+<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
+<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
+<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
       </tags>
   </entry>
   <entry>
@@ -380,32 +380,6 @@ copy /b xxx.png+xxx.zip xxx.png
       </tags>
   </entry>
   <entry>
-    <title>The violin</title>
-    <url>/post/The%20violin/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
-
-
-<ol>
-<li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li>
-<li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li>
-<li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li>
-<li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li>
-</ol>
-<h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul>
-<li>四根琴弦 , 右手按弦 </li>
-</ul>
-<h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul>
-<li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p>
-<blockquote>
-<p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p>
-</blockquote>
-</li>
-<li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>黄梅戏</title>
     <url>/post/oper-hmx/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
@@ -432,6 +406,32 @@ copy /b xxx.png+xxx.zip xxx.png
 ——官人
 丢了破屋上官哪舟 还怕招来一场哪羞——妻子1.01
 </code></pre>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>The violin</title>
+    <url>/post/The%20violin/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
+
+
+<ol>
+<li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li>
+<li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li>
+<li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li>
+<li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li>
+</ol>
+<h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul>
+<li>四根琴弦 , 右手按弦 </li>
+</ul>
+<h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul>
+<li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p>
+<blockquote>
+<p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p>
+</blockquote>
+</li>
+<li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
+</li>
+</ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
