@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-07-30T14:38:23.158Z</updated>
+  <updated>2022-07-31T18:18:52.122Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Code of conduct</title>
+    <link href="http://blog.nagisb.space/post/Code%20of%20conduct/"/>
+    <id>http://blog.nagisb.space/post/Code%20of%20conduct/</id>
+    <published>2022-07-31T17:44:38.669Z</published>
+    <updated>2022-07-31T18:18:52.122Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="63ff280e636472b26fa94e2504b2a98b3e96b0fa932749de21c2af7b5f2e5a7c">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8ca3bf99e2f9d5b110a69e518e7b7f3e74fa33ad03de93bae3ac875fab8273b1b113e2f32f81a999db0f435d9b854cfccddd1210ae108282ae9238a61b687b7d1f7f1ba17e35463e8c02adad7258aaea68d3dd88d353c61da94fe0016e37ca916604ac4b8e01aa65da48f208ed8a1a4daebdbc57904cc3bc57d91c8b26d40a9830775923b2825996c064da227983b447737e6d8a9f90d55691e5cc755d6a3958b18c1f0a311356352ae91c516ad81f853a80d06ae9280f25a4b6c49b75f9da57dd153aadf5bd1fc043e0a77e7bd76e9d683c1d057baabc6931dff34c5736e2c082ec6679ab2fed31e0789990845ac8147f8466589b5f4184cc511d334cf990363258d80300eda9f515f0cad997105e6a7f3bfb4f25f4e1b625bb88c793ba49ce546ddbb67588820240ee9139a4ce2ee3b84b9748cd962e554fb2203eb8676e8566e250f4de40e7ab665fb3ebaffb872bf6a7bce1443b426c1072dd720e61add6c5a59afb5d7adee3083b9b753db2ad9ef308bc0cd50cc6959409efac7c51d90636f3a504d3ba8d3ec183aa08c5720a5a5b96d0b0618043c3677d1f4b635fea2f43460123291c1cf38b9e405314c5c46845cbd93426da4da547f43367a10347fdf5c2f12fd2735c0e2e89b286924959acb48dcc20d8027c05345d89703496b9fe41303ccb849492fe6b01b96cfdece7149b0c8857c0c7bfc6c58b6759b345e8e6c5f9d971a0c9ad6ce92f2b7e8e98e526b94876cdcf7c6c119819a00b6557e6e1018de934777604ce06e3408cf5cdbb9f063430b6bc0879178f134838aeade6b15fc85d0178b5a877fc46a7ff2be5f4f8598c27718c00ff9bf00bbf5c1c33e73b7c5d65f281c442de20ab4a8b12533fa5a13aca003cedb43ff4ac571279582dab5936aca89f505921a0ed819223ff922bd410a850a785ebc9b83f0a3c2a7dd260859a2fa5d66d596902209f0b9927b1b01d315270b8f45c8208b4e91e356fa995852154385a4852130bf1463dbf35e4957e13730ae50c5307cb540d64c9bb59e20a0e59e02e4821902029977940ea0a8a887e201d4b97c8ba3350a8dec0579e10690bf8bb64fff6f04ebb49ec133b9e2b70c9793a71aa6da0b44a7b8c3e1a71f368d3224725764df62d6a70272008e8f80ec44eff7c65eb9c88eeb732ec521cc07ea7afacff27cf785eedbb818396f40bb546046b38a1f757ac86620928f9754ca3597894bf968322600d24944c3867b536d6c999760512a131ef74568cfee08e49c2c3bcfb19b02530075a45b7ce9d27f02904328bf5110d312d2093d6a976b51e22d14cdcb7d15148b327f9ca786da7241d889ba9b3bebecd5f4adca07af76d57191b074368502c4e8dde40580958b2b511d7f25fef509aa49742f63699a68cd1a6049ef47d664c903bcdac63652fa6d08a15d1ab1959cdb2b1e28fafff0a9092dc5e3bd943a49ee60cd38be9d4b76951674745cc7ab0d45fe96fda7ab3678cbef0f74f92da5852e849eaa734d90ba868e22abba9d82599af06e8220a88850c2865aa67e619ca540ee7cc13f43e5b90f01e110b5fb9370b8f3443e0bd708cc5e05713c9861c4930854224f9e26b74b43f709014e3b3df48e130e635d4d1a9afc3dc83534d971588b8a8d572b7cd8fed8</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>帕累托法则</title>
