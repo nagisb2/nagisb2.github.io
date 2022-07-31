@@ -17,6 +17,19 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
+    <title>帕累托法则</title>
+    <url>/post/Pareto%20principle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+</blockquote>
+<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>奥卡姆剃刀</title>
     <url>/post/Occam&#39;s%20Razor/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
@@ -27,19 +40,6 @@
 </ul>
 <p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p>
 <p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>帕累托法则</title>
-    <url>/post/Pareto%20principle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
-</blockquote>
-<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
 <p><em><span id="more"></span></em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
@@ -246,21 +246,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DNS</title>
-    <url>/post/real-rational/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
-<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
-</li>
-<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
-</li>
-</ul>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>优雅的盗号技巧</title>
     <url>/post/qq-passwd/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
@@ -289,6 +274,21 @@
 <h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
         <category>渗透</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>DNS</title>
+    <url>/post/real-rational/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
+<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
+</li>
+<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
+</li>
+</ul>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
       </categories>
   </entry>
   <entry>
@@ -380,35 +380,6 @@
       </tags>
   </entry>
   <entry>
-    <title>黄梅戏</title>
-    <url>/post/oper-hmx/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>黄梅戏，原名黄梅调、采茶戏等，起源于湖北黄梅，发展壮大于安徽安庆。 </p>
-<p>黄梅戏与京剧、越剧、评剧 、豫剧并称<strong>中国五大戏曲剧种</strong></p>
-</blockquote>
-<h3 id="棒打薄情郎——又名金玉奴"><a href="#棒打薄情郎——又名金玉奴" class="headerlink" title="棒打薄情郎——又名金玉奴"></a>棒打薄情郎——又名金玉奴</h3><ul>
-<li>第一场——招婿</li>
-</ul>
-<pre><code>天色晚雪纷飞 叫他何处把身投 你救人就要救到地——黄花闺女
-老丈夫招我做女婿 千万不可失良机 不但得了个多情女 重此有了安身地——秀才
-</code></pre>
-<ul>
-<li>第二场——中榜</li>
-</ul>
-<pre><code>一去月余信渺茫 害我终日倚门往 但愿官人早日还——妻子
-为人只要有双手 走遍天下饿不煞——妻子
-纲常礼体心胆寒 怎与乞丐吧亲攀——官人
-</code></pre>
-<ul>
-<li>第三场——推江</li>
-</ul>
-<pre><code>肚里如吃萤火虫 为了我的女儿愿忍痛 好似水上浮萍草 风浪打呐随水流——岳父
-——官人
-丢了破屋上官哪舟 还怕招来一场哪羞——妻子1.01
-</code></pre>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>文件伪装图片命令</title>
     <url>/post/zip&amp;png/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre><code>cd %SystemDrive%\Users\Administrator\Desktop
@@ -448,6 +419,35 @@ copy /b xxx.png+xxx.zip xxx.png
 <li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
 </li>
 </ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>黄梅戏</title>
+    <url>/post/oper-hmx/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>黄梅戏，原名黄梅调、采茶戏等，起源于湖北黄梅，发展壮大于安徽安庆。 </p>
+<p>黄梅戏与京剧、越剧、评剧 、豫剧并称<strong>中国五大戏曲剧种</strong></p>
+</blockquote>
+<h3 id="棒打薄情郎——又名金玉奴"><a href="#棒打薄情郎——又名金玉奴" class="headerlink" title="棒打薄情郎——又名金玉奴"></a>棒打薄情郎——又名金玉奴</h3><ul>
+<li>第一场——招婿</li>
+</ul>
+<pre><code>天色晚雪纷飞 叫他何处把身投 你救人就要救到地——黄花闺女
+老丈夫招我做女婿 千万不可失良机 不但得了个多情女 重此有了安身地——秀才
+</code></pre>
+<ul>
+<li>第二场——中榜</li>
+</ul>
+<pre><code>一去月余信渺茫 害我终日倚门往 但愿官人早日还——妻子
+为人只要有双手 走遍天下饿不煞——妻子
+纲常礼体心胆寒 怎与乞丐吧亲攀——官人
+</code></pre>
+<ul>
+<li>第三场——推江</li>
+</ul>
+<pre><code>肚里如吃萤火虫 为了我的女儿愿忍痛 好似水上浮萍草 风浪打呐随水流——岳父
+——官人
+丢了破屋上官哪舟 还怕招来一场哪羞——妻子1.01
+</code></pre>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
