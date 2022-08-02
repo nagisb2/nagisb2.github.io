@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-08-02T06:42:12.283Z</updated>
+  <updated>2022-08-02T15:30:15.367Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>权重</title>
+    <link href="http://blog.nagisb.space/post/The%20weight/"/>
+    <id>http://blog.nagisb.space/post/The%20weight/</id>
+    <published>2022-08-02T15:09:37.000Z</published>
+    <updated>2022-08-02T15:30:15.367Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是权重"><a href="#什么是权重" class="headerlink" title="什么是权重"></a>什么是权重</h3><blockquote><ul><li><font color="#FF8C00" size="4" face="STFangsong">指标在整体评价中的相对影响程度</font><ul><li>针对某一指标而言</li><li>如质能方程<code>E=mc²</code>光速c是二阶导数比质量m对更能对能量E产生影响</li></ul></li></ul></blockquote><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;什么是权重&quot;&gt;&lt;a href=&quot;#什么是权重&quot; class=&quot;headerlink&quot; title=&quot;什么是权重&quot;&gt;&lt;/a&gt;什么是权重&lt;/h3&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;#FF8C00&quot; size=&quot;4&quot; face=&quot;STFangsong&quot;&gt;指标在整体评价中的相对影响程度&lt;/font&gt;&lt;ul&gt;
+&lt;li&gt;针对某一指标而言&lt;/li&gt;
+&lt;li&gt;如质能方程&lt;code&gt;E=mc²&lt;/code&gt;光速c是二阶导数比质量m对更能对能量E产生影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    
+    <category term="专业词" scheme="http://blog.nagisb.space/tags/%E4%B8%93%E4%B8%9A%E8%AF%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>编程字体</title>
@@ -73,9 +101,9 @@
     <link href="http://blog.nagisb.space/post/Code%20of%20conduct/"/>
     <id>http://blog.nagisb.space/post/Code%20of%20conduct/</id>
     <published>2022-07-31T17:44:38.669Z</published>
-    <updated>2022-07-31T18:18:52.122Z</updated>
+    <updated>2022-08-02T14:35:09.553Z</updated>
     
-    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="63ff280e636472b26fa94e2504b2a98b3e96b0fa932749de21c2af7b5f2e5a7c">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8ca3bf99e2f9d5b110a69e518e7b7f3e74fa33ad03de93bae3ac875fab8273b1b113e2f32f81a999db0f435d9b854cfccddd1210ae108282ae9238a61b687b7d1f7f1ba17e35463e8c02adad7258aaea68d3dd88d353c61da94fe0016e37ca916604ac4b8e01aa65da48f208ed8a1a4daebdbc57904cc3bc57d91c8b26d40a9830775923b2825996c064da227983b447737e6d8a9f90d55691e5cc755d6a3958b18c1f0a311356352ae91c516ad81f853a80d06ae9280f25a4b6c49b75f9da57dd153aadf5bd1fc043e0a77e7bd76e9d683c1d057baabc6931dff34c5736e2c082ec6679ab2fed31e0789990845ac8147f8466589b5f4184cc511d334cf990363258d80300eda9f515f0cad997105e6a7f3bfb4f25f4e1b625bb88c793ba49ce546ddbb67588820240ee9139a4ce2ee3b84b9748cd962e554fb2203eb8676e8566e250f4de40e7ab665fb3ebaffb872bf6a7bce1443b426c1072dd720e61add6c5a59afb5d7adee3083b9b753db2ad9ef308bc0cd50cc6959409efac7c51d90636f3a504d3ba8d3ec183aa08c5720a5a5b96d0b0618043c3677d1f4b635fea2f43460123291c1cf38b9e405314c5c46845cbd93426da4da547f43367a10347fdf5c2f12fd2735c0e2e89b286924959acb48dcc20d8027c05345d89703496b9fe41303ccb849492fe6b01b96cfdece7149b0c8857c0c7bfc6c58b6759b345e8e6c5f9d971a0c9ad6ce92f2b7e8e98e526b94876cdcf7c6c119819a00b6557e6e1018de934777604ce06e3408cf5cdbb9f063430b6bc0879178f134838aeade6b15fc85d0178b5a877fc46a7ff2be5f4f8598c27718c00ff9bf00bbf5c1c33e73b7c5d65f281c442de20ab4a8b12533fa5a13aca003cedb43ff4ac571279582dab5936aca89f505921a0ed819223ff922bd410a850a785ebc9b83f0a3c2a7dd260859a2fa5d66d596902209f0b9927b1b01d315270b8f45c8208b4e91e356fa995852154385a4852130bf1463dbf35e4957e13730ae50c5307cb540d64c9bb59e20a0e59e02e4821902029977940ea0a8a887e201d4b97c8ba3350a8dec0579e10690bf8bb64fff6f04ebb49ec133b9e2b70c9793a71aa6da0b44a7b8c3e1a71f368d3224725764df62d6a70272008e8f80ec44eff7c65eb9c88eeb732ec521cc07ea7afacff27cf785eedbb818396f40bb546046b38a1f757ac86620928f9754ca3597894bf968322600d24944c3867b536d6c999760512a131ef74568cfee08e49c2c3bcfb19b02530075a45b7ce9d27f02904328bf5110d312d2093d6a976b51e22d14cdcb7d15148b327f9ca786da7241d889ba9b3bebecd5f4adca07af76d57191b074368502c4e8dde40580958b2b511d7f25fef509aa49742f63699a68cd1a6049ef47d664c903bcdac63652fa6d08a15d1ab1959cdb2b1e28fafff0a9092dc5e3bd943a49ee60cd38be9d4b76951674745cc7ab0d45fe96fda7ab3678cbef0f74f92da5852e849eaa734d90ba868e22abba9d82599af06e8220a88850c2865aa67e619ca540ee7cc13f43e5b90f01e110b5fb9370b8f3443e0bd708cc5e05713c9861c4930854224f9e26b74b43f709014e3b3df48e130e635d4d1a9afc3dc83534d971588b8a8d572b7cd8fed8</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="6dd1cdc5a61a81878219922d23dbad4baf974264ca848371efd0b4fde11ac048">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8ca3bf99e2f9d5b110a69e518e7b7f3e74fa33ad03de93bae3ac875fab8273b1b113e2f32f81a999db0f435d9b854cfccddd1210ae108282ae9238a61b687b7d1f7f1ba17e35463e8c02adad7258aaea68d3dd88d353c61da94fe0016e37ca916604ac4b8e01aa65da48f208ed8a1a4daebdbc57904cc3bc57d91c8b26d40a9830775923b2825996c064da227983b447737e6d8a9f90d55691e5cc755d6a3958b18c1f0a311356352ae91c516ad81f853a80d06ae9280f25a4b6c49b75f9da57dd153aadf5bd1fc043e0a77e7bd76e9d683c1d057baabc6931dff34c5736e2c082ec6679ab2fed31e0789990845ac8147f8466589b5f4184cc511d334cf990363258d80300eda9f515f0cad997105e6a7f3bfb4f25f4e1b625bb88c793ba49ce546ddbb67588820240ee9139a4ce2ee3b84b9748cd962e554fb2203eb8676e8566e250f4de40e7ab665fb3ebaffb872bf6a7bce1443b426c1072dd720e61add6c5a59afb5d7adee3083b9b753db2ad9ef308bc0cd50cc6959409efac7c51d90636f3a504d3ba8d3ec183aa08c5720a5a5b96d0b0618043c3677d1f4b635fea2f43460123291c1cf38b9e405314c5c46845cbd93426da4da547f43367a10347fdf5c2f12fd2735c0e2e89b286924959acb48dcc20d8027c05345d89703496b9fe41303ccb849492fe6b01b96cfdece7149b0c8857c0c7bfc6c58b6759b345e8e6c5f9d971a0c9ad6ce92f2b7e8e98e526b94876cdcf7c6c119819a00b6557e6e1018de934777604ce06e3408cf5cdbb9f063430b6bc0879178f134838aeade6b15fc85d0178b5a877fc46a7ff2be5f4f8598c27718c00ff9bf00bbf5c1c33e73b7c5d65f281c442de20ab4a8b12533fa5a13aca003cedb43ff4ac571279582dab5936aca89f505921a0ed819223ff922bd410a850a785ebc9b83f0a3c2a7dd260859a2fa5d66d596902209f0b9927b1b01d315270b8f45c8208b4e91e356fa995852154385a4852130bf1463dbf35e4957e13730ae50c5307cb540d64c9bb59e20a0e59e02e4821902029977940ea0a8a887e201d4b97c8ba3350a8dec0579e10690bf8bb64fff6f04ebb49ec133b9e2b70c9793a71aa6da0b44a7b8c3e1a71f368d3224725764df62d6a70272008e8f80ec44eff7c65eb9c88eeb732ec521cc07ea7afacff27cf785eedbb818396f40bb546046b38a1f757ac86620928f9754ca3597894bf968322600d24944c3867b536d6c999760512a131ef74568cfee08e49c2c3bcfb19b02530075a45b7ce9d27f02904328bf5110d312d2093d6a976b51e22d14cdcb7d15148b327f9ca786da7241d889ba9b3bebecd5f4adca07af76d57191b074368502c4e8dde40580958b2b511d7f25fef509aa49742f63699a68cd1a6049ef47d664c903bcdac63652fa6d08a15d1ab1959cdb2b1e28fafff0a909f84d2a4aa5658b35c716c30c3c30107d7ea8c77bb31d9cd71920fb8fa94e2d672bc1567c797ee4efa647e50b19cdb1a52cd2c64760c163218247c7fa7eaabe524d03f24391b6412c2958da38a7ba74b06e2285887708d60dd9c44f068b9ed0281ce82a020971c8baf98239c36c4977dee289d5a57327225aafc644086e691f81176872589eae35dec88735ea38b5a315b50800e71103b1209332d0b92bcb5906a851010dd0772428a088e1c5d1652503a580d97fe90a736ed9313080f9641498c91b5d20cc81255b6ad18824600772b031583539b3d7c679ab7e9ed9edb190960acd8d8aacbf7c798be46380e4bfcb7d0ea986b7ba48383a94722ee2fbdcb5ef31c3fa6d4a5eb645124bb957ed6eeb9c507c775ce9d2060a5360fccf3451fef3b79dce3a32a8554d7b3d9f5413fadb5d</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
