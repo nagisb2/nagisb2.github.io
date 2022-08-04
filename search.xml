@@ -440,6 +440,57 @@
       </tags>
   </entry>
   <entry>
+    <title>Windows作为服务器发布静态网址</title>
+    <url>/post/win-server/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote>
+<p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p>
+</blockquote>
+<p><em><span id="more"></span></em></p>
+<p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p>
+<hr>
+<h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p>
+<p>设置→控制面板→程序→启用或关闭Windows功能→找到<code>Internet Information Services</code>并勾选→确定</p>
+<h2 id="创建静态网址"><a href="#创建静态网址" class="headerlink" title="创建静态网址"></a>创建静态网址</h2><ul>
+<li><p><a href="https://www.aliyundrive.com/s/EiA6LXj9GKQ">index.html</a></p>
+<blockquote>
+<p>下载静态网址放到本地 , 如我的地址为 &gt; 桌面/web/index.html</p>
+</blockquote>
+</li>
+</ul>
+<p>双击打开这个网址可以看到在浏览器上这个页面 , 现在就把它放到公网上</p>
+<h2 id="什么是IPV6"><a href="#什么是IPV6" class="headerlink" title="什么是IPV6"></a><a href="https://zhuanlan.zhihu.com/p/36542469">什么是IPV6</a></h2><ul>
+<li>总而言之使用IPV6的地址可以直接将本地地址映射到公网地址上面 </li>
+<li> IPV4想要实现可以申请公网IP,或者使用内网穿透</li>
+</ul>
+<h3 id="测试IPV6"><a href="#测试IPV6" class="headerlink" title="测试IPV6"></a><a href="http://test-ipv6.com/">测试IPV6</a></h3><p>若网址显示没有接入IPV6可以去路由器设置开启IPV6</p>
+<hr>
+<h3 id="获取IPV6地址"><a href="#获取IPV6地址" class="headerlink" title="获取IPV6地址"></a>获取IPV6地址</h3><p>打开CMD , 在出来的DOS界面里，输入<code>ipconfig</code>  , 回显显示IPV6地址</p>
+<p><img src="/images/IPV6-ip.png" loading="lazy"></p>
+<h2 id="搜索IIS程序打开"><a href="#搜索IIS程序打开" class="headerlink" title="搜索IIS程序打开"></a>搜索IIS程序打开</h2><p>点击红色下拉标,可以看到一个默认网站,右键网站 , 选择添加网址,物理路径选择静态网址所在文件夹,如: <code>F:\Users\Administrator\Desktop\Web</code>,ip地址输入IPV6地址.点击确认</p>
+<p><img src="/images/IIS-ip.png" loading="lazy"></p>
+<h2 id="部署网址"><a href="#部署网址" class="headerlink" title="部署网址"></a>部署网址</h2><ul>
+<li><p>在浏览器上<code>http://[ipv6地址]:端口(</code>不填默认80) , 显示错误页面 , 提示无权访问，是因为我们没有开启权限</p>
+<blockquote>
+<p>在本地电脑找到网址所在文件夹,右键属性共享页面,选择不共享下面的共享设置,输入添加everyone用户共享</p>
+</blockquote>
+</li>
+<li><p>再次输入<code>http://[ipv6地址]:端口</code>可以看到.html页面 , 使用不再局域网下的设备输入网址测试IPV6地址</p>
+</li>
+</ul>
+<p><img src="/images/ipv6-index.png" loading="lazy"></p>
+<hr>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote>
+<p><a href="https://www.bilibili.com/read/cv6429435/">让你的windows电脑变成服务器 </a><strong>—陈就就</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+</blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DLL——“动态链接”</title>
     <url>/post/win-dll/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
@@ -499,57 +550,6 @@ rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
       </tags>
   </entry>
   <entry>
-    <title>Windows作为服务器发布静态网址</title>
-    <url>/post/win-server/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote>
-<p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p>
-</blockquote>
-<p><em><span id="more"></span></em></p>
-<p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p>
-<hr>
-<h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p>
-<p>设置→控制面板→程序→启用或关闭Windows功能→找到<code>Internet Information Services</code>并勾选→确定</p>
-<h2 id="创建静态网址"><a href="#创建静态网址" class="headerlink" title="创建静态网址"></a>创建静态网址</h2><ul>
-<li><p><a href="https://www.aliyundrive.com/s/EiA6LXj9GKQ">index.html</a></p>
-<blockquote>
-<p>下载静态网址放到本地 , 如我的地址为 &gt; 桌面/web/index.html</p>
-</blockquote>
-</li>
-</ul>
-<p>双击打开这个网址可以看到在浏览器上这个页面 , 现在就把它放到公网上</p>
-<h2 id="什么是IPV6"><a href="#什么是IPV6" class="headerlink" title="什么是IPV6"></a><a href="https://zhuanlan.zhihu.com/p/36542469">什么是IPV6</a></h2><ul>
-<li>总而言之使用IPV6的地址可以直接将本地地址映射到公网地址上面 </li>
-<li> IPV4想要实现可以申请公网IP,或者使用内网穿透</li>
-</ul>
-<h3 id="测试IPV6"><a href="#测试IPV6" class="headerlink" title="测试IPV6"></a><a href="http://test-ipv6.com/">测试IPV6</a></h3><p>若网址显示没有接入IPV6可以去路由器设置开启IPV6</p>
-<hr>
-<h3 id="获取IPV6地址"><a href="#获取IPV6地址" class="headerlink" title="获取IPV6地址"></a>获取IPV6地址</h3><p>打开CMD , 在出来的DOS界面里，输入<code>ipconfig</code>  , 回显显示IPV6地址</p>
-<p><img src="/images/IPV6-ip.png" loading="lazy"></p>
-<h2 id="搜索IIS程序打开"><a href="#搜索IIS程序打开" class="headerlink" title="搜索IIS程序打开"></a>搜索IIS程序打开</h2><p>点击红色下拉标,可以看到一个默认网站,右键网站 , 选择添加网址,物理路径选择静态网址所在文件夹,如: <code>F:\Users\Administrator\Desktop\Web</code>,ip地址输入IPV6地址.点击确认</p>
-<p><img src="/images/IIS-ip.png" loading="lazy"></p>
-<h2 id="部署网址"><a href="#部署网址" class="headerlink" title="部署网址"></a>部署网址</h2><ul>
-<li><p>在浏览器上<code>http://[ipv6地址]:端口(</code>不填默认80) , 显示错误页面 , 提示无权访问，是因为我们没有开启权限</p>
-<blockquote>
-<p>在本地电脑找到网址所在文件夹,右键属性共享页面,选择不共享下面的共享设置,输入添加everyone用户共享</p>
-</blockquote>
-</li>
-<li><p>再次输入<code>http://[ipv6地址]:端口</code>可以看到.html页面 , 使用不再局域网下的设备输入网址测试IPV6地址</p>
-</li>
-</ul>
-<p><img src="/images/ipv6-index.png" loading="lazy"></p>
-<hr>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote>
-<p><a href="https://www.bilibili.com/read/cv6429435/">让你的windows电脑变成服务器 </a><strong>—陈就就</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-</blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>文件伪装图片命令</title>
     <url>/post/zip&amp;png/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
@@ -564,32 +564,6 @@ copy /b xxx.png+xxx.zip xxx.png
       <tags>
         <tag>文件</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>The violin</title>
-    <url>/post/The%20violin/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
-
-
-<ol>
-<li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li>
-<li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li>
-<li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li>
-<li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li>
-</ol>
-<h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul>
-<li>四根琴弦 , 右手按弦 </li>
-</ul>
-<h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul>
-<li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p>
-<blockquote>
-<p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p>
-</blockquote>
-</li>
-<li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>黄梅戏</title>
@@ -638,17 +612,30 @@ copy /b xxx.png+xxx.zip xxx.png
       </categories>
   </entry>
   <entry>
-    <title>帕累托法则</title>
-    <url>/post/Pareto%20principle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+    <title>The violin</title>
+    <url>/post/The%20violin/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
+
+
+<ol>
+<li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li>
+<li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li>
+<li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li>
+<li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li>
+</ol>
+<h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul>
+<li>四根琴弦 , 右手按弦 </li>
+</ul>
+<h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul>
+<li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p>
+<blockquote>
+<p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p>
 </blockquote>
-<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
-<p><em><span id="more"></span></em></p>
+</li>
+<li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
+</li>
+</ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
   </entry>
   <entry>
     <title>权重</title>
@@ -669,14 +656,12 @@ copy /b xxx.png+xxx.zip xxx.png
       </tags>
   </entry>
   <entry>
-    <title>DNS</title>
-    <url>/post/real-rational/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
-<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
-</li>
-<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
-</li>
-</ul>
+    <title>帕累托法则</title>
+    <url>/post/Pareto%20principle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+</blockquote>
+<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
 <p><em><span id="more"></span></em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
@@ -706,5 +691,20 @@ copy /b xxx.png+xxx.zip xxx.png
       <tags>
         <tag>字体</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>DNS</title>
+    <url>/post/real-rational/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
+<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
+</li>
+<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
+</li>
+</ul>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
   </entry>
 </search>
