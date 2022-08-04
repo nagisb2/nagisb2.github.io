@@ -638,19 +638,6 @@ copy /b xxx.png+xxx.zip xxx.png
       </categories>
   </entry>
   <entry>
-    <title>帕累托法则</title>
-    <url>/post/Pareto%20principle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
-</blockquote>
-<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>权重</title>
     <url>/post/The%20weight/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是权重"><a href="#什么是权重" class="headerlink" title="什么是权重"></a>什么是权重</h3><blockquote>
@@ -667,6 +654,19 @@ copy /b xxx.png+xxx.zip xxx.png
       <tags>
         <tag>专业词</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>帕累托法则</title>
+    <url>/post/Pareto%20principle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+</blockquote>
+<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
   </entry>
   <entry>
     <title>DNS</title>
