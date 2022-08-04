@@ -17,6 +17,29 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
+    <title>对熵的一种微观解释进行可视化</title>
+    <url>/post/entropy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
+<summary>熵源于的热力学第二定律</summary>
+
+<ul>
+<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
+<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
+</ul>
+<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
+<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
+<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
+<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>安卓像微机一样安装双系统</title>
     <url>/post/System-double/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
@@ -84,52 +107,6 @@
       </categories>
       <tags>
         <tag>双系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对熵的一种微观解释进行可视化</title>
-    <url>/post/entropy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
-<summary>熵源于的热力学第二定律</summary>
-
-<ul>
-<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
-<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
-</ul>
-<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
-<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
-<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
-<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>信息论与编码基础</title>
-    <url>/post/information/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="18e3df9b55e4f2e38422928fbd9277cfe559f1421983df83f1762d4310b223d6">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9452c2f04edb51ef276b6dad8f34c5858da0fc247d2bbebd1d8ceeefb5ec9e3dfa4b5d8d1048d872c1be48bce2cee74e895a14b155017c9f2c8ea5352ba13e796840301c92cbbe96d50a405528e4a48d5195de0181a72e76f5d6b6355f798d6c705c20e835c8bbafb1db98e7720bb5f6773cd8d492f5a68cde8529dc5a135b2f1aedda41a59c7168e4ab0209f857fff9edd2991c4e95eb9c0967b2120d7b8f05b841ae022d0b56e1b448243debc07d02924ba27ecc346618553988a094414c5e25093ae7e07873f8eb884661f2355a3cb0f1be11f86ad6de0c10d9eb832092cac041a6362352601c7d9d5f4927b8b31a5e13021c513e3ff49ca5804a4c85b36805622903d93e25c1d10370260135ed5b6787ef6486d95b0c66cf26614eae7421b189fd08183f3564c6a87e13271530b4b9f72f14671016f3a0d9cea129452eb35d7931d251e77f1be9c76e618bcdf147c32ad1a7eb2ecb1d8b7a5e747b93650c3d4afedfc9772ebea0efc209ce119c35934e817ada96c45c41a35e70ed84096700a2701834a3f451cc603a7b578904d1ccfb671effdc289283623df958877793e133dfc6909967acbce9e761e628a3d6b5ae273875ce691fc5ba43f601b8550c4f714af521a636a75335bc9ac781c8c2bce8361cbe511ed6f8e158de835fef891e60ff46aae7073aae58fb5349cb27b0989dfe4aa6783744fc7d97d06ffd30b110c6ba5be34aafe57593818a159a7e31ac3b3ebda4aefbafaa8ebcf9ff6235aff86e412c6f896b85c4f35ee0519faaa4e018dae97d95163c95e082cde8e294b817fb11d1ab1d13e7ecd77037a030a4f83ea4b6d9c7fe2839563307e4e38302c6f13486cd852c7d8b1995ce9febd4171283d233172b9a9a16cf02e51e269afcd0603c5b3cbdde4406aca1594939fb2cdc65ff93c30a1afefbadba968efead98ce2c15244e1b628e4661e734ee307a15ea00a4f53030cfd677a0962b86e8919b38d6ac2658992e427501cd9792ee821ce4712b52a20c3f6b5627112357e5ce656320790fae979a1c4bf1fdaa5cbe616574b750a4f1d8867731d2fcb1832f5532d2b1fc459dc127983fd00a54b87dbf4e46b975f330d493b84c30c96f4861bbfef6a8f65f3dfcca739fc360bada574339f97e816a381dc4bc0591595381d657ebe6e4494e36daebb80224954b537177d3d14a47939aff30464ea75ddb4429b1f2059159e7cf791e27a1d04fbcb7df2c027bed4aa1f9b789bf6316a58a0af6022c6b316d60974c4a85fc854e01ca5234fbebcbf816aad873c4ae70c22fa64d995ad2082f64c547f4a63da32061b736697a89a0bacc1e9888c20f4c730da86ea5ea0626f57b4d4dff330138eda5fcd5b3437fe33c1acdefbe9902f888e2ea6189832472341fdac09a1108cba80cbaec9f6b87803904b8963cb32323ce74862a734f57e4c0dbcc08af1f1e8010ac39ba5eea0054637ef40e6475803e6132cf14ad9c9615372ee6b2095d73fe8d2fc33fc12a514f167ac46b295ac662b74cc79cef854fce869e0e8ead89fdd2f581fc7d3df05f5611238d6b4182f5e36396c2760091eb367f30cd74476dcd0f051e7344f97677efc1f795f116d307fede83a1bfaa644a2f274feacbdf851852a0a3afadf8617fd1b70d58c9cd9d439198607f1f70380b72bacb20bf77e8b675fe1783b8733e00faa9f7e9017bd11e93dd579fefc6b3f949dfe9c806086ccb56de18ee5255a2e01cb0aaa5edd1c80405ed52eeefccb9db905cc1a56a8ff65e8b5b8598ac41a2e4597573f34293121a63c55d62e8133af2073b5a7744cd4a4605ec2a0d279d5648b83c4f3576a8b592f60d05426e1c0a7bb9c228566f9429ead38b46a2902b0ece485b8f68380c76ab97d6b726be73df7c683dcc18b3a4378bb8dc3f253df301d0c890fc3d4ad0cac24126a86ab0b77cc8f9af637cac238462ec55b8073bf183bccfa86223cc76cad7109ab04230e09e463c0f71ede292cc2265b3f49575f282ac7babf941f7c0ba6b68cce1b9f33553abc0bb840948f0afca075190b85281f21c31548ad994da5425e6557c54b997db132040f1585d2630d25bf3129d2530e6939c2367ee90a6d705c2e6fc5796307bb2133323fbf5daf0abbf5c8c703473538b7bdbfa827605cdd134caebfa92705c1bb0f1239a351c17fffb7afc9cc93109297f6c67659f5c548c8411c56d0d39e8dddfe9481e80d24c8c8689a009d05425e24b4c6546cb8c5ddb031a1f8be6c27bf7f4c740d6cf966e109821c6a17d292601382d4080c6d2079adac4a09b01a24b0e9a99798f832bf9280b0138af9c898faf98ef092930b1792121f710449a5e170d82b7b6757d1b5d371b895a056d26989af7527cbe30a370d737906486784f8fa204c77b376df4d0c9308e2eb680f7e0e5c27a4e22be327b3f10ef1de1294b4fd022d04684f7cb60637643e89e77cbe26a81a1270f7bdda69172d556a5a2f068729df7330de80d930a525023e52bab09742cc5d52af4b298813de36a9b7be29b47c14fba780f5b7ac3f1ef9de5cedd00fca472bbecdf5e59ad6d61bd64a78d10924fc40455d6c0b96861db58cb5eda894c490e9953a366d7866663a2201cc8bf450fc6f1f75a0b63f7ddeb940b31133106ab640267f1297c2cf4ca6039d0b1a2d7d1595728ab32f77a18353ac8b6b5218ae5599cab6297074701561b9847dfcd83b0ec2bbdaea285190cd8d089e88a9bd02e325f35b70d8847a6375dedc51728dd30b53201f2513775baed2f7143169dfa98db38e55d77b1b6de756e3f3f8ac23fd4fb194bcbacbc6690f7e41d81a91b8018c6d8c51bc240b7bc020a352a616f939904c3af1090c1972d03a7a1c3dbdc19e7ea2428425726dbb8e72e04d61dedc0559416e7f114e1534719ade35abdbfc103be4cdb99f6801ddb5957453f12e10615982afdf1efe739dbe5a2529176314453b0c8ebecb229e18539bc87d7719f93db9c47d15be554e7f5d2031be3a29438c233bf6c9df334e527bc3d643b4d064bb78279728a75f0bdaa36d9ae9df3d8f89f37052b11dc5fe1d70d782eb532ff69901a51bc6cb1b52a97ba10c07107563a0dd2d1f0f8ed5a4ad21157c36407317cc429f2dedcb9370a7969985c30f1fae8fc19e54fe674b53423458e4c51f027733c63c3032f0e9935ed4e78ea8d9bb9f2926a24594ccd86edb537cba3534b8eefa3a20f7d7edc23c4ecb1a89356602824768</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-        <tag>编码</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +266,29 @@
       </tags>
   </entry>
   <entry>
+    <title>信息论与编码基础</title>
+    <url>/post/information/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="18e3df9b55e4f2e38422928fbd9277cfe559f1421983df83f1762d4310b223d6">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa8f9cb0330729e3befcded6114a777a9452c2f04edb51ef276b6dad8f34c5858da0fc247d2bbebd1d8ceeefb5ec9e3dfa4b5d8d1048d872c1be48bce2cee74e895a14b155017c9f2c8ea5352ba13e796840301c92cbbe96d50a405528e4a48d5195de0181a72e76f5d6b6355f798d6c705c20e835c8bbafb1db98e7720bb5f6773cd8d492f5a68cde8529dc5a135b2f1aedda41a59c7168e4ab0209f857fff9edd2991c4e95eb9c0967b2120d7b8f05b841ae022d0b56e1b448243debc07d02924ba27ecc346618553988a094414c5e25093ae7e07873f8eb884661f2355a3cb0f1be11f86ad6de0c10d9eb832092cac041a6362352601c7d9d5f4927b8b31a5e13021c513e3ff49ca5804a4c85b36805622903d93e25c1d10370260135ed5b6787ef6486d95b0c66cf26614eae7421b189fd08183f3564c6a87e13271530b4b9f72f14671016f3a0d9cea129452eb35d7931d251e77f1be9c76e618bcdf147c32ad1a7eb2ecb1d8b7a5e747b93650c3d4afedfc9772ebea0efc209ce119c35934e817ada96c45c41a35e70ed84096700a2701834a3f451cc603a7b578904d1ccfb671effdc289283623df958877793e133dfc6909967acbce9e761e628a3d6b5ae273875ce691fc5ba43f601b8550c4f714af521a636a75335bc9ac781c8c2bce8361cbe511ed6f8e158de835fef891e60ff46aae7073aae58fb5349cb27b0989dfe4aa6783744fc7d97d06ffd30b110c6ba5be34aafe57593818a159a7e31ac3b3ebda4aefbafaa8ebcf9ff6235aff86e412c6f896b85c4f35ee0519faaa4e018dae97d95163c95e082cde8e294b817fb11d1ab1d13e7ecd77037a030a4f83ea4b6d9c7fe2839563307e4e38302c6f13486cd852c7d8b1995ce9febd4171283d233172b9a9a16cf02e51e269afcd0603c5b3cbdde4406aca1594939fb2cdc65ff93c30a1afefbadba968efead98ce2c15244e1b628e4661e734ee307a15ea00a4f53030cfd677a0962b86e8919b38d6ac2658992e427501cd9792ee821ce4712b52a20c3f6b5627112357e5ce656320790fae979a1c4bf1fdaa5cbe616574b750a4f1d8867731d2fcb1832f5532d2b1fc459dc127983fd00a54b87dbf4e46b975f330d493b84c30c96f4861bbfef6a8f65f3dfcca739fc360bada574339f97e816a381dc4bc0591595381d657ebe6e4494e36daebb80224954b537177d3d14a47939aff30464ea75ddb4429b1f2059159e7cf791e27a1d04fbcb7df2c027bed4aa1f9b789bf6316a58a0af6022c6b316d60974c4a85fc854e01ca5234fbebcbf816aad873c4ae70c22fa64d995ad2082f64c547f4a63da32061b736697a89a0bacc1e9888c20f4c730da86ea5ea0626f57b4d4dff330138eda5fcd5b3437fe33c1acdefbe9902f888e2ea6189832472341fdac09a1108cba80cbaec9f6b87803904b8963cb32323ce74862a734f57e4c0dbcc08af1f1e8010ac39ba5eea0054637ef40e6475803e6132cf14ad9c9615372ee6b2095d73fe8d2fc33fc12a514f167ac46b295ac662b74cc79cef854fce869e0e8ead89fdd2f581fc7d3df05f5611238d6b4182f5e36396c2760091eb367f30cd74476dcd0f051e7344f97677efc1f795f116d307fede83a1bfaa644a2f274feacbdf851852a0a3afadf8617fd1b70d58c9cd9d439198607f1f70380b72bacb20bf77e8b675fe1783b8733e00faa9f7e9017bd11e93dd579fefc6b3f949dfe9c806086ccb56de18ee5255a2e01cb0aaa5edd1c80405ed52eeefccb9db905cc1a56a8ff65e8b5b8598ac41a2e4597573f34293121a63c55d62e8133af2073b5a7744cd4a4605ec2a0d279d5648b83c4f3576a8b592f60d05426e1c0a7bb9c228566f9429ead38b46a2902b0ece485b8f68380c76ab97d6b726be73df7c683dcc18b3a4378bb8dc3f253df301d0c890fc3d4ad0cac24126a86ab0b77cc8f9af637cac238462ec55b8073bf183bccfa86223cc76cad7109ab04230e09e463c0f71ede292cc2265b3f49575f282ac7babf941f7c0ba6b68cce1b9f33553abc0bb840948f0afca075190b85281f21c31548ad994da5425e6557c54b997db132040f1585d2630d25bf3129d2530e6939c2367ee90a6d705c2e6fc5796307bb2133323fbf5daf0abbf5c8c703473538b7bdbfa827605cdd134caebfa92705c1bb0f1239a351c17fffb7afc9cc93109297f6c67659f5c548c8411c56d0d39e8dddfe9481e80d24c8c8689a009d05425e24b4c6546cb8c5ddb031a1f8be6c27bf7f4c740d6cf966e109821c6a17d292601382d4080c6d2079adac4a09b01a24b0e9a99798f832bf9280b0138af9c898faf98ef092930b1792121f710449a5e170d82b7b6757d1b5d371b895a056d26989af7527cbe30a370d737906486784f8fa204c77b376df4d0c9308e2eb680f7e0e5c27a4e22be327b3f10ef1de1294b4fd022d04684f7cb60637643e89e77cbe26a81a1270f7bdda69172d556a5a2f068729df7330de80d930a525023e52bab09742cc5d52af4b298813de36a9b7be29b47c14fba780f5b7ac3f1ef9de5cedd00fca472bbecdf5e59ad6d61bd64a78d10924fc40455d6c0b96861db58cb5eda894c490e9953a366d7866663a2201cc8bf450fc6f1f75a0b63f7ddeb940b31133106ab640267f1297c2cf4ca6039d0b1a2d7d1595728ab32f77a18353ac8b6b5218ae5599cab6297074701561b9847dfcd83b0ec2bbdaea285190cd8d089e88a9bd02e325f35b70d8847a6375dedc51728dd30b53201f2513775baed2f7143169dfa98db38e55d77b1b6de756e3f3f8ac23fd4fb194bcbacbc6690f7e41d81a91b8018c6d8c51bc240b7bc020a352a616f939904c3af1090c1972d03a7a1c3dbdc19e7ea2428425726dbb8e72e04d61dedc0559416e7f114e1534719ade35abdbfc103be4cdb99f6801ddb5957453f12e10615982afdf1efe739dbe5a2529176314453b0c8ebecb229e18539bc87d7719f93db9c47d15be554e7f5d2031be3a29438c233bf6c9df334e527bc3d643b4d064bb78279728a75f0bdaa36d9ae9df3d8f89f37052b11dc5fe1d70d782eb532ff69901a51bc6cb1b52a97ba10c07107563a0dd2d1f0f8ed5a4ad21157c36407317cc429f2dedcb9370a7969985c30f1fae8fc19e54fe674b53423458e4c51f027733c63c3032f0e9935ed4e78ea8d9bb9f2926a24594ccd86edb537cba3534b8eefa3a20f7d7edc23c4ecb1a89356602824768</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+        <tag>编码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>电信HG6543C1超级管理员账户密码获取</title>
     <url>/post/light-cat/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
@@ -350,6 +350,28 @@
       </tags>
   </entry>
   <entry>
+    <title>我的md笔记</title>
+    <url>/post/practice/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="dc89cb5d29e60623313ca107cebd3c14c0339e1d8a377074f535878090200328">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa84be2fd8ec42e5a6edaff40062dbe9734b8808e5d34b9bca038efec25aae8dbbda9612e7a09745272d5203f7ae473eab7cd311868cd9258029285005dc09634e01500f2c3d7343d7433c45f15fb15e9582a307988582656eeb1c6cf4c100470d219fa8c3e75a9be03ef8bea5e33ecc60945fb7faea50eaf50056ebbdbe4f041fa7b7e8812573aa63f0a611bb450bcedd317678c28f4568b99306319449e70e3f91eb93ca21a16bb3544b56dc2ab1618a5a00f289776b20419e052703f36126ee691b5f1b9cef461bc119ab1646cbf4b70771e436496f36af5f21bca1dc1fcf143aa9169655e95b4164da6c3ac80ac9582f59d21ef1c093229b2515cd04d9a7cd0772ff92e6227f321fd6b01729a0714f8f65fc1a50bc45e32bcdeb602e82fb79de06055ec164c01b616d1e2a2bf109d828a175cf5a416208313e6c27ea6da12fa577fc50ead4ce2a8a2fcd3015338fa92cd319621c20c4d84e28c7341bc86994f3cb84d962b047e2343473631dabee83444a64cffdde2b4216c3b478719db5c90cfc3a77343b782cbc7a1aea4d83bb9bd4c1c868edb93fb6002a3d0e23c690e15d1f58e3137082d07c76734e9b81e24ad86731cf48526f0950a534c7dff26cb2d43db8f19f219e20556811b3155abb8c7c74144b72849de010e6b7e0eb50e3445a58b6af2ecffbf90a0a5e67c36ec78a22d2af1055f44f655a6b6be6c3114f0feb9556efcad08f8c0c911dd4d638be284611fdcdb57a408d4de2bb0c2ea171ce5abb8ced1297a464014bd4c2fbd82c14b67727c46cb52c0051793c6241a22714243c1af2f1adbe654ab1b25275175a9b4c882c25d354666f1391100d9b06c80f88118525c1cce35cdaa0d10c5b2a411d747dd144cccc9a9ec26cf766009aa3cdf7efa4b4c36a9502405cb72dda068cef2b0b3980c2fd72e59af1c642a9693a54c63c00c667192d469b4a2114c018dbdf0e703ad60e2fa24be4166adbebc8430d49f4dd547a258f522070fa04fc0ec102bec1a9c08a05bd0ce8a6112956f49a4e01dcaf1adfdbf1d056b1c6f50efb3a2128f2b4eb4d6fb7436a88acbb21461892ad9ed86809a1e6cc33ba4a1d04fe7b0c81581802645709e1e2767f7e0f35c0fa1fae1bb1ad876f699e67a7befeb7be53eff97b7e080b9c14a22e9a5a9968a5f4ca8a9e5f392b20b97d75b2467b762b88093f2edfe8d956cea5cc9de9619973e100381b53251d6707137ce789a6058d51fbb0e0744083e2e748ecf45705d286b5fc62a74da93e276b2eb909607a0e48b95b3ed81df6c5200aa380026ff0ada550c4b09559a7dc1416cf573a2c7a7089087f97c1b4147069444d204f30ec0c7dba48bc3990840efc886b1a82fb0e3d3074eb23c8f312a2ad8f5c755dcba5b5ae5ebda2327ca2583a879515ca598032fe7498e66fb484d46f403b46d6f567002e5bf3e7246e22e36f8e05d86db48ac13d91aaf43424617e6696b58565664c8da83b477a14a11d921c512ac13fe6a5bdcf965cd429dae15efbd655ec1857121b5f9809e67339b398089796035a551fb2f5ccd110ed8cb9c4a3293e695827895271307eb9d0de5f2cd0edbd8bf6485117585cf664361a9bf76426ff732c5d76dbfbfa73106d6c3031d507dba52e24d55a9b7b70b28073e8043660c97caa3554dc0d415c83f14dc654ac0fcf15bf53d2012dfc009fa97a65f28a8f4b8c2462926d20f2d71f886a75e189597562a11d4235329172ec1eac98df388cc300f7757cc2747609aa4371e7e04fe1de5746834f01dc3f0b8ad16b91f848b75ccf2a94abd38192131b923a883ccd172eb00422b96d18cd7bba1ce8429b2c52952a75ac6f4a72e647dcae41d05eaa86595f7723c85447a0a6d6bf76468f5903541cc0990c9cb8c5e2633b9d407f769524b79b7c87978372e6a4ad5ac198b7626e74a76e6699daf7d67259add6a10804a2bdc07f0914a52b858fe6d6634b5c77972b1bc85dcf1ad5175d29654cefb13a02a6658ac902075b0a225574fe6bc7c22494ce57128fbf5a22570371742a8756cdc2d1781dd8225ebf8c41e36fd169240a49d5341b724b912a0ead5e8c2da751704e688feaf8a7f8d61be18372356dc93cd24f7b9b203bacda111a462c8ecbdbd2f6b2799dbd4f493b577fb22d94e017baacd4bd8a3e2cc1b6308f9a4e4b46b0c448fd5608aacf5e5e01da4806dd3b4eb2c086777adb96f93eaaf5f85d3b7c0eb0ecc33566da108adfc3cf51164b9936daba69f77111ae70fe7434fa4320e4242531ee0b61deed3f93b2abff6f504123d7f3df081f284223b6fe8b12f8ca1d4db4fc9f2e002083d030002ad561dfedd4e37da84270a933622b21aa33f568bb0082c6926fa9d71cfc5c0a9f0c51e5264535b9551f2bf3cee02e43ce1a5af4bd60d3ec9147221c049e6c869349bdbe07a571667e289024221414b2003c6c64275fda5fa3cdc7197bf6e9e05c56d5d18f3d07a650a7eeb8f44dabab3a4a7e8a5f1add88dc6a79441c3e98bdec10b744167071a3eef4404711b622c42181af7a2f2d32fb7eb96033ad226681aa9fa48da0238038ac8898e4fffb905a06c9ccc792ddb2f56477a25ffe92d40c1ea37fec776a18556cf31a2c27bb4ee9601c2a92f8f9b0ddb4aeb1adacf93b734a030c974ea4854d67cf87abdb35b3d2a08757f94f99bf17c95abfef2fa5e94a7cd12ed7d0f47a9bb6dd17239734bf09be095a1313e440379963d2c31ae668e53ec6b6023233147e6182c989df06d3ca4a662162b352f73d0c757dfeeeb52532ddb2d56d02fb77f4c1e843d70fcb8c88f15a7f2b3eeacbce4b7180d59316c9c3c17c3231acbc6644b6762747db68e5c79494abe3259329389cb4882868c5274cf5c2f94e8ef6d56ffa197d4423e27dfd15d486e69311eefaeebe9e9fa17c45410f4d1419c638e465d34abf3222c995e4cd374cbcf94fdfdee310cc79fd62bb05b132d46dbf4b5bed24560a0e92c14b49a8e8e46bfeb9102da73dc283312bc31b0c2cc22e40c54c750c01a017ac862802d2619d97e812313e76d972326313bfbf933a25e047e5460001f36f609a5d6276d5d24bfc6c81d2abeac96cc352af72416e0db3372a5386aeb5cd7de8ec955100529dedb971a828b71f623c96b627a5f93f7b594d3f07074d44561dba50d8311d84e88c203fb254bea25d915927afe206f42b7446db2443a7f9cf4b02b1bb25ec18d968f91966bcf26f9e920ea05a32fe5be5da4c1e399e20f302a392117c52c6202e00549d5b62624789ce764a11793085fd2103e88ee9d58cdf5801723497f8da595640076535785d4f560fad81999a16ab35c53505fcc0ee2d1b719a1fa5f4fba9fa8eddc0ef48a7f50c2d9e9e37a24d112d96bd4456bbd91d37e617ca475ecf5b724314a15f436781f0a51318343b98d3fe4aeadc232a0e50645fd93d8d4215e96e02a56cdd63a9b9b6e653feccaea685e839e8ccfedfd0ec99349c561b9146e8778f1ee460cec599590055335037407541ff7400b067d9bfcfa51c02236b9a8b1aa0e37a546af11b7f0fa5dcdc9b4ed892da5ad239194b53f2d33e746dfbda70b310af781ff96cebbd749d90fd1c3ead4e4b2245bdb5b7709852ce6e09639774ad52e62a678a5afe648d4e0015d00516c07b76be62a934def82adf52b07ea5ef833ad03f21c0cfbd8192e78bfb368cd508004617ea90aa1ea589a60b5ee2fe26e9a9476653f142e8e0aae326a02e303f601da75bee45bb43961c9f4b1198dbae2c203e0c78709504cdbf626263b4cbcb3cfd09665fb418f27828132de44e09575873a1301859144ac247cf1d3af6e4fdb0352df5130dd204e9718dcf56efe26f5437f19626a15d5bda0d6ecaa62efea12abfa2178e38cddb983431b76e6e0d59cca4f7caaec450094ae2c34d3db2a547584c2a45f2dcd3f391326c4dddf53d0b314d60ad7dbe64c068dc8174944dbe634f045e7fb3d52a7e2940c1ac9862a80739b553cd0b5d38abbf23e8c55caa2870b07d83a806ecf0414f066276ee7c0d812dabf4f2758ca45b95054ae1f6402df85aa289a19d43a71c90442e73495239c20c34ae03cc93483d9ad84c8aac41cfaf8487fb0e7b60e81da15b8949f0fbf6ef89d23dfb84686ef69529588294d30bf71845afff30422342cae6fa8a27c1c341d9887f8fc7e61de7a8a99ae69f7303f82b560ee080317313cc8ed4fd46be8f9dbf6198265c7d5e79fd4709726a3405d835b7d32050bcec84faf0262df30f68101ba70f33a0e8d19a4e1dc731154c79cddf118a4f2075b27019887a330144e94283435907c7a56e0b2e67189beec74c0958e478c6f11d0765d9f01e15818805673568c07c6bd98449067907a7bdc4ef40df54c91f4212a40b53c34cb3e7f9c7204da817e28a109f62c43f47e5e2d1a5a86897a1753e179e0be42b305baea95a14c35f43627cbe0f4f96f91971424c24745168344db1a7f90765c653f20ffe27d73266e624e4025f71c58489d6b5b0c3daff138be31c4237a9b58fa1211351ad0e0d45ae53e7af0a7a59d62c9a8a39fa1447fbdc2a565c3925a7d771fe3b03b85b1f800f683c03ac2ba2df98b4eac7d9deace7d6b76ef90382d0eaf83a3c0bba75b3471b2f055a20c1aa6c61887b4600db3e9c0b41917ef05b9bba7975bef83cb1fc6a9f5ba781e2b7c1fa2b189456d9deecb6c099784b1b4a7f44f3b555b49b60b6b420dfb6f44acd837a927dbe9f95f8a2ce95c36f12659a23bd4880dd10cf51bc36d8d744fb5fef85c13f85f6723947e5722cc8edb10ca3f826ffcb522dc4f428eaa3b2ec1f84c77db09ce949e555dcfcea4e5333d02e747f04489f0</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>优雅的盗号技巧</title>
     <url>/post/qq-passwd/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
@@ -379,28 +401,6 @@
       <categories>
         <category>渗透</category>
       </categories>
-  </entry>
-  <entry>
-    <title>我的md笔记</title>
-    <url>/post/practice/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="dc89cb5d29e60623313ca107cebd3c14c0339e1d8a377074f535878090200328">1ac8257062fc56a3de8d7a31065f3f672628247548b66b5aea2bbc0e995cdccd7ca5306c7a83c11b90c7daf7ab550bf37c97af4d3bd6d008e14e507936dc2c56fb4839ff93d4bf5254c03178686aef790b7b8388fe32d7648bea0ac49290ae422ea6a865cba6bf718fb33a8f3cdfa250f7f8cc2de1606c7e2dc1ae6e4f56d79e7d8bb9933eb380482dbe751a6a4026fd9ccc34facbfe4107da837b4f908ff9302cb4eb4eed17440130d749c4d792b43b9b29f897663fb3270d20cddb461accdd23728ce04f2fd311da2bcb88ab84f31b39e6b19a2605b1cbe5e0a9a3f0e63d4d6815485ee527483137b5dd2afff34182059a46f9014176b1970d20a3466fce29044621ea1b50ebb0c1cad1a3020f44eebee63a1d3b355c90e5a737a79eeeafa84be2fd8ec42e5a6edaff40062dbe9734b8808e5d34b9bca038efec25aae8dbbda9612e7a09745272d5203f7ae473eab7cd311868cd9258029285005dc09634e01500f2c3d7343d7433c45f15fb15e9582a307988582656eeb1c6cf4c100470d219fa8c3e75a9be03ef8bea5e33ecc60945fb7faea50eaf50056ebbdbe4f041fa7b7e8812573aa63f0a611bb450bcedd317678c28f4568b99306319449e70e3f91eb93ca21a16bb3544b56dc2ab1618a5a00f289776b20419e052703f36126ee691b5f1b9cef461bc119ab1646cbf4b70771e436496f36af5f21bca1dc1fcf143aa9169655e95b4164da6c3ac80ac9582f59d21ef1c093229b2515cd04d9a7cd0772ff92e6227f321fd6b01729a0714f8f65fc1a50bc45e32bcdeb602e82fb79de06055ec164c01b616d1e2a2bf109d828a175cf5a416208313e6c27ea6da12fa577fc50ead4ce2a8a2fcd3015338fa92cd319621c20c4d84e28c7341bc86994f3cb84d962b047e2343473631dabee83444a64cffdde2b4216c3b478719db5c90cfc3a77343b782cbc7a1aea4d83bb9bd4c1c868edb93fb6002a3d0e23c690e15d1f58e3137082d07c76734e9b81e24ad86731cf48526f0950a534c7dff26cb2d43db8f19f219e20556811b3155abb8c7c74144b72849de010e6b7e0eb50e3445a58b6af2ecffbf90a0a5e67c36ec78a22d2af1055f44f655a6b6be6c3114f0feb9556efcad08f8c0c911dd4d638be284611fdcdb57a408d4de2bb0c2ea171ce5abb8ced1297a464014bd4c2fbd82c14b67727c46cb52c0051793c6241a22714243c1af2f1adbe654ab1b25275175a9b4c882c25d354666f1391100d9b06c80f88118525c1cce35cdaa0d10c5b2a411d747dd144cccc9a9ec26cf766009aa3cdf7efa4b4c36a9502405cb72dda068cef2b0b3980c2fd72e59af1c642a9693a54c63c00c667192d469b4a2114c018dbdf0e703ad60e2fa24be4166adbebc8430d49f4dd547a258f522070fa04fc0ec102bec1a9c08a05bd0ce8a6112956f49a4e01dcaf1adfdbf1d056b1c6f50efb3a2128f2b4eb4d6fb7436a88acbb21461892ad9ed86809a1e6cc33ba4a1d04fe7b0c81581802645709e1e2767f7e0f35c0fa1fae1bb1ad876f699e67a7befeb7be53eff97b7e080b9c14a22e9a5a9968a5f4ca8a9e5f392b20b97d75b2467b762b88093f2edfe8d956cea5cc9de9619973e100381b53251d6707137ce789a6058d51fbb0e0744083e2e748ecf45705d286b5fc62a74da93e276b2eb909607a0e48b95b3ed81df6c5200aa380026ff0ada550c4b09559a7dc1416cf573a2c7a7089087f97c1b4147069444d204f30ec0c7dba48bc3990840efc886b1a82fb0e3d3074eb23c8f312a2ad8f5c755dcba5b5ae5ebda2327ca2583a879515ca598032fe7498e66fb484d46f403b46d6f567002e5bf3e7246e22e36f8e05d86db48ac13d91aaf43424617e6696b58565664c8da83b477a14a11d921c512ac13fe6a5bdcf965cd429dae15efbd655ec1857121b5f9809e67339b398089796035a551fb2f5ccd110ed8cb9c4a3293e695827895271307eb9d0de5f2cd0edbd8bf6485117585cf664361a9bf76426ff732c5d76dbfbfa73106d6c3031d507dba52e24d55a9b7b70b28073e8043660c97caa3554dc0d415c83f14dc654ac0fcf15bf53d2012dfc009fa97a65f28a8f4b8c2462926d20f2d71f886a75e189597562a11d4235329172ec1eac98df388cc300f7757cc2747609aa4371e7e04fe1de5746834f01dc3f0b8ad16b91f848b75ccf2a94abd38192131b923a883ccd172eb00422b96d18cd7bba1ce8429b2c52952a75ac6f4a72e647dcae41d05eaa86595f7723c85447a0a6d6bf76468f5903541cc0990c9cb8c5e2633b9d407f769524b79b7c87978372e6a4ad5ac198b7626e74a76e6699daf7d67259add6a10804a2bdc07f0914a52b858fe6d6634b5c77972b1bc85dcf1ad5175d29654cefb13a02a6658ac902075b0a225574fe6bc7c22494ce57128fbf5a22570371742a8756cdc2d1781dd8225ebf8c41e36fd169240a49d5341b724b912a0ead5e8c2da751704e688feaf8a7f8d61be18372356dc93cd24f7b9b203bacda111a462c8ecbdbd2f6b2799dbd4f493b577fb22d94e017baacd4bd8a3e2cc1b6308f9a4e4b46b0c448fd5608aacf5e5e01da4806dd3b4eb2c086777adb96f93eaaf5f85d3b7c0eb0ecc33566da108adfc3cf51164b9936daba69f77111ae70fe7434fa4320e4242531ee0b61deed3f93b2abff6f504123d7f3df081f284223b6fe8b12f8ca1d4db4fc9f2e002083d030002ad561dfedd4e37da84270a933622b21aa33f568bb0082c6926fa9d71cfc5c0a9f0c51e5264535b9551f2bf3cee02e43ce1a5af4bd60d3ec9147221c049e6c869349bdbe07a571667e289024221414b2003c6c64275fda5fa3cdc7197bf6e9e05c56d5d18f3d07a650a7eeb8f44dabab3a4a7e8a5f1add88dc6a79441c3e98bdec10b744167071a3eef4404711b622c42181af7a2f2d32fb7eb96033ad226681aa9fa48da0238038ac8898e4fffb905a06c9ccc792ddb2f56477a25ffe92d40c1ea37fec776a18556cf31a2c27bb4ee9601c2a92f8f9b0ddb4aeb1adacf93b734a030c974ea4854d67cf87abdb35b3d2a08757f94f99bf17c95abfef2fa5e94a7cd12ed7d0f47a9bb6dd17239734bf09be095a1313e440379963d2c31ae668e53ec6b6023233147e6182c989df06d3ca4a662162b352f73d0c757dfeeeb52532ddb2d56d02fb77f4c1e843d70fcb8c88f15a7f2b3eeacbce4b7180d59316c9c3c17c3231acbc6644b6762747db68e5c79494abe3259329389cb4882868c5274cf5c2f94e8ef6d56ffa197d4423e27dfd15d486e69311eefaeebe9e9fa17c45410f4d1419c638e465d34abf3222c995e4cd374cbcf94fdfdee310cc79fd62bb05b132d46dbf4b5bed24560a0e92c14b49a8e8e46bfeb9102da73dc283312bc31b0c2cc22e40c54c750c01a017ac862802d2619d97e812313e76d972326313bfbf933a25e047e5460001f36f609a5d6276d5d24bfc6c81d2abeac96cc352af72416e0db3372a5386aeb5cd7de8ec955100529dedb971a828b71f623c96b627a5f93f7b594d3f07074d44561dba50d8311d84e88c203fb254bea25d915927afe206f42b7446db2443a7f9cf4b02b1bb25ec18d968f91966bcf26f9e920ea05a32fe5be5da4c1e399e20f302a392117c52c6202e00549d5b62624789ce764a11793085fd2103e88ee9d58cdf5801723497f8da595640076535785d4f560fad81999a16ab35c53505fcc0ee2d1b719a1fa5f4fba9fa8eddc0ef48a7f50c2d9e9e37a24d112d96bd4456bbd91d37e617ca475ecf5b724314a15f436781f0a51318343b98d3fe4aeadc232a0e50645fd93d8d4215e96e02a56cdd63a9b9b6e653feccaea685e839e8ccfedfd0ec99349c561b9146e8778f1ee460cec599590055335037407541ff7400b067d9bfcfa51c02236b9a8b1aa0e37a546af11b7f0fa5dcdc9b4ed892da5ad239194b53f2d33e746dfbda70b310af781ff96cebbd749d90fd1c3ead4e4b2245bdb5b7709852ce6e09639774ad52e62a678a5afe648d4e0015d00516c07b76be62a934def82adf52b07ea5ef833ad03f21c0cfbd8192e78bfb368cd508004617ea90aa1ea589a60b5ee2fe26e9a9476653f142e8e0aae326a02e303f601da75bee45bb43961c9f4b1198dbae2c203e0c78709504cdbf626263b4cbcb3cfd09665fb418f27828132de44e09575873a1301859144ac247cf1d3af6e4fdb0352df5130dd204e9718dcf56efe26f5437f19626a15d5bda0d6ecaa62efea12abfa2178e38cddb983431b76e6e0d59cca4f7caaec450094ae2c34d3db2a547584c2a45f2dcd3f391326c4dddf53d0b314d60ad7dbe64c068dc8174944dbe634f045e7fb3d52a7e2940c1ac9862a80739b553cd0b5d38abbf23e8c55caa2870b07d83a806ecf0414f066276ee7c0d812dabf4f2758ca45b95054ae1f6402df85aa289a19d43a71c90442e73495239c20c34ae03cc93483d9ad84c8aac41cfaf8487fb0e7b60e81da15b8949f0fbf6ef89d23dfb84686ef69529588294d30bf71845afff30422342cae6fa8a27c1c341d9887f8fc7e61de7a8a99ae69f7303f82b560ee080317313cc8ed4fd46be8f9dbf6198265c7d5e79fd4709726a3405d835b7d32050bcec84faf0262df30f68101ba70f33a0e8d19a4e1dc731154c79cddf118a4f2075b27019887a330144e94283435907c7a56e0b2e67189beec74c0958e478c6f11d0765d9f01e15818805673568c07c6bd98449067907a7bdc4ef40df54c91f4212a40b53c34cb3e7f9c7204da817e28a109f62c43f47e5e2d1a5a86897a1753e179e0be42b305baea95a14c35f43627cbe0f4f96f91971424c24745168344db1a7f90765c653f20ffe27d73266e624e4025f71c58489d6b5b0c3daff138be31c4237a9b58fa1211351ad0e0d45ae53e7af0a7a59d62c9a8a39fa1447fbdc2a565c3925a7d771fe3b03b85b1f800f683c03ac2ba2df98b4eac7d9deace7d6b76ef90382d0eaf83a3c0bba75b3471b2f055a20c1aa6c61887b4600db3e9c0b41917ef05b9bba7975bef83cb1fc6a9f5ba781e2b7c1fa2b189456d9deecb6c099784b1b4a7f44f3b555b49b60b6b420dfb6f44acd837a927dbe9f95f8a2ce95c36f12659a23bd4880dd10cf51bc36d8d744fb5fef85c13f85f6723947e5722cc8edb10ca3f826ffcb522dc4f428eaa3b2ec1f84c77db09ce949e555dcfcea4e5333d02e747f04489f0</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
   </entry>
   <entry>
     <title>来给你的u盘实现一盘多系统</title>
@@ -492,23 +492,8 @@ rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
 </font>
 
 <h4 id="dll编译"><a href="#dll编译" class="headerlink" title="dll编译"></a><font color="#F4E539">dll编译</font></h4><p><a href="http://angusj.com/resourcehacker/">Resource Hacker (angusj.com)</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Wy4y1q7WR?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">Windows8改oobe_哔哩哔哩_bilibili</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文件伪装图片命令</title>
-    <url>/post/zip&amp;png/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
-cd %UserProfile%\Desktop
-copy /b xxx.png+xxx.zip xxx.png
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
       <tags>
         <tag>文件</tag>
       </tags>
@@ -565,6 +550,48 @@ copy /b xxx.png+xxx.zip xxx.png
       </tags>
   </entry>
   <entry>
+    <title>文件伪装图片命令</title>
+    <url>/post/zip&amp;png/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
+cd %UserProfile%\Desktop
+copy /b xxx.png+xxx.zip xxx.png
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The violin</title>
+    <url>/post/The%20violin/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
+
+
+<ol>
+<li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li>
+<li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li>
+<li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li>
+<li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li>
+</ol>
+<h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul>
+<li>四根琴弦 , 右手按弦 </li>
+</ul>
+<h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul>
+<li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p>
+<blockquote>
+<p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p>
+</blockquote>
+</li>
+<li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>黄梅戏</title>
     <url>/post/oper-hmx/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
@@ -594,32 +621,6 @@ copy /b xxx.png+xxx.zip xxx.png
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>The violin</title>
-    <url>/post/The%20violin/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
-
-
-<ol>
-<li>学习先是量变→质变的过程 , 不要叶公好龙 , 做到切合实际</li>
-<li>注重基本功 , 小提琴是思维的连贯 , 音色的互通</li>
-<li>拆分法 , 将复杂问题拆分成简单的小问题 , 将问题简单化</li>
-<li>提高艺术鉴赏力 , 按自己的想法去理解小提琴</details></li>
-</ol>
-<h2 id="知识-情报"><a href="#知识-情报" class="headerlink" title="知识 , 情报"></a>知识 , 情报</h2><ul>
-<li>四根琴弦 , 右手按弦 </li>
-</ul>
-<h3 id="白条的作用"><a href="#白条的作用" class="headerlink" title="白条的作用"></a>白条的作用</h3><ul>
-<li><p>音准的听觉概念转化成视觉和听觉的综合概念 , 等到右手框架 , 音准听觉能力建立前的辅助</p>
-<blockquote>
-<p>注重白条的作用是以视觉<strong>辅助听觉</strong>来形成的音准 , 注意分清主次 , 不要本末倒置</p>
-</blockquote>
-</li>
-<li><p>若去掉白条 , 初期的音准会让自我埋头于抽象音准的音准 , 而产生学习的较大眩晕感</p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>奥卡姆剃刀</title>
     <url>/post/Occam&#39;s%20Razor/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
@@ -630,6 +631,19 @@ copy /b xxx.png+xxx.zip xxx.png
 </ul>
 <p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p>
 <p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>帕累托法则</title>
+    <url>/post/Pareto%20principle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+</blockquote>
+<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
 <p><em><span id="more"></span></em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
@@ -653,19 +667,6 @@ copy /b xxx.png+xxx.zip xxx.png
       <tags>
         <tag>专业词</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>帕累托法则</title>
-    <url>/post/Pareto%20principle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
-</blockquote>
-<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
   </entry>
   <entry>
     <title>DNS</title>
