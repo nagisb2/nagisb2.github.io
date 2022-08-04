@@ -17,6 +17,76 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
+    <title>安卓像微机一样安装双系统</title>
+    <url>/post/System-double/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
+<p>1.一部已经解好Bl的手机和一台微机</p>
+<p>2.已经做好备份工作和能够承担风险的能力</p>
+<p><em><span id="more"></span></em></p>
+<h3 id="工具和方式"><a href="#工具和方式" class="headerlink" title="工具和方式"></a>工具和方式</h3><p>sgdisk: Android下操作GPT分区的命令工具,一般自带</p>
+<p>不限于社区上的REC: 用来刷系统,执行命令</p>
+<p>可以执行命令的方式: 包括但不限于adb,第三方REC,解释性脚本bash</p>
+<h2 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h2><h3 id="确保权限"><a href="#确保权限" class="headerlink" title="确保权限"></a>确保权限</h3><p>打开MT管理器进入终端,输入su,继续输入sgdiak,若终端回显最后一行代表成功执行命令!</p>
+<p><img src="/images/sgdisk-shell.png" alt="direct" loading="lazy"></p>
+<h3 id="终端命令"><a href="#终端命令" class="headerlink" title="终端命令"></a>终端命令</h3><p>首先输入; <code>sgdisk /dev/block/sda --print</code> 回显查看手机的分区情况 </p>
+<p>可能由于设备类型不同,sgdisk[分区块]可能不通用</p>
+<blockquote>
+<p>UFS闪存分区块:sda,sdb,sdd,sde,sdf</p>
+<p>EMMC闪存分区块:mmcblk0</p>
+</blockquote>
+<p><img src="/images/partition.png" alt="direct" loading="lazy"></p>
+<p>备份命令: <code>--backup=/路径/rename.bin</code>; 恢复命令: <code>  --load-backup=/路径/rename.bin</code></p>
+<blockquote>
+<p>修改(恢复)命令后只有重启系统才会限定修改系统分区当前仍是旧分区表备份命令只备份当前分区</p>
+<p>目前命令前缀都是sgdisk /[分区路径]</p>
+</blockquote>
+<p>删除命令: <code>--delete=[分区号]</code>; 新建命令: <code>--new=[分区号:开始:结束]</code></p>
+<p>改名命令: <code>--change-name=分区号:名字</code> </p>
+<h3 id="终端操作"><a href="#终端操作" class="headerlink" title="终端操作"></a>终端操作</h3><h4 id="删除data"><a href="#删除data" class="headerlink" title="删除data"></a>删除data</h4><p>使用删除命令删除分区21[userdata]</p>
+<h4 id="新建data"><a href="#新建data" class="headerlink" title="新建data"></a>新建data</h4><p>使用新建命令<code>sgdisk /dev/block/sda --new=0:0+sizeGib</code>; <code>sgdisk /dev/block/sda --new:0:0+sizeGib</code></p>
+<blockquote>
+<p>前者新建大小size分区21,后者表示新建填充剩余空间分区22</p>
+</blockquote>
+<h4 id="进行改名"><a href="#进行改名" class="headerlink" title="进行改名"></a>进行改名</h4><p>使用改名命令<code>sgdisk /dev/block/sda --change-name=21:userdata</code>; <code>sgdisk /dev/block/sda --change-name=22:userdata1</code></p>
+<hr>
+<blockquote>
+<p>到上面差不多是完成微机分硬盘装系统的操作,只不过从图形操作变成终端操作</p>
+</blockquote>
+<h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><p>重启进入TWRP,进入终端界面操作</p>
+<p>按照我上面的例子,<code>mke2fs -t ext4 /dev/block/sda21; mke2fs -t ext4 /dev/block/sda22</code></p>
+<hr>
+<p><del>到以上为之你已经完成了小白最容易踩到坑的部分了</del></p>
+<hr>
+<h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p>直接重启你会发现进去入厂系统了,用的是刚刚userdata的分区,看看内存是不是已经改变了</p>
+<h2 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h2><blockquote>
+<p>原理: 用命令通过恢复备份的分区镜像来换系统</p>
+<blockquote>
+<p> <a href="https://www.lanzouw.com/iGcPjvvuu9g">下载工具压缩包</a></p>
+</blockquote>
+</blockquote>
+<ol>
+<li>一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符<em>表示</em></li>
+<li>将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名</li>
+<li>   使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置</li>
+<li>   再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名</li>
+<li>   同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统</li>
+<li>   使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2</li>
+<li>   电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切换的方法可以根据工具说明rec刷入切换</p>
+<p>当不是官方原版分区表时一定不能线刷,不然必定砖,只能9008</p>
+<p>刷双系统尽量是同底层组合避免不必要的bug 如安卓9和安卓10底层差别很大</p>
+<h2 id="一键切换"><a href="#一键切换" class="headerlink" title="一键切换"></a>一键切换</h2><p><a href="https://www.coolapk.com/apk/com.highsys.systemchanger">ATMS-ROM激活器</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>刷机</category>
+        <category>安卓</category>
+      </categories>
+      <tags>
+        <tag>双系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对熵的一种微观解释进行可视化</title>
     <url>/post/entropy/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
@@ -258,76 +328,6 @@
       </tags>
   </entry>
   <entry>
-    <title>安卓像微机一样安装双系统</title>
-    <url>/post/System-double/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
-<p>1.一部已经解好Bl的手机和一台微机</p>
-<p>2.已经做好备份工作和能够承担风险的能力</p>
-<p><em><span id="more"></span></em></p>
-<h3 id="工具和方式"><a href="#工具和方式" class="headerlink" title="工具和方式"></a>工具和方式</h3><p>sgdisk: Android下操作GPT分区的命令工具,一般自带</p>
-<p>不限于社区上的REC: 用来刷系统,执行命令</p>
-<p>可以执行命令的方式: 包括但不限于adb,第三方REC,解释性脚本bash</p>
-<h2 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h2><h3 id="确保权限"><a href="#确保权限" class="headerlink" title="确保权限"></a>确保权限</h3><p>打开MT管理器进入终端,输入su,继续输入sgdiak,若终端回显最后一行代表成功执行命令!</p>
-<p><img src="/images/sgdisk-shell.png" alt="direct" loading="lazy"></p>
-<h3 id="终端命令"><a href="#终端命令" class="headerlink" title="终端命令"></a>终端命令</h3><p>首先输入; <code>sgdisk /dev/block/sda --print</code> 回显查看手机的分区情况 </p>
-<p>可能由于设备类型不同,sgdisk[分区块]可能不通用</p>
-<blockquote>
-<p>UFS闪存分区块:sda,sdb,sdd,sde,sdf</p>
-<p>EMMC闪存分区块:mmcblk0</p>
-</blockquote>
-<p><img src="/images/partition.png" alt="direct" loading="lazy"></p>
-<p>备份命令: <code>--backup=/路径/rename.bin</code>; 恢复命令: <code>  --load-backup=/路径/rename.bin</code></p>
-<blockquote>
-<p>修改(恢复)命令后只有重启系统才会限定修改系统分区当前仍是旧分区表备份命令只备份当前分区</p>
-<p>目前命令前缀都是sgdisk /[分区路径]</p>
-</blockquote>
-<p>删除命令: <code>--delete=[分区号]</code>; 新建命令: <code>--new=[分区号:开始:结束]</code></p>
-<p>改名命令: <code>--change-name=分区号:名字</code> </p>
-<h3 id="终端操作"><a href="#终端操作" class="headerlink" title="终端操作"></a>终端操作</h3><h4 id="删除data"><a href="#删除data" class="headerlink" title="删除data"></a>删除data</h4><p>使用删除命令删除分区21[userdata]</p>
-<h4 id="新建data"><a href="#新建data" class="headerlink" title="新建data"></a>新建data</h4><p>使用新建命令<code>sgdisk /dev/block/sda --new=0:0+sizeGib</code>; <code>sgdisk /dev/block/sda --new:0:0+sizeGib</code></p>
-<blockquote>
-<p>前者新建大小size分区21,后者表示新建填充剩余空间分区22</p>
-</blockquote>
-<h4 id="进行改名"><a href="#进行改名" class="headerlink" title="进行改名"></a>进行改名</h4><p>使用改名命令<code>sgdisk /dev/block/sda --change-name=21:userdata</code>; <code>sgdisk /dev/block/sda --change-name=22:userdata1</code></p>
-<hr>
-<blockquote>
-<p>到上面差不多是完成微机分硬盘装系统的操作,只不过从图形操作变成终端操作</p>
-</blockquote>
-<h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><p>重启进入TWRP,进入终端界面操作</p>
-<p>按照我上面的例子,<code>mke2fs -t ext4 /dev/block/sda21; mke2fs -t ext4 /dev/block/sda22</code></p>
-<hr>
-<p><del>到以上为之你已经完成了小白最容易踩到坑的部分了</del></p>
-<hr>
-<h2 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h2><p>直接重启你会发现进去入厂系统了,用的是刚刚userdata的分区,看看内存是不是已经改变了</p>
-<h2 id="双系统"><a href="#双系统" class="headerlink" title="双系统"></a>双系统</h2><blockquote>
-<p>原理: 用命令通过恢复备份的分区镜像来换系统</p>
-<blockquote>
-<p> <a href="https://www.lanzouw.com/iGcPjvvuu9g">下载工具压缩包</a></p>
-</blockquote>
-</blockquote>
-<ol>
-<li>一般修改的分区名: system,boot,vebdor,dtbo,vendor这里用通配符<em>表示</em></li>
-<li>将现在所在系统sda分区的一般分区名修改为*1(如:system1),只改5个分区名</li>
-<li>   使用命令备份sda分区块改名为sda1.bin放入刚刚下载的压缩包手sda1显示位置</li>
-<li>   再将所在系统sda分区的一般分区名修改为*2(如:system2),只改5个分区名</li>
-<li>   同上3这次是sda2,使用rec刷入sda1的压缩包这就是主系统</li>
-<li>   使用rec刷入sda2的压缩包,这时必须格式化data重启rec才能指向系统2</li>
-<li>   电脑传包后 再用rec刷入你喜欢的系统2,教程就完成了</li>
-</ol>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切换的方法可以根据工具说明rec刷入切换</p>
-<p>当不是官方原版分区表时一定不能线刷,不然必定砖,只能9008</p>
-<p>刷双系统尽量是同底层组合避免不必要的bug 如安卓9和安卓10底层差别很大</p>
-<h2 id="一键切换"><a href="#一键切换" class="headerlink" title="一键切换"></a>一键切换</h2><p><a href="https://www.coolapk.com/apk/com.highsys.systemchanger">ATMS-ROM激活器</a></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>刷机</category>
-        <category>安卓</category>
-      </categories>
-      <tags>
-        <tag>双系统</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基础Linux&amp;shell</title>
     <url>/post/linux-teach/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -440,57 +440,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows作为服务器发布静态网址</title>
-    <url>/post/win-server/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote>
-<p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p>
-</blockquote>
-<p><em><span id="more"></span></em></p>
-<p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p>
-<hr>
-<h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p>
-<p>设置→控制面板→程序→启用或关闭Windows功能→找到<code>Internet Information Services</code>并勾选→确定</p>
-<h2 id="创建静态网址"><a href="#创建静态网址" class="headerlink" title="创建静态网址"></a>创建静态网址</h2><ul>
-<li><p><a href="https://www.aliyundrive.com/s/EiA6LXj9GKQ">index.html</a></p>
-<blockquote>
-<p>下载静态网址放到本地 , 如我的地址为 &gt; 桌面/web/index.html</p>
-</blockquote>
-</li>
-</ul>
-<p>双击打开这个网址可以看到在浏览器上这个页面 , 现在就把它放到公网上</p>
-<h2 id="什么是IPV6"><a href="#什么是IPV6" class="headerlink" title="什么是IPV6"></a><a href="https://zhuanlan.zhihu.com/p/36542469">什么是IPV6</a></h2><ul>
-<li>总而言之使用IPV6的地址可以直接将本地地址映射到公网地址上面 </li>
-<li> IPV4想要实现可以申请公网IP,或者使用内网穿透</li>
-</ul>
-<h3 id="测试IPV6"><a href="#测试IPV6" class="headerlink" title="测试IPV6"></a><a href="http://test-ipv6.com/">测试IPV6</a></h3><p>若网址显示没有接入IPV6可以去路由器设置开启IPV6</p>
-<hr>
-<h3 id="获取IPV6地址"><a href="#获取IPV6地址" class="headerlink" title="获取IPV6地址"></a>获取IPV6地址</h3><p>打开CMD , 在出来的DOS界面里，输入<code>ipconfig</code>  , 回显显示IPV6地址</p>
-<p><img src="/images/IPV6-ip.png" loading="lazy"></p>
-<h2 id="搜索IIS程序打开"><a href="#搜索IIS程序打开" class="headerlink" title="搜索IIS程序打开"></a>搜索IIS程序打开</h2><p>点击红色下拉标,可以看到一个默认网站,右键网站 , 选择添加网址,物理路径选择静态网址所在文件夹,如: <code>F:\Users\Administrator\Desktop\Web</code>,ip地址输入IPV6地址.点击确认</p>
-<p><img src="/images/IIS-ip.png" loading="lazy"></p>
-<h2 id="部署网址"><a href="#部署网址" class="headerlink" title="部署网址"></a>部署网址</h2><ul>
-<li><p>在浏览器上<code>http://[ipv6地址]:端口(</code>不填默认80) , 显示错误页面 , 提示无权访问，是因为我们没有开启权限</p>
-<blockquote>
-<p>在本地电脑找到网址所在文件夹,右键属性共享页面,选择不共享下面的共享设置,输入添加everyone用户共享</p>
-</blockquote>
-</li>
-<li><p>再次输入<code>http://[ipv6地址]:端口</code>可以看到.html页面 , 使用不再局域网下的设备输入网址测试IPV6地址</p>
-</li>
-</ul>
-<p><img src="/images/ipv6-index.png" loading="lazy"></p>
-<hr>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote>
-<p><a href="https://www.bilibili.com/read/cv6429435/">让你的windows电脑变成服务器 </a><strong>—陈就就</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-</blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DLL——“动态链接”</title>
     <url>/post/win-dll/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
@@ -547,6 +496,57 @@ rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows作为服务器发布静态网址</title>
+    <url>/post/win-server/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote>
+<p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p>
+</blockquote>
+<p><em><span id="more"></span></em></p>
+<p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p>
+<hr>
+<h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p>
+<p>设置→控制面板→程序→启用或关闭Windows功能→找到<code>Internet Information Services</code>并勾选→确定</p>
+<h2 id="创建静态网址"><a href="#创建静态网址" class="headerlink" title="创建静态网址"></a>创建静态网址</h2><ul>
+<li><p><a href="https://www.aliyundrive.com/s/EiA6LXj9GKQ">index.html</a></p>
+<blockquote>
+<p>下载静态网址放到本地 , 如我的地址为 &gt; 桌面/web/index.html</p>
+</blockquote>
+</li>
+</ul>
+<p>双击打开这个网址可以看到在浏览器上这个页面 , 现在就把它放到公网上</p>
+<h2 id="什么是IPV6"><a href="#什么是IPV6" class="headerlink" title="什么是IPV6"></a><a href="https://zhuanlan.zhihu.com/p/36542469">什么是IPV6</a></h2><ul>
+<li>总而言之使用IPV6的地址可以直接将本地地址映射到公网地址上面 </li>
+<li> IPV4想要实现可以申请公网IP,或者使用内网穿透</li>
+</ul>
+<h3 id="测试IPV6"><a href="#测试IPV6" class="headerlink" title="测试IPV6"></a><a href="http://test-ipv6.com/">测试IPV6</a></h3><p>若网址显示没有接入IPV6可以去路由器设置开启IPV6</p>
+<hr>
+<h3 id="获取IPV6地址"><a href="#获取IPV6地址" class="headerlink" title="获取IPV6地址"></a>获取IPV6地址</h3><p>打开CMD , 在出来的DOS界面里，输入<code>ipconfig</code>  , 回显显示IPV6地址</p>
+<p><img src="/images/IPV6-ip.png" loading="lazy"></p>
+<h2 id="搜索IIS程序打开"><a href="#搜索IIS程序打开" class="headerlink" title="搜索IIS程序打开"></a>搜索IIS程序打开</h2><p>点击红色下拉标,可以看到一个默认网站,右键网站 , 选择添加网址,物理路径选择静态网址所在文件夹,如: <code>F:\Users\Administrator\Desktop\Web</code>,ip地址输入IPV6地址.点击确认</p>
+<p><img src="/images/IIS-ip.png" loading="lazy"></p>
+<h2 id="部署网址"><a href="#部署网址" class="headerlink" title="部署网址"></a>部署网址</h2><ul>
+<li><p>在浏览器上<code>http://[ipv6地址]:端口(</code>不填默认80) , 显示错误页面 , 提示无权访问，是因为我们没有开启权限</p>
+<blockquote>
+<p>在本地电脑找到网址所在文件夹,右键属性共享页面,选择不共享下面的共享设置,输入添加everyone用户共享</p>
+</blockquote>
+</li>
+<li><p>再次输入<code>http://[ipv6地址]:端口</code>可以看到.html页面 , 使用不再局域网下的设备输入网址测试IPV6地址</p>
+</li>
+</ul>
+<p><img src="/images/ipv6-index.png" loading="lazy"></p>
+<hr>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote>
+<p><a href="https://www.bilibili.com/read/cv6429435/">让你的windows电脑变成服务器 </a><strong>—陈就就</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+</blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
       </tags>
   </entry>
   <entry>
@@ -621,19 +621,6 @@ copy /b xxx.png+xxx.zip xxx.png
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>帕累托法则</title>
-    <url>/post/Pareto%20principle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
-</blockquote>
-<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>奥卡姆剃刀</title>
     <url>/post/Occam&#39;s%20Razor/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
@@ -644,6 +631,19 @@ copy /b xxx.png+xxx.zip xxx.png
 </ul>
 <p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p>
 <p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>帕累托法则</title>
+    <url>/post/Pareto%20principle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+</blockquote>
+<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
 <p><em><span id="more"></span></em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
