@@ -6,9 +6,11 @@ type: notion
 categories:
 - [渗透]
 ---
-	cd %SystemDrive%\Users\Administrator\Desktop
-	cd %UserProfile%\Desktop
-	copy /b xxx.png+xxx.zip xxx.png
+```shell
+cd %SystemDrive%\Users\Administrator\Desktop
+cd %UserProfile%\Desktop
+copy /b xxx.png+xxx.zip xxx.png
+```
 
 
 *<!-- more -->*

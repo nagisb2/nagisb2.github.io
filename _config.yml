@@ -58,8 +58,13 @@ prependRoot: true
 postAsset: true
 relative_link: false
 future: true
+prism_plugin:
+  mode: preprocess # realtime/preprocess
+  theme: default
+  line_number: true # default false
+  # custom_css: "path/to/your/custom.css" # optional
 highlight:
-  enable: true
+  enable: false # 代码高亮
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -120,4 +125,4 @@ deploy:
   type: git
   repo: https://github.com/nagisb2/nagisb2.github.io.git
   branch: master # 默认使用 master 分支
-  message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+  message: 2022-08-05 # 你可以自定义此次部署更新的说明

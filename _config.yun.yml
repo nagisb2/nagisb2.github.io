@@ -2,7 +2,7 @@ favicon: /images/favicon.ico
 bg_image:
   enable: true
   url: https://upload-bbs.mihoyo.com/upload/2022/04/04/260511332/5f36c9c2ec91bf56caf5331e4ed4918d_4875177930097895211.jpg
-  dark: https://git.poker/nagisb2/image/blob/master/bizhi-blue_yasuo.webp?raw=true
+  dark: https://cdn.staticaly.com/gh/nagisb2/image@master/bizhi-blue_yasuo.webp
   # blur: 2px
   opacity: 0.8
 head:
@@ -120,11 +120,11 @@ social:
     color: '#7acdba'
     icon: ri:at-fill
   - name: QQ
-    link: https://git.poker/nagisb2/image/blob/master/QQ-id.webp?raw=true
+    link: https://cdn.staticaly.com/gh/nagisb2/image@master/QQ-id.webp
     color: '#12B7F5'
     icon: ri:qq-line
   - name: 微信
-    link: https://git.poker/nagisb2/image/blob/master/weixin-id.1h8psrjlw1j4.webp?raw=true
+    link: https://cdn.staticaly.com/gh/nagisb2/image@master/weixin-id.1h8psrjlw1j4.webp
     color: '#2DC100'
     icon: ri:wechat-pay-line
   - name: E-Mail
@@ -186,7 +186,7 @@ reward:
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
   methods:
     - name: 微信支付
-      path: https://git.poker/nagisb2/image/blob/master/wechat.webp?raw=true
+      path: https://cdn.staticaly.com/gh/nagisb2/image@master/wechat.webp
       color: '#2DC100'
       icon: ri:wechat-pay-line
 wordcount:
@@ -224,13 +224,14 @@ tags:
   服务器: '#8892BF'
   编码: '#0066B8'
   文件: '#F4DF4F'
-  TypeScript: '#317AC6'
-  Laravel: '#F4645F'
+  字体: '#317AC6'
+  专业词: '#F4645F'
 categories:
   随笔一记: '#F4645F'
+  资源: '#FF8C00'
 colors:
   primary: "#986DB2"
-
+  
 
 
 
