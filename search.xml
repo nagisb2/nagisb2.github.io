@@ -289,45 +289,6 @@
       </tags>
   </entry>
   <entry>
-    <title>电信HG6543C1超级管理员账户密码获取</title>
-    <url>/post/light-cat/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
-<blockquote>
-<p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p>
-</blockquote>
-<p><em><span id="more"></span></em></p>
-<p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p>
-<h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p>
-<h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote>
-<p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p>
-</blockquote>
-<hr>
-<h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p>
-<p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p>
-<hr>
-<p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p>
-<h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p>
-<blockquote>
-<p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p>
-</blockquote>
-<p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p>
-<hr>
-<p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p>
-<p><img src="/images/cat-passwd.png" loading="lazy"></p>
-<hr>
-<h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>
-
-<p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>刷机</category>
-      </categories>
-      <tags>
-        <tag>整活</tag>
-        <tag>光猫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基础Linux&amp;shell</title>
     <url>/post/linux-teach/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -401,6 +362,45 @@
       <categories>
         <category>渗透</category>
       </categories>
+  </entry>
+  <entry>
+    <title>电信HG6543C1超级管理员账户密码获取</title>
+    <url>/post/light-cat/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
+<blockquote>
+<p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p>
+</blockquote>
+<p><em><span id="more"></span></em></p>
+<p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p>
+<h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p>
+<h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote>
+<p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p>
+</blockquote>
+<hr>
+<h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p>
+<p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p>
+<hr>
+<p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p>
+<h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p>
+<blockquote>
+<p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p>
+</blockquote>
+<p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p>
+<hr>
+<p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p>
+<p><img src="/images/cat-passwd.png" loading="lazy"></p>
+<hr>
+<h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>
+
+<p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>刷机</category>
+      </categories>
+      <tags>
+        <tag>整活</tag>
+        <tag>光猫</tag>
+      </tags>
   </entry>
   <entry>
     <title>来给你的u盘实现一盘多系统</title>
@@ -550,22 +550,6 @@ rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
       </tags>
   </entry>
   <entry>
-    <title>文件伪装图片命令</title>
-    <url>/post/zip&amp;png/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
-cd %UserProfile%\Desktop
-copy /b xxx.png+xxx.zip xxx.png
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-      <tags>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The violin</title>
     <url>/post/The%20violin/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
@@ -590,6 +574,22 @@ copy /b xxx.png+xxx.zip xxx.png
 </li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>文件伪装图片命令</title>
+    <url>/post/zip&amp;png/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
+cd %UserProfile%\Desktop
+copy /b xxx.png+xxx.zip xxx.png
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>文件</tag>
+      </tags>
   </entry>
   <entry>
     <title>黄梅戏</title>
