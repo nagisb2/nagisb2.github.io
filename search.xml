@@ -1022,6 +1022,21 @@ copy /b xxx.png+xxx.zip xxx.png
       </categories>
   </entry>
   <entry>
+    <title>DNS</title>
+    <url>/post/real-rational/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
+<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
+</li>
+<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
+</li>
+</ul>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>权重</title>
     <url>/post/The%20weight/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是权重"><a href="#什么是权重" class="headerlink" title="什么是权重"></a>什么是权重</h3><blockquote>
@@ -1038,21 +1053,6 @@ copy /b xxx.png+xxx.zip xxx.png
       <tags>
         <tag>专业词</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>DNS</title>
-    <url>/post/real-rational/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
-<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
-</li>
-<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
-</li>
-</ul>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
   </entry>
   <entry>
     <title>编程字体</title>
