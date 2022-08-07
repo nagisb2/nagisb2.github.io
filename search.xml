@@ -124,6 +124,29 @@
       </tags>
   </entry>
   <entry>
+    <title>对熵的一种微观解释进行可视化</title>
+    <url>/post/entropy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
+<summary>熵源于的热力学第二定律</summary>
+
+<ul>
+<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
+<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
+</ul>
+<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
+<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
+<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
+<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机通用图像格式</title>
     <url>/post/img-type/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#D0087E" size="4" face="STFangsong">计算机通用“<a href="https://blog.csdn.net/weixin_44191535/article/details/105022799"><strong>图像知识</strong></a>“,文件格式(BMP、JPG、PNG、GIF、WebP、AVIF、HEIF、JXL)</font></p>
@@ -288,29 +311,6 @@
       </tags>
   </entry>
   <entry>
-    <title>对熵的一种微观解释进行可视化</title>
-    <url>/post/entropy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
-<summary>熵源于的热力学第二定律</summary>
-
-<ul>
-<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
-<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
-</ul>
-<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
-<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
-<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
-<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>信息论与编码基础</title>
     <url>/post/information/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -450,6 +450,37 @@
       </tags>
   </entry>
   <entry>
+    <title>优雅的盗号技巧</title>
+    <url>/post/qq-passwd/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
+<p><em><span id="more"></span></em></p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul>
+<li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p>
+<blockquote>
+<p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li><p>安装软件后按提示打开软件无障碍服务</p>
+</li>
+<li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p>
+</li>
+</ol>
+<h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p>
+<p><img src="/images/qq-passwd.png" loading="lazy"></p>
+<center>提前打开密码显示按钮</center>
+
+<p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p>
+<p><img src="/images/Type-qq.png" loading="lazy"></p>
+<p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p>
+<h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+  </entry>
+  <entry>
     <title>来给你的u盘实现一盘多系统</title>
     <url>/post/ventory/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/images/ventoy-logo.png" alt="ventoy" loading="lazy"><em><span id="more"></span></em></p>
@@ -485,37 +516,6 @@
       <tags>
         <tag>u盘</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>优雅的盗号技巧</title>
-    <url>/post/qq-passwd/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
-<p><em><span id="more"></span></em></p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p>
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul>
-<li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p>
-<blockquote>
-<p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p>
-</blockquote>
-</li>
-</ul>
-<ol>
-<li><p>安装软件后按提示打开软件无障碍服务</p>
-</li>
-<li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p>
-</li>
-</ol>
-<h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p>
-<p><img src="/images/qq-passwd.png" loading="lazy"></p>
-<center>提前打开密码显示按钮</center>
-
-<p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p>
-<p><img src="/images/Type-qq.png" loading="lazy"></p>
-<p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p>
-<h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
   </entry>
   <entry>
     <title>计算机通用视频格式</title>
@@ -954,22 +954,6 @@ cd %SystemRoot%\system32\config 注册表路径
       </tags>
   </entry>
   <entry>
-    <title>文件伪装图片命令</title>
-    <url>/post/zip&amp;png/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
-cd %UserProfile%\Desktop
-copy /b xxx.png+xxx.zip xxx.png
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-      <tags>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The violin</title>
     <url>/post/The%20violin/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><details><summary>实际导航</summary>
@@ -1023,6 +1007,22 @@ copy /b xxx.png+xxx.zip xxx.png
 丢了破屋上官哪舟 还怕招来一场哪羞——妻子1.01
 </code></pre>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>文件伪装图片命令</title>
+    <url>/post/zip&amp;png/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
+cd %UserProfile%\Desktop
+copy /b xxx.png+xxx.zip xxx.png
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>文件</tag>
+      </tags>
   </entry>
   <entry>
     <title>奥卡姆剃刀</title>
