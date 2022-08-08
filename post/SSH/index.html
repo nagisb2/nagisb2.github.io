@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#986DB2"><meta name="author" content="NAGISB"><meta name="copyright" content="NAGISB"><meta name="generator" content="Hexo 5.4.2"><meta name="theme" content="hexo-theme-yun"><title>SSH | NAGISB'S</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="icon" type="image/png" href="/images/favicon.ico"><link rel="mask-icon" href="/images/favicon.ico" color="#986DB2"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"blog.nagisb.space","root":"/","title":["NA","GI","SB","Blog"],"version":"1.10.4","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"fireworks":{"colors":null},"vendors":{"darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="NAGISB'S" type="application/atom+xml"><link rel="stylesheet" href="/null"><script src="https://at.alicdn.com/t/font_2598701_hm5djhdw3d.js" async></script><script src="https://cdn.jsdelivr.net/gh/nagisb2/file@1.0/font_3543821_rhwvosswlc.js" async></script><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><script async src="https://www.googletagmanager.com/gtag/js?id=G-5G031WZ8W0"></script><script>if (CONFIG.hostname === location.hostname) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5G031WZ8W0');
+}</script><meta name="description" content="什么是SSH SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSH">
+<meta property="og:url" content="http://blog.nagisb.space/post/SSH/index.html">
+<meta property="og:site_name" content="NAGISB&#39;S">
+<meta property="og:description" content="什么是SSH SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-08T19:02:35.000Z">
+<meta property="article:modified_time" content="2022-08-08T20:27:56.241Z">
+<meta property="article:author" content="NAGISB">
+<meta property="article:tag" content="服务器">
+<meta name="twitter:card" content="summary"><script>(function() {
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="NAGISB"><img width="96" loading="lazy" src="/images/nagisb.png" alt="NAGISB"><span class="site-author-status" title="暑假ing">😎</span></a><div class="site-author-name"><a href="/about/">NAGISB</a></div><span class="site-name">NAGISB'S</span><sub class="site-subtitle">blog.nagisb.space</sub><div class="site-description">From JiangMen</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="home"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">25</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">9</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">13</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言板"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:clipboard-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><span class="icon iconify" data-icon="ri:rss-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=1682645831" title="网易云音乐" target="_blank" style="color:#C10D0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wwwapi.kugou.com/share/zlist.html?listid=19&amp;type=0&amp;uid=1003801245&amp;sign=747aac2b678ae204fe781f8f9067b081&amp;_t=1632545367&amp;pagesize=30&amp;json=&amp;page=1&amp;token=66a3cc379c897b5e2eb11573556935aa298b7b639bfdc0cb94d07543975c2f96#hash=FB973B4987E914B4AE60E261331C03E7&amp;album_id=38747155&amp;album_audio_id=269637511" title="酷狗" target="_blank" style="color:#4DC2FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kugou"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/gisb_na" title="Twitter" target="_blank" style="color:#1da1f2"><span class="icon iconify" data-icon="ri:twitter-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/AB2" title="Telegram" target="_blank" style="color:#0088CC"><span class="icon iconify" data-icon="ri:telegram-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.vilipix.com/ranking" title="Pixiv Daily Ranking" target="_blank" style="color:undefined"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pixiv"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://bgm.tv/game/list/fuyou2181/collect?orderby=rate" title="bangumi" target="_blank" style="color:#F09199"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pgc_bangumi"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.coolapk.com/u/2118614" title="Coolapk" target="_blank" style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-coolapk1"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://aweidao1.com/" title="阿苇岛" target="_blank" style="color:#7acdba"><span class="icon iconify" data-icon="ri:at-fill"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://cdn.staticaly.com/gh/nagisb2/image@master/QQ-id.webp" title="QQ" target="_blank" style="color:#12B7F5"><span class="icon iconify" data-icon="ri:qq-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://cdn.staticaly.com/gh/nagisb2/image@master/weixin-id.1h8psrjlw1j4.webp" title="微信" target="_blank" style="color:#2DC100"><span class="icon iconify" data-icon="ri:wechat-pay-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:w2181890001@gmail.com" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFSSH"><span class="toc-number">1.</span> <span class="toc-text">什么是SSH</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH%E7%AB%AF%E5%8F%A3"><span class="toc-number">2.</span> <span class="toc-text">SSH端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81"><span class="toc-number">3.</span> <span class="toc-text">安全验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OpenSSH"><span class="toc-number">4.</span> <span class="toc-text">OpenSSH</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SSH-KEY"><span class="toc-number">4.1.</span> <span class="toc-text">SSH KEY</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%93%E4%B8%9A%E8%AF%8D"><span class="toc-number">5.</span> <span class="toc-text">专业词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF"><span class="toc-number">6.</span> <span class="toc-text">宝塔面板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6"><span class="toc-number">7.</span> <span class="toc-text">软件</span></a></li></ol></div></div></div><div class="tag-cloud"><div class="tag-cloud-tags"><a href="/tags/Linux/" style="font-size: 12px; color: #999">Linux</a> <a href="/tags/Markdown/" style="font-size: 12px; color: #999">Markdown</a> <a href="/tags/u%E7%9B%98/" style="font-size: 12px; color: #999">u盘</a> <a href="/tags/%E4%B8%93%E4%B8%9A%E8%AF%8D/" style="font-size: 12px; color: #999">专业词</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/" style="font-size: 30px; color: #0078e7">信息论</a></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#986DB2;"><link itemprop="mainEntityOfPage" href="http://blog.nagisb.space/post/SSH/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="NAGISB"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="NAGISB'S"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">SSH</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <span class="post-meta-icon-text">发表于</span> <time title="创建时间：2022-08-09 03:02:35" itemprop="dateCreated datePublished" datetime="2022-08-09T03:02:35+08:00">2022-08-09</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">561</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">2m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><span class="icon iconify" data-icon="ri:eye-line"></span> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E6%B8%97%E9%80%8F/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">渗透</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="--text-color:#8892BF"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">服务器</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h3 id="什么是SSH"><a href="#什么是SSH" class="headerlink" title="什么是SSH"></a><font color="#76DFE3" size="4" face="STFangsong">什么是SSH</h3><ul>
+<li>SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式 <span id="more"></span></li>
+</ul>
+<blockquote>
+<p><font color="#EDFFFC" size="4" face="STFangsong">中间人攻击: 利用DNS欺骗和IP欺骗,冒充服务器和你之间的数据传送过程</font></p>
+<p>SSH协议通过网络数据进行加密验证,为传统的远程登录: Telenet、FTP、Pop提供更为安全的加密协议</p>
+</blockquote>
+<h3 id="SSH端口"><a href="#SSH端口" class="headerlink" title="SSH端口"></a>SSH端口</h3><p>SSH应用于STelnet，SFTP以及SCP时默认SSH;22/80端口号。SSH端口支持修改, SSH服务会重新侦听新端口</p>
+<h3 id="安全验证"><a href="#安全验证" class="headerlink" title="安全验证"></a>安全验证</h3><p>SSH采用<strong>公钥</strong>加密技术来<strong>验证远程主机</strong>，以及(必要时)允许远程主机验证用户。</p>
+<pre><code>      ssh客户端(ssh)                       ssh服务端(sshd)
+
+     +----------+                       +---------+
+     |          |                       |         |
+     |          |                       |         |
+     |          |                       |         |
+     |          |                       |         |
+     +---+---+--+                       +-+---+---+
+         |   |                            |   |
+         |   |                            |   |
+         |   +----------------------------+   |
+         |                                    |
+         |        ssh加密了的TCP通信            |
+         +------------------------------------+
+
+                    SSH连接
+</code></pre>
+</font>
+
+
+
+<h3 id="OpenSSH"><a href="#OpenSSH" class="headerlink" title="OpenSSH"></a>OpenSSH</h3><p>对于OpenSSH客户端（Linux默认安装）, <font color="#D0087E" size="4" face="STFangsong">主机与服务器进行远程连接</font></p>
+<p>OpenSSH(OpenBSD Secure Shell)是一套使用<strong>ssh协议</strong>, 提供<font color="#D0087E" size="4" face="STFangsong">加密通讯会话的程序</font></p>
+<h4 id="SSH-KEY"><a href="#SSH-KEY" class="headerlink" title="SSH KEY"></a>SSH KEY</h4><ul>
+<li><p>SSH密钥简单来说: 让你方便的登录SSH服务器, <font color="#D0087E" size="4" face="STFangsong">而无需密码</font></p>
+<blockquote>
+<p>——SSH利用SSH Key来进行前面提到的基于密钥的安全验证</p>
+</blockquote>
+</li>
+<li><p>使用步骤—Github</p>
+</li>
+</ul>
+<pre class="line-numbers language-shell"><code class="language-shell">ssh-keygen -t rsa -C 'xxx@xxx.com' ——生成密钥对(OpenSSH也可生成
+cat ~/.ssh/id_rsa.pub ——查看配置公钥文件
+SHA256:xxxbg6kXUpJWGlxxxIGOCspRomTxdCARLxxx6E5SY8 ——sha256哈希值格式
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>1.在客户端生成SSH key（密钥对：公钥和私钥）——终端操作</p>
+<p>2.在服务端的配置文件中加入你的公钥。（比如我们需要在GitHub中粘贴你的公钥）</p>
+<h3 id="专业词"><a href="#专业词" class="headerlink" title="专业词"></a>专业词</h3><p><font color="#D0087E" size="4" face="STFangsong">服务</font> : service 是指在后台运行的软件</p>
+<p><font color="#D0087E" size="4" face="STFangsong">主机</font> : host 可以托管相对于<strong>其他计算机</strong>有用的应用程序</p>
+<p><font color="#D0087E" size="4" face="STFangsong">本地</font> : local/localhost 是指用户或特定软件正在使用的计算机</p>
+<p><font color="#D0087E" size="4" face="STFangsong">远程</font> : 远程计算机指不再你面前, 客观上没有实际使用的面对面计算机 </p>
+<h3 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://tencent.yundashi168.com/bt-panel">宝塔面板系列教程</a> <a target="_blank" rel="noopener" href="https://www.php.cn/topic/bt/">宝塔面板使用教程</a> 面板url:<code>http://&lt;服务器公网IP&gt;:8888</code></li>
+<li>帮助管理远程主机(服务器)的大量组件工具,添加搭建动态网站使用在购买的云服务器上,默认占用8888端口</li>
+</ul>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://putty.org/">PuTTY for Windows</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.xshell.com/zh/xshell/">XSHELL - NetSarang Website</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.hostbuf.com/t/988.html">FinalShel-Windows,macOS,Linux</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script></div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.staticaly.com/gh/nagisb2/image@master/wechat.webp"><img loading="lazy" src="https://cdn.staticaly.com/gh/nagisb2/image@master/wechat.webp" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><span class="icon iconify" data-icon="ri:wechat-pay-line"></span></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>NAGISB</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://blog.nagisb.space/post/SSH/" title="SSH">http://blog.nagisb.space/post/SSH/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/post/js-loading/" rel="next" title="JS加载"><span class="post-nav-text">JS加载</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2022 </span><a class="with-love" id="animate" href="/404.html" title="404NOT FOUNT"><span class="icon iconify" data-icon="ri:questionnaire-line"></span></a><span class="author"> NAGISB</span></div><div class="live-time"><span>蓝色空间号已在太空中航行了</span><span id="display_live_time"></span><span class="moe-text">☆⋘≡=——</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2022-07-19T22:21:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div><div id="busuanzi"><span id="busuanzi_container_site_uv" title="总访客量"><span><span class="icon iconify" data-icon="ri:user-line"></span></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="总访问量"><span><span class="icon iconify" data-icon="ri:eye-line"></span></span><span id="busuanzi_value_site_pv"></span></span><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="footer-custom-text"><a target="_blank" href="https://hexo.io" title="由Hexo驱动 v6.2.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=Hexo"></a>,<a target="_blank" href="https://yun.yunyoujun.cn/" title="主题 Yun-1.10.4"><img src="https://img.shields.io/badge/Theme-Yun-6513df?style=flat&logo=Google Cloud"></a>,<a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=Github"></a>,Deploys by <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style=""><svg width="66.33" height="15" viewBox="0 0 283 64" id="vercel-logo" fill="#000" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z"></path></svg></a><br><img width="315" height="100" src="https://api.moedog.org/count/@himekana?theme=rule34" style="margin-top:10px" alt></div><div class="footer-support"><span>💜💜💜💜</span><a class="footer-support-logo" href="https://www.jsdelivr.com/" target="blank" title="本网站由jsDelivr提供 CDN 加速"><img height="30" src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt="本网站由jsDelivr提供 CDN 加速"></a><span>💜💜💜💜</span></div></footer><html><head><style>@import url(https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css);
+</style><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script></head><body><meting-js id="7552215560" server="netease" type="playlist" fixed="true" autoplay="true" loop="all" order="random" preload="auto" list-folded="ture" list-max-height="500px"></meting-js></body></html><script src="//code.tidio.co/voy7jrqxjlcfh8puhjnbbaxlvohqxguq.js" async></script></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#986DB2" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="https://fastly.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script><script src="/js/search/local-search.js" defer type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div class="search-result-container"></div></div><script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script>const images = [...document.querySelectorAll('.markdown-body img')]
+mediumZoom(images)</script><style>.medium-zoom-image {
+  z-index: 99;
+}</style></body></html>
