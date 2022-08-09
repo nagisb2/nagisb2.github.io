@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-08-09T18:02:02.881Z</updated>
+  <updated>2022-08-09T18:03:17.704Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.nagisb.space/post/command-wget/"/>
     <id>http://blog.nagisb.space/post/command-wget/</id>
     <published>2022-08-09T17:23:18.000Z</published>
-    <updated>2022-08-09T18:02:02.881Z</updated>
+    <updated>2022-08-09T18:03:17.704Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p><p><em><span id="more"></span></em></p><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)sudo apt-get install wget --命令行安装<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件tail -f wget-log --查看下载进度wget -O xxx.tgz url --下载并以不同的文件名保存(大写Owget -c -r -np -k -L -p url --递归下载整个网站<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote><details><summary>wget [option] [URL]</summary>-h,--help打印语法帮助 <p>-r,  –recursive 指定递归下载</p><p>-b,  –background 启动后转入后台下载</p><p>-o, –output-file=FILE xxx.log URL保存日志</p><p>-q,–quiet 安静模式不显示输出信息</p><p>-c,  –continue  断点续传下载文件</p><p>-O, 以不同的文件名保存</p><p>–spider, 模拟下载,不下载任何文件</p></blockquote></details><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
