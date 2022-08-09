@@ -209,13 +209,13 @@
     <link href="http://blog.nagisb.space/post/code-ttf/"/>
     <id>http://blog.nagisb.space/post/code-ttf/</id>
     <published>2022-08-02T06:02:24.000Z</published>
-    <updated>2022-08-02T12:00:00.000Z</updated>
+    <updated>2022-08-09T20:45:44.707Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-top-red"><font color="#1D8886" size="4" face="FZYaoti">Noto Sans Mono ——<a href="https://blog.csdn.net/weixin_44191535/article/details/105022799"><strong>Noto Sans Mono CJK SC</strong></a>——适合中文编译</font></p><ul><li>fonts<ul><li><a href="https://www.nerdfonts.com/font-downloads"><strong>nerdfonts</strong></a></li><li><a href="https://www.googlefonts.cn/"><strong>google fonts</strong></a></li><li><a href="https://fonts.safe.360.cn/"><strong>fonts copyright</strong></a></li></ul></li></ul><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-top-red"><font color="#1D8886" size="4" face="FZYaoti">Noto Sans Mono ——<a href="https://github.com/googlefonts/noto-cjk/releases/tag/Sans2.004"><strong>Noto Sans Mono CJK SC</strong></a>——适合中文编译</font></p><ul><li>fonts<ul><li><a href="https://www.nerdfonts.com/font-downloads"><strong>nerdfonts</strong></a></li><li><a href="https://www.googlefonts.cn/"><strong>google fonts</strong></a></li><li><a href="https://fonts.safe.360.cn/"><strong>fonts copyright</strong></a></li></ul></li></ul><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
     <summary type="html">&lt;p id=&quot;div-border-top-red&quot;&gt;
-&lt;font color=&quot;#1D8886&quot; size=&quot;4&quot; face=&quot;FZYaoti&quot;&gt;Noto Sans Mono ——&lt;a href=&quot;https://blog.csdn.net/weixin_44191535/article/details/105022799&quot;&gt;&lt;strong&gt;Noto Sans Mono CJK SC&lt;/strong&gt;&lt;/a&gt;——适合中文编译
+&lt;font color=&quot;#1D8886&quot; size=&quot;4&quot; face=&quot;FZYaoti&quot;&gt;Noto Sans Mono ——&lt;a href=&quot;https://github.com/googlefonts/noto-cjk/releases/tag/Sans2.004&quot;&gt;&lt;strong&gt;Noto Sans Mono CJK SC&lt;/strong&gt;&lt;/a&gt;——适合中文编译
 &lt;/font&gt;&lt;/p&gt;
 
 &lt;ul&gt;

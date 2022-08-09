@@ -17,6 +17,92 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
+    <title>SSH</title>
+    <url>/post/SSH/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是SSH"><a href="#什么是SSH" class="headerlink" title="什么是SSH"></a><font color="#76DFE3" size="4" face="STFangsong">什么是SSH</h3><ul>
+<li>SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式</font> <span id="more"></span></li>
+</ul>
+<blockquote>
+<p><font color="#EDFFFC" size="4" face="STFangsong">中间人攻击: 利用DNS欺骗和IP欺骗,冒充服务器和你之间的数据传送过程</font></p>
+<p>SSH协议通过网络数据进行加密验证,为传统的远程登录: Telenet、FTP、Pop提供更为安全的加密协议</p>
+</blockquote>
+<h3 id="SSH端口"><a href="#SSH端口" class="headerlink" title="SSH端口"></a>SSH端口</h3><p>SSH应用于STelnet，SFTP以及SCP时默认SSH;22/80端口号。SSH端口支持修改, SSH服务会重新侦听新端口</p>
+<h3 id="安全验证"><a href="#安全验证" class="headerlink" title="安全验证"></a>安全验证</h3><p>SSH采用<strong>公钥</strong>加密技术来<strong>验证远程主机</strong>，以及(必要时)允许远程主机验证用户。</p>
+<pre><code>      ssh客户端(ssh)                       ssh服务端(sshd)
+
+     +----------+                       +---------+
+     |          |                       |         |
+     |          |                       |         |
+     |          |                       |         |
+     |          |                       |         |
+     +---+---+--+                       +-+---+---+
+         |   |                            |   |
+         |   |                            |   |
+         |   +----------------------------+   |
+         |                                    |
+         |        ssh加密了的TCP通信            |
+         +------------------------------------+
+
+                    SSH连接
+</code></pre>
+<h3 id="OpenSSH"><a href="#OpenSSH" class="headerlink" title="OpenSSH"></a>OpenSSH</h3><p>对于OpenSSH客户端（Linux默认安装）, <font color="#D0087E" size="4" face="STFangsong">主机(公网ip)与某一个服务器进行远程连接</font></p>
+<p>OpenSSH(OpenBSD Secure Shell)是一套使用<strong>ssh协议</strong>, 提供<font color="#D0087E" size="4" face="STFangsong">加密通讯会话的程序</font></p>
+<h4 id="SSH-KEY"><a href="#SSH-KEY" class="headerlink" title="SSH KEY"></a>SSH KEY</h4><ul>
+<li><p>SSH密钥简单来说: 让你方便的登录SSH服务器, <font color="#D0087E" size="4" face="STFangsong">而无需密码</font></p>
+<blockquote>
+<p>——SSH利用SSH Key来进行前面提到的基于密钥的安全验证</p>
+</blockquote>
+</li>
+<li><p>使用步骤—主机与Github服务器</p>
+</li>
+</ul>
+<pre class="line-numbers language-shell"><code class="language-shell">ssh-keygen -t rsa -C 'xxx@xxx.com' ——生成密钥对(OpenSSH也可生成
+cat ~/.ssh/id_rsa.pub ——查看配置公钥文件
+SHA256:xxxbg6kXUpJWGlxxxIGOCspRomTxdCARLxxx6E5SY8 ——sha256哈希值格式
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>git使用https协议，每次pull, push都要输入密码,所以使用ssh密钥(也可使用<a href="https://www.5axxw.com/questions/content/0lwpqy">Github令牌</a>)</p>
+</blockquote>
+<p>1.在客户端生成SSH key（密钥对：公钥和私钥）——终端操作</p>
+<p>2.在服务端的配置文件中加入你的公钥。（比如我们需要在GitHub中粘贴你的公钥）</p>
+<ul>
+<li>主机与Linux服务器</li>
+</ul>
+<pre class="line-numbers language-shell"><code class="language-shell">mv id_rsa_2048.pub ~/.ssh --生成的密钥对文件
+cd ~/.ssh/authorized_keys
+cat id_rsa_2048.pub >> ~/.ssh/authorized_keys --密钥文件追加
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h3 id="附笔"><a href="#附笔" class="headerlink" title="附笔"></a>附笔</h3><pre><code>id_rsa：本机（服务端）的私钥文件。
+id_rsa.pub：本机（服务端）的公钥文件。
+authorized_key：存放想要通过公私钥校验方式连接本机（服务端）的客户端公钥。
+known_hosts：本地的客户端存放成功连接本机（服务端）的服务端信息，服务端信息变更的话会再次询问，是否连接。（即存放曾经连接成功过的远程服务器信息）
+</code></pre>
+<p><font color="#D0087E" size="4" face="STFangsong">服务器</font> : 被用来设计处理的业务应用(如网络和系统管理，数据库管理和Web服务的电脑(不限于微机,linux系统</p>
+<p><font color="#D0087E" size="4" face="STFangsong">主机</font> : host 可以托管相对于<strong>其他计算机</strong>有用的应用程序</p>
+<p><font color="#D0087E" size="4" face="STFangsong">本地</font> : local/localhost 是指用户或特定软件正在使用的计算机</p>
+<p><font color="#D0087E" size="4" face="STFangsong">远程</font> : 远程计算机指不再你面前, 客观上没有实际使用的面对面计算机 </p>
+<h3 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h3><ul>
+<li><a href="http://tencent.yundashi168.com/bt-panel">宝塔面板系列教程</a> <a href="https://www.php.cn/topic/bt/">宝塔面板使用教程</a> 面板url:<code>http://&lt;服务器公网IP&gt;:8888</code></li>
+<li>帮助管理远程主机(服务器)的大量组件工具,添加搭建动态网站使用在购买的云服务器上,默认占用8888端口</li>
+</ul>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
+<li><p><a href="https://putty.org/">PuTTY for Windows</a></p>
+</li>
+<li><p><a href="https://www.xshell.com/zh/xshell/">XSHELL - NetSarang Website</a></p>
+</li>
+<li><p><a href="http://www.hostbuf.com/t/988.html">FinalShell-Windows,macOS,Linux</a></p>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>安卓像微机一样安装双系统</title>
     <url>/post/System-double/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言与准备"><a href="#前言与准备" class="headerlink" title="前言与准备"></a>前言与准备</h2><p>本教程理论上通用与所有解了BL想要双系统的安卓系统。</p>
@@ -124,115 +210,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SSH</title>
-    <url>/post/SSH/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是SSH"><a href="#什么是SSH" class="headerlink" title="什么是SSH"></a><font color="#76DFE3" size="4" face="STFangsong">什么是SSH</h3><ul>
-<li>SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式</font> <span id="more"></span></li>
-</ul>
-<blockquote>
-<p><font color="#EDFFFC" size="4" face="STFangsong">中间人攻击: 利用DNS欺骗和IP欺骗,冒充服务器和你之间的数据传送过程</font></p>
-<p>SSH协议通过网络数据进行加密验证,为传统的远程登录: Telenet、FTP、Pop提供更为安全的加密协议</p>
-</blockquote>
-<h3 id="SSH端口"><a href="#SSH端口" class="headerlink" title="SSH端口"></a>SSH端口</h3><p>SSH应用于STelnet，SFTP以及SCP时默认SSH;22/80端口号。SSH端口支持修改, SSH服务会重新侦听新端口</p>
-<h3 id="安全验证"><a href="#安全验证" class="headerlink" title="安全验证"></a>安全验证</h3><p>SSH采用<strong>公钥</strong>加密技术来<strong>验证远程主机</strong>，以及(必要时)允许远程主机验证用户。</p>
-<pre><code>      ssh客户端(ssh)                       ssh服务端(sshd)
-
-     +----------+                       +---------+
-     |          |                       |         |
-     |          |                       |         |
-     |          |                       |         |
-     |          |                       |         |
-     +---+---+--+                       +-+---+---+
-         |   |                            |   |
-         |   |                            |   |
-         |   +----------------------------+   |
-         |                                    |
-         |        ssh加密了的TCP通信            |
-         +------------------------------------+
-
-                    SSH连接
-</code></pre>
-<h3 id="OpenSSH"><a href="#OpenSSH" class="headerlink" title="OpenSSH"></a>OpenSSH</h3><p>对于OpenSSH客户端（Linux默认安装）, <font color="#D0087E" size="4" face="STFangsong">主机(公网ip)与某一个服务器进行远程连接</font></p>
-<p>OpenSSH(OpenBSD Secure Shell)是一套使用<strong>ssh协议</strong>, 提供<font color="#D0087E" size="4" face="STFangsong">加密通讯会话的程序</font></p>
-<h4 id="SSH-KEY"><a href="#SSH-KEY" class="headerlink" title="SSH KEY"></a>SSH KEY</h4><ul>
-<li><p>SSH密钥简单来说: 让你方便的登录SSH服务器, <font color="#D0087E" size="4" face="STFangsong">而无需密码</font></p>
-<blockquote>
-<p>——SSH利用SSH Key来进行前面提到的基于密钥的安全验证</p>
-</blockquote>
-</li>
-<li><p>使用步骤—主机与Github服务器</p>
-</li>
-</ul>
-<pre class="line-numbers language-shell"><code class="language-shell">ssh-keygen -t rsa -C 'xxx@xxx.com' ——生成密钥对(OpenSSH也可生成
-cat ~/.ssh/id_rsa.pub ——查看配置公钥文件
-SHA256:xxxbg6kXUpJWGlxxxIGOCspRomTxdCARLxxx6E5SY8 ——sha256哈希值格式
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>git使用https协议，每次pull, push都要输入密码,所以使用ssh密钥(也可使用<a href="https://www.5axxw.com/questions/content/0lwpqy">Github令牌</a>)</p>
-</blockquote>
-<p>1.在客户端生成SSH key（密钥对：公钥和私钥）——终端操作</p>
-<p>2.在服务端的配置文件中加入你的公钥。（比如我们需要在GitHub中粘贴你的公钥）</p>
-<ul>
-<li>主机与Linux服务器</li>
-</ul>
-<pre class="line-numbers language-shell"><code class="language-shell">mv id_rsa_2048.pub ~/.ssh --生成的密钥对文件
-cd ~/.ssh/authorized_keys
-cat id_rsa_2048.pub >> ~/.ssh/authorized_keys --密钥文件追加
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="附笔"><a href="#附笔" class="headerlink" title="附笔"></a>附笔</h3><pre><code>id_rsa：本机（服务端）的私钥文件。
-id_rsa.pub：本机（服务端）的公钥文件。
-authorized_key：存放想要通过公私钥校验方式连接本机（服务端）的客户端公钥。
-known_hosts：本地的客户端存放成功连接本机（服务端）的服务端信息，服务端信息变更的话会再次询问，是否连接。（即存放曾经连接成功过的远程服务器信息）
-</code></pre>
-<p><font color="#D0087E" size="4" face="STFangsong">服务器</font> : 被用来设计处理的业务应用(如网络和系统管理，数据库管理和Web服务的电脑(不限于微机,linux系统</p>
-<p><font color="#D0087E" size="4" face="STFangsong">主机</font> : host 可以托管相对于<strong>其他计算机</strong>有用的应用程序</p>
-<p><font color="#D0087E" size="4" face="STFangsong">本地</font> : local/localhost 是指用户或特定软件正在使用的计算机</p>
-<p><font color="#D0087E" size="4" face="STFangsong">远程</font> : 远程计算机指不再你面前, 客观上没有实际使用的面对面计算机 </p>
-<h3 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h3><ul>
-<li><a href="http://tencent.yundashi168.com/bt-panel">宝塔面板系列教程</a> <a href="https://www.php.cn/topic/bt/">宝塔面板使用教程</a> 面板url:<code>http://&lt;服务器公网IP&gt;:8888</code></li>
-<li>帮助管理远程主机(服务器)的大量组件工具,添加搭建动态网站使用在购买的云服务器上,默认占用8888端口</li>
-</ul>
-<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul>
-<li><p><a href="https://putty.org/">PuTTY for Windows</a></p>
-</li>
-<li><p><a href="https://www.xshell.com/zh/xshell/">XSHELL - NetSarang Website</a></p>
-</li>
-<li><p><a href="http://www.hostbuf.com/t/988.html">FinalShell-Windows,macOS,Linux</a></p>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对熵的一种微观解释进行可视化</title>
-    <url>/post/entropy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
-<summary>熵源于的热力学第二定律</summary>
-
-<ul>
-<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
-<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
-</ul>
-<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
-<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
-<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
-<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>WGET</title>
     <url>/post/command-wget/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p>
@@ -263,6 +240,29 @@ wget -c -r -np -k -L -p url --递归下载整个网站
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>对熵的一种微观解释进行可视化</title>
+    <url>/post/entropy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
+<summary>熵源于的热力学第二定律</summary>
+
+<ul>
+<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
+<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
+</ul>
+<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
+<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
+<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
+<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
       </tags>
   </entry>
   <entry>
@@ -453,6 +453,39 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       </tags>
   </entry>
   <entry>
+    <title>JS加载</title>
+    <url>/post/js-loading/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="同步加载"><a href="#同步加载" class="headerlink" title="同步加载"></a><font color="#D0087E" face="STFangsong">同步加载</h3><ul>
+<li>阻塞模式 , 提高安全性</li>
+</ul>
+<p>过多JS加载会影响页面效率<br>默认正常情况下, JS是同步加载 , 及优先加载外部JS , 只有当JS文件下载完成 , don和css才开始加载</font></p>
+<pre class="line-numbers language-html"><code class="language-html">&lt;script src = 'index.js' ><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="异步加载"><a href="#异步加载" class="headerlink" title="异步加载"></a><font color="#2181ff" face="STFangsong">异步加载</h3><ul>
+<li><p>非阻塞加载</p>
+<ul>
+<li><p>动态创建script</p>
+</li>
+<li><p>defer 延迟加载JS,等到HTML的DOM全部解析之后</p>
+</li>
+<li><p>async HTML的文档解析和脚本的获取同时进行</font></p>
+</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html">&lt;script src = 'index.js' defer><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> -defer
+&lt;script src = 'index.js' async><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> -async
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Code</category>
+        <category>html/css/javascript</category>
+      </categories>
+      <tags>
+        <tag>效率</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>电信HG6543C1超级管理员账户密码获取</title>
     <url>/post/light-cat/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
@@ -489,39 +522,6 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       <tags>
         <tag>整活</tag>
         <tag>光猫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JS加载</title>
-    <url>/post/js-loading/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="同步加载"><a href="#同步加载" class="headerlink" title="同步加载"></a><font color="#D0087E" face="STFangsong">同步加载</h3><ul>
-<li>阻塞模式 , 提高安全性</li>
-</ul>
-<p>过多JS加载会影响页面效率<br>默认正常情况下, JS是同步加载 , 及优先加载外部JS , 只有当JS文件下载完成 , don和css才开始加载</font></p>
-<pre class="line-numbers language-html"><code class="language-html">&lt;script src = 'index.js' ><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="异步加载"><a href="#异步加载" class="headerlink" title="异步加载"></a><font color="#2181ff" face="STFangsong">异步加载</h3><ul>
-<li><p>非阻塞加载</p>
-<ul>
-<li><p>动态创建script</p>
-</li>
-<li><p>defer 延迟加载JS,等到HTML的DOM全部解析之后</p>
-</li>
-<li><p>async HTML的文档解析和脚本的获取同时进行</font></p>
-</li>
-</ul>
-</li>
-</ul>
-<pre class="line-numbers language-html"><code class="language-html">&lt;script src = 'index.js' defer><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> -defer
-&lt;script src = 'index.js' async><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> -async
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>Code</category>
-        <category>html/css/javascript</category>
-      </categories>
-      <tags>
-        <tag>效率</tag>
       </tags>
   </entry>
   <entry>
@@ -1115,6 +1115,23 @@ copy /b xxx.png+xxx.zip xxx.png
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>奥卡姆剃刀</title>
+    <url>/post/Occam&#39;s%20Razor/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
+<li><p>如无必要 勿增实体</p>
+<blockquote>
+ <center>英格兰奥卡姆逻辑学家--威廉</center></blockquote>
+</li>
+</ul>
+<p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p>
+<p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>黄梅戏</title>
     <url>/post/oper-hmx/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
@@ -1144,36 +1161,6 @@ copy /b xxx.png+xxx.zip xxx.png
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>奥卡姆剃刀</title>
-    <url>/post/Occam&#39;s%20Razor/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
-<li><p>如无必要 勿增实体</p>
-<blockquote>
- <center>英格兰奥卡姆逻辑学家--威廉</center></blockquote>
-</li>
-</ul>
-<p><strong>如果存在一条无法感知的龙 , 而且不可证伪 , 那么就解释这条龙根本不存在</strong></p>
-<p><strong>如果同一个现象有n种逻辑解释系统 , 最简单的那个就是最正确的</strong> </p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>帕累托法则</title>
-    <url>/post/Pareto%20principle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
-</blockquote>
-<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>权重</title>
     <url>/post/The%20weight/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是权重"><a href="#什么是权重" class="headerlink" title="什么是权重"></a>什么是权重</h3><blockquote>
@@ -1190,6 +1177,19 @@ copy /b xxx.png+xxx.zip xxx.png
       <tags>
         <tag>专业词</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>帕累托法则</title>
+    <url>/post/Pareto%20principle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>在统计学上的意义、别名关键少数法则、二八定律，是罗马尼亚管理学家约瑟夫·朱兰提出的一条管理学原理</p>
+</blockquote>
+<p>在通信的过程中需要<strong>消除80%不确定性的</strong>事物运动状态或存在方式,<strong>获取20%信息</strong></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
   </entry>
   <entry>
     <title>DNS</title>
@@ -1210,7 +1210,7 @@ copy /b xxx.png+xxx.zip xxx.png
     <title>编程字体</title>
     <url>/post/code-ttf/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-top-red">
-<font color="#1D8886" size="4" face="FZYaoti">Noto Sans Mono ——<a href="https://blog.csdn.net/weixin_44191535/article/details/105022799"><strong>Noto Sans Mono CJK SC</strong></a>——适合中文编译
+<font color="#1D8886" size="4" face="FZYaoti">Noto Sans Mono ——<a href="https://github.com/googlefonts/noto-cjk/releases/tag/Sans2.004"><strong>Noto Sans Mono CJK SC</strong></a>——适合中文编译
 </font></p>
 
 <ul>
