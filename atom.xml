@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-08-09T18:03:17.704Z</updated>
+  <updated>2022-08-11T03:41:08.581Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>内网和外网</title>
+    <link href="http://blog.nagisb.space/post/server-router/"/>
+    <id>http://blog.nagisb.space/post/server-router/</id>
+    <published>2022-08-11T02:38:05.000Z</published>
+    <updated>2022-08-11T03:41:08.581Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><font color="#2181ff" size="4" face="STFangsong"><center>公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性</center></font></p><span id="more"></span><h4 id="公网IP"><a href="#公网IP" class="headerlink" title="公网IP"></a>公网IP</h4><ul><li><p>广域网IP, 依公网连接Internet上的非保留地址</p><blockquote><p>指设备在访问(Internet)互联网上的IP地址, 默认运营商给网关唯一分配地址</p></blockquote></li></ul><h5 id="使用公网"><a href="#使用公网" class="headerlink" title="使用公网"></a>使用公网</h5><blockquote><p>申请公网IP后, 路由器nat服务在Internet映射你的端口, 设置DMZ主机可将电脑暴露在外网</p></blockquote><h4 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h4><ul><li><p>局域网ip, 内网的计算机以NAT 协议，通过一个公共的<a href="https://baike.baidu.com/item/%E7%BD%91%E5%85%B3/98992">网关</a>访问Internet</p><blockquote><p>样式 <code>192.168.xxx.xxx</code>  <code>127.0.0.1</code>回送地址就是回送的主机内网IP</p><p>用来区分在同一网关下的不同设备, 一般仅内网设备可以通过公网访问Internet</p></blockquote></li></ul><h5 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h5><ul><li><p>NAT穿透, 采用端口映射(无需公网iP</p><blockquote><p>将内网通过<code>nat_app</code>隧道打通, 再通过端口映射, 让外网设备访问内网</p></blockquote></li></ul><hr><h4 id="公网设备"><a href="#公网设备" class="headerlink" title="公网设备"></a>公网设备</h4><p>浏览器输入<code>主机IP</code>显示的就是唯一公网地址</p><pre class="line-numbers language-shell"><code class="language-shell">ipconfig -回显比对是否有公网地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="NATAPP"><a href="#NATAPP" class="headerlink" title="NATAPP"></a>NATAPP</h4><ul><li><a href="https://www.natfrp.com/?page=register">Sakura Frp — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案 (natfrp.com)</a></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;font color=&quot;#2181ff&quot; size=&quot;4&quot; face=&quot;STFangsong&quot;&gt;&lt;center&gt;公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性&lt;/center&gt;&lt;/font&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="服务器" scheme="http://blog.nagisb.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WGET</title>
     <link href="http://blog.nagisb.space/post/command-wget/"/>
     <id>http://blog.nagisb.space/post/command-wget/</id>
     <published>2022-08-09T17:23:18.000Z</published>
-    <updated>2022-08-09T18:03:17.704Z</updated>
+    <updated>2022-08-11T03:14:56.575Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p><p><em><span id="more"></span></em></p><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)sudo apt-get install wget --命令行安装<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件tail -f wget-log --查看下载进度wget -O xxx.tgz url --下载并以不同的文件名保存(大写Owget -c -r -np -k -L -p url --递归下载整个网站<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote><details><summary>wget [option] [URL]</summary>-h,--help打印语法帮助 <p>-r,  –recursive 指定递归下载</p><p>-b,  –background 启动后转入后台下载</p><p>-o, –output-file=FILE xxx.log URL保存日志</p><p>-q,–quiet 安静模式不显示输出信息</p><p>-c,  –continue  断点续传下载文件</p><p>-O, 以不同的文件名保存</p><p>–spider, 模拟下载,不下载任何文件</p></blockquote></details><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
@@ -460,30 +479,6 @@ copy /b xxx.png+xxx.zip xxx.png
     <category term="信息论" scheme="http://blog.nagisb.space/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/"/>
     
     <category term="编码" scheme="http://blog.nagisb.space/tags/%E7%BC%96%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows作为服务器发布静态网址</title>
-    <link href="http://blog.nagisb.space/post/win-server/"/>
-    <id>http://blog.nagisb.space/post/win-server/</id>
-    <published>2022-07-24T20:34:46.532Z</published>
-    <updated>2022-07-25T01:40:28.828Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是IIS"><a href="#什么是IIS" class="headerlink" title="什么是IIS"></a>什么是IIS</h2><blockquote><p>Internet Information Service<code>（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务</code></p></blockquote><p><em><span id="more"></span></em></p><p>我们想要实现将静态网址放到公网上面,需要用到微软的IIS服务</p><hr><h3 id="设置打开IIS"><a href="#设置打开IIS" class="headerlink" title="设置打开IIS"></a>设置打开IIS</h3><p><img src="/images/IIS-ser.png" loading="lazy"></p><p>设置→控制面板→程序→启用或关闭Windows功能→找到<code>Internet Information Services</code>并勾选→确定</p><h2 id="创建静态网址"><a href="#创建静态网址" class="headerlink" title="创建静态网址"></a>创建静态网址</h2><ul><li><p><a href="https://www.aliyundrive.com/s/EiA6LXj9GKQ">index.html</a></p><blockquote><p>下载静态网址放到本地 , 如我的地址为 &gt; 桌面/web/index.html</p></blockquote></li></ul><p>双击打开这个网址可以看到在浏览器上这个页面 , 现在就把它放到公网上</p><h2 id="什么是IPV6"><a href="#什么是IPV6" class="headerlink" title="什么是IPV6"></a><a href="https://zhuanlan.zhihu.com/p/36542469">什么是IPV6</a></h2><ul><li>总而言之使用IPV6的地址可以直接将本地地址映射到公网地址上面 </li><li> IPV4想要实现可以申请公网IP,或者使用内网穿透</li></ul><h3 id="测试IPV6"><a href="#测试IPV6" class="headerlink" title="测试IPV6"></a><a href="http://test-ipv6.com/">测试IPV6</a></h3><p>若网址显示没有接入IPV6可以去路由器设置开启IPV6</p><hr><h3 id="获取IPV6地址"><a href="#获取IPV6地址" class="headerlink" title="获取IPV6地址"></a>获取IPV6地址</h3><p>打开CMD , 在出来的DOS界面里，输入<code>ipconfig</code>  , 回显显示IPV6地址</p><p><img src="/images/IPV6-ip.png" loading="lazy"></p><h2 id="搜索IIS程序打开"><a href="#搜索IIS程序打开" class="headerlink" title="搜索IIS程序打开"></a>搜索IIS程序打开</h2><p>点击红色下拉标,可以看到一个默认网站,右键网站 , 选择添加网址,物理路径选择静态网址所在文件夹,如: <code>F:\Users\Administrator\Desktop\Web</code>,ip地址输入IPV6地址.点击确认</p><p><img src="/images/IIS-ip.png" loading="lazy"></p><h2 id="部署网址"><a href="#部署网址" class="headerlink" title="部署网址"></a>部署网址</h2><ul><li><p>在浏览器上<code>http://[ipv6地址]:端口(</code>不填默认80) , 显示错误页面 , 提示无权访问，是因为我们没有开启权限</p><blockquote><p>在本地电脑找到网址所在文件夹,右键属性共享页面,选择不共享下面的共享设置,输入添加everyone用户共享</p></blockquote></li><li><p>再次输入<code>http://[ipv6地址]:端口</code>可以看到.html页面 , 使用不再局域网下的设备输入网址测试IPV6地址</p></li></ul><p><img src="/images/ipv6-index.png" loading="lazy"></p><hr><h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote><p><a href="https://www.bilibili.com/read/cv6429435/">让你的windows电脑变成服务器 </a><strong>—陈就就</strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;什么是IIS&quot;&gt;&lt;a href=&quot;#什么是IIS&quot; class=&quot;headerlink&quot; title=&quot;什么是IIS&quot;&gt;&lt;/a&gt;什么是IIS&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Internet Information Service&lt;code&gt;（IIS）是windows开设web网页服务的组件，用来搭载网站运行程序的平台的。还能提供FTP，SMTP等服务&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;</summary>
-    
-    
-    
-    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
-    
-    
-    <category term="服务器" scheme="http://blog.nagisb.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
