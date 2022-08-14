@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-08-14T03:05:59.757Z</updated>
+  <updated>2022-08-14T13:21:44.143Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>对数幻觉</title>
+    <link href="http://blog.nagisb.space/post/log-huanjue/"/>
+    <id>http://blog.nagisb.space/post/log-huanjue/</id>
+    <published>2022-08-14T11:59:40.000Z</published>
+    <updated>2022-08-14T13:21:44.143Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="韦伯-费希纳定律"><a href="#韦伯-费希纳定律" class="headerlink" title="韦伯-费希纳定律"></a>韦伯-费希纳定律</h3><ul><li>$\frac {\Delta I}{I} = K$  <code>差别阈限/标准刺激强度=韦伯分数(常数)</code>   <em><span id="more"></span></em><ul><li>表明<code>心理量</code>和<code>物理量</code>在韦伯常数字下之间关系的定律</li><li>差别阈限测量的是观察者对刺激间阈上差异的辨别能力</li><li>感觉量与物理量的对数值成正比,<font color="#2181ff" size="4" face="STFangsong">就是当感觉量成<code>算数级数</code>增长, 物理量要成<code>几何级数</code>增长</font></font></li></ul></li></ul><blockquote><p> <code>一</code>台音响所带来的1倍体验, 需要<code>十</code>台音响才能带来2倍体验</p><p>在10LX光照强度的房间增加1LX 带来的体验 比100LX光照强度的房间需增加10LX</p></blockquote><hr><h3 id="推导图像"><a href="#推导图像" class="headerlink" title="推导图像"></a>推导图像</h3><p><img src="https://cdn.staticaly.com/gh/nagisb2/image@master/log-weibo.webp" loading="lazy"></p><ul><li>以y轴为感官区别, x轴为物质实际变化量</li></ul><p><img src="https://cdn.staticaly.com/gh/nagisb2/image@master/log-hanshu.webp" loading="lazy"></p><blockquote><p><font color="#2181ff" size="4" face="STFangsong">某一区间相同变化量下物质的感官区别会有所不同, 相同感受量需要更多的变化量</font></font></p></blockquote><h3 id="对数幻觉"><a href="#对数幻觉" class="headerlink" title="对数幻觉"></a>对数幻觉</h3><p id="div-border-top-red">感官的感受区别更参考于 基数与变化量的比例 而不是 仅靠变化量 的心理现象</p><ul><li><code>物质的答案先于客观事实而存在,  正是由对数幻觉的心理现实和物质答案 而产生了一定的认知偏差</code><ul><li><code>艾宾浩斯错觉</code>: 两个小球的 主观参照基数与变化量的比例不同(视觉</li><li><code>谢帕德音节</code>: 主观参照的音调基数与音阶的比例相差(听觉</li><li><code>时间错觉</code>: 一年时间的<code>快慢</code>年龄小和年龄大的人 1年占了我存活(年龄)基数的比例不同</li></ul></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;韦伯-费希纳定律&quot;&gt;&lt;a href=&quot;#韦伯-费希纳定律&quot; class=&quot;headerlink&quot; title=&quot;韦伯-费希纳定律&quot;&gt;&lt;/a&gt;韦伯-费希纳定律&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;$\frac {\Delta I}{I} = K$  &lt;code&gt;差别阈限/标准刺激强度=韦伯分数(常数)&lt;/code&gt;   &lt;em&gt;</summary>
+    
+    
+    
+    <category term="随笔一记" scheme="http://blog.nagisb.space/categories/%E9%9A%8F%E7%AC%94%E4%B8%80%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>相对定位和绝对定位</title>
@@ -64,7 +84,7 @@
     <link href="http://blog.nagisb.space/post/command-wget/"/>
     <id>http://blog.nagisb.space/post/command-wget/</id>
     <published>2022-08-09T17:23:18.000Z</published>
-    <updated>2022-08-11T03:14:56.575Z</updated>
+    <updated>2022-08-14T12:27:34.019Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p><p><em><span id="more"></span></em></p><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)sudo apt-get install wget --命令行安装<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件tail -f wget-log --查看下载进度wget -O xxx.tgz url --下载并以不同的文件名保存(大写Owget -c -r -np -k -L -p url --递归下载整个网站<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote><details><summary>wget [option] [URL]</summary>-h,--help打印语法帮助 <p>-r,  –recursive 指定递归下载</p><p>-b,  –background 启动后转入后台下载</p><p>-o, –output-file=FILE xxx.log URL保存日志</p><p>-q,–quiet 安静模式不显示输出信息</p><p>-c,  –continue  断点续传下载文件</p><p>-O, 以不同的文件名保存</p><p>–spider, 模拟下载,不下载任何文件</p></blockquote></details><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
@@ -460,26 +480,6 @@ copy /b xxx.png+xxx.zip xxx.png
     
     
     <category term="信息论" scheme="http://blog.nagisb.space/tags/%E4%BF%A1%E6%81%AF%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>优雅的盗号技巧</title>
-    <link href="http://blog.nagisb.space/post/qq-passwd/"/>
-    <id>http://blog.nagisb.space/post/qq-passwd/</id>
-    <published>2022-07-26T14:30:33.000Z</published>
-    <updated>2022-07-28T10:24:55.013Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p><p><em><span id="more"></span></em></p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul><li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p><blockquote><p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p></blockquote></li></ul><ol><li><p>安装软件后按提示打开软件无障碍服务</p></li><li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p></li></ol><h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p><p><img src="/images/qq-passwd.png" loading="lazy"></p><center>提前打开密码显示按钮</center><p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p><p><img src="/images/Type-qq.png" loading="lazy"></p><p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p><h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;声明&quot;&gt;&lt;a href=&quot;#声明&quot; class=&quot;headerlink&quot; title=&quot;声明&quot;&gt;&lt;/a&gt;声明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;由于此文章、&lt;a href=&quot;https://www.findlaw.cn/hetong/ft590/&quot;&gt;不可抗力&lt;/a&gt;、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;</summary>
-    
-    
-    
-    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
-    
     
   </entry>
   
