@@ -14,6 +14,7 @@
 <h3 id="CDN"><a href="#CDN" class="headerlink" title=" CDN"></a><font color="#D0087E" face="STFangsong"> CDN</h3><ul>
 <li>加速部分如CSS, JS静态资源的访问, 如,网络图床, 相对于降低Web部署服务器的网络拥堵</li>
 <li><strong>Content Delivery Network</strong>, 使用CDN可以将网站部分内容进行分发来有效提升下载速度、降低响应时间，提供流畅的用户体验</li>
+<li>内容分发网络：访问者的每个访问请求，都会被自动发送到物理距离最近、速度最快的节点上</li>
 </ul>
 <h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><table>
     <caption>CDN</caption>
@@ -44,7 +45,7 @@
     </tr>
     <tr>
         <td>cloudflare</td>
-        <td>免费套餐国外</td>
+        <td>免费</td>
         <td>github、JavaScript、css、image、html</td>
     </tr>
     </table></font>
@@ -95,6 +96,12 @@
         <td>netlify</td>
         <td>新加坡</td>
         <td>支持自动部署</td>>
+    </tr>
+    <tr>
+        <td>Heroku</td>
+        <td>美国弗吉尼亚阿什本</td>
+        <td>支持自动部署</td>>
+    </tr>
 </table></font>
 
 <hr>
@@ -291,39 +298,6 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </tags>
   </entry>
   <entry>
-    <title>WGET</title>
-    <url>/post/command-wget/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p>
-
-<p><em><span id="more"></span></em></p>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)
-sudo apt-get install wget --命令行安装
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件
-tail -f wget-log --查看下载进度
-wget -O xxx.tgz url --下载并以不同的文件名保存(大写O
-wget -c -r -np -k -L -p url --递归下载整个网站
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote>
-<details>
-<summary>wget [option] [URL]</summary>
--h,--help打印语法帮助
- 
-<p>-r,  –recursive 指定递归下载</p>
-<p>-b,  –background 启动后转入后台下载</p>
-<p>-o, –output-file=FILE xxx.log URL保存日志</p>
-<p>-q,–quiet 安静模式不显示输出信息</p>
-<p>-c,  –continue  断点续传下载文件</p>
-<p>-O, 以不同的文件名保存</p>
-<p>–spider, 模拟下载,不下载任何文件</p>
-</blockquote>
-</details>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>路径</title>
     <url>/post/Web-path/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-right-yellow"><font color="#5b3030" size="5" face="sans-serif">对文件操作时会遇到需要读写外部文件的情况，这个时候就需要用到文件路径</font></p>
@@ -358,6 +332,39 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       </categories>
       <tags>
         <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WGET</title>
+    <url>/post/command-wget/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p>
+
+<p><em><span id="more"></span></em></p>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)
+sudo apt-get install wget --命令行安装
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件
+tail -f wget-log --查看下载进度
+wget -O xxx.tgz url --下载并以不同的文件名保存(大写O
+wget -c -r -np -k -L -p url --递归下载整个网站
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote>
+<details>
+<summary>wget [option] [URL]</summary>
+-h,--help打印语法帮助
+ 
+<p>-r,  –recursive 指定递归下载</p>
+<p>-b,  –background 启动后转入后台下载</p>
+<p>-o, –output-file=FILE xxx.log URL保存日志</p>
+<p>-q,–quiet 安静模式不显示输出信息</p>
+<p>-c,  –continue  断点续传下载文件</p>
+<p>-O, 以不同的文件名保存</p>
+<p>–spider, 模拟下载,不下载任何文件</p>
+</blockquote>
+</details>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
@@ -850,6 +857,65 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       </tags>
   </entry>
   <entry>
+    <title>DLL——“动态链接”</title>
+    <url>/post/win-dll/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
+
+<blockquote>
+<p>exe程序在执行的时链接到.Dll文件——动态链接库(Dynamic Link Library)<em><span id="more"></span></em></p>
+<p>普通程序符合接口规范下<strong>DLL文件与EXE文件独立</strong>——<a href="https://docs.microsoft.com/zh-cn/troubleshoot/windows-client/deployment/dynamic-link-library">动态链接</a></p>
+<p>DLL文件可以被许多程序共用。因此可以利用DLL文件,作为一些代码Dll(模块)存放。</p>
+</blockquote>
+</font>
+
+
+
+<h4 id="Svchost"><a href="#Svchost" class="headerlink" title="Svchost"></a><font color="#F4E539">Svchost</font><font color="#3F3E3F"></h4><ul>
+<li><p>在Windows任务管理器的进程栏里有一大票<strong>svchost.exe</strong></p>
+<blockquote>
+<p>——它为Windows上的<strong>Dll类服务</strong>例程驱动提供了运行空间(Service Host process)</p>
+</blockquote>
+</li>
+</ul>
+</font>
+
+<h4 id="rundll"><a href="#rundll" class="headerlink" title="rundll"></a><font color="#F4E539">rundll</font><font color="#3F3E3F"></h4><ul>
+<li>顾名思义，rundll就是运行dll。这个dll并不是普通的dll, 而是要<strong>符合rundll接口</strong>规范</li>
+</ul>
+<pre class="line-numbers language-shell"><code class="language-shell">rundll32.exe shell32.dll,Control_RunDLL 打开控制面板
+rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<hr>
+</font>
+
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a><font color="#F4E539">链接</font><font color="#3F3E3F"></h4><blockquote>
+<p>基本来说它让<strong>一个文件可以拥有多个访问路径</strong></p>
+</blockquote>
+<ul>
+<li>Windows NT内核的结构很大程度依赖于DLL<strong>动态链接</strong>机制。</li>
+<li>从Windows  NT4开始，NTFS文件系统引入了<strong>HardLink</strong>这个概念。</li>
+<li>到了Windows2000，引入了<strong>Junction</strong> 链接方式，又叫初级的软链接。</li>
+<li>在Windows Vista之后引入了 <strong>Symbolic Link</strong>, 可以说是Junction链接的增强版。</li>
+</ul>
+</font>
+
+
+</font>
+
+<h4 id="dll注入"><a href="#dll注入" class="headerlink" title="dll注入"></a><font color="#F4E539">dll注入</font><font color="#3F3E3F"></h4><ul>
+<li><strong>DLL注入简单地定义为将DLL插入另一个进程的空间然后执行其代码的过程</strong></li>
+</ul>
+<p><a href="https://www.bilibili.com/video/BV1SY4y1g75J?spm_id_from=..search-card.all.click&vd_source=a9f586ee0f1226cd479b50e1f04dcaea">『教程』Windows中的窗口注入dll 哔哩哔哩_bilibili</a></p>
+</font>
+
+<h4 id="dll编译"><a href="#dll编译" class="headerlink" title="dll编译"></a><font color="#F4E539">dll编译</font></h4><p><a href="http://angusj.com/resourcehacker/">Resource Hacker (angusj.com)</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Wy4y1q7WR?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">Windows8改oobe_哔哩哔哩_bilibili</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机通用视频格式</title>
     <url>/post/video-type/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#D0087E" size="4" face="STFangsong">计算机通用“<a href="https://www.bluraycopys.com/zh-CN/video/what-is-mp4.html"><strong>视频知识</strong></a>“,文件格式(MP4、MOV、WMV、FLV、AVI、WebM、MKV、DAT、M3U8)</font></p>
@@ -968,65 +1034,6 @@ wget -c -r -np -k -L -p url --递归下载整个网站
 <li><a href="https://www.videolan.org/">VLC</a></li>
 <li><a href="https://potplayer.daum.net/?lang=zh_CN">POTPLAYER</a></li>
 </ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DLL——“动态链接”</title>
-    <url>/post/win-dll/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
-
-<blockquote>
-<p>exe程序在执行的时链接到.Dll文件——动态链接库(Dynamic Link Library)<em><span id="more"></span></em></p>
-<p>普通程序符合接口规范下<strong>DLL文件与EXE文件独立</strong>——<a href="https://docs.microsoft.com/zh-cn/troubleshoot/windows-client/deployment/dynamic-link-library">动态链接</a></p>
-<p>DLL文件可以被许多程序共用。因此可以利用DLL文件,作为一些代码Dll(模块)存放。</p>
-</blockquote>
-</font>
-
-
-
-<h4 id="Svchost"><a href="#Svchost" class="headerlink" title="Svchost"></a><font color="#F4E539">Svchost</font><font color="#3F3E3F"></h4><ul>
-<li><p>在Windows任务管理器的进程栏里有一大票<strong>svchost.exe</strong></p>
-<blockquote>
-<p>——它为Windows上的<strong>Dll类服务</strong>例程驱动提供了运行空间(Service Host process)</p>
-</blockquote>
-</li>
-</ul>
-</font>
-
-<h4 id="rundll"><a href="#rundll" class="headerlink" title="rundll"></a><font color="#F4E539">rundll</font><font color="#3F3E3F"></h4><ul>
-<li>顾名思义，rundll就是运行dll。这个dll并不是普通的dll, 而是要<strong>符合rundll接口</strong>规范</li>
-</ul>
-<pre class="line-numbers language-shell"><code class="language-shell">rundll32.exe shell32.dll,Control_RunDLL 打开控制面板
-rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<hr>
-</font>
-
-<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a><font color="#F4E539">链接</font><font color="#3F3E3F"></h4><blockquote>
-<p>基本来说它让<strong>一个文件可以拥有多个访问路径</strong></p>
-</blockquote>
-<ul>
-<li>Windows NT内核的结构很大程度依赖于DLL<strong>动态链接</strong>机制。</li>
-<li>从Windows  NT4开始，NTFS文件系统引入了<strong>HardLink</strong>这个概念。</li>
-<li>到了Windows2000，引入了<strong>Junction</strong> 链接方式，又叫初级的软链接。</li>
-<li>在Windows Vista之后引入了 <strong>Symbolic Link</strong>, 可以说是Junction链接的增强版。</li>
-</ul>
-</font>
-
-
-</font>
-
-<h4 id="dll注入"><a href="#dll注入" class="headerlink" title="dll注入"></a><font color="#F4E539">dll注入</font><font color="#3F3E3F"></h4><ul>
-<li><strong>DLL注入简单地定义为将DLL插入另一个进程的空间然后执行其代码的过程</strong></li>
-</ul>
-<p><a href="https://www.bilibili.com/video/BV1SY4y1g75J?spm_id_from=..search-card.all.click&vd_source=a9f586ee0f1226cd479b50e1f04dcaea">『教程』Windows中的窗口注入dll 哔哩哔哩_bilibili</a></p>
-</font>
-
-<h4 id="dll编译"><a href="#dll编译" class="headerlink" title="dll编译"></a><font color="#F4E539">dll编译</font></h4><p><a href="http://angusj.com/resourcehacker/">Resource Hacker (angusj.com)</a></p>
-<p><a href="https://www.bilibili.com/video/BV1Wy4y1q7WR?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">Windows8改oobe_哔哩哔哩_bilibili</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>文件</tag>
