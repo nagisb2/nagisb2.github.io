@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-08-27T15:40:51.369Z</updated>
+  <updated>2022-08-27T17:13:46.823Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html与xhtml</title>
+    <link href="http://blog.nagisb.space/post/html-bibq/"/>
+    <id>http://blog.nagisb.space/post/html-bibq/</id>
+    <published>2022-08-27T16:39:31.873Z</published>
+    <updated>2022-08-27T17:13:46.823Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red">在早先的html规范中&#60br&#62&#60hr&#62&#60img&#62等标记元素无需"封闭自身", 造成了html规范本身的不严谨</p><p><em><span id="more"></span></em> </p><h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><ul><li><strong>超文本标记语言</strong></li><li><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</li></ul><h4 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h4><blockquote><p> 参考自更规范的XML语言所推出了XHTML</p></blockquote><ul><li><strong>可扩展超文本标记语言</strong></li><li>e<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage<ul><li>尽量减少网页的代码量，同时保持逻辑严谨。</li><li> 标签都必须<code>成对出现</code>，不能成对的标签也需要<code>结束符</code></li></ul></li></ul><h4 id="差异性"><a href="#差异性" class="headerlink" title="差异性"></a>差异性</h4><ul><li><p>HTML是SGML的子集，SGML允许标签没有结束标签，而换行符元素正好不需要内嵌元素，也就不需要结束标签。所以在HTML中，应该写成<code>&lt;br&gt;</code></p></li><li><p>XHTML是XML的子集，在XML中，标签必须要有结束标签。所以在XHTML中只写<code>&lt;br&gt;</code>是不符合语法的，必须写成<code>&lt;br&gt;&lt;/br&gt;</code>或简写成<code>&lt;br /&gt;</code></p></li></ul><h4 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h4><ul><li><code>&lt;br&gt;&lt;/br&gt;</code><ul><li>HTML解析不规范</li></ul></li><li><code>&lt;br&gt;</code><ul><li>XHTML解析不规范</li></ul></li><li><code>&lt;br /&gt;</code><ul><li>在XHTML解析成<code>&lt;br&gt;&lt;/br&gt;的简写</code></li><li>在HTML会理解成有一个叫<code>/</code>的属性的<code>br</code>标签</li><li>是XHTML为兼容HTML的写法，也是XML写法</li></ul></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;p id=&quot;div-border-left-red&quot;&gt;在早先的html规范中&amp;#60br&amp;#62&amp;#60hr&amp;#62&amp;#60img&amp;#62等标记元素无需&quot;封闭自身&quot;, 造成了html规范本身的不严谨&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    <category term="Code" scheme="http://blog.nagisb.space/categories/Code/"/>
+    
+    <category term="html/css/javascript" scheme="http://blog.nagisb.space/categories/Code/html-css-javascript/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>常见逻辑谬误</title>
@@ -447,39 +470,6 @@
     
     
     <category term="专业词" scheme="http://blog.nagisb.space/tags/%E4%B8%93%E4%B8%9A%E8%AF%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>编程字体</title>
-    <link href="http://blog.nagisb.space/post/code-ttf/"/>
-    <id>http://blog.nagisb.space/post/code-ttf/</id>
-    <published>2022-08-02T06:02:24.000Z</published>
-    <updated>2022-08-09T20:45:44.707Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-top-red"><font color="#1D8886" size="4" face="FZYaoti">Noto Sans Mono ——<a href="https://github.com/googlefonts/noto-cjk/releases/tag/Sans2.004"><strong>Noto Sans Mono CJK SC</strong></a>——适合中文编译</font></p><ul><li>fonts<ul><li><a href="https://www.nerdfonts.com/font-downloads"><strong>nerdfonts</strong></a></li><li><a href="https://www.googlefonts.cn/"><strong>google fonts</strong></a></li><li><a href="https://fonts.safe.360.cn/"><strong>fonts copyright</strong></a></li></ul></li></ul><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p id=&quot;div-border-top-red&quot;&gt;
-&lt;font color=&quot;#1D8886&quot; size=&quot;4&quot; face=&quot;FZYaoti&quot;&gt;Noto Sans Mono ——&lt;a href=&quot;https://github.com/googlefonts/noto-cjk/releases/tag/Sans2.004&quot;&gt;&lt;strong&gt;Noto Sans Mono CJK SC&lt;/strong&gt;&lt;/a&gt;——适合中文编译
-&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;fonts&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.nerdfonts.com/font-downloads&quot;&gt;&lt;strong&gt;nerdfonts&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.googlefonts.cn/&quot;&gt;&lt;strong&gt;google fonts&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://fonts.safe.360.cn/&quot;&gt;&lt;strong&gt;fonts copyright&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;</summary>
-    
-    
-    
-    <category term="资源" scheme="http://blog.nagisb.space/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="字体" scheme="http://blog.nagisb.space/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
