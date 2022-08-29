@@ -482,7 +482,7 @@
 <h4 id="乱码"><a href="#乱码" class="headerlink" title="乱码"></a><span id="inline-blue">乱码</span></h4><ul>
 <li><p>不同地区编码的标准不同</p>
 </li>
-<li><p>编辑器之前的不规范标准</p>
+<li><p>最新字符在旧的字符集下解析</p>
 </li>
 <li><p>保存源文件，读取源文件的不统一</p>
 <blockquote>
@@ -494,7 +494,7 @@
 </ul>
 <h4 id="锟斤拷"><a href="#锟斤拷" class="headerlink" title="锟斤拷"></a><span id="inline-blue">锟斤拷</span></h4><ul>
 <li>GBK, Unicode的转换问题</li>
-<li>编辑器自动展示<a href="https://www.fuhaozi.cn/unicode/F/FFFD.html">Unciode�替换符号</a>在GBK解码出现<code>锟斤拷</code></li>
+<li>编辑器自动展示<a href="https://www.fuhaozi.cn/unicode/F/FFFD.html">Unciode�替换/乱码符号</a>在GBK解码出现<code>锟斤拷</code></li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
@@ -1335,56 +1335,6 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </tags>
   </entry>
   <entry>
-    <title>相对定位和绝对定位</title>
-    <url>/post/css-location/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>文档中的一个分隔区块或者一个区域部分划定区域,类似图层<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a><font color="#D0087E" face="STFangsong">绝对定位</h3><ul>
-<li><p>以整个网页布局为基准</p>
-<ul>
-<li>四个边距: left和right, bottom和top</li>
-<li>分别对应左右下上四个网页距离边距</li>
-</ul>
-<pre class="line-numbers language-html"><code class="language-html">&lt;div name = "mydiv" id="mydiv" style="position:absolute;left:200px;top:200px">
-    JavaScript/css
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</font></li>
-</ul>
-<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a><font color="#2181ff" face="STFangsong">相对定位</h3><ul>
-<li><p>以当前标签位置为基准</p>
-<ul>
-<li>4个属性: left和top(与绝对位置, width和height</li>
-<li>width:  尺寸大小的宽度</li>
-<li>height: 尺寸大小的高度</li>
-</ul>
-<pre class="line-numbers language-html"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>relative<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">400</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span><span class="token number">50</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-        JavaScript/css 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<h3 id="div居中"><a href="#div居中" class="headerlink" title="div居中"></a><font color="#6666ff" face="STFangsong">div居中</h3><ul>
-<li><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">transform</span><span class="token punctuation">:</span><span class="token function">translate</span><span class="token punctuation">(</span>-<span class="token number">50%</span>,-<span class="token number">50%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>s</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      JavaScript/css 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<ul>
-<li><pre class="line-numbers language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span> center</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span> -行内元素居中
-           JavaScript/css
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>Code</category>
-        <category>html/css/javascript</category>
-      </categories>
-  </entry>
-  <entry>
     <title>html与xhtml</title>
     <url>/post/html-bibq/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red">在早先的html规范中&#60br&#62&#60hr&#62&#60img&#62等标记元素无需"封闭自身", 造成了html规范本身的不严谨</p>
@@ -1484,51 +1434,6 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </tags>
   </entry>
   <entry>
-    <title>内网和外网</title>
-    <url>/post/server-router/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><font color="#2181ff" size="4" face="STFangsong"><center>公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性</center></font></p>
-<span id="more"></span>
-
-<h4 id="公网IP"><a href="#公网IP" class="headerlink" title="公网IP"></a>公网IP</h4><ul>
-<li><p>广域网IP, 依公网连接Internet上的非保留地址</p>
-<blockquote>
-<p>指设备在访问(Internet)互联网上的IP地址</p>
-<p>一般购买的<code>服务器</code>, 网关下默认<code>运营商</code>给网关唯一分配地址</p>
-</blockquote>
-</li>
-</ul>
-<h5 id="使用公网"><a href="#使用公网" class="headerlink" title="使用公网"></a>使用公网</h5><blockquote>
-<p>申请公网IP后, 路由器nat服务在Internet映射你的端口,</p>
-<p>之后设置DMZ主机可将电脑暴露在外网(就是拿自己的电脑当服务器用了</p>
-</blockquote>
-<h4 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h4><ul>
-<li><p>局域网ip, 内网的计算机以NAT 协议，通过一个公共的<a href="https://baike.baidu.com/item/%E7%BD%91%E5%85%B3/98992">网关</a>访问Internet</p>
-<blockquote>
-<p>样式 <code>192.168.xxx.xxx</code>  <code>127.0.0.1</code>回送地址就是回送的主机内网IP</p>
-<p>用来区分在同一网关下的不同设备, 一般仅内网设备可以通过公网访问Internet</p>
-</blockquote>
-</li>
-</ul>
-<h5 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h5><ul>
-<li><p>NAT穿透, 采用端口映射(无需公网iP</p>
-<blockquote>
-<p>将内网通过<code>nat_app</code>隧道打通, 再通过端口映射, 让外网设备访问内网</p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h4 id="公网设备"><a href="#公网设备" class="headerlink" title="公网设备"></a>公网设备</h4><p>浏览器输入<code>主机IP</code>显示的就是唯一公网地址</p>
-<pre class="line-numbers language-shell"><code class="language-shell">ipconfig -回显比对是否有公网地址
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="NATAPP"><a href="#NATAPP" class="headerlink" title="NATAPP"></a>NATAPP</h4><ul>
-<li><a href="https://www.natfrp.com/?page=register">Sakura Frp — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案 (natfrp.com)</a></li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>静态与动态</title>
     <url>/post/web-dj/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="静态"><a href="#静态" class="headerlink" title="静态"></a>静态</h3><ul>
@@ -1591,6 +1496,101 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       <tags>
         <tag>服务器</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>内网和外网</title>
+    <url>/post/server-router/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><font color="#2181ff" size="4" face="STFangsong"><center>公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性</center></font></p>
+<span id="more"></span>
+
+<h4 id="公网IP"><a href="#公网IP" class="headerlink" title="公网IP"></a>公网IP</h4><ul>
+<li><p>广域网IP, 依公网连接Internet上的非保留地址</p>
+<blockquote>
+<p>指设备在访问(Internet)互联网上的IP地址</p>
+<p>一般购买的<code>服务器</code>, 网关下默认<code>运营商</code>给网关唯一分配地址</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="使用公网"><a href="#使用公网" class="headerlink" title="使用公网"></a>使用公网</h5><blockquote>
+<p>申请公网IP后, 路由器nat服务在Internet映射你的端口,</p>
+<p>之后设置DMZ主机可将电脑暴露在外网(就是拿自己的电脑当服务器用了</p>
+</blockquote>
+<h4 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h4><ul>
+<li><p>局域网ip, 内网的计算机以NAT 协议，通过一个公共的<a href="https://baike.baidu.com/item/%E7%BD%91%E5%85%B3/98992">网关</a>访问Internet</p>
+<blockquote>
+<p>样式 <code>192.168.xxx.xxx</code>  <code>127.0.0.1</code>回送地址就是回送的主机内网IP</p>
+<p>用来区分在同一网关下的不同设备, 一般仅内网设备可以通过公网访问Internet</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h5><ul>
+<li><p>NAT穿透, 采用端口映射(无需公网iP</p>
+<blockquote>
+<p>将内网通过<code>nat_app</code>隧道打通, 再通过端口映射, 让外网设备访问内网</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="公网设备"><a href="#公网设备" class="headerlink" title="公网设备"></a>公网设备</h4><p>浏览器输入<code>主机IP</code>显示的就是唯一公网地址</p>
+<pre class="line-numbers language-shell"><code class="language-shell">ipconfig -回显比对是否有公网地址
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="NATAPP"><a href="#NATAPP" class="headerlink" title="NATAPP"></a>NATAPP</h4><ul>
+<li><a href="https://www.natfrp.com/?page=register">Sakura Frp — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案 (natfrp.com)</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>相对定位和绝对定位</title>
+    <url>/post/css-location/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>文档中的一个分隔区块或者一个区域部分划定区域,类似图层<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a><font color="#D0087E" face="STFangsong">绝对定位</h3><ul>
+<li><p>以整个网页布局为基准</p>
+<ul>
+<li>四个边距: left和right, bottom和top</li>
+<li>分别对应左右下上四个网页距离边距</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html">&lt;div name = "mydiv" id="mydiv" style="position:absolute;left:200px;top:200px">
+    JavaScript/css
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</font></li>
+</ul>
+<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a><font color="#2181ff" face="STFangsong">相对定位</h3><ul>
+<li><p>以当前标签位置为基准</p>
+<ul>
+<li>4个属性: left和top(与绝对位置, width和height</li>
+<li>width:  尺寸大小的宽度</li>
+<li>height: 尺寸大小的高度</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>relative<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">400</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span><span class="token number">50</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        JavaScript/css 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="div居中"><a href="#div居中" class="headerlink" title="div居中"></a><font color="#6666ff" face="STFangsong">div居中</h3><ul>
+<li><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">transform</span><span class="token punctuation">:</span><span class="token function">translate</span><span class="token punctuation">(</span>-<span class="token number">50%</span>,-<span class="token number">50%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>s</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      JavaScript/css 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<ul>
+<li><pre class="line-numbers language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span> center</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span> -行内元素居中
+           JavaScript/css
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Code</category>
+        <category>html/css/javascript</category>
+      </categories>
   </entry>
   <entry>
     <title>The violin</title>
