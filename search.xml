@@ -502,39 +502,6 @@
       </tags>
   </entry>
   <entry>
-    <title>WGET</title>
-    <url>/post/command-wget/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p>
-
-<p><em><span id="more"></span></em></p>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)
-sudo apt-get install wget --命令行安装
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件
-tail -f wget-log --查看下载进度
-wget -O xxx.tgz url --下载并以不同的文件名保存(大写O
-wget -c -r -np -k -L -p url --递归下载整个网站
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote>
-<details>
-<summary>wget [option] [URL]</summary>
--h,--help打印语法帮助
- 
-<p>-r,  –recursive 指定递归下载</p>
-<p>-b,  –background 启动后转入后台下载</p>
-<p>-o, –output-file=FILE xxx.log URL保存日志</p>
-<p>-q,–quiet 安静模式不显示输出信息</p>
-<p>-c,  –continue  断点续传下载文件</p>
-<p>-O, 以不同的文件名保存</p>
-<p>–spider, 模拟下载,不下载任何文件</p>
-</blockquote>
-</details>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对熵的一种微观解释进行可视化</title>
     <url>/post/entropy/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
@@ -828,37 +795,6 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       </tags>
   </entry>
   <entry>
-    <title>优雅的盗号技巧</title>
-    <url>/post/qq-passwd/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
-<p><em><span id="more"></span></em></p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p>
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul>
-<li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p>
-<blockquote>
-<p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p>
-</blockquote>
-</li>
-</ul>
-<ol>
-<li><p>安装软件后按提示打开软件无障碍服务</p>
-</li>
-<li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p>
-</li>
-</ol>
-<h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p>
-<p><img src="/images/qq-passwd.png" loading="lazy"></p>
-<center>提前打开密码显示按钮</center>
-
-<p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p>
-<p><img src="/images/Type-qq.png" loading="lazy"></p>
-<p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p>
-<h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>渗透</category>
-      </categories>
-  </entry>
-  <entry>
     <title>高级检索</title>
     <url>/post/search/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="高级检索"><a href="#高级检索" class="headerlink" title="高级检索"></a>高级检索</h4><table><tr><td bgcolor=DodgerBlue>相对于基本检索而言的, 可以使用多于基本检索的标准以便精炼自己想检索的内容</td></tr></table>
@@ -904,6 +840,37 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       <tags>
         <tag>效率</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>优雅的盗号技巧</title>
+    <url>/post/qq-passwd/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p><strong>由于此文章、<a href="https://www.findlaw.cn/hetong/ft590/">不可抗力</a>、意外事件导致的侵权事件  , 作者概不负责 , 请自行承担责任</strong></p>
+<p><em><span id="more"></span></em></p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p><strong>使用特定安卓软件的监测功能来记录账号和密码</strong> , <del>熟人作案吗</del></p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul>
+<li><p><a href="https://www.lanzoui.com/ihnxu08god6d">软件</a></p>
+<blockquote>
+<p>密码2181 , 压缩包有安装包和一个面具模块 , 建议使用模块刷入避免不必要的bug</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li><p>安装软件后按提示打开软件无障碍服务</p>
+</li>
+<li><p>将软件隐藏至后台运行 , <code>建议软件使用后台保护,这样在杀掉后台界面的同时保持软件的正常工作</code></p>
+</li>
+</ol>
+<h2 id="选择平台"><a href="#选择平台" class="headerlink" title="选择平台"></a>选择平台</h2><p>这里选择QQ作为演示 , 打开登录界面将你准备好的设备给你的(路人A)登录</p>
+<p><img src="/images/qq-passwd.png" loading="lazy"></p>
+<center>提前打开密码显示按钮</center>
+
+<p><strong>如果路人A有相对良好信息安全意识大概率会重新点上密码隐藏</strong>,这时软件就只能记录账号</p>
+<p><img src="/images/Type-qq.png" loading="lazy"></p>
+<p>这其中涉及到了<a href="https://wiki.mbalib.com/wiki/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F">信息隐藏技术</a>来保证信息所有者保护数据的隐密性</p>
+<h2 id="【Android初级】密码显隐实现"><a href="#【Android初级】密码显隐实现" class="headerlink" title="【Android初级】密码显隐实现"></a><a href="https://zhuanlan.zhihu.com/p/348039376">【Android初级】密码显隐实现</a></h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
   </entry>
   <entry>
     <title>来给你的u盘实现一盘多系统</title>
@@ -1335,6 +1302,56 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </tags>
   </entry>
   <entry>
+    <title>相对定位和绝对定位</title>
+    <url>/post/css-location/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>文档中的一个分隔区块或者一个区域部分划定区域,类似图层<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a><font color="#D0087E" face="STFangsong">绝对定位</h3><ul>
+<li><p>以整个网页布局为基准</p>
+<ul>
+<li>四个边距: left和right, bottom和top</li>
+<li>分别对应左右下上四个网页距离边距</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html">&lt;div name = "mydiv" id="mydiv" style="position:absolute;left:200px;top:200px">
+    JavaScript/css
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</font></li>
+</ul>
+<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a><font color="#2181ff" face="STFangsong">相对定位</h3><ul>
+<li><p>以当前标签位置为基准</p>
+<ul>
+<li>4个属性: left和top(与绝对位置, width和height</li>
+<li>width:  尺寸大小的宽度</li>
+<li>height: 尺寸大小的高度</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>relative<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">400</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span><span class="token number">50</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        JavaScript/css 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="div居中"><a href="#div居中" class="headerlink" title="div居中"></a><font color="#6666ff" face="STFangsong">div居中</h3><ul>
+<li><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">transform</span><span class="token punctuation">:</span><span class="token function">translate</span><span class="token punctuation">(</span>-<span class="token number">50%</span>,-<span class="token number">50%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>s</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      JavaScript/css 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<ul>
+<li><pre class="line-numbers language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span> center</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span> -行内元素居中
+           JavaScript/css
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Code</category>
+        <category>html/css/javascript</category>
+      </categories>
+  </entry>
+  <entry>
     <title>html与xhtml</title>
     <url>/post/html-bibq/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red">在早先的html规范中&#60br&#62&#60hr&#62&#60img&#62等标记元素无需"封闭自身", 造成了html规范本身的不严谨</p>
@@ -1434,6 +1451,51 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </tags>
   </entry>
   <entry>
+    <title>内网和外网</title>
+    <url>/post/server-router/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><font color="#2181ff" size="4" face="STFangsong"><center>公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性</center></font></p>
+<span id="more"></span>
+
+<h4 id="公网IP"><a href="#公网IP" class="headerlink" title="公网IP"></a>公网IP</h4><ul>
+<li><p>广域网IP, 依公网连接Internet上的非保留地址</p>
+<blockquote>
+<p>指设备在访问(Internet)互联网上的IP地址</p>
+<p>一般购买的<code>服务器</code>, 网关下默认<code>运营商</code>给网关唯一分配地址</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="使用公网"><a href="#使用公网" class="headerlink" title="使用公网"></a>使用公网</h5><blockquote>
+<p>申请公网IP后, 路由器nat服务在Internet映射你的端口,</p>
+<p>之后设置DMZ主机可将电脑暴露在外网(就是拿自己的电脑当服务器用了</p>
+</blockquote>
+<h4 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h4><ul>
+<li><p>局域网ip, 内网的计算机以NAT 协议，通过一个公共的<a href="https://baike.baidu.com/item/%E7%BD%91%E5%85%B3/98992">网关</a>访问Internet</p>
+<blockquote>
+<p>样式 <code>192.168.xxx.xxx</code>  <code>127.0.0.1</code>回送地址就是回送的主机内网IP</p>
+<p>用来区分在同一网关下的不同设备, 一般仅内网设备可以通过公网访问Internet</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h5><ul>
+<li><p>NAT穿透, 采用端口映射(无需公网iP</p>
+<blockquote>
+<p>将内网通过<code>nat_app</code>隧道打通, 再通过端口映射, 让外网设备访问内网</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="公网设备"><a href="#公网设备" class="headerlink" title="公网设备"></a>公网设备</h4><p>浏览器输入<code>主机IP</code>显示的就是唯一公网地址</p>
+<pre class="line-numbers language-shell"><code class="language-shell">ipconfig -回显比对是否有公网地址
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="NATAPP"><a href="#NATAPP" class="headerlink" title="NATAPP"></a>NATAPP</h4><ul>
+<li><a href="https://www.natfrp.com/?page=register">Sakura Frp — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案 (natfrp.com)</a></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>静态与动态</title>
     <url>/post/web-dj/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="静态"><a href="#静态" class="headerlink" title="静态"></a>静态</h3><ul>
@@ -1496,101 +1558,6 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       <tags>
         <tag>服务器</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>内网和外网</title>
-    <url>/post/server-router/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><font color="#2181ff" size="4" face="STFangsong"><center>公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性</center></font></p>
-<span id="more"></span>
-
-<h4 id="公网IP"><a href="#公网IP" class="headerlink" title="公网IP"></a>公网IP</h4><ul>
-<li><p>广域网IP, 依公网连接Internet上的非保留地址</p>
-<blockquote>
-<p>指设备在访问(Internet)互联网上的IP地址</p>
-<p>一般购买的<code>服务器</code>, 网关下默认<code>运营商</code>给网关唯一分配地址</p>
-</blockquote>
-</li>
-</ul>
-<h5 id="使用公网"><a href="#使用公网" class="headerlink" title="使用公网"></a>使用公网</h5><blockquote>
-<p>申请公网IP后, 路由器nat服务在Internet映射你的端口,</p>
-<p>之后设置DMZ主机可将电脑暴露在外网(就是拿自己的电脑当服务器用了</p>
-</blockquote>
-<h4 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h4><ul>
-<li><p>局域网ip, 内网的计算机以NAT 协议，通过一个公共的<a href="https://baike.baidu.com/item/%E7%BD%91%E5%85%B3/98992">网关</a>访问Internet</p>
-<blockquote>
-<p>样式 <code>192.168.xxx.xxx</code>  <code>127.0.0.1</code>回送地址就是回送的主机内网IP</p>
-<p>用来区分在同一网关下的不同设备, 一般仅内网设备可以通过公网访问Internet</p>
-</blockquote>
-</li>
-</ul>
-<h5 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h5><ul>
-<li><p>NAT穿透, 采用端口映射(无需公网iP</p>
-<blockquote>
-<p>将内网通过<code>nat_app</code>隧道打通, 再通过端口映射, 让外网设备访问内网</p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h4 id="公网设备"><a href="#公网设备" class="headerlink" title="公网设备"></a>公网设备</h4><p>浏览器输入<code>主机IP</code>显示的就是唯一公网地址</p>
-<pre class="line-numbers language-shell"><code class="language-shell">ipconfig -回显比对是否有公网地址
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="NATAPP"><a href="#NATAPP" class="headerlink" title="NATAPP"></a>NATAPP</h4><ul>
-<li><a href="https://www.natfrp.com/?page=register">Sakura Frp — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案 (natfrp.com)</a></li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>相对定位和绝对定位</title>
-    <url>/post/css-location/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>文档中的一个分隔区块或者一个区域部分划定区域,类似图层<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a><font color="#D0087E" face="STFangsong">绝对定位</h3><ul>
-<li><p>以整个网页布局为基准</p>
-<ul>
-<li>四个边距: left和right, bottom和top</li>
-<li>分别对应左右下上四个网页距离边距</li>
-</ul>
-<pre class="line-numbers language-html"><code class="language-html">&lt;div name = "mydiv" id="mydiv" style="position:absolute;left:200px;top:200px">
-    JavaScript/css
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</font></li>
-</ul>
-<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a><font color="#2181ff" face="STFangsong">相对定位</h3><ul>
-<li><p>以当前标签位置为基准</p>
-<ul>
-<li>4个属性: left和top(与绝对位置, width和height</li>
-<li>width:  尺寸大小的宽度</li>
-<li>height: 尺寸大小的高度</li>
-</ul>
-<pre class="line-numbers language-html"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>relative<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">;</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">400</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span><span class="token number">50</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-        JavaScript/css 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<h3 id="div居中"><a href="#div居中" class="headerlink" title="div居中"></a><font color="#6666ff" face="STFangsong">div居中</h3><ul>
-<li><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span><span class="token property">top</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span><span class="token number">50%</span><span class="token punctuation">;</span><span class="token property">transform</span><span class="token punctuation">:</span><span class="token function">translate</span><span class="token punctuation">(</span>-<span class="token number">50%</span>,-<span class="token number">50%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>s</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-      JavaScript/css 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<ul>
-<li><pre class="line-numbers language-html"><code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span> center</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span> -行内元素居中
-           JavaScript/css
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>Code</category>
-        <category>html/css/javascript</category>
-      </categories>
   </entry>
   <entry>
     <title>The violin</title>
@@ -1877,6 +1844,118 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </categories>
   </entry>
   <entry>
+    <title>常见逻辑谬误</title>
+    <url>/post/yuyanmiwu/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>
+    <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small>
+</center>
+
+<h3 id="以偏概全"><a href="#以偏概全" class="headerlink" title="以偏概全"></a>以偏概全</h3><p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p>
+<blockquote>
+<p>如: 我身边的人都这样, 所以其他人也这样</p>
+</blockquote>
+<h3 id="推不出"><a href="#推不出" class="headerlink" title="推不出"></a>推不出</h3><p>从给出的论据推不出想要证明的结论。</p>
+<blockquote>
+<p>如: 因为你没有钱, 所以她才不和你在一起</p>
+</blockquote>
+<h3 id="假性因果"><a href="#假性因果" class="headerlink" title="假性因果"></a>假性因果</h3><p>两者之间存在的因果关系是虚假的, 只不过是时间上先后发生。</p>
+<p>常见于归因是带有偏见。</p>
+<blockquote>
+<p>如: 花瓶被打碎了, 而在之前有个小孩进来玩, 所以是小孩打的花瓶</p>
+</blockquote>
+<p>假性因果只是一种可能性, 而不是既定事实</p>
+<h3 id="滑坡谬误"><a href="#滑坡谬误" class="headerlink" title="滑坡谬误"></a>滑坡谬误</h3><p>声称某件事情将会发生一连串的后果, 但却没有充分证据支持该理论。</p>
+<blockquote>
+<p>如: 不好好读书考不上大学; 考不上大学就找不到好工作; 找不到好工作就没有钱</p>
+</blockquote>
+<p>连锁推论不够严谨, 忽略条件, 使其含糊</p>
+<p>无限延伸细节 , 常常是带有目的性的话语</p>
+<h3 id="诉诸非逻辑"><a href="#诉诸非逻辑" class="headerlink" title="诉诸非逻辑"></a>诉诸非逻辑</h3><ul>
+<li><p>诉诸权威</p>
+<p>  名人名言并不一定是真理, 也要受到逻辑的考验, 实际的情景, 不能一味的断章取义</p>
+</li>
+<li><p>诉诸民意</p>
+<p>  民意不意为就是正当, 合理的, 多数人支持的事情, 并不一定是正确的</p>
+</li>
+<li><p>诉诸情感</p>
+<p>  煽情代替逻辑, 情绪主导思维。</p>
+</li>
+<li><p>诉诸无知</p>
+<p>  主观不知道的事情就是不存在的, 主观无法证明的就是没有的</p>
+<p>  通常会以对方无法解答和说明，不客观审理, 就认为自己是对的</p>
+</li>
+<li><p>诉诸道德</p>
+<p>  将某事件与某项道德关联, 从而批判事件, 却无法论述事件为什么与该道德关联</p>
+</li>
+<li><p>诉诸沉默</p>
+<p>  沉默不代表认罪, 嫌疑人有权保持沉默</p>
+</li>
+<li><p>诉诸比喻</p>
+<p>  用在价值判断上而不是事实判断, 如<code>群众的眼睛是雪亮的</code>是一种价值判断</p>
+<p>  并非群众的眼睛都是雪亮的, 引申含义比喻人民大众对社会上的事情观察得最透彻</p>
+</li>
+<li><p>诉诸信心</p>
+<p>  仅仅是个人的心理信念, 不存在逻辑的推理效果</p>
+</li>
+</ul>
+<h3 id="反问谬误"><a href="#反问谬误" class="headerlink" title="反问谬误"></a>反问谬误</h3><p>常说的, 你有本事你上; 如果换成你, 你就不会这么想</p>
+<p>换位思考没有错, 而是将换位思考作为逻辑的合理性</p>
+<blockquote>
+<p> 我的做与不做, 想与不想, 都不能决定该事情的正确与否。</p>
+</blockquote>
+<p>如：我可以一边说<code>1+1=2</code>，一边将答案写成3，这并不妨碍2是正确答案。</p>
+<h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><p>通常体现在不准确解读对手的观点，将其观点极端化标签化，归类于某个公众痛恨的理念。</p>
+<h3 id="虚假两难"><a href="#虚假两难" class="headerlink" title="虚假两难"></a>虚假两难</h3><p>营造一个虚假的两难困境, 而实际不存在两难, 完全可以多元化选择</p>
+<blockquote>
+<p>如: 你妈和你女朋友掉水里，你先救谁？</p>
+</blockquote>
+<p>模糊背景, 模糊实际, 模糊判断</p>
+<p>选择任何一个都能引向人性之恶, 通常出现在电影小说情节, 用来突出人性之恶的主题</p>
+<h3 id="复杂问题谬误"><a href="#复杂问题谬误" class="headerlink" title="复杂问题谬误"></a>复杂问题谬误</h3><p>在向别人提出问题时隐式置入自己的倾向观点</p>
+<blockquote>
+<p>出现在诱导采访</p>
+<p>“你要感谢谁?” 暗示你要感谢.</p>
+<p>“买不起房怎么办?” 暗示你要买房.</p>
+</blockquote>
+<h3 id="词语歧义"><a href="#词语歧义" class="headerlink" title="词语歧义"></a>词语歧义</h3><p>同音字, 语境的变化, 容易引起歧义</p>
+<h3 id="小众统计"><a href="#小众统计" class="headerlink" title="小众统计"></a>小众统计</h3><p>以个案做论据,心理学的“鲜活性效应” 以与人有关的事件作为论据，以加强说服力</p>
+<h3 id="实体化谬误"><a href="#实体化谬误" class="headerlink" title="实体化谬误"></a>实体化谬误</h3><p>将抽象的信念或者假设的构想, 当做既定事情与实在的事物</p>
+<blockquote>
+<p>如：某心理学研究证实了xx的人会yy，你是xx的人所以你会yy。</p>
+</blockquote>
+<h3 id="感觉谬误"><a href="#感觉谬误" class="headerlink" title="感觉谬误"></a>感觉谬误</h3><p>凭表象和感觉想当然地作出判断和推理，符合人的直觉，但经不起逻辑和推敲。</p>
+<blockquote>
+<p>如：虽然说不清楚，但我就感觉他说的对。</p>
+</blockquote>
+<p>同情和相似性会增加感觉谬误。将人物塑造为可同情的，这样观点就会朝该人物偏移。</p>
+<h3 id="烟幕谬误"><a href="#烟幕谬误" class="headerlink" title="烟幕谬误"></a>烟幕谬误</h3><p>用复杂的前缀和专业词, 将谬误掩盖起来, 从而混淆视线</p>
+<blockquote>
+<p>如: 鸡汤文的管理法: 经过第一步x1，第二步x2，第三步x3，就能收获成功。</p>
+</blockquote>
+<p>这里的x1, x2, x3为何可以联系起来以及与成功挂钩</p>
+<h3 id="概念偷换"><a href="#概念偷换" class="headerlink" title="概念偷换"></a>概念偷换</h3><p>在观点的争论中, 论者有意转移论点, 寻找有利于自己的角度</p>
+<blockquote>
+<p>如: 科学松鼠会科普–人体的最早水分实验文献, 没必要731增添暴行</p>
+</blockquote>
+<p>将”最早人体的实验”转移到”731的人体实验是谣言”</p>
+<hr>
+<h3 id="简化逻辑"><a href="#简化逻辑" class="headerlink" title="简化逻辑"></a>简化逻辑</h3><blockquote>
+<p>逻辑是“确保真能推论出真”的思考工具。工具就代表着要不要用到</p>
+</blockquote>
+<p>比如情侣之间对话:</p>
+<ul>
+<li>不要求真的时候：说情话，“我好喜欢你，我要把月亮摘给你。”月亮肯定摘不了，但很浪漫。</li>
+<li>要求真的时候：吵架时，“你昨晚去哪了？”“我去给你摘月亮了。”这就要挨打了</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>收录</category>
+      </categories>
+      <tags>
+        <tag>逻辑学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PowerShell 的命令行启动参数</title>
     <url>/post/shell_power/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center><small><a href="https://blog.csdn.net/WPwalter/article/details/94128752">By CSDN</a></small></center>
@@ -2055,118 +2134,6 @@ PowerShell<span class="token punctuation">[</span><span class="token punctuation
       </categories>
   </entry>
   <entry>
-    <title>常见逻辑谬误</title>
-    <url>/post/yuyanmiwu/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>
-    <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small>
-</center>
-
-<h3 id="以偏概全"><a href="#以偏概全" class="headerlink" title="以偏概全"></a>以偏概全</h3><p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p>
-<blockquote>
-<p>如: 我身边的人都这样, 所以其他人也这样</p>
-</blockquote>
-<h3 id="推不出"><a href="#推不出" class="headerlink" title="推不出"></a>推不出</h3><p>从给出的论据推不出想要证明的结论。</p>
-<blockquote>
-<p>如: 因为你没有钱, 所以她才不和你在一起</p>
-</blockquote>
-<h3 id="假性因果"><a href="#假性因果" class="headerlink" title="假性因果"></a>假性因果</h3><p>两者之间存在的因果关系是虚假的, 只不过是时间上先后发生。</p>
-<p>常见于归因是带有偏见。</p>
-<blockquote>
-<p>如: 花瓶被打碎了, 而在之前有个小孩进来玩, 所以是小孩打的花瓶</p>
-</blockquote>
-<p>假性因果只是一种可能性, 而不是既定事实</p>
-<h3 id="滑坡谬误"><a href="#滑坡谬误" class="headerlink" title="滑坡谬误"></a>滑坡谬误</h3><p>声称某件事情将会发生一连串的后果, 但却没有充分证据支持该理论。</p>
-<blockquote>
-<p>如: 不好好读书考不上大学; 考不上大学就找不到好工作; 找不到好工作就没有钱</p>
-</blockquote>
-<p>连锁推论不够严谨, 忽略条件, 使其含糊</p>
-<p>无限延伸细节 , 常常是带有目的性的话语</p>
-<h3 id="诉诸非逻辑"><a href="#诉诸非逻辑" class="headerlink" title="诉诸非逻辑"></a>诉诸非逻辑</h3><ul>
-<li><p>诉诸权威</p>
-<p>  名人名言并不一定是真理, 也要受到逻辑的考验, 实际的情景, 不能一味的断章取义</p>
-</li>
-<li><p>诉诸民意</p>
-<p>  民意不意为就是正当, 合理的, 多数人支持的事情, 并不一定是正确的</p>
-</li>
-<li><p>诉诸情感</p>
-<p>  煽情代替逻辑, 情绪主导思维。</p>
-</li>
-<li><p>诉诸无知</p>
-<p>  主观不知道的事情就是不存在的, 主观无法证明的就是没有的</p>
-<p>  通常会以对方无法解答和说明，不客观审理, 就认为自己是对的</p>
-</li>
-<li><p>诉诸道德</p>
-<p>  将某事件与某项道德关联, 从而批判事件, 却无法论述事件为什么与该道德关联</p>
-</li>
-<li><p>诉诸沉默</p>
-<p>  沉默不代表认罪, 嫌疑人有权保持沉默</p>
-</li>
-<li><p>诉诸比喻</p>
-<p>  用在价值判断上而不是事实判断, 如<code>群众的眼睛是雪亮的</code>是一种价值判断</p>
-<p>  并非群众的眼睛都是雪亮的, 引申含义比喻人民大众对社会上的事情观察得最透彻</p>
-</li>
-<li><p>诉诸信心</p>
-<p>  仅仅是个人的心理信念, 不存在逻辑的推理效果</p>
-</li>
-</ul>
-<h3 id="反问谬误"><a href="#反问谬误" class="headerlink" title="反问谬误"></a>反问谬误</h3><p>常说的, 你有本事你上; 如果换成你, 你就不会这么想</p>
-<p>换位思考没有错, 而是将换位思考作为逻辑的合理性</p>
-<blockquote>
-<p> 我的做与不做, 想与不想, 都不能决定该事情的正确与否。</p>
-</blockquote>
-<p>如：我可以一边说<code>1+1=2</code>，一边将答案写成3，这并不妨碍2是正确答案。</p>
-<h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><p>通常体现在不准确解读对手的观点，将其观点极端化标签化，归类于某个公众痛恨的理念。</p>
-<h3 id="虚假两难"><a href="#虚假两难" class="headerlink" title="虚假两难"></a>虚假两难</h3><p>营造一个虚假的两难困境, 而实际不存在两难, 完全可以多元化选择</p>
-<blockquote>
-<p>如: 你妈和你女朋友掉水里，你先救谁？</p>
-</blockquote>
-<p>模糊背景, 模糊实际, 模糊判断</p>
-<p>选择任何一个都能引向人性之恶, 通常出现在电影小说情节, 用来突出人性之恶的主题</p>
-<h3 id="复杂问题谬误"><a href="#复杂问题谬误" class="headerlink" title="复杂问题谬误"></a>复杂问题谬误</h3><p>在向别人提出问题时隐式置入自己的倾向观点</p>
-<blockquote>
-<p>出现在诱导采访</p>
-<p>“你要感谢谁?” 暗示你要感谢.</p>
-<p>“买不起房怎么办?” 暗示你要买房.</p>
-</blockquote>
-<h3 id="词语歧义"><a href="#词语歧义" class="headerlink" title="词语歧义"></a>词语歧义</h3><p>同音字, 语境的变化, 容易引起歧义</p>
-<h3 id="小众统计"><a href="#小众统计" class="headerlink" title="小众统计"></a>小众统计</h3><p>以个案做论据,心理学的“鲜活性效应” 以与人有关的事件作为论据，以加强说服力</p>
-<h3 id="实体化谬误"><a href="#实体化谬误" class="headerlink" title="实体化谬误"></a>实体化谬误</h3><p>将抽象的信念或者假设的构想, 当做既定事情与实在的事物</p>
-<blockquote>
-<p>如：某心理学研究证实了xx的人会yy，你是xx的人所以你会yy。</p>
-</blockquote>
-<h3 id="感觉谬误"><a href="#感觉谬误" class="headerlink" title="感觉谬误"></a>感觉谬误</h3><p>凭表象和感觉想当然地作出判断和推理，符合人的直觉，但经不起逻辑和推敲。</p>
-<blockquote>
-<p>如：虽然说不清楚，但我就感觉他说的对。</p>
-</blockquote>
-<p>同情和相似性会增加感觉谬误。将人物塑造为可同情的，这样观点就会朝该人物偏移。</p>
-<h3 id="烟幕谬误"><a href="#烟幕谬误" class="headerlink" title="烟幕谬误"></a>烟幕谬误</h3><p>用复杂的前缀和专业词, 将谬误掩盖起来, 从而混淆视线</p>
-<blockquote>
-<p>如: 鸡汤文的管理法: 经过第一步x1，第二步x2，第三步x3，就能收获成功。</p>
-</blockquote>
-<p>这里的x1, x2, x3为何可以联系起来以及与成功挂钩</p>
-<h3 id="概念偷换"><a href="#概念偷换" class="headerlink" title="概念偷换"></a>概念偷换</h3><p>在观点的争论中, 论者有意转移论点, 寻找有利于自己的角度</p>
-<blockquote>
-<p>如: 科学松鼠会科普–人体的最早水分实验文献, 没必要731增添暴行</p>
-</blockquote>
-<p>将”最早人体的实验”转移到”731的人体实验是谣言”</p>
-<hr>
-<h3 id="简化逻辑"><a href="#简化逻辑" class="headerlink" title="简化逻辑"></a>简化逻辑</h3><blockquote>
-<p>逻辑是“确保真能推论出真”的思考工具。工具就代表着要不要用到</p>
-</blockquote>
-<p>比如情侣之间对话:</p>
-<ul>
-<li>不要求真的时候：说情话，“我好喜欢你，我要把月亮摘给你。”月亮肯定摘不了，但很浪漫。</li>
-<li>要求真的时候：吵架时，“你昨晚去哪了？”“我去给你摘月亮了。”这就要挨打了</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>收录</category>
-      </categories>
-      <tags>
-        <tag>逻辑学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>奥卡姆剃刀</title>
     <url>/post/Occam&#39;s%20Razor/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="简单性原则"><a href="#简单性原则" class="headerlink" title="简单性原则"></a>简单性原则</h2><ul>
@@ -2310,6 +2277,458 @@ copy /b xxx.png+xxx.zip xxx.png
       </tags>
   </entry>
   <entry>
+    <title>LUX,FFMPEG</title>
+    <url>/post/command-lux/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="LUX"><a href="#LUX" class="headerlink" title="LUX"></a>LUX</h3><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://blog.csdn.net/qq_52237775/article/details/123305849"><strong>Lux </strong></a>“是一个从网上自由下载视频图片的自由工具</font></p>
+
+<p><em><span id="more"></span></em></p>
+<details>
+<summary>Supported Sites</summary>
+
+<table>
+<thead>
+<tr>
+<th>Site</th>
+<th>URL</th>
+<th>🎬 Videos</th>
+<th>🌁 Images</th>
+<th>🔊 Audio</th>
+<th>📚 Playlist</th>
+<th>🍪 VIP adaptation</th>
+<th>Build Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>抖音</td>
+<td><a href="https://www.douyin.com/">https://www.douyin.com</a></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_douyin.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_douyin.yml/badge.svg" alt="douyin" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>哔哩哔哩</td>
+<td><a href="https://www.bilibili.com/">https://www.bilibili.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_bilibili.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_bilibili.yml/badge.svg" alt="bilibili" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>半次元</td>
+<td><a href="https://bcy.net/">https://bcy.net</a></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_bcy.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_bcy.yml/badge.svg" alt="bcy" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>pixivision</td>
+<td><a href="https://www.pixivision.net/">https://www.pixivision.net</a></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_pixivision.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_pixivision.yml/badge.svg" alt="pixivision" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>优酷</td>
+<td><a href="https://www.youku.com/">https://www.youku.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_youku.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_youku.yml/badge.svg" alt="youku" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>YouTube</td>
+<td><a href="https://www.youtube.com/">https://www.youtube.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_youtube.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_youtube.yml/badge.svg" alt="youtube" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>西瓜视频（头条）</td>
+<td><a href="https://m.toutiao.com/">https://m.toutiao.com</a>, <a href="https://v.ixigua.com/">https://v.ixigua.com</a>, <a href="https://www.ixigua.com/">https://www.ixigua.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_ixigua.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_ixigua.yml/badge.svg" alt="ixigua" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>爱奇艺</td>
+<td><a href="https://www.iqiyi.com/">https://www.iqiyi.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_iqiyi.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_iqiyi.yml/badge.svg" alt="iqiyi" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>新片场</td>
+<td><a href="https://www.xinpianchang.com/">https://www.xinpianchang.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_xinpianchang.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_xinpianchang.yml/badge.svg" alt="xinpianchang" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>芒果 TV</td>
+<td><a href="https://www.mgtv.com/">https://www.mgtv.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_mgtv.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_mgtv.yml/badge.svg" alt="mgtv" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>糖豆广场舞</td>
+<td><a href="https://www.tangdou.com/">https://www.tangdou.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_tangdou.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_tangdou.yml/badge.svg" alt="tangdou" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Tumblr</td>
+<td><a href="https://www.tumblr.com/">https://www.tumblr.com</a></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_tumblr.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_tumblr.yml/badge.svg" alt="tumblr" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Vimeo</td>
+<td><a href="https://vimeo.com/">https://vimeo.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_vimeo.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_vimeo.yml/badge.svg" alt="vimeo" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td><a href="https://facebook.com/">https://facebook.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_facebook.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_facebook.yml/badge.svg" alt="facebook" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>斗鱼视频</td>
+<td><a href="https://v.douyu.com/">https://v.douyu.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_douyu.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_douyu.yml/badge.svg" alt="douyu" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>秒拍</td>
+<td><a href="https://www.miaopai.com/">https://www.miaopai.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_miaopai.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_miaopai.yml/badge.svg" alt="miaopai" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>微博</td>
+<td><a href="https://weibo.com/">https://weibo.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_weibo.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_weibo.yml/badge.svg" alt="weibo" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Instagram</td>
+<td><a href="https://www.instagram.com/">https://www.instagram.com</a></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_instagram.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_instagram.yml/badge.svg" alt="instagram" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td><a href="https://twitter.com/">https://twitter.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_twitter.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_twitter.yml/badge.svg" alt="twitter" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>腾讯视频</td>
+<td><a href="https://v.qq.com/">https://v.qq.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_qq.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_qq.yml/badge.svg" alt="qq" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>网易云音乐</td>
+<td><a href="https://music.163.com/">https://music.163.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_netease.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_netease.yml/badge.svg" alt="netease" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>音悦台</td>
+<td><a href="https://yinyuetai.com/">https://yinyuetai.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_yinyuetai.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_yinyuetai.yml/badge.svg" alt="yinyuetai" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>极客时间</td>
+<td><a href="https://time.geekbang.org/">https://time.geekbang.org</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_geekbang.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_geekbang.yml/badge.svg" alt="geekbang" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Pornhub</td>
+<td><a href="https://pornhub.com/">https://pornhub.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_pornhub.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_pornhub.yml/badge.svg" alt="pornhub" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>XVIDEOS</td>
+<td><a href="https://xvideos.com/">https://xvideos.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_xvideos.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_xvideos.yml/badge.svg" alt="xvideos" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>聯合新聞網</td>
+<td><a href="https://udn.com/">https://udn.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_udn.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_udn.yml/badge.svg" alt="udn" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>TikTok</td>
+<td><a href="https://www.tiktok.com/">https://www.tiktok.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_tiktok.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_tiktok.yml/badge.svg" alt="tiktok" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>好看视频</td>
+<td><a href="https://haokan.baidu.com/">https://haokan.baidu.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_haokan.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_haokan.yml/badge.svg" alt="haokan" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>AcFun</td>
+<td><a href="https://www.acfun.cn/">https://www.acfun.cn</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_acfun.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_acfun.yml/badge.svg" alt="acfun" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Eporner</td>
+<td><a href="https://eporner.com/">https://eporner.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_eporner.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_eporner.yml/badge.svg" alt="eporner" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>StreamTape</td>
+<td><a href="https://streamtape.com/">https://streamtape.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_streamtape.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_streamtape.yml/badge.svg" alt="streamtape" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>虎扑</td>
+<td><a href="https://hupu.com/">https://hupu.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_hupu.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_hupu.yml/badge.svg" alt="hupu" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>虎牙视频</td>
+<td><a href="https://v.huya.com/">https://v.huya.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_huya.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_huya.yml/badge.svg" alt="huya" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>喜马拉雅</td>
+<td><a href="https://www.ximalaya.com/">https://www.ximalaya.com</a></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_ximalaya.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_ximalaya.yml/badge.svg" alt="ximalaya" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>快手</td>
+<td><a href="https://www.kuaishou.com/">https://www.kuaishou.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_kuaishou.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_kuaishou.yml/badge.svg" alt="kuaishou" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>Reddit</td>
+<td><a href="https://www.reddit.com/">https://www.reddit.com</a></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_reddit.yml"><img src="https://github.com/iawia002/lux/actions/workflows/stream_reddit.yml/badge.svg" alt="reddit" loading="lazy"></a></td>
+</tr>
+<tr>
+<td>VKontakte</td>
+<td><a href="https://vk.com/">https://vk.com</a></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://github.com/iawia002/lux/actions/workflows/stream_vk.yml/"><img src="https://github.com/iawia002/lux/actions/workflows/stream_vk.yml/badge.svg" alt="vk" loading="lazy"></a></td>
+</tr>
+</tbody></table>
+</details>
+
+<h3 id="FFMEPG"><a href="#FFMEPG" class="headerlink" title="FFMEPG"></a>FFMEPG</h3><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/117523405"><strong>ffmepg</strong></a>“是一个强大的多媒体处理的自由工具</font></p>
+
+<blockquote>
+<p>配合ffmepg的视音merge与lux的视音download功能</p>
+</blockquote>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://github.com/iawia002/lux)(https://github.com/BtbN/FFmpeg-Builds)
+[配置环境变量] -[./ffmepg.exe,lux.exe]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">lux %url% --默认下载
+lux -p --专辑下载
+lux BVxxxx1111 --以BV号下载
+lux %1 --下载传入批处理形参链接
+lux -o C:/download url --自定义位置
+%windir%\system32\cmd.exe /c "lux.exe" 批处理调用
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="快捷方式"><a href="#快捷方式" class="headerlink" title="快捷方式"></a>快捷方式</h3><pre class="line-numbers language-shell"><code class="language-shell">设置快捷方式的环境变量, 起始位置为%CD%指向工作目录
+%windir%\system32\cmd.exe /c "lux.exe" -o --以快捷方式运行工具
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>文件</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WGET</title>
+    <url>/post/command-wget/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#2181ff" size="4" face="STFangsong">“<a href="https://zhuanlan.zhihu.com/p/335258413"><strong>GNU Wget</strong></a>“是一个从网上自由下载文件的自由工具</font></p>
+
+<p><em><span id="more"></span></em></p>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre class="line-numbers language-shell"><code class="language-shell">[Windows安装](https://eternallybored.org/misc/wget/)
+sudo apt-get install wget --命令行安装
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><pre class="line-numbers language-shell"><code class="language-shell">wget url --下载单个文件
+tail -f wget-log --查看下载进度
+wget -O xxx.tgz url --下载并以不同的文件名保存(大写O
+wget -c -r -np -k -L -p url --递归下载整个网站
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><blockquote>
+<details>
+<summary>wget [option] [URL]</summary>
+-h,--help打印语法帮助
+ 
+<p>-r,  –recursive 指定递归下载</p>
+<p>-b,  –background 启动后转入后台下载</p>
+<p>-o, –output-file=FILE xxx.log URL保存日志</p>
+<p>-q,–quiet 安静模式不显示输出信息</p>
+<p>-c,  –continue  断点续传下载文件</p>
+<p>-O, 以不同的文件名保存</p>
+<p>–spider, 模拟下载,不下载任何文件</p>
+</blockquote>
+</details>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DLL——“动态链接”</title>
     <url>/post/win-dll/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
@@ -2399,8 +2818,8 @@ rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>命令</tag>
         <tag>文件</tag>
+        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
@@ -2654,6 +3073,54 @@ cd %SystemRoot%\system32\config 注册表路径
       </categories>
       <tags>
         <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快捷方式</title>
+    <url>/post/win-shortcut/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是快捷方式"><a href="#什么是快捷方式" class="headerlink" title="什么是快捷方式"></a>什么是快捷方式</h3><blockquote>
+<p><strong>快捷方式</strong>（Shortcut）不等同于 <strong>符号链接</strong>（Symbolic link）<strong>硬链接</strong>（Hard link）</p>
+<blockquote>
+<p>快捷方式在系统中源文件是完全分离&gt;如果源文件删除，链接就<strong>即时失效</strong></p>
+</blockquote>
+</blockquote>
+<p><em><span id="more"></span></em></p>
+<h3 id="文件属性"><a href="#文件属性" class="headerlink" title="文件属性"></a>文件属性</h3><ul>
+<li><p>.lnk .pif .url </p>
+<ul>
+<li><p>目标: 快捷方式指向的程序或文件的具体路径(绝对路径)</p>
+</li>
+<li><p>起始位置: 目标的工作目录(相对路径), 如传入参数:%CD%</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Windows创建程序快捷方式<strong>动作</strong>的起始位置默认是程序绝对路径</p>
+</blockquote>
+<h3 id="创建快捷方式"><a href="#创建快捷方式" class="headerlink" title="创建快捷方式"></a>创建快捷方式</h3><blockquote>
+<p>Windows Vista开始, 可用于 <a href="https://docs.microsoft.com/zh-cn/windows/win32/shell/controlpanel-canonical-names?redirectedfrom=MSDN">API 调用或命令行指令</a>,识别: 规范名称、GUID以调用</p>
+<blockquote>
+<p>PS. 文件夹调用 = <strong>名称</strong>.<strong>GUID</strong> 注册表:<a href="regjump://HKEY_CLASSES_ROOT\CLSID">GUID</a></p>
+</blockquote>
+</blockquote>
+<h4 id="Applications文件夹"><a href="#Applications文件夹" class="headerlink" title="Applications文件夹"></a>Applications文件夹</h4><pre class="line-numbers language-shell"><code class="language-shell">%windir%\explorer.exe shell:::&#123;4234d49b-0245-4df3-b780-3893943456e1&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="控制面板控件"><a href="#控制面板控件" class="headerlink" title="控制面板控件"></a>控制面板控件</h4><pre class="line-numbers language-shell"><code class="language-shell">%windir%\explorer.exe shell:::&#123;ED7BA470-8E54-465E-825C-99712043E01C&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="桌面小工具"><a href="#桌面小工具" class="headerlink" title="桌面小工具"></a>桌面小工具</h4><pre class="line-numbers language-shell"><code class="language-shell">%windir%\explorer.exe shell:::&#123;37efd44d-ef8d-41b1-940d-96973a50e9e0&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="回收站"><a href="#回收站" class="headerlink" title="回收站"></a>回收站</h4><pre class="line-numbers language-shell"><code class="language-shell">%windir%\explorer.exe shell:::&#123;645FF040-5081-101B-9F08-00AA002F954E&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="资源管理器"><a href="#资源管理器" class="headerlink" title="资源管理器"></a>资源管理器</h4><pre class="line-numbers language-shell"><code class="language-shell">%windir%\explorer.exe shell:::&#123;20D04FE0-3AEA-1069-A2D8-08002B30309D&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="电脑休眠"><a href="#电脑休眠" class="headerlink" title="电脑休眠"></a>电脑休眠</h4><pre class="line-numbers language-shell"><code class="language-shell">%windir%\System32\rundll32.exe powrprof.dll,SetSuspendState Hibemate
+%windir%\System32\rundll32.exe powrprof.dll,SetSuspendState Sleep --不是睡眠/待机
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>文件</tag>
+        <tag>命令</tag>
       </tags>
   </entry>
 </search>
