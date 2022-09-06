@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-09-05T20:45:19.328Z</updated>
+  <updated>2022-09-06T23:23:53.095Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>科学概念</title>
+    <link href="http://blog.nagisb.space/post/longtong/"/>
+    <id>http://blog.nagisb.space/post/longtong/</id>
+    <published>2022-09-06T22:53:34.000Z</published>
+    <updated>2022-09-06T23:23:53.095Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="笼统"><a href="#笼统" class="headerlink" title="笼统"></a>笼统</h3><blockquote><ul><li><font color="#10aec2" size="4" face="STFangsong">强调事物的不具体、简略的表现形式</font><ul><li>笼统不等同于模糊、不明确<ul><li>多用于文章系统性地论述、不做具体分析</li></ul></li></ul></li></ul></blockquote><p><em><span id="more"></span></em></p><h3 id="抽象"><a href="#抽象" class="headerlink" title="抽象"></a>抽象</h3><blockquote><ul><li><font color="#158654" size="4" face="STFangsong">将事物共通、本质的特征作为概念、判断、推理的思维表现</font><ul><li>作为物质存在</li><li>着重在提纯时, 事物的联想方式</li></ul></li></ul></blockquote><h3 id="形象"><a href="#形象" class="headerlink" title="形象"></a>形象</h3><blockquote><ul><li><font color="#158654" size="4" face="STFangsong">将人类意识可观测的作为事物具体形式</font><ul><li>作为意识存在</li><li>人类意识对某一事物的具体观测</li></ul></li></ul></blockquote><h3 id="广义"><a href="#广义" class="headerlink" title="广义"></a>广义</h3><blockquote><ul><li><font color="#2181FF" size="4" face="STFangsong">作为事物基本的元框架</font><ul><li>针对某一参照物而言</li><li>科学事物的全面概括</li></ul></li></ul></blockquote><h3 id="狭义"><a href="#狭义" class="headerlink" title="狭义"></a>狭义</h3><blockquote><ul><li><font color="#2181FF" size="4" face="STFangsong">相对广义事物中的特殊性</font><ul><li>针对某一参照物而言</li><li>科学事物的局限概括</li></ul></li></ul></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;笼统&quot;&gt;&lt;a href=&quot;#笼统&quot; class=&quot;headerlink&quot; title=&quot;笼统&quot;&gt;&lt;/a&gt;笼统&lt;/h3&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&quot;#10aec2&quot; size=&quot;4&quot; face=&quot;STFangsong&quot;&gt;强调事物的不具体、简略的表现形式&lt;/font&gt;&lt;ul&gt;
+&lt;li&gt;笼统不等同于模糊、不明确&lt;ul&gt;
+&lt;li&gt;多用于文章系统性地论述、不做具体分析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;</summary>
+    
+    
+    
+    
+    <category term="专业词" scheme="http://blog.nagisb.space/tags/%E4%B8%93%E4%B8%9A%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>引用与指向</title>
     <link href="http://blog.nagisb.space/post/yinyong/"/>
     <id>http://blog.nagisb.space/post/yinyong/</id>
     <published>2022-09-05T20:33:27.000Z</published>
-    <updated>2022-09-05T20:45:19.328Z</updated>
+    <updated>2022-09-06T23:18:28.654Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是引用"><a href="#什么是引用" class="headerlink" title="什么是引用"></a>什么是引用</h3><blockquote><ul><li><font color="#10aec2" size="4" face="STFangsong">将可被引用的对象,作为表达的方法</font><ul><li>如: 变量引用了对象</li><li>对象与变量将是引用关系,变量与对象的实例互不相干</li></ul></li></ul></blockquote><h3 id="什么是指向"><a href="#什么是指向" class="headerlink" title="什么是指向"></a>什么是指向</h3><blockquote><ul><li><font color="#158654" size="4" face="STFangsong">将唯一客观存在因素作为标识指向</font><ul><li>如: 对象地址指向变量</li><li>一个标识可以有多个指向</li></ul></li></ul></blockquote><p><em><span id="more"></span></em></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
@@ -457,28 +487,6 @@
     
     
     <category term="命令" scheme="http://blog.nagisb.space/tags/%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SSH</title>
-    <link href="http://blog.nagisb.space/post/SSH/"/>
-    <id>http://blog.nagisb.space/post/SSH/</id>
-    <published>2022-08-08T19:02:35.000Z</published>
-    <updated>2022-08-08T23:35:49.689Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是SSH"><a href="#什么是SSH" class="headerlink" title="什么是SSH"></a><font color="#76DFE3" size="4" face="STFangsong">什么是SSH</h3><ul><li>SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式</font> <span id="more"></span></li></ul><blockquote><p><font color="#EDFFFC" size="4" face="STFangsong">中间人攻击: 利用DNS欺骗和IP欺骗,冒充服务器和你之间的数据传送过程</font></p><p>SSH协议通过网络数据进行加密验证,为传统的远程登录: Telenet、FTP、Pop提供更为安全的加密协议</p></blockquote><h3 id="SSH端口"><a href="#SSH端口" class="headerlink" title="SSH端口"></a>SSH端口</h3><p>SSH应用于STelnet，SFTP以及SCP时默认SSH;22/80端口号。SSH端口支持修改, SSH服务会重新侦听新端口</p><h3 id="安全验证"><a href="#安全验证" class="headerlink" title="安全验证"></a>安全验证</h3><p>SSH采用<strong>公钥</strong>加密技术来<strong>验证远程主机</strong>，以及(必要时)允许远程主机验证用户。</p><pre><code>      ssh客户端(ssh)                       ssh服务端(sshd)     +----------+                       +---------+     |          |                       |         |     |          |                       |         |     |          |                       |         |     |          |                       |         |     +---+---+--+                       +-+---+---+         |   |                            |   |         |   |                            |   |         |   +----------------------------+   |         |                                    |         |        ssh加密了的TCP通信            |         +------------------------------------+                    SSH连接</code></pre><h3 id="OpenSSH"><a href="#OpenSSH" class="headerlink" title="OpenSSH"></a>OpenSSH</h3><p>对于OpenSSH客户端（Linux默认安装）, <font color="#D0087E" size="4" face="STFangsong">主机(公网ip)与某一个服务器进行远程连接</font></p><p>OpenSSH(OpenBSD Secure Shell)是一套使用<strong>ssh协议</strong>, 提供<font color="#D0087E" size="4" face="STFangsong">加密通讯会话的程序</font></p><h4 id="SSH-KEY"><a href="#SSH-KEY" class="headerlink" title="SSH KEY"></a>SSH KEY</h4><ul><li><p>SSH密钥简单来说: 让你方便的登录SSH服务器, <font color="#D0087E" size="4" face="STFangsong">而无需密码</font></p><blockquote><p>——SSH利用SSH Key来进行前面提到的基于密钥的安全验证</p></blockquote></li><li><p>使用步骤—主机与Github服务器</p></li></ul><pre class="line-numbers language-shell"><code class="language-shell">ssh-keygen -t rsa -C 'xxx@xxx.com' ——生成密钥对(OpenSSH也可生成cat ~/.ssh/id_rsa.pub ——查看配置公钥文件SHA256:xxxbg6kXUpJWGlxxxIGOCspRomTxdCARLxxx6E5SY8 ——sha256哈希值格式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>git使用https协议，每次pull, push都要输入密码,所以使用ssh密钥(也可使用<a href="https://www.5axxw.com/questions/content/0lwpqy">Github令牌</a>)</p></blockquote><p>1.在客户端生成SSH key（密钥对：公钥和私钥）——终端操作</p><p>2.在服务端的配置文件中加入你的公钥。（比如我们需要在GitHub中粘贴你的公钥）</p><ul><li>主机与Linux服务器</li></ul><pre class="line-numbers language-shell"><code class="language-shell">mv id_rsa_2048.pub ~/.ssh --生成的密钥对文件cd ~/.ssh/authorized_keyscat id_rsa_2048.pub >> ~/.ssh/authorized_keys --密钥文件追加<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><hr><h3 id="附笔"><a href="#附笔" class="headerlink" title="附笔"></a>附笔</h3><pre><code>id_rsa：本机（服务端）的私钥文件。id_rsa.pub：本机（服务端）的公钥文件。authorized_key：存放想要通过公私钥校验方式连接本机（服务端）的客户端公钥。known_hosts：本地的客户端存放成功连接本机（服务端）的服务端信息，服务端信息变更的话会再次询问，是否连接。（即存放曾经连接成功过的远程服务器信息）</code></pre><p><font color="#D0087E" size="4" face="STFangsong">服务器</font> : 被用来设计处理的业务应用(如网络和系统管理，数据库管理和Web服务的电脑(不限于微机,linux系统</p><p><font color="#D0087E" size="4" face="STFangsong">主机</font> : host 可以托管相对于<strong>其他计算机</strong>有用的应用程序</p><p><font color="#D0087E" size="4" face="STFangsong">本地</font> : local/localhost 是指用户或特定软件正在使用的计算机</p><p><font color="#D0087E" size="4" face="STFangsong">远程</font> : 远程计算机指不再你面前, 客观上没有实际使用的面对面计算机 </p><h3 id="宝塔面板"><a href="#宝塔面板" class="headerlink" title="宝塔面板"></a>宝塔面板</h3><ul><li><a href="http://tencent.yundashi168.com/bt-panel">宝塔面板系列教程</a> <a href="https://www.php.cn/topic/bt/">宝塔面板使用教程</a> 面板url:<code>http://&lt;服务器公网IP&gt;:8888</code></li><li>帮助管理远程主机(服务器)的大量组件工具,添加搭建动态网站使用在购买的云服务器上,默认占用8888端口</li></ul><h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ul><li><p><a href="https://putty.org/">PuTTY for Windows</a></p></li><li><p><a href="https://www.xshell.com/zh/xshell/">XSHELL - NetSarang Website</a></p></li><li><p><a href="http://www.hostbuf.com/t/988.html">FinalShell-Windows,macOS,Linux</a></p></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;什么是SSH&quot;&gt;&lt;a href=&quot;#什么是SSH&quot; class=&quot;headerlink&quot; title=&quot;什么是SSH&quot;&gt;&lt;/a&gt;&lt;font color=&quot;#76DFE3&quot; size=&quot;4&quot; face=&quot;STFangsong&quot;&gt;什么是SSH&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;SSH(Secure Shell, 安全外壳协议)是一种提供安全性的网络协议。进行远程登录或文件传输的方式&lt;/font&gt;</summary>
-    
-    
-    
-    <category term="渗透" scheme="http://blog.nagisb.space/categories/%E6%B8%97%E9%80%8F/"/>
-    
-    
-    <category term="服务器" scheme="http://blog.nagisb.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
