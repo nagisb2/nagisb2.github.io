@@ -1355,6 +1355,94 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </categories>
   </entry>
   <entry>
+    <title>HTTP错误代码汇总</title>
+    <url>/post/error-web/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h5 id="1xx信息提示-表示临时的相应"><a href="#1xx信息提示-表示临时的相应" class="headerlink" title="1xx信息提示: 表示临时的相应"></a>1xx信息提示: 表示临时的相应</h5><ul>
+<li>100 继续</li>
+<li>101 切换协议</li>
+</ul>
+<hr>
+<h5 id="2xx成功-表示服务器接受了客户端的请求"><a href="#2xx成功-表示服务器接受了客户端的请求" class="headerlink" title="2xx成功: 表示服务器接受了客户端的请求"></a>2xx成功: 表示服务器接受了客户端的请求</h5><ul>
+<li>200 确定</li>
+<li>201 已创建</li>
+<li>202 已接收</li>
+<li>203 非权威信息</li>
+<li>204 无内容</li>
+<li>205 重置内容</li>
+<li>206 部分内容</li>
+</ul>
+<hr>
+<h5 id="3xx重定向-客户端采取更多操作实现页面请求"><a href="#3xx重定向-客户端采取更多操作实现页面请求" class="headerlink" title="3xx重定向: 客户端采取更多操作实现页面请求"></a>3xx重定向: 客户端采取更多操作实现页面请求</h5><ul>
+<li>300 多种选择, 客户请求的文档多个位置找到</li>
+<li>301 已被永久移走, 客户请求的文档在其他位置</li>
+<li>302 对象已找到并移动</li>
+<li>304 未修改, 客户端请求的文档位于客户缓存当中</li>
+<li>305 使用代理</li>
+<li>306 已被保存但尚未使用</li>
+<li>307 临时重定向</li>
+</ul>
+<hr>
+<h5 id="4xx客户端错误-客户端出现问题-发生错误"><a href="#4xx客户端错误-客户端出现问题-发生错误" class="headerlink" title="4xx客户端错误: 客户端出现问题, 发生错误"></a>4xx客户端错误: 客户端出现问题, 发生错误</h5><ul>
+<li><p>400 错误的请求</p>
+</li>
+<li><p>401  访问被拒绝IIS定义了许多不同的401错误</p>
+<ul>
+<li>401.1 登录失败</li>
+<li>401.2 服务器配置导致登录失败</li>
+<li>401.3 ACL对资源的限制而未获得授权</li>
+<li>401.4 筛选器授权失败</li>
+<li>401.5 ISAPI/CGI应用程序授权失败</li>
+<li>401.7 访问被Web服务器的URL授权策略拒绝</li>
+</ul>
+</li>
+<li><p>403 Foribidden资源不可用, 禁止访问</p>
+</li>
+<li><p>404 服务器找不到请求的页面文件</p>
+</li>
+<li><p>405  用来访问本页面的HTTP谓词不被允许</p>
+</li>
+<li><p>406 客户端浏览器不接受所请求页面的MIME类型</p>
+</li>
+<li><p>407 要求进行代理身份验证</p>
+</li>
+<li><p>412 - 前提条件失败</p>
+</li>
+<li><p>413 - 请求实体太大</p>
+</li>
+<li><p>414 - 请求URI太长</p>
+</li>
+<li><p>415 - 不支持的媒体类型</p>
+</li>
+<li><p>416 - 所请求的范围无法满足</p>
+</li>
+<li><p>417 - 执行失败</p>
+</li>
+<li><p>423 - 锁定的错误</p>
+</li>
+</ul>
+<hr>
+<h5 id="5xx-服务器发生错误"><a href="#5xx-服务器发生错误" class="headerlink" title="5xx: 服务器发生错误"></a>5xx: 服务器发生错误</h5><ul>
+<li>500 - 内部服务器错误很多服务器端的错误都可能导致该错误信息。事件查看器日志包含更详细的错误原因。此外，您可以禁用友好HTTP错误信息以便收到详细的错误说明。<ul>
+<li>500.12 - 应用程序正忙于在Web服务器上重新启动　　这表示您在IIS重新启动应用程序的过程中试图加载ASP页。刷新页面后，此信息即会消失。</li>
+<li>500.13 - Web服务器太忙</li>
+<li>500.15 - 不允许直接请求Global.asa</li>
+<li>500.16 - UNC授权凭据不正确（IIS6.0专有）</li>
+<li>500.18 - URL授权存储不能打开（IIS6.0专有）</li>
+<li>500.100 - 内部ASP错误　　如果试图加载的ASP页中含有错误代码，将出现此错误信息。若要获得更确切的错误信息，请禁用友好HTTP错误信息。默认情况下，只会在默认Web站点上启用此错误信息。</li>
+</ul>
+</li>
+<li>501 页眉值指定了未实现的错误</li>
+<li>502 网关错误, 服务器无法正常相应</li>
+<li>503 服务器由于维护或者负载过重未能应答</li>
+<li>504 网关超时 服务器无法即时相应</li>
+<li>505 服务器不支持请求中所指明的HTTP版本</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>收录</category>
+      </categories>
+  </entry>
+  <entry>
     <title>html与xhtml</title>
     <url>/post/html-bibq/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red">在早先的html规范中&#60br&#62&#60hr&#62&#60img&#62等标记元素无需"封闭自身", 造成了html规范本身的不严谨</p>
@@ -2365,21 +2453,6 @@ PowerShell<span class="token punctuation">[</span><span class="token punctuation
       </categories>
   </entry>
   <entry>
-    <title>DNS</title>
-    <url>/post/real-rational/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
-<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
-</li>
-<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
-</li>
-</ul>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>科学概念</title>
     <url>/post/longtong/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="笼统"><a href="#笼统" class="headerlink" title="笼统"></a>笼统</h3><blockquote>
@@ -2436,20 +2509,19 @@ PowerShell<span class="token punctuation">[</span><span class="token punctuation
       </tags>
   </entry>
   <entry>
-    <title>文件伪装图片命令</title>
-    <url>/post/zip&amp;png/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
-cd %UserProfile%\Desktop
-copy /b xxx.png+xxx.zip xxx.png
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+    <title>DNS</title>
+    <url>/post/real-rational/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="什么是DNS"><a href="#什么是DNS" class="headerlink" title="什么是DNS"></a>什么是DNS</h3><ul>
+<li><p>域名系统（Domain Name System)服务。它作为将<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D">域名</a>和<a href="https://baike.baidu.com/item/IP%E5%9C%B0%E5%9D%80">IP地址</a><strong>相互</strong><a href="https://baike.baidu.com/item/%E6%98%A0%E5%B0%84">映射</a>的一个<a href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93">分布式数据库</a></p>
+</li>
+<li><p>DNS就是将域名解析为IP地址，浏览器就将解析的<strong>IP地址</strong>信息用来网上冲浪</p>
+</li>
+</ul>
 <p><em><span id="more"></span></em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
-        <category>渗透</category>
+        <category>随笔一记</category>
       </categories>
-      <tags>
-        <tag>命令</tag>
-      </tags>
   </entry>
   <entry>
     <title>引用与指向</title>
@@ -2476,6 +2548,22 @@ copy /b xxx.png+xxx.zip xxx.png
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>专业词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文件伪装图片命令</title>
+    <url>/post/zip&amp;png/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><pre class="line-numbers language-shell"><code class="language-shell">cd %SystemDrive%\Users\Administrator\Desktop
+cd %UserProfile%\Desktop
+copy /b xxx.png+xxx.zip xxx.png
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
+      <tags>
+        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
