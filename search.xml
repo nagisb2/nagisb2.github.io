@@ -2229,13 +2229,14 @@ PowerShell<span class="token punctuation">[</span><span class="token punctuation
       </categories>
   </entry>
   <entry>
-    <title>常见逻辑谬误</title>
+    <title>常见逻辑谬误00</title>
     <url>/post/yuyanmiwu/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>
     <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small>
 </center>
+### 以偏概全
 
-<h3 id="以偏概全"><a href="#以偏概全" class="headerlink" title="以偏概全"></a>以偏概全</h3><p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p>
+<p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p>
 <blockquote>
 <p>如: 我身边的人都这样, 所以其他人也这样</p>
 </blockquote>
@@ -2337,7 +2338,40 @@ PowerShell<span class="token punctuation">[</span><span class="token punctuation
         <category>收录</category>
       </categories>
       <tags>
-        <tag>逻辑学</tag>
+        <tag>逻辑谬误</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见逻辑谬误01</title>
+    <url>/post/yuyanmiwu01/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="草率归纳"><a href="#草率归纳" class="headerlink" title="草率归纳"></a>草率归纳</h3><p>是一种用例子而不是证据来概括经验, 通常给读者带来刻板影响或错误信息</p>
+<blockquote>
+<p>如: 尽管这是我在新工作的第一天的上午的中午，我可以感觉到这将是一个艰巨的工作</p>
+</blockquote>
+<h3 id="循环论点"><a href="#循环论点" class="headerlink" title="循环论点"></a>循环论点</h3><p>对于观点的不是用逻辑论证它, 而是重述它</p>
+<blockquote>
+<p>梵高是一位杰出的艺术家, 因为他画得很好</p>
+</blockquote>
+<p>通常没有给出任何特定证据论述, 而是使用两种意义相同的声明来完成</p>
+<h3 id="红鲱鱼"><a href="#红鲱鱼" class="headerlink" title="红鲱鱼"></a>红鲱鱼</h3><p>这种类型的鱼用于狐狸狩猎，狗将被鱼的气味分散注意力，因此将分散注意力，从实际捕获狐狸</p>
+<blockquote>
+<p>论证者的分散注意力是带有目的性的, 而不是作为手段</p>
+</blockquote>
+<h3 id="等价谬误"><a href="#等价谬误" class="headerlink" title="等价谬误"></a>等价谬误</h3><p>将一件事与另一件事进行比较，试图得出一个合乎逻辑的结论, 有时来源于错误贫瘠的认知</p>
+<blockquote>
+<p>如: 布朗先生曾嫖娼被捕，布莱克先生曾被开过超速罚单，他们都是罪犯</p>
+</blockquote>
+<p>以上例子中, 供述的是他们都犯了非法行为, 但是违反的法律不一样，要具体情况具体分析</p>
+<h3 id="道德等价"><a href="#道德等价" class="headerlink" title="道德等价"></a>道德等价</h3><p>与诉诸道德不同, 以更重要的事情比较小的错误引导别人两者都是彼此的糟糕</p>
+<blockquote>
+<p>如: 在公共汽车上坐我座位的那个人坏透了</p>
+</blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>收录</category>
+      </categories>
+      <tags>
+        <tag>逻辑谬误</tag>
       </tags>
   </entry>
   <entry>

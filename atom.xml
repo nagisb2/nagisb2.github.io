@@ -6,7 +6,7 @@
   <link href="http://blog.nagisb.space/atom.xml" rel="self"/>
   
   <link href="http://blog.nagisb.space/"/>
-  <updated>2022-09-12T19:17:13.221Z</updated>
+  <updated>2022-09-19T18:37:27.117Z</updated>
   <id>http://blog.nagisb.space/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见逻辑谬误01</title>
+    <link href="http://blog.nagisb.space/post/yuyanmiwu01/"/>
+    <id>http://blog.nagisb.space/post/yuyanmiwu01/</id>
+    <published>2022-09-19T18:01:52.000Z</published>
+    <updated>2022-09-19T18:37:27.117Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="草率归纳"><a href="#草率归纳" class="headerlink" title="草率归纳"></a>草率归纳</h3><p>是一种用例子而不是证据来概括经验, 通常给读者带来刻板影响或错误信息</p><blockquote><p>如: 尽管这是我在新工作的第一天的上午的中午，我可以感觉到这将是一个艰巨的工作</p></blockquote><h3 id="循环论点"><a href="#循环论点" class="headerlink" title="循环论点"></a>循环论点</h3><p>对于观点的不是用逻辑论证它, 而是重述它</p><blockquote><p>梵高是一位杰出的艺术家, 因为他画得很好</p></blockquote><p>通常没有给出任何特定证据论述, 而是使用两种意义相同的声明来完成</p><h3 id="红鲱鱼"><a href="#红鲱鱼" class="headerlink" title="红鲱鱼"></a>红鲱鱼</h3><p>这种类型的鱼用于狐狸狩猎，狗将被鱼的气味分散注意力，因此将分散注意力，从实际捕获狐狸</p><blockquote><p>论证者的分散注意力是带有目的性的, 而不是作为手段</p></blockquote><h3 id="等价谬误"><a href="#等价谬误" class="headerlink" title="等价谬误"></a>等价谬误</h3><p>将一件事与另一件事进行比较，试图得出一个合乎逻辑的结论, 有时来源于错误贫瘠的认知</p><blockquote><p>如: 布朗先生曾嫖娼被捕，布莱克先生曾被开过超速罚单，他们都是罪犯</p></blockquote><p>以上例子中, 供述的是他们都犯了非法行为, 但是违反的法律不一样，要具体情况具体分析</p><h3 id="道德等价"><a href="#道德等价" class="headerlink" title="道德等价"></a>道德等价</h3><p>与诉诸道德不同, 以更重要的事情比较小的错误引导别人两者都是彼此的糟糕</p><blockquote><p>如: 在公共汽车上坐我座位的那个人坏透了</p></blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="收录" scheme="http://blog.nagisb.space/categories/%E6%94%B6%E5%BD%95/"/>
+    
+    
+    <category term="逻辑谬误" scheme="http://blog.nagisb.space/tags/%E9%80%BB%E8%BE%91%E8%B0%AC%E8%AF%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>HTTP错误代码汇总</title>
@@ -246,13 +270,13 @@
   </entry>
   
   <entry>
-    <title>常见逻辑谬误</title>
+    <title>常见逻辑谬误00</title>
     <link href="http://blog.nagisb.space/post/yuyanmiwu/"/>
     <id>http://blog.nagisb.space/post/yuyanmiwu/</id>
     <published>2022-08-27T14:18:42.000Z</published>
-    <updated>2022-08-27T20:05:47.040Z</updated>
+    <updated>2022-09-19T18:03:40.800Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>    <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small></center><h3 id="以偏概全"><a href="#以偏概全" class="headerlink" title="以偏概全"></a>以偏概全</h3><p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p><blockquote><p>如: 我身边的人都这样, 所以其他人也这样</p></blockquote><h3 id="推不出"><a href="#推不出" class="headerlink" title="推不出"></a>推不出</h3><p>从给出的论据推不出想要证明的结论。</p><blockquote><p>如: 因为你没有钱, 所以她才不和你在一起</p></blockquote><h3 id="假性因果"><a href="#假性因果" class="headerlink" title="假性因果"></a>假性因果</h3><p>两者之间存在的因果关系是虚假的, 只不过是时间上先后发生。</p><p>常见于归因是带有偏见。</p><blockquote><p>如: 花瓶被打碎了, 而在之前有个小孩进来玩, 所以是小孩打的花瓶</p></blockquote><p>假性因果只是一种可能性, 而不是既定事实</p><h3 id="滑坡谬误"><a href="#滑坡谬误" class="headerlink" title="滑坡谬误"></a>滑坡谬误</h3><p>声称某件事情将会发生一连串的后果, 但却没有充分证据支持该理论。</p><blockquote><p>如: 不好好读书考不上大学; 考不上大学就找不到好工作; 找不到好工作就没有钱</p></blockquote><p>连锁推论不够严谨, 忽略条件, 使其含糊</p><p>无限延伸细节 , 常常是带有目的性的话语</p><h3 id="诉诸非逻辑"><a href="#诉诸非逻辑" class="headerlink" title="诉诸非逻辑"></a>诉诸非逻辑</h3><ul><li><p>诉诸权威</p><p>  名人名言并不一定是真理, 也要受到逻辑的考验, 实际的情景, 不能一味的断章取义</p></li><li><p>诉诸民意</p><p>  民意不意为就是正当, 合理的, 多数人支持的事情, 并不一定是正确的</p></li><li><p>诉诸情感</p><p>  煽情代替逻辑, 情绪主导思维。</p></li><li><p>诉诸无知</p><p>  主观不知道的事情就是不存在的, 主观无法证明的就是没有的</p><p>  通常会以对方无法解答和说明，不客观审理, 就认为自己是对的</p></li><li><p>诉诸道德</p><p>  将某事件与某项道德关联, 从而批判事件, 却无法论述事件为什么与该道德关联</p></li><li><p>诉诸沉默</p><p>  沉默不代表认罪, 嫌疑人有权保持沉默</p></li><li><p>诉诸比喻</p><p>  用在价值判断上而不是事实判断, 如<code>群众的眼睛是雪亮的</code>是一种价值判断</p><p>  并非群众的眼睛都是雪亮的, 引申含义比喻人民大众对社会上的事情观察得最透彻</p></li><li><p>诉诸信心</p><p>  仅仅是个人的心理信念, 不存在逻辑的推理效果</p></li></ul><h3 id="反问谬误"><a href="#反问谬误" class="headerlink" title="反问谬误"></a>反问谬误</h3><p>常说的, 你有本事你上; 如果换成你, 你就不会这么想</p><p>换位思考没有错, 而是将换位思考作为逻辑的合理性</p><blockquote><p> 我的做与不做, 想与不想, 都不能决定该事情的正确与否。</p></blockquote><p>如：我可以一边说<code>1+1=2</code>，一边将答案写成3，这并不妨碍2是正确答案。</p><h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><p>通常体现在不准确解读对手的观点，将其观点极端化标签化，归类于某个公众痛恨的理念。</p><h3 id="虚假两难"><a href="#虚假两难" class="headerlink" title="虚假两难"></a>虚假两难</h3><p>营造一个虚假的两难困境, 而实际不存在两难, 完全可以多元化选择</p><blockquote><p>如: 你妈和你女朋友掉水里，你先救谁？</p></blockquote><p>模糊背景, 模糊实际, 模糊判断</p><p>选择任何一个都能引向人性之恶, 通常出现在电影小说情节, 用来突出人性之恶的主题</p><h3 id="复杂问题谬误"><a href="#复杂问题谬误" class="headerlink" title="复杂问题谬误"></a>复杂问题谬误</h3><p>在向别人提出问题时隐式置入自己的倾向观点</p><blockquote><p>出现在诱导采访</p><p>“你要感谢谁?” 暗示你要感谢.</p><p>“买不起房怎么办?” 暗示你要买房.</p></blockquote><h3 id="词语歧义"><a href="#词语歧义" class="headerlink" title="词语歧义"></a>词语歧义</h3><p>同音字, 语境的变化, 容易引起歧义</p><h3 id="小众统计"><a href="#小众统计" class="headerlink" title="小众统计"></a>小众统计</h3><p>以个案做论据,心理学的“鲜活性效应” 以与人有关的事件作为论据，以加强说服力</p><h3 id="实体化谬误"><a href="#实体化谬误" class="headerlink" title="实体化谬误"></a>实体化谬误</h3><p>将抽象的信念或者假设的构想, 当做既定事情与实在的事物</p><blockquote><p>如：某心理学研究证实了xx的人会yy，你是xx的人所以你会yy。</p></blockquote><h3 id="感觉谬误"><a href="#感觉谬误" class="headerlink" title="感觉谬误"></a>感觉谬误</h3><p>凭表象和感觉想当然地作出判断和推理，符合人的直觉，但经不起逻辑和推敲。</p><blockquote><p>如：虽然说不清楚，但我就感觉他说的对。</p></blockquote><p>同情和相似性会增加感觉谬误。将人物塑造为可同情的，这样观点就会朝该人物偏移。</p><h3 id="烟幕谬误"><a href="#烟幕谬误" class="headerlink" title="烟幕谬误"></a>烟幕谬误</h3><p>用复杂的前缀和专业词, 将谬误掩盖起来, 从而混淆视线</p><blockquote><p>如: 鸡汤文的管理法: 经过第一步x1，第二步x2，第三步x3，就能收获成功。</p></blockquote><p>这里的x1, x2, x3为何可以联系起来以及与成功挂钩</p><h3 id="概念偷换"><a href="#概念偷换" class="headerlink" title="概念偷换"></a>概念偷换</h3><p>在观点的争论中, 论者有意转移论点, 寻找有利于自己的角度</p><blockquote><p>如: 科学松鼠会科普–人体的最早水分实验文献, 没必要731增添暴行</p></blockquote><p>将”最早人体的实验”转移到”731的人体实验是谣言”</p><hr><h3 id="简化逻辑"><a href="#简化逻辑" class="headerlink" title="简化逻辑"></a>简化逻辑</h3><blockquote><p>逻辑是“确保真能推论出真”的思考工具。工具就代表着要不要用到</p></blockquote><p>比如情侣之间对话:</p><ul><li>不要求真的时候：说情话，“我好喜欢你，我要把月亮摘给你。”月亮肯定摘不了，但很浪漫。</li><li>要求真的时候：吵架时，“你昨晚去哪了？”“我去给你摘月亮了。”这就要挨打了</li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>    <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small></center>### 以偏概全<p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p><blockquote><p>如: 我身边的人都这样, 所以其他人也这样</p></blockquote><h3 id="推不出"><a href="#推不出" class="headerlink" title="推不出"></a>推不出</h3><p>从给出的论据推不出想要证明的结论。</p><blockquote><p>如: 因为你没有钱, 所以她才不和你在一起</p></blockquote><h3 id="假性因果"><a href="#假性因果" class="headerlink" title="假性因果"></a>假性因果</h3><p>两者之间存在的因果关系是虚假的, 只不过是时间上先后发生。</p><p>常见于归因是带有偏见。</p><blockquote><p>如: 花瓶被打碎了, 而在之前有个小孩进来玩, 所以是小孩打的花瓶</p></blockquote><p>假性因果只是一种可能性, 而不是既定事实</p><h3 id="滑坡谬误"><a href="#滑坡谬误" class="headerlink" title="滑坡谬误"></a>滑坡谬误</h3><p>声称某件事情将会发生一连串的后果, 但却没有充分证据支持该理论。</p><blockquote><p>如: 不好好读书考不上大学; 考不上大学就找不到好工作; 找不到好工作就没有钱</p></blockquote><p>连锁推论不够严谨, 忽略条件, 使其含糊</p><p>无限延伸细节 , 常常是带有目的性的话语</p><h3 id="诉诸非逻辑"><a href="#诉诸非逻辑" class="headerlink" title="诉诸非逻辑"></a>诉诸非逻辑</h3><ul><li><p>诉诸权威</p><p>  名人名言并不一定是真理, 也要受到逻辑的考验, 实际的情景, 不能一味的断章取义</p></li><li><p>诉诸民意</p><p>  民意不意为就是正当, 合理的, 多数人支持的事情, 并不一定是正确的</p></li><li><p>诉诸情感</p><p>  煽情代替逻辑, 情绪主导思维。</p></li><li><p>诉诸无知</p><p>  主观不知道的事情就是不存在的, 主观无法证明的就是没有的</p><p>  通常会以对方无法解答和说明，不客观审理, 就认为自己是对的</p></li><li><p>诉诸道德</p><p>  将某事件与某项道德关联, 从而批判事件, 却无法论述事件为什么与该道德关联</p></li><li><p>诉诸沉默</p><p>  沉默不代表认罪, 嫌疑人有权保持沉默</p></li><li><p>诉诸比喻</p><p>  用在价值判断上而不是事实判断, 如<code>群众的眼睛是雪亮的</code>是一种价值判断</p><p>  并非群众的眼睛都是雪亮的, 引申含义比喻人民大众对社会上的事情观察得最透彻</p></li><li><p>诉诸信心</p><p>  仅仅是个人的心理信念, 不存在逻辑的推理效果</p></li></ul><h3 id="反问谬误"><a href="#反问谬误" class="headerlink" title="反问谬误"></a>反问谬误</h3><p>常说的, 你有本事你上; 如果换成你, 你就不会这么想</p><p>换位思考没有错, 而是将换位思考作为逻辑的合理性</p><blockquote><p> 我的做与不做, 想与不想, 都不能决定该事情的正确与否。</p></blockquote><p>如：我可以一边说<code>1+1=2</code>，一边将答案写成3，这并不妨碍2是正确答案。</p><h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><p>通常体现在不准确解读对手的观点，将其观点极端化标签化，归类于某个公众痛恨的理念。</p><h3 id="虚假两难"><a href="#虚假两难" class="headerlink" title="虚假两难"></a>虚假两难</h3><p>营造一个虚假的两难困境, 而实际不存在两难, 完全可以多元化选择</p><blockquote><p>如: 你妈和你女朋友掉水里，你先救谁？</p></blockquote><p>模糊背景, 模糊实际, 模糊判断</p><p>选择任何一个都能引向人性之恶, 通常出现在电影小说情节, 用来突出人性之恶的主题</p><h3 id="复杂问题谬误"><a href="#复杂问题谬误" class="headerlink" title="复杂问题谬误"></a>复杂问题谬误</h3><p>在向别人提出问题时隐式置入自己的倾向观点</p><blockquote><p>出现在诱导采访</p><p>“你要感谢谁?” 暗示你要感谢.</p><p>“买不起房怎么办?” 暗示你要买房.</p></blockquote><h3 id="词语歧义"><a href="#词语歧义" class="headerlink" title="词语歧义"></a>词语歧义</h3><p>同音字, 语境的变化, 容易引起歧义</p><h3 id="小众统计"><a href="#小众统计" class="headerlink" title="小众统计"></a>小众统计</h3><p>以个案做论据,心理学的“鲜活性效应” 以与人有关的事件作为论据，以加强说服力</p><h3 id="实体化谬误"><a href="#实体化谬误" class="headerlink" title="实体化谬误"></a>实体化谬误</h3><p>将抽象的信念或者假设的构想, 当做既定事情与实在的事物</p><blockquote><p>如：某心理学研究证实了xx的人会yy，你是xx的人所以你会yy。</p></blockquote><h3 id="感觉谬误"><a href="#感觉谬误" class="headerlink" title="感觉谬误"></a>感觉谬误</h3><p>凭表象和感觉想当然地作出判断和推理，符合人的直觉，但经不起逻辑和推敲。</p><blockquote><p>如：虽然说不清楚，但我就感觉他说的对。</p></blockquote><p>同情和相似性会增加感觉谬误。将人物塑造为可同情的，这样观点就会朝该人物偏移。</p><h3 id="烟幕谬误"><a href="#烟幕谬误" class="headerlink" title="烟幕谬误"></a>烟幕谬误</h3><p>用复杂的前缀和专业词, 将谬误掩盖起来, 从而混淆视线</p><blockquote><p>如: 鸡汤文的管理法: 经过第一步x1，第二步x2，第三步x3，就能收获成功。</p></blockquote><p>这里的x1, x2, x3为何可以联系起来以及与成功挂钩</p><h3 id="概念偷换"><a href="#概念偷换" class="headerlink" title="概念偷换"></a>概念偷换</h3><p>在观点的争论中, 论者有意转移论点, 寻找有利于自己的角度</p><blockquote><p>如: 科学松鼠会科普–人体的最早水分实验文献, 没必要731增添暴行</p></blockquote><p>将”最早人体的实验”转移到”731的人体实验是谣言”</p><hr><h3 id="简化逻辑"><a href="#简化逻辑" class="headerlink" title="简化逻辑"></a>简化逻辑</h3><blockquote><p>逻辑是“确保真能推论出真”的思考工具。工具就代表着要不要用到</p></blockquote><p>比如情侣之间对话:</p><ul><li>不要求真的时候：说情话，“我好喜欢你，我要把月亮摘给你。”月亮肯定摘不了，但很浪漫。</li><li>要求真的时候：吵架时，“你昨晚去哪了？”“我去给你摘月亮了。”这就要挨打了</li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     
       
@@ -265,7 +289,7 @@
     <category term="收录" scheme="http://blog.nagisb.space/categories/%E6%94%B6%E5%BD%95/"/>
     
     
-    <category term="逻辑学" scheme="http://blog.nagisb.space/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/"/>
+    <category term="逻辑谬误" scheme="http://blog.nagisb.space/tags/%E9%80%BB%E8%BE%91%E8%B0%AC%E8%AF%AF/"/>
     
   </entry>
   
@@ -469,25 +493,6 @@
     
     <category term="html/css/javascript" scheme="http://blog.nagisb.space/categories/Code/html-css-javascript/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>内网和外网</title>
-    <link href="http://blog.nagisb.space/post/server-router/"/>
-    <id>http://blog.nagisb.space/post/server-router/</id>
-    <published>2022-08-11T02:38:05.000Z</published>
-    <updated>2022-08-14T13:38:28.928Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><font color="#2181ff" size="4" face="STFangsong"><center>公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性</center></font></p><span id="more"></span><h4 id="公网IP"><a href="#公网IP" class="headerlink" title="公网IP"></a>公网IP</h4><ul><li><p>广域网IP, 依公网连接Internet上的非保留地址</p><blockquote><p>指设备在访问(Internet)互联网上的IP地址</p><p>一般购买的<code>服务器</code>, 网关下默认<code>运营商</code>给网关唯一分配地址</p></blockquote></li></ul><h5 id="使用公网"><a href="#使用公网" class="headerlink" title="使用公网"></a>使用公网</h5><blockquote><p>申请公网IP后, 路由器nat服务在Internet映射你的端口,</p><p>之后设置DMZ主机可将电脑暴露在外网(就是拿自己的电脑当服务器用了</p></blockquote><h4 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h4><ul><li><p>局域网ip, 内网的计算机以NAT 协议，通过一个公共的<a href="https://baike.baidu.com/item/%E7%BD%91%E5%85%B3/98992">网关</a>访问Internet</p><blockquote><p>样式 <code>192.168.xxx.xxx</code>  <code>127.0.0.1</code>回送地址就是回送的主机内网IP</p><p>用来区分在同一网关下的不同设备, 一般仅内网设备可以通过公网访问Internet</p></blockquote></li></ul><h5 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h5><ul><li><p>NAT穿透, 采用端口映射(无需公网iP</p><blockquote><p>将内网通过<code>nat_app</code>隧道打通, 再通过端口映射, 让外网设备访问内网</p></blockquote></li></ul><hr><h4 id="公网设备"><a href="#公网设备" class="headerlink" title="公网设备"></a>公网设备</h4><p>浏览器输入<code>主机IP</code>显示的就是唯一公网地址</p><pre class="line-numbers language-shell"><code class="language-shell">ipconfig -回显比对是否有公网地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="NATAPP"><a href="#NATAPP" class="headerlink" title="NATAPP"></a>NATAPP</h4><ul><li><a href="https://www.natfrp.com/?page=register">Sakura Frp — 免费内网穿透_免费端口映射_高速_高防节点_不限流量_Minecraft我的世界_微信开发调试_群辉NAS_无需公网_免备案 (natfrp.com)</a></li></ul><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;font color=&quot;#2181ff&quot; size=&quot;4&quot; face=&quot;STFangsong&quot;&gt;&lt;center&gt;公网IP在世界范围具有唯一性，而内网IP只在局域网内部具有唯一性&lt;/center&gt;&lt;/font&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="服务器" scheme="http://blog.nagisb.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
