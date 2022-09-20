@@ -87,193 +87,6 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>对熵的一种微观解释进行可视化</title>
-    <url>/post/entropy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
-<summary>熵源于的热力学第二定律</summary>
-
-<ul>
-<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
-<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
-</ul>
-<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
-<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
-<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
-<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
-<p><em><span id="more"></span></em></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>随笔一记</category>
-      </categories>
-      <tags>
-        <tag>信息论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机通用图像格式</title>
-    <url>/post/img-type/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#D0087E" size="4" face="STFangsong">计算机通用“<a href="https://blog.csdn.net/weixin_44191535/article/details/105022799"><strong>图像知识</strong></a>“,文件格式(BMP、JPG、PNG、GIF、WebP、AVIF、HEIF、JXL)</font></p>
-
-<p><em><span id="more"></span></em></p>
-<h4 id="分辨率-像素"><a href="#分辨率-像素" class="headerlink" title="分辨率/像素"></a><span id="inline-blue">分辨率/像素</span></h4><ul>
-<li><p>像素(LCD、OLED)</p>
-<ul>
-<li>Pixel</li>
-<li>像素点、像素颗粒</li>
-</ul>
-</li>
-<li><p>分辨率(1080p -HD -FHD)</p>
-<ul>
-<li>Resolution</li>
-<li>图片尺寸(不会随着缩放级别的变化而变化)</li>
-</ul>
-</li>
-</ul>
-<h4 id="BMP"><a href="#BMP" class="headerlink" title="BMP"></a><span id="inline-yellow">BMP</span></h4><ul>
-<li>全名<ul>
-<li>BItmap</li>
-<li>位图</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>Windows3.0为<a href="https://apps.microsoft.com/store/detail/%E7%94%BB%E5%9B%BE-3d/9NBLGGH5FV99?hl=zh-cn&gl=CN">画图程序</a>研发的图片格式,  <strong>不支持压缩</strong> , 多种色深(颜色位深), 不支持半透明</p>
-</blockquote>
-<h4 id="JPEG"><a href="#JPEG" class="headerlink" title="JPEG"></a><span id="inline-yellow">JPEG</span></h4><ul>
-<li>全名<ul>
-<li>J-Peg</li>
-<li>jpg、jpeg</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>有损压缩、失真、 兼容性、相比于BMP <strong>20高压缩倍率</strong> 游戏cg</p>
-</blockquote>
-<hr>
-<h4 id="EXIF"><a href="#EXIF" class="headerlink" title="EXIF"></a><span id="inline-blue">EXIF</span></h4><blockquote>
-<p>相机camera设备相关、包括不等图片GPS信息</p>
-</blockquote>
-<h4 id="PNG"><a href="#PNG" class="headerlink" title="PNG"></a><span id="inline-yellow">PNG</span></h4><ul>
-<li>PNG<ul>
-<li>Portable Network Graphics</li>
-<li>便携网络图像</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>无损压缩、<del>鉴定为丁真</del></p>
-</blockquote>
-<h4 id="Alpha"><a href="#Alpha" class="headerlink" title="Alpha"></a><span id="inline-blue">Alpha</span></h4><ul>
-<li>RGB-A<ul>
-<li>Logo、ico图片 A透明通道</li>
-</ul>
-</li>
-</ul>
-<h4 id="GIF"><a href="#GIF" class="headerlink" title="GIF"></a><span id="inline-yellow">GIF</span></h4><ul>
-<li>动图</li>
-</ul>
-<blockquote>
-<p>无损压缩、半透明、插入图帧</p>
-</blockquote>
-<h4 id="APNG"><a href="#APNG" class="headerlink" title="APNG"></a><span id="inline-yellow">APNG</span></h4><ul>
-<li>动图<ul>
-<li>PNG兼容版</li>
-</ul>
-</li>
-</ul>
-<h4 id="Webp"><a href="#Webp" class="headerlink" title="Webp"></a><span id="inline-yellow">Webp</span></h4><ul>
-<li>Webp<ul>
-<li>Google2010收购、编码VP8</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>有损(2/3 JPG)&amp;无损(3/4 PNG) 、半透明、动画、大多数现代浏览器支持</p>
-</blockquote>
-<h4 id="缩略图"><a href="#缩略图" class="headerlink" title="缩略图"></a><span id="inline-yellow">缩略图</span></h4><ul>
-<li>Thumbnail</li>
-</ul>
-<blockquote>
-<p>文件管理器、看图软件–&gt;解码前的预览效果</p>
-</blockquote>
-<h4 id="Avif-Heif"><a href="#Avif-Heif" class="headerlink" title="Avif/Heif"></a><span id="inline-yellow">Avif/Heif</span></h4><ul>
-<li>压缩比例最好、解码率感人<ul>
-<li>2/3 Webp 、1/2 JPG、PNG</li>
-<li>avif、只兼容Chrome</li>
-<li>hevc 收费</li>
-</ul>
-</li>
-</ul>
-<h4 id="JXL"><a href="#JXL" class="headerlink" title="JXL"></a><span id="inline-yellow">JXL</span></h4><ul>
-<li>尚未兼容浏览器<ul>
-<li>.JXL—JPEG XL</li>
-<li><del>NO,硬编码器</del></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a><span id="inline-yellow">SVG</span></h4><ul>
-<li>可代替ico、logo<ul>
-<li>Scalable Vector Graphics</li>
-<li>可缩放矢量图</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>坐标位置, xml源代码存储, 局限在简单几何形</p>
-</blockquote>
-<h4 id="TGA"><a href="#TGA" class="headerlink" title="TGA"></a><span id="inline-yellow">TGA</span></h4><ul>
-<li>1987古老格式<ul>
-<li>近似PNG、压缩率稍低</li>
-<li>广泛用于游戏CG</li>
-</ul>
-</li>
-</ul>
-<h4 id="全景图"><a href="#全景图" class="headerlink" title="全景图"></a><span id="inline-blue">全景图</span></h4><ul>
-<li>拍摄周围所有画面<ul>
-<li>Panorama</li>
-<li>全景图</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>用于地图软件全景街道、3D动画、3D游戏开发    </p>
-</blockquote>
-<h4 id="RAW"><a href="#RAW" class="headerlink" title="RAW"></a><span id="inline-blue">RAW</span></h4><ul>
-<li>原始图像、厂商不统<ul>
-<li>未经软件处理和加工</li>
-<li><del>生肉资源</del>、体积大</li>
-</ul>
-</li>
-</ul>
-<h4 id="PSD"><a href="#PSD" class="headerlink" title="PSD"></a><span id="inline-yellow">PSD</span></h4><ul>
-<li>PS图像存档格式、厂商不统<ul>
-<li>分层源文件</li>
-<li>图层、特效、路径、选区的保存类型</li>
-</ul>
-</li>
-</ul>
-<h4 id="TIFF"><a href="#TIFF" class="headerlink" title="TIFF"></a><span id="inline-yellow">TIFF</span></h4><ul>
-<li>TIFF<ul>
-<li>用于扫描、打印、印刷、图层、PDF多页</li>
-</ul>
-</li>
-</ul>
-<h4 id="PX"><a href="#PX" class="headerlink" title="PX"></a><span id="inline-blue">PX</span></h4><ul>
-<li>像素单位<ul>
-<li>pixel的缩写, 也是影像显示的基本单位,CSS样式代码中使用的逻辑像素</li>
-<li>CSS中相对长度的单位，相对于屏幕显示器的分辨率</li>
-<li>字体font-size,缩进,边距,行高,等css样式单位<h4 id="Web-images"><a href="#Web-images" class="headerlink" title="Web-images"></a>Web-images</h4></li>
-</ul>
-</li>
-</ul>
-<p><img src="/images/images-html.jpg" loading="lazy"></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机通用编码</title>
     <url>/post/coding-type/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#D0087E" size="4" face="STFangsong">计算机通用“<a href="https://blog.csdn.net/sgy1993/article/details/114929342?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166180384516781667887774%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166180384516781667887774&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-114929342-null-null.142^v42^pc_ran_alice,185^v2^control&utm_term=%E7%BC%96%E7%A0%81%E7%9F%A5%E8%AF%86&spm=1018.2226.3001.4187"><strong>编码知识</strong></a>“,字符编码(Ascill、Unicode、GBK、ANSI、UTF-8、UTF-32)</font></p>
@@ -692,6 +505,193 @@
       </tags>
   </entry>
   <entry>
+    <title>对熵的一种微观解释进行可视化</title>
+    <url>/post/entropy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="熵增定律"><a href="#熵增定律" class="headerlink" title="熵增定律"></a>熵增定律</h4><details>
+<summary>熵源于的热力学第二定律</summary>
+
+<ul>
+<li>热量不能自发地从低温物体转移到高温物体（克劳修斯）</li>
+<li>不可能从单一热源取热使之完全转换为有用的功而不产生其他影响 (开尔文)</details></li>
+</ul>
+<p><strong>熵增的过程是一个自发的由有序向无序发展的过程</strong></p>
+<p><strong>一个封闭的系统，熵总是朝着增加的方向发展 , 粒子越多，越集中于中点部分</strong></p>
+<p><strong>粒子数量和粒子微观态数量——玻尔兹曼熵</strong></p>
+<p><strong>事物运动状态或存在方式的不确定性——<a href="https://www.bilibili.com/video/BV1oX4y1w7aG?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">信息熵</a></strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg></p>
+<p><em><span id="more"></span></em></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>随笔一记</category>
+      </categories>
+      <tags>
+        <tag>信息论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机通用图像格式</title>
+    <url>/post/img-type/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red"><font color="#D0087E" size="4" face="STFangsong">计算机通用“<a href="https://blog.csdn.net/weixin_44191535/article/details/105022799"><strong>图像知识</strong></a>“,文件格式(BMP、JPG、PNG、GIF、WebP、AVIF、HEIF、JXL)</font></p>
+
+<p><em><span id="more"></span></em></p>
+<h4 id="分辨率-像素"><a href="#分辨率-像素" class="headerlink" title="分辨率/像素"></a><span id="inline-blue">分辨率/像素</span></h4><ul>
+<li><p>像素(LCD、OLED)</p>
+<ul>
+<li>Pixel</li>
+<li>像素点、像素颗粒</li>
+</ul>
+</li>
+<li><p>分辨率(1080p -HD -FHD)</p>
+<ul>
+<li>Resolution</li>
+<li>图片尺寸(不会随着缩放级别的变化而变化)</li>
+</ul>
+</li>
+</ul>
+<h4 id="BMP"><a href="#BMP" class="headerlink" title="BMP"></a><span id="inline-yellow">BMP</span></h4><ul>
+<li>全名<ul>
+<li>BItmap</li>
+<li>位图</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Windows3.0为<a href="https://apps.microsoft.com/store/detail/%E7%94%BB%E5%9B%BE-3d/9NBLGGH5FV99?hl=zh-cn&gl=CN">画图程序</a>研发的图片格式,  <strong>不支持压缩</strong> , 多种色深(颜色位深), 不支持半透明</p>
+</blockquote>
+<h4 id="JPEG"><a href="#JPEG" class="headerlink" title="JPEG"></a><span id="inline-yellow">JPEG</span></h4><ul>
+<li>全名<ul>
+<li>J-Peg</li>
+<li>jpg、jpeg</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>有损压缩、失真、 兼容性、相比于BMP <strong>20高压缩倍率</strong> 游戏cg</p>
+</blockquote>
+<hr>
+<h4 id="EXIF"><a href="#EXIF" class="headerlink" title="EXIF"></a><span id="inline-blue">EXIF</span></h4><blockquote>
+<p>相机camera设备相关、包括不等图片GPS信息</p>
+</blockquote>
+<h4 id="PNG"><a href="#PNG" class="headerlink" title="PNG"></a><span id="inline-yellow">PNG</span></h4><ul>
+<li>PNG<ul>
+<li>Portable Network Graphics</li>
+<li>便携网络图像</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>无损压缩、<del>鉴定为丁真</del></p>
+</blockquote>
+<h4 id="Alpha"><a href="#Alpha" class="headerlink" title="Alpha"></a><span id="inline-blue">Alpha</span></h4><ul>
+<li>RGB-A<ul>
+<li>Logo、ico图片 A透明通道</li>
+</ul>
+</li>
+</ul>
+<h4 id="GIF"><a href="#GIF" class="headerlink" title="GIF"></a><span id="inline-yellow">GIF</span></h4><ul>
+<li>动图</li>
+</ul>
+<blockquote>
+<p>无损压缩、半透明、插入图帧</p>
+</blockquote>
+<h4 id="APNG"><a href="#APNG" class="headerlink" title="APNG"></a><span id="inline-yellow">APNG</span></h4><ul>
+<li>动图<ul>
+<li>PNG兼容版</li>
+</ul>
+</li>
+</ul>
+<h4 id="Webp"><a href="#Webp" class="headerlink" title="Webp"></a><span id="inline-yellow">Webp</span></h4><ul>
+<li>Webp<ul>
+<li>Google2010收购、编码VP8</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>有损(2/3 JPG)&amp;无损(3/4 PNG) 、半透明、动画、大多数现代浏览器支持</p>
+</blockquote>
+<h4 id="缩略图"><a href="#缩略图" class="headerlink" title="缩略图"></a><span id="inline-yellow">缩略图</span></h4><ul>
+<li>Thumbnail</li>
+</ul>
+<blockquote>
+<p>文件管理器、看图软件–&gt;解码前的预览效果</p>
+</blockquote>
+<h4 id="Avif-Heif"><a href="#Avif-Heif" class="headerlink" title="Avif/Heif"></a><span id="inline-yellow">Avif/Heif</span></h4><ul>
+<li>压缩比例最好、解码率感人<ul>
+<li>2/3 Webp 、1/2 JPG、PNG</li>
+<li>avif、只兼容Chrome</li>
+<li>hevc 收费</li>
+</ul>
+</li>
+</ul>
+<h4 id="JXL"><a href="#JXL" class="headerlink" title="JXL"></a><span id="inline-yellow">JXL</span></h4><ul>
+<li>尚未兼容浏览器<ul>
+<li>.JXL—JPEG XL</li>
+<li><del>NO,硬编码器</del></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a><span id="inline-yellow">SVG</span></h4><ul>
+<li>可代替ico、logo<ul>
+<li>Scalable Vector Graphics</li>
+<li>可缩放矢量图</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>坐标位置, xml源代码存储, 局限在简单几何形</p>
+</blockquote>
+<h4 id="TGA"><a href="#TGA" class="headerlink" title="TGA"></a><span id="inline-yellow">TGA</span></h4><ul>
+<li>1987古老格式<ul>
+<li>近似PNG、压缩率稍低</li>
+<li>广泛用于游戏CG</li>
+</ul>
+</li>
+</ul>
+<h4 id="全景图"><a href="#全景图" class="headerlink" title="全景图"></a><span id="inline-blue">全景图</span></h4><ul>
+<li>拍摄周围所有画面<ul>
+<li>Panorama</li>
+<li>全景图</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>用于地图软件全景街道、3D动画、3D游戏开发    </p>
+</blockquote>
+<h4 id="RAW"><a href="#RAW" class="headerlink" title="RAW"></a><span id="inline-blue">RAW</span></h4><ul>
+<li>原始图像、厂商不统<ul>
+<li>未经软件处理和加工</li>
+<li><del>生肉资源</del>、体积大</li>
+</ul>
+</li>
+</ul>
+<h4 id="PSD"><a href="#PSD" class="headerlink" title="PSD"></a><span id="inline-yellow">PSD</span></h4><ul>
+<li>PS图像存档格式、厂商不统<ul>
+<li>分层源文件</li>
+<li>图层、特效、路径、选区的保存类型</li>
+</ul>
+</li>
+</ul>
+<h4 id="TIFF"><a href="#TIFF" class="headerlink" title="TIFF"></a><span id="inline-yellow">TIFF</span></h4><ul>
+<li>TIFF<ul>
+<li>用于扫描、打印、印刷、图层、PDF多页</li>
+</ul>
+</li>
+</ul>
+<h4 id="PX"><a href="#PX" class="headerlink" title="PX"></a><span id="inline-blue">PX</span></h4><ul>
+<li>像素单位<ul>
+<li>pixel的缩写, 也是影像显示的基本单位,CSS样式代码中使用的逻辑像素</li>
+<li>CSS中相对长度的单位，相对于屏幕显示器的分辨率</li>
+<li>字体font-size,缩进,边距,行高,等css样式单位<h4 id="Web-images"><a href="#Web-images" class="headerlink" title="Web-images"></a>Web-images</h4></li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/images-html.jpg" loading="lazy"></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>信息论与编码基础</title>
     <url>/post/information/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -710,8 +710,47 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>信息论</tag>
         <tag>编码</tag>
+        <tag>信息论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电信HG6543C1超级管理员账户密码获取</title>
+    <url>/post/light-cat/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
+<blockquote>
+<p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p>
+</blockquote>
+<p><em><span id="more"></span></em></p>
+<p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p>
+<h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p>
+<h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote>
+<p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p>
+</blockquote>
+<hr>
+<h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p>
+<p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p>
+<hr>
+<p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p>
+<h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p>
+<blockquote>
+<p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p>
+</blockquote>
+<p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p>
+<hr>
+<p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p>
+<p><img src="/images/cat-passwd.png" loading="lazy"></p>
+<hr>
+<h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>
+
+<p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>刷机</category>
+      </categories>
+      <tags>
+        <tag>整活</tag>
+        <tag>光猫</tag>
       </tags>
   </entry>
   <entry>
@@ -1404,6 +1443,67 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </categories>
   </entry>
   <entry>
+    <title>网页布局</title>
+    <url>/post/html-buju/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="data:image/png;base64,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" loading="lazy"></p>
+<blockquote>
+<p>在经典的页面布局中，页面被分为 header、main、aside、footer 四个部分</p>
+</blockquote>
+<hr>
+<ul>
+<li><p><code>header</code>: 定义文档的页眉 (介绍信息)</p>
+<ul>
+<li>网站Logo</li>
+</ul>
+</li>
+<li><p><code>main</code>: 定义文档应用的主体部分</p>
+<ul>
+<li>不限于<code>body</code></li>
+</ul>
+</li>
+<li><p><code>aside</code>: 通常是网页的说明</p>
+<ul>
+<li>引用、附加注释、相关链接、广告</li>
+</ul>
+</li>
+<li><p><code>footer</code>: 定义文档或节的页脚</p>
+<ul>
+<li>文档的作者、使用条款链接、联系信息、版权信息 Copyright ©</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><code>article</code>: 定义一篇与页面无相干的文章<ul>
+<li>论坛帖子、杂志或新闻文章、评论、交互式组件</li>
+</ul>
+</li>
+<li><code>nav</code>: 定义页面的主导航功能<ul>
+<li>如:  导航1| 导航2</li>
+</ul>
+</li>
+<li><code>section</code>: 定义内容的分节或分段<ul>
+<li><code>article，nav或者aside</code>是特殊的<code>section</code></li>
+</ul>
+</li>
+<li><code>details</code>: 定义可见或隐藏的需求补充<ul>
+<li><code>summary定义details元素的可见标题</code></li>
+</ul>
+</li>
+<li><code>dialog</code>: 定义对话框, 确认框或窗口</li>
+</ul>
+<hr>
+<blockquote>
+<p>html5新特性: 语义与呈现分离, 语义元素与非语意元素定义网页的布局</p>
+<p>非语义元素特点是便利,但却会导致代码的滥用,使得html的代码含义混乱</p>
+</blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>Code</category>
+        <category>html/css/javascript</category>
+      </categories>
+  </entry>
+  <entry>
     <title>html与xhtml</title>
     <url>/post/html-bibq/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-red">在早先的html规范中&#60br&#62&#60hr&#62&#60img&#62等标记元素无需"封闭自身", 造成了html规范本身的不严谨</p>
@@ -1501,106 +1601,6 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       <tags>
         <tag>效率</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>电信HG6543C1超级管理员账户密码获取</title>
-    <url>/post/light-cat/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="管理员密码"><a href="#管理员密码" class="headerlink" title="管理员密码"></a>管理员密码</h2><p>为什么要获取管理员密码</p>
-<blockquote>
-<p>一般在浏览器输入光猫地址ip都是192.168.1.1:80(默认不写就是80端口)会自动进入<a href="http://192.168.1.1/cgi-bin/luci">用户界面</a>在这个模式下输入账户密码是不能进行光猫的高权限操作(如:桥接模式)所以我们需要取得管理员权限</p>
-</blockquote>
-<p><em><span id="more"></span></em></p>
-<p><img src="/images/cat-80.png" alt="direct" loading="lazy"></p>
-<h2 id="8080端口"><a href="#8080端口" class="headerlink" title="8080端口"></a>8080端口</h2><p>另外一个地址的端口是8080端口的即地址为192.168.1.1:8080在浏览器使用<a href="http://192.168.1.1:8080/">8080端口</a>登入后可以看到界面已经不一样了，和原来的设置页面相比较，也多了很多设置，但是此时不是用超级管理员账号登录的依然还有很多设置页面被隐藏了，还是看不到我们需要的桥接模式,现在我们就要获取超级管理员密码</p>
-<h2 id="打开Telnet服务"><a href="#打开Telnet服务" class="headerlink" title="打开Telnet服务"></a>打开Telnet服务</h2><blockquote>
-<p>Telnet协议是TCP/IP协议家族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力</p>
-</blockquote>
-<hr>
-<h3 id="如何开启"><a href="#如何开启" class="headerlink" title="如何开启"></a>如何开启</h3><p><img src="/images/Tenlnet.png" loading="lazy"></p>
-<p>设置→控制面板→程序→启用或关闭Windows功能→找到Telnet客户端（Telnet Clinet）并勾选→确定</p>
-<hr>
-<p>浏览器中输入：192.168.1.1:8080/cgi-bin/telnetenable.cgi?telnetenable=1判断是否开启</p>
-<h2 id="CMD操作"><a href="#CMD操作" class="headerlink" title="CMD操作"></a>CMD操作</h2><p>在出来的DOS界面里，输入telnet测试端口命令： telnet IP 端口 或者 telnet 域名 端口，回车。例：<code>telnet 192.168.1.1</code>（telnet后边有一个空格）</p>
-<blockquote>
-<p><strong>注意：</strong>如果端口关闭或者无法连接，则显示不能打开到主机的链接，链接失败；端口打开的情况下，链接成功，则进入telnet页面（全黑的），证明端口可用。</p>
-</blockquote>
-<p>Telnet用户名 ：root<br>密码是<code>默认无线网络密钥+默认终端配置密码</code>的组合（光猫背面可看到）<br>注意：输密码的时候能看到，回车完看不到密码，这种情况是正常的。出来“ # ”就说明成功了。</p>
-<hr>
-<p>输入代码：cat /flash/cfg/agentconf/factory.conf（输代码的时候注意cat后边有一个空格）</p>
-<p><img src="/images/cat-passwd.png" loading="lazy"></p>
-<hr>
-<h2 id="8080端口管理员登录"><a href="#8080端口管理员登录" class="headerlink" title="8080端口管理员登录"></a>8080端口管理员登录</h2><center>开启桥接模式</center>
-
-<p><img src="/images/cat-qiaojie.png" alt="cat" loading="lazy"></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>刷机</category>
-      </categories>
-      <tags>
-        <tag>整活</tag>
-        <tag>光猫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网页布局</title>
-    <url>/post/html-buju/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="data:image/png;base64,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" loading="lazy"></p>
-<blockquote>
-<p>在经典的页面布局中，页面被分为 header、main、aside、footer 四个部分</p>
-</blockquote>
-<hr>
-<ul>
-<li><p><code>header</code>: 定义文档的页眉 (介绍信息)</p>
-<ul>
-<li>网站Logo</li>
-</ul>
-</li>
-<li><p><code>main</code>: 定义文档应用的主体部分</p>
-<ul>
-<li>不限于<code>body</code></li>
-</ul>
-</li>
-<li><p><code>aside</code>: 通常是网页的说明</p>
-<ul>
-<li>引用、附加注释、相关链接、广告</li>
-</ul>
-</li>
-<li><p><code>footer</code>: 定义文档或节的页脚</p>
-<ul>
-<li>文档的作者、使用条款链接、联系信息、版权信息 Copyright ©</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><code>article</code>: 定义一篇与页面无相干的文章<ul>
-<li>论坛帖子、杂志或新闻文章、评论、交互式组件</li>
-</ul>
-</li>
-<li><code>nav</code>: 定义页面的主导航功能<ul>
-<li>如:  导航1| 导航2</li>
-</ul>
-</li>
-<li><code>section</code>: 定义内容的分节或分段<ul>
-<li><code>article，nav或者aside</code>是特殊的<code>section</code></li>
-</ul>
-</li>
-<li><code>details</code>: 定义可见或隐藏的需求补充<ul>
-<li><code>summary定义details元素的可见标题</code></li>
-</ul>
-</li>
-<li><code>dialog</code>: 定义对话框, 确认框或窗口</li>
-</ul>
-<hr>
-<blockquote>
-<p>html5新特性: 语义与呈现分离, 语义元素与非语意元素定义网页的布局</p>
-<p>非语义元素特点是便利,但却会导致代码的滥用,使得html的代码含义混乱</p>
-</blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>Code</category>
-        <category>html/css/javascript</category>
-      </categories>
   </entry>
   <entry>
     <title>内网和外网</title>
@@ -2051,119 +2051,6 @@ known_hosts：本地的客户端存放成功连接本机（服务端）的服务
       </categories>
   </entry>
   <entry>
-    <title>常见逻辑谬误00</title>
-    <url>/post/yuyanmiwu/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>
-    <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small>
-</center>
-### 以偏概全
-
-<p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p>
-<blockquote>
-<p>如: 我身边的人都这样, 所以其他人也这样</p>
-</blockquote>
-<h3 id="推不出"><a href="#推不出" class="headerlink" title="推不出"></a>推不出</h3><p>从给出的论据推不出想要证明的结论。</p>
-<blockquote>
-<p>如: 因为你没有钱, 所以她才不和你在一起</p>
-</blockquote>
-<h3 id="假性因果"><a href="#假性因果" class="headerlink" title="假性因果"></a>假性因果</h3><p>两者之间存在的因果关系是虚假的, 只不过是时间上先后发生。</p>
-<p>常见于归因是带有偏见。</p>
-<blockquote>
-<p>如: 花瓶被打碎了, 而在之前有个小孩进来玩, 所以是小孩打的花瓶</p>
-</blockquote>
-<p>假性因果只是一种可能性, 而不是既定事实</p>
-<h3 id="滑坡谬误"><a href="#滑坡谬误" class="headerlink" title="滑坡谬误"></a>滑坡谬误</h3><p>声称某件事情将会发生一连串的后果, 但却没有充分证据支持该理论。</p>
-<blockquote>
-<p>如: 不好好读书考不上大学; 考不上大学就找不到好工作; 找不到好工作就没有钱</p>
-</blockquote>
-<p>连锁推论不够严谨, 忽略条件, 使其含糊</p>
-<p>无限延伸细节 , 常常是带有目的性的话语</p>
-<h3 id="诉诸非逻辑"><a href="#诉诸非逻辑" class="headerlink" title="诉诸非逻辑"></a>诉诸非逻辑</h3><ul>
-<li><p>诉诸权威</p>
-<p>  名人名言并不一定是真理, 也要受到逻辑的考验, 实际的情景, 不能一味的断章取义</p>
-</li>
-<li><p>诉诸民意</p>
-<p>  民意不意为就是正当, 合理的, 多数人支持的事情, 并不一定是正确的</p>
-</li>
-<li><p>诉诸情感</p>
-<p>  煽情代替逻辑, 情绪主导思维。</p>
-</li>
-<li><p>诉诸无知</p>
-<p>  主观不知道的事情就是不存在的, 主观无法证明的就是没有的</p>
-<p>  通常会以对方无法解答和说明，不客观审理, 就认为自己是对的</p>
-</li>
-<li><p>诉诸道德</p>
-<p>  将某事件与某项道德关联, 从而批判事件, 却无法论述事件为什么与该道德关联</p>
-</li>
-<li><p>诉诸沉默</p>
-<p>  沉默不代表认罪, 嫌疑人有权保持沉默</p>
-</li>
-<li><p>诉诸比喻</p>
-<p>  用在价值判断上而不是事实判断, 如<code>群众的眼睛是雪亮的</code>是一种价值判断</p>
-<p>  并非群众的眼睛都是雪亮的, 引申含义比喻人民大众对社会上的事情观察得最透彻</p>
-</li>
-<li><p>诉诸信心</p>
-<p>  仅仅是个人的心理信念, 不存在逻辑的推理效果</p>
-</li>
-</ul>
-<h3 id="反问谬误"><a href="#反问谬误" class="headerlink" title="反问谬误"></a>反问谬误</h3><p>常说的, 你有本事你上; 如果换成你, 你就不会这么想</p>
-<p>换位思考没有错, 而是将换位思考作为逻辑的合理性</p>
-<blockquote>
-<p> 我的做与不做, 想与不想, 都不能决定该事情的正确与否。</p>
-</blockquote>
-<p>如：我可以一边说<code>1+1=2</code>，一边将答案写成3，这并不妨碍2是正确答案。</p>
-<h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><p>通常体现在不准确解读对手的观点，将其观点极端化标签化，归类于某个公众痛恨的理念。</p>
-<h3 id="虚假两难"><a href="#虚假两难" class="headerlink" title="虚假两难"></a>虚假两难</h3><p>营造一个虚假的两难困境, 而实际不存在两难, 完全可以多元化选择</p>
-<blockquote>
-<p>如: 你妈和你女朋友掉水里，你先救谁？</p>
-</blockquote>
-<p>模糊背景, 模糊实际, 模糊判断</p>
-<p>选择任何一个都能引向人性之恶, 通常出现在电影小说情节, 用来突出人性之恶的主题</p>
-<h3 id="复杂问题谬误"><a href="#复杂问题谬误" class="headerlink" title="复杂问题谬误"></a>复杂问题谬误</h3><p>在向别人提出问题时隐式置入自己的倾向观点</p>
-<blockquote>
-<p>出现在诱导采访</p>
-<p>“你要感谢谁?” 暗示你要感谢.</p>
-<p>“买不起房怎么办?” 暗示你要买房.</p>
-</blockquote>
-<h3 id="词语歧义"><a href="#词语歧义" class="headerlink" title="词语歧义"></a>词语歧义</h3><p>同音字, 语境的变化, 容易引起歧义</p>
-<h3 id="小众统计"><a href="#小众统计" class="headerlink" title="小众统计"></a>小众统计</h3><p>以个案做论据,心理学的“鲜活性效应” 以与人有关的事件作为论据，以加强说服力</p>
-<h3 id="实体化谬误"><a href="#实体化谬误" class="headerlink" title="实体化谬误"></a>实体化谬误</h3><p>将抽象的信念或者假设的构想, 当做既定事情与实在的事物</p>
-<blockquote>
-<p>如：某心理学研究证实了xx的人会yy，你是xx的人所以你会yy。</p>
-</blockquote>
-<h3 id="感觉谬误"><a href="#感觉谬误" class="headerlink" title="感觉谬误"></a>感觉谬误</h3><p>凭表象和感觉想当然地作出判断和推理，符合人的直觉，但经不起逻辑和推敲。</p>
-<blockquote>
-<p>如：虽然说不清楚，但我就感觉他说的对。</p>
-</blockquote>
-<p>同情和相似性会增加感觉谬误。将人物塑造为可同情的，这样观点就会朝该人物偏移。</p>
-<h3 id="烟幕谬误"><a href="#烟幕谬误" class="headerlink" title="烟幕谬误"></a>烟幕谬误</h3><p>用复杂的前缀和专业词, 将谬误掩盖起来, 从而混淆视线</p>
-<blockquote>
-<p>如: 鸡汤文的管理法: 经过第一步x1，第二步x2，第三步x3，就能收获成功。</p>
-</blockquote>
-<p>这里的x1, x2, x3为何可以联系起来以及与成功挂钩</p>
-<h3 id="概念偷换"><a href="#概念偷换" class="headerlink" title="概念偷换"></a>概念偷换</h3><p>在观点的争论中, 论者有意转移论点, 寻找有利于自己的角度</p>
-<blockquote>
-<p>如: 科学松鼠会科普–人体的最早水分实验文献, 没必要731增添暴行</p>
-</blockquote>
-<p>将”最早人体的实验”转移到”731的人体实验是谣言”</p>
-<hr>
-<h3 id="简化逻辑"><a href="#简化逻辑" class="headerlink" title="简化逻辑"></a>简化逻辑</h3><blockquote>
-<p>逻辑是“确保真能推论出真”的思考工具。工具就代表着要不要用到</p>
-</blockquote>
-<p>比如情侣之间对话:</p>
-<ul>
-<li>不要求真的时候：说情话，“我好喜欢你，我要把月亮摘给你。”月亮肯定摘不了，但很浪漫。</li>
-<li>要求真的时候：吵架时，“你昨晚去哪了？”“我去给你摘月亮了。”这就要挨打了</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>收录</category>
-      </categories>
-      <tags>
-        <tag>逻辑谬误</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PowerShell 的命令行启动参数</title>
     <url>/post/shell_power/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center><small><a href="https://blog.csdn.net/WPwalter/article/details/94128752">By CSDN</a></small></center>
@@ -2340,6 +2227,119 @@ PowerShell<span class="token punctuation">[</span><span class="token punctuation
         <category>收录</category>
         <category>powershell</category>
       </categories>
+  </entry>
+  <entry>
+    <title>常见逻辑谬误00</title>
+    <url>/post/yuyanmiwu/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><center>
+    <small><a href="https://zhuanlan.zhihu.com/p/65488581">By zhihu</a></small>
+</center>
+### 以偏概全
+
+<p>根据很有限的例证得出一个普遍的结论。论据不足, 混淆视听</p>
+<blockquote>
+<p>如: 我身边的人都这样, 所以其他人也这样</p>
+</blockquote>
+<h3 id="推不出"><a href="#推不出" class="headerlink" title="推不出"></a>推不出</h3><p>从给出的论据推不出想要证明的结论。</p>
+<blockquote>
+<p>如: 因为你没有钱, 所以她才不和你在一起</p>
+</blockquote>
+<h3 id="假性因果"><a href="#假性因果" class="headerlink" title="假性因果"></a>假性因果</h3><p>两者之间存在的因果关系是虚假的, 只不过是时间上先后发生。</p>
+<p>常见于归因是带有偏见。</p>
+<blockquote>
+<p>如: 花瓶被打碎了, 而在之前有个小孩进来玩, 所以是小孩打的花瓶</p>
+</blockquote>
+<p>假性因果只是一种可能性, 而不是既定事实</p>
+<h3 id="滑坡谬误"><a href="#滑坡谬误" class="headerlink" title="滑坡谬误"></a>滑坡谬误</h3><p>声称某件事情将会发生一连串的后果, 但却没有充分证据支持该理论。</p>
+<blockquote>
+<p>如: 不好好读书考不上大学; 考不上大学就找不到好工作; 找不到好工作就没有钱</p>
+</blockquote>
+<p>连锁推论不够严谨, 忽略条件, 使其含糊</p>
+<p>无限延伸细节 , 常常是带有目的性的话语</p>
+<h3 id="诉诸非逻辑"><a href="#诉诸非逻辑" class="headerlink" title="诉诸非逻辑"></a>诉诸非逻辑</h3><ul>
+<li><p>诉诸权威</p>
+<p>  名人名言并不一定是真理, 也要受到逻辑的考验, 实际的情景, 不能一味的断章取义</p>
+</li>
+<li><p>诉诸民意</p>
+<p>  民意不意为就是正当, 合理的, 多数人支持的事情, 并不一定是正确的</p>
+</li>
+<li><p>诉诸情感</p>
+<p>  煽情代替逻辑, 情绪主导思维。</p>
+</li>
+<li><p>诉诸无知</p>
+<p>  主观不知道的事情就是不存在的, 主观无法证明的就是没有的</p>
+<p>  通常会以对方无法解答和说明，不客观审理, 就认为自己是对的</p>
+</li>
+<li><p>诉诸道德</p>
+<p>  将某事件与某项道德关联, 从而批判事件, 却无法论述事件为什么与该道德关联</p>
+</li>
+<li><p>诉诸沉默</p>
+<p>  沉默不代表认罪, 嫌疑人有权保持沉默</p>
+</li>
+<li><p>诉诸比喻</p>
+<p>  用在价值判断上而不是事实判断, 如<code>群众的眼睛是雪亮的</code>是一种价值判断</p>
+<p>  并非群众的眼睛都是雪亮的, 引申含义比喻人民大众对社会上的事情观察得最透彻</p>
+</li>
+<li><p>诉诸信心</p>
+<p>  仅仅是个人的心理信念, 不存在逻辑的推理效果</p>
+</li>
+</ul>
+<h3 id="反问谬误"><a href="#反问谬误" class="headerlink" title="反问谬误"></a>反问谬误</h3><p>常说的, 你有本事你上; 如果换成你, 你就不会这么想</p>
+<p>换位思考没有错, 而是将换位思考作为逻辑的合理性</p>
+<blockquote>
+<p> 我的做与不做, 想与不想, 都不能决定该事情的正确与否。</p>
+</blockquote>
+<p>如：我可以一边说<code>1+1=2</code>，一边将答案写成3，这并不妨碍2是正确答案。</p>
+<h3 id="稻草人谬误"><a href="#稻草人谬误" class="headerlink" title="稻草人谬误"></a>稻草人谬误</h3><p>通常体现在不准确解读对手的观点，将其观点极端化标签化，归类于某个公众痛恨的理念。</p>
+<h3 id="虚假两难"><a href="#虚假两难" class="headerlink" title="虚假两难"></a>虚假两难</h3><p>营造一个虚假的两难困境, 而实际不存在两难, 完全可以多元化选择</p>
+<blockquote>
+<p>如: 你妈和你女朋友掉水里，你先救谁？</p>
+</blockquote>
+<p>模糊背景, 模糊实际, 模糊判断</p>
+<p>选择任何一个都能引向人性之恶, 通常出现在电影小说情节, 用来突出人性之恶的主题</p>
+<h3 id="复杂问题谬误"><a href="#复杂问题谬误" class="headerlink" title="复杂问题谬误"></a>复杂问题谬误</h3><p>在向别人提出问题时隐式置入自己的倾向观点</p>
+<blockquote>
+<p>出现在诱导采访</p>
+<p>“你要感谢谁?” 暗示你要感谢.</p>
+<p>“买不起房怎么办?” 暗示你要买房.</p>
+</blockquote>
+<h3 id="词语歧义"><a href="#词语歧义" class="headerlink" title="词语歧义"></a>词语歧义</h3><p>同音字, 语境的变化, 容易引起歧义</p>
+<h3 id="小众统计"><a href="#小众统计" class="headerlink" title="小众统计"></a>小众统计</h3><p>以个案做论据,心理学的“鲜活性效应” 以与人有关的事件作为论据，以加强说服力</p>
+<h3 id="实体化谬误"><a href="#实体化谬误" class="headerlink" title="实体化谬误"></a>实体化谬误</h3><p>将抽象的信念或者假设的构想, 当做既定事情与实在的事物</p>
+<blockquote>
+<p>如：某心理学研究证实了xx的人会yy，你是xx的人所以你会yy。</p>
+</blockquote>
+<h3 id="感觉谬误"><a href="#感觉谬误" class="headerlink" title="感觉谬误"></a>感觉谬误</h3><p>凭表象和感觉想当然地作出判断和推理，符合人的直觉，但经不起逻辑和推敲。</p>
+<blockquote>
+<p>如：虽然说不清楚，但我就感觉他说的对。</p>
+</blockquote>
+<p>同情和相似性会增加感觉谬误。将人物塑造为可同情的，这样观点就会朝该人物偏移。</p>
+<h3 id="烟幕谬误"><a href="#烟幕谬误" class="headerlink" title="烟幕谬误"></a>烟幕谬误</h3><p>用复杂的前缀和专业词, 将谬误掩盖起来, 从而混淆视线</p>
+<blockquote>
+<p>如: 鸡汤文的管理法: 经过第一步x1，第二步x2，第三步x3，就能收获成功。</p>
+</blockquote>
+<p>这里的x1, x2, x3为何可以联系起来以及与成功挂钩</p>
+<h3 id="概念偷换"><a href="#概念偷换" class="headerlink" title="概念偷换"></a>概念偷换</h3><p>在观点的争论中, 论者有意转移论点, 寻找有利于自己的角度</p>
+<blockquote>
+<p>如: 科学松鼠会科普–人体的最早水分实验文献, 没必要731增添暴行</p>
+</blockquote>
+<p>将”最早人体的实验”转移到”731的人体实验是谣言”</p>
+<hr>
+<h3 id="简化逻辑"><a href="#简化逻辑" class="headerlink" title="简化逻辑"></a>简化逻辑</h3><blockquote>
+<p>逻辑是“确保真能推论出真”的思考工具。工具就代表着要不要用到</p>
+</blockquote>
+<p>比如情侣之间对话:</p>
+<ul>
+<li>不要求真的时候：说情话，“我好喜欢你，我要把月亮摘给你。”月亮肯定摘不了，但很浪漫。</li>
+<li>要求真的时候：吵架时，“你昨晚去哪了？”“我去给你摘月亮了。”这就要挨打了</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>收录</category>
+      </categories>
+      <tags>
+        <tag>逻辑谬误</tag>
+      </tags>
   </entry>
   <entry>
     <title>常见逻辑谬误01</title>
@@ -2596,6 +2596,42 @@ copy /b xxx.png+xxx.zip xxx.png
       <categories>
         <category>渗透</category>
       </categories>
+      <tags>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机CR&amp;LF</title>
+    <url>/post/command-cr/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="回车换行符"><a href="#回车换行符" class="headerlink" title="回车换行符"></a>回车换行符</h4><blockquote>
+<p>\n 10 换行（newline）<br>\r 13 回车（return）</p>
+<p>\r\n 回车换行符(return &amp;&amp; newline)</p>
+<blockquote>
+<p>回车键的换行符通常指换行和回车的操作</p>
+</blockquote>
+</blockquote>
+<p><em><span id="more"></span></em></p>
+<h4 id="换行符歧义"><a href="#换行符歧义" class="headerlink" title="换行符歧义"></a>换行符歧义</h4><ul>
+<li>Wiondows<ul>
+<li>OAOD</li>
+<li>CR&amp;LF</li>
+<li><code>\r\n</code> </li>
+</ul>
+</li>
+<li>Linux<ul>
+<li>OA</li>
+<li>LF</li>
+<li><code>\n</code></li>
+</ul>
+</li>
+<li>Mac<ul>
+<li>OD</li>
+<li>CR</li>
+<li><code>\r</code></li>
+</ul>
+</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>命令</tag>
       </tags>
@@ -3053,6 +3089,65 @@ wget -c -r -np -k -L -p url --递归下载整个网站
       </tags>
   </entry>
   <entry>
+    <title>DLL——“动态链接”</title>
+    <url>/post/win-dll/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
+
+<blockquote>
+<p>exe程序在执行的时链接到.Dll文件——动态链接库(Dynamic Link Library)<em><span id="more"></span></em></p>
+<p>普通程序符合接口规范下<strong>DLL文件与EXE文件独立</strong>——<a href="https://docs.microsoft.com/zh-cn/troubleshoot/windows-client/deployment/dynamic-link-library">动态链接</a></p>
+<p>DLL文件可以被许多程序共用。因此可以利用DLL文件,作为一些代码Dll(模块)存放。</p>
+</blockquote>
+</font>
+
+
+
+<h4 id="Svchost"><a href="#Svchost" class="headerlink" title="Svchost"></a><font color="#F4E539">Svchost</font><font color="#3F3E3F"></h4><ul>
+<li><p>在Windows任务管理器的进程栏里有一大票<strong>svchost.exe</strong></p>
+<blockquote>
+<p>——它为Windows上的<strong>Dll类服务</strong>例程驱动提供了运行空间(Service Host process)</p>
+</blockquote>
+</li>
+</ul>
+</font>
+
+<h4 id="rundll"><a href="#rundll" class="headerlink" title="rundll"></a><font color="#F4E539">rundll</font><font color="#3F3E3F"></h4><ul>
+<li>顾名思义，rundll就是运行dll。这个dll并不是普通的dll, 而是要<strong>符合rundll接口</strong>规范</li>
+</ul>
+<pre class="line-numbers language-shell"><code class="language-shell">rundll32.exe shell32.dll,Control_RunDLL 打开控制面板
+rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<hr>
+</font>
+
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a><font color="#F4E539">链接</font><font color="#3F3E3F"></h4><blockquote>
+<p>基本来说它让<strong>一个文件可以拥有多个访问路径</strong></p>
+</blockquote>
+<ul>
+<li>Windows NT内核的结构很大程度依赖于DLL<strong>动态链接</strong>机制。</li>
+<li>从Windows  NT4开始，NTFS文件系统引入了<strong>HardLink</strong>这个概念。</li>
+<li>到了Windows2000，引入了<strong>Junction</strong> 链接方式，又叫初级的软链接。</li>
+<li>在Windows Vista之后引入了 <strong>Symbolic Link</strong>, 可以说是Junction链接的增强版。</li>
+</ul>
+</font>
+
+
+</font>
+
+<h4 id="dll注入"><a href="#dll注入" class="headerlink" title="dll注入"></a><font color="#F4E539">dll注入</font><font color="#3F3E3F"></h4><ul>
+<li><strong>DLL注入简单地定义为将DLL插入另一个进程的空间然后执行其代码的过程</strong></li>
+</ul>
+<p><a href="https://www.bilibili.com/video/BV1SY4y1g75J?spm_id_from=..search-card.all.click&vd_source=a9f586ee0f1226cd479b50e1f04dcaea">『教程』Windows中的窗口注入dll 哔哩哔哩_bilibili</a></p>
+</font>
+
+<h4 id="dll编译"><a href="#dll编译" class="headerlink" title="dll编译"></a><font color="#F4E539">dll编译</font></h4><p><a href="http://angusj.com/resourcehacker/">Resource Hacker (angusj.com)</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Wy4y1q7WR?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">Windows8改oobe_哔哩哔哩_bilibili</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>文件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mshta</title>
     <url>/post/win-mshta/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p id="div-border-left-yellow">微软Windows操作系统相关程序, 用于执行.HTA(Html应用程序)文件</p> <span id="more"></span>
@@ -3284,65 +3379,6 @@ cd %SystemRoot%\system32\config 注册表路径
 
 
 
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>文件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DLL——“动态链接”</title>
-    <url>/post/win-dll/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="什么是DLL"><a href="#什么是DLL" class="headerlink" title=" 什么是DLL"></a><font color="#F4E539"> 什么是DLL</font></h4><font color="#3F3E3F">
-
-<blockquote>
-<p>exe程序在执行的时链接到.Dll文件——动态链接库(Dynamic Link Library)<em><span id="more"></span></em></p>
-<p>普通程序符合接口规范下<strong>DLL文件与EXE文件独立</strong>——<a href="https://docs.microsoft.com/zh-cn/troubleshoot/windows-client/deployment/dynamic-link-library">动态链接</a></p>
-<p>DLL文件可以被许多程序共用。因此可以利用DLL文件,作为一些代码Dll(模块)存放。</p>
-</blockquote>
-</font>
-
-
-
-<h4 id="Svchost"><a href="#Svchost" class="headerlink" title="Svchost"></a><font color="#F4E539">Svchost</font><font color="#3F3E3F"></h4><ul>
-<li><p>在Windows任务管理器的进程栏里有一大票<strong>svchost.exe</strong></p>
-<blockquote>
-<p>——它为Windows上的<strong>Dll类服务</strong>例程驱动提供了运行空间(Service Host process)</p>
-</blockquote>
-</li>
-</ul>
-</font>
-
-<h4 id="rundll"><a href="#rundll" class="headerlink" title="rundll"></a><font color="#F4E539">rundll</font><font color="#3F3E3F"></h4><ul>
-<li>顾名思义，rundll就是运行dll。这个dll并不是普通的dll, 而是要<strong>符合rundll接口</strong>规范</li>
-</ul>
-<pre class="line-numbers language-shell"><code class="language-shell">rundll32.exe shell32.dll,Control_RunDLL 打开控制面板
-rundll32.exe shell32.dll,SHExitWindowsEx 1 执行关机
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<hr>
-</font>
-
-<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a><font color="#F4E539">链接</font><font color="#3F3E3F"></h4><blockquote>
-<p>基本来说它让<strong>一个文件可以拥有多个访问路径</strong></p>
-</blockquote>
-<ul>
-<li>Windows NT内核的结构很大程度依赖于DLL<strong>动态链接</strong>机制。</li>
-<li>从Windows  NT4开始，NTFS文件系统引入了<strong>HardLink</strong>这个概念。</li>
-<li>到了Windows2000，引入了<strong>Junction</strong> 链接方式，又叫初级的软链接。</li>
-<li>在Windows Vista之后引入了 <strong>Symbolic Link</strong>, 可以说是Junction链接的增强版。</li>
-</ul>
-</font>
-
-
-</font>
-
-<h4 id="dll注入"><a href="#dll注入" class="headerlink" title="dll注入"></a><font color="#F4E539">dll注入</font><font color="#3F3E3F"></h4><ul>
-<li><strong>DLL注入简单地定义为将DLL插入另一个进程的空间然后执行其代码的过程</strong></li>
-</ul>
-<p><a href="https://www.bilibili.com/video/BV1SY4y1g75J?spm_id_from=..search-card.all.click&vd_source=a9f586ee0f1226cd479b50e1f04dcaea">『教程』Windows中的窗口注入dll 哔哩哔哩_bilibili</a></p>
-</font>
-
-<h4 id="dll编译"><a href="#dll编译" class="headerlink" title="dll编译"></a><font color="#F4E539">dll编译</font></h4><p><a href="http://angusj.com/resourcehacker/">Resource Hacker (angusj.com)</a></p>
-<p><a href="https://www.bilibili.com/video/BV1Wy4y1q7WR?vd_source=a9f586ee0f1226cd479b50e1f04dcaea">Windows8改oobe_哔哩哔哩_bilibili</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>文件</tag>
